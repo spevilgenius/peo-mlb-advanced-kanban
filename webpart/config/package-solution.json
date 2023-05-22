@@ -1,0 +1,40 @@
+{
+	"$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+	"solution": {
+		"name": "PEO_MLB_KanbanWebpart",
+		"id": "9298fc9a-fc50-456a-a25a-f70e6ac306c7",
+		"version": "0.0.1.0",
+		"includeClientSideAssets": true,
+		"skipFeatureDeployment": true,
+		"isDomainIsolated": false,
+		"developer": {
+			"name": "Daniel Walker",
+			"websiteUrl": "",
+			"privacyUrl": "",
+			"termsOfUseUrl": "",
+			"mpnId": "Undefined-1.16.1"
+		},
+		"metadata": {
+			"shortDescription": {
+				"default": "Vue Kanban Webpart"
+			},
+			"longDescription": {
+				"default": "An advanced kanban system."
+			},
+			"screenshotPaths": [],
+			"videoUrl": "",
+			"categories": []
+		},
+		"features": [
+			{
+				"title": "Advanced Kanban",
+				"description": "The feature that activates elements of the webpart solution.",
+				"id": "3324de4d-58eb-40e6-903e-033e88c88558",
+				"version": "1.0.0.0"
+			}
+		]
+	},
+	"paths": {
+		"zippedPackage": "solution/PEO_MLB_KanbanWebpart.sppkg"
+	}
+}

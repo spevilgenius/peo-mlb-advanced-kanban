@@ -1,0 +1,264 @@
+@import './base.css';
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+#calendarapp {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  z-index: 10000; */
+  font-weight: normal;
+  min-height: 950px;
+}
+
+#app {
+  /* max-width: 1280px; */
+  display: flex;
+  margin: 0 auto;
+  /* z-index: 10000; */
+  font-weight: normal;
+}
+
+.hidden { display: none; }
+
+.px10 {
+  width: 10px !important;
+}
+.px20 {
+  width: 20px !important;
+}
+.px30 {
+  width: 30px !important;
+}
+.px35 {
+  width: 35px !important;
+}
+.px40 {
+  width: 40px !important;
+}
+.px50 {
+  width: 50px !important;
+}
+.px60 {
+  width: 60px !important;
+}
+.px70 {
+  width: 70px !important;
+}
+.px80 {
+  width: 80px !important;
+}
+.px90 {
+  width: 90px !important;
+}
+.px100 {
+  width: 100px !important;
+}
+.px110 {
+  width: 110px !important;
+}
+.px120 {
+  width: 120px !important;
+}
+.px130 {
+  width: 130px !important;
+}
+.px140 {
+  width: 140px !important;
+}
+.px150 {
+  width: 150px !important;
+}
+.px160 {
+  width: 160px !important;
+}
+.px170 {
+  width: 170px !important;
+}
+.px180 {
+  width: 180px !important;
+}
+.px190 {
+  width: 190px !important;
+}
+.px200 {
+  width: 200px !important;
+}
+.px210 {
+  width: 210px !important;
+}
+.px220 {
+  width: 220px !important;
+}
+.px230 {
+  width: 230px !important;
+}
+.px240 {
+  width: 240px !important;
+}
+.px250 {
+  width: 250px !important;
+}
+.px260 {
+  width: 260px !important;
+}
+.px270 {
+  width: 270px !important;
+}
+.px280 {
+  width: 280px !important;
+}
+.px290 {
+  width: 290px !important;
+}
+.px300 {
+  width: 300px !important;
+}
+.px310 {
+  width: 310px !important;
+}
+.px315 {
+  width: 315px !important;
+}
+.px320 {
+  width: 320px !important;
+}
+.px330 {
+  width: 330px !important;
+}
+.px340 {
+  width: 340px !important;
+}
+.px350 {
+  width: 350px !important;
+}
+.px360 {
+  width: 360px !important;
+}
+.px370 {
+  width: 370px !important;
+}
+.px380 {
+  width: 380px !important;
+}
+.px390 {
+  width: 390px !important;
+}
+.px400 {
+  width: 400px !important;
+}
+.px410 {
+  width: 410px !important;
+}
+.px420 {
+  width: 420px !important;
+}
+.px430 {
+  width: 430px !important;
+}
+.px440 {
+  width: 440px !important;
+}
+.px450 {
+  width: 450px !important;
+}
+.px460 {
+  width: 460px !important;
+}
+.px470 {
+  width: 470px !important;
+}
+.px480 {
+  width: 480px !important;
+}
+.px490 {
+  width: 490px !important;
+}
+.px500 {
+  width: 500px !important;
+}
+.px600 {
+  width: 600px !important;
+}
+.px700 {
+  width: 700px !important;
+}
+.px800 {
+  width: 800px !important;
+}
+.px900 {
+  width: 900px !important;
+}
+.px1000 {
+  width: 1000px !important;
+}
+
+.pw10 {
+  width: 10%;
+}
+.pw20 {
+  width: 20%;
+}
+.pw30 {
+  width: 30%;
+}
+.pw40 {
+  width: 40%;
+}
+.pw50 {
+  width: 50%;
+}
+.pw60 {
+  width: 60%;
+}
+.pw70 {
+  width: 70%;
+}
+.pw80 {
+  width: 80%;
+}
+.pw90 {
+  width: 90%;
+}
+.pw100 {
+  width: 100%;
+}
+.mb5px {
+  margin-bottom: 5px !important;
+}
+
+.py10 {
+  height: 10px !important;
+}
+.py20 {
+  height: 20px !important;
+}
+.py30 {
+  height: 30px !important;
+}
+.py40 {
+  height: 40px !important;
+}
+.py50 {
+  height: 50px !important;
+}
+.py60 {
+  height: 60px !important;
+}
+.py70 {
+  height: 70px !important;
+}
+.py80 {
+  height: 80px !important;
+}
+.py90 {
+  height: 90px !important;
+}
+.py100 {
+  height: 100px !important;
+}

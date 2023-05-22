@@ -1,0 +1,61 @@
+{
+  "id": "3d102a6d-1747-4305-8255-3c0db6a766de",
+  "alias": "Vue3KanbanWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportsFullBleed": true,
+  "supportedHosts": [
+    "SharePointWebPart",
+    "TeamsPersonalApp",
+    "TeamsTab",
+    "SharePointFullPage"
+  ],
+  "supportsThemeVariants": true,
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": {
+        "default": "Advanced"
+      },
+      "title": {
+        "default": "Advanced Kanban"
+      },
+      "description": {
+        "default": "An advanced Kanban web part."
+      },
+      "officeFabricIconFontName": "BacklogBoard",
+      "properties": {
+        "description": "Advanced Kanban"
+      }
+    }
+  ],
+  "loaderConfig": {
+    "internalModuleBaseUrls": [
+      "<!-- PATH TO CDN -->"
+    ],
+    "entryModuleId": "vue-3-kanban-web-part",
+    "scriptResources": {
+      "vue-3-kanban-web-part": {
+        "type": "path",
+        "path": "vue-3-kanban-web-part_58d26a67d40de76e791c.js"
+      },
+      "@microsoft/sp-property-pane": {
+        "type": "component",
+        "id": "f9e737b7-f0df-4597-ba8c-3060f82380db",
+        "version": "1.16.1"
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b",
+        "version": "1.16.1"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0",
+        "version": "1.16.1"
+      }
+    }
+  }
+}
