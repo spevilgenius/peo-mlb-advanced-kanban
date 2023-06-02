@@ -333,7 +333,7 @@
                   </ejs-sidebar>
                   <div class="row">
                     <div class="main main-calendar">
-                      <ejs-schedule id="scheduler" ref="scheduleObj" height="900px" width="100%" cssClass="schedule-overview" :quickInfoTemplates="quickInfoTemplates" :currentView="currentView" :popupOpen="onPopupOpen" :selectedDate="selectedDate" :eventSettings="eventSettings" :actionBegin="onActionBegin">
+                      <ejs-schedule id="scheduler" ref="scheduleObj" height="900px" width="100%" cssClass="main-calendar" :quickInfoTemplates="quickInfoTemplates" :currentView="currentView" :popupOpen="onPopupOpen" :selectedDate="selectedDate" :eventSettings="eventSettings" :actionBegin="onActionBegin">
                         <e-views>
                           <e-view option="Day"></e-view>
                           <e-view option="WorkWeek" startHour="10:00" endHour="18:00"></e-view>
@@ -1335,57 +1335,24 @@ export default defineComponent({
   border: 1px solid black;
 }
 
-.schedule-overview .overview-header .overview-titlebar .e-upload.calendar-import button,
-.schedule-overview .overview-header .overview-titlebar .e-upload.calendar-import button:focus,
-.schedule-overview .overview-header .overview-titlebar .e-upload.calendar-import button:hover {
-  background-color: transparent;
-  border-color: transparent;
-  box-shadow: none;
-  color: inherit;
-  font-size: 12px;
-  height: 40px;
-  text-transform: capitalize;
-}
-
-.schedule-overview .overview-header .overview-titlebar .title-bar-btn,
-.schedule-overview .overview-header .overview-titlebar .title-bar-btn:hover,
-.schedule-overview .overview-header .overview-titlebar .title-bar-btn:focus,
-.schedule-overview .overview-header .overview-titlebar .e-dropdown-btn,
-.schedule-overview .overview-header .overview-titlebar .e-dropdown-btn.e-btn {
-  background: transparent;
-  box-shadow: none;
-  font-family: inherit;
-  border-color: transparent;
-  border-radius: 2px;
-  color: inherit;
-  font-size: 12px;
-  text-transform: capitalize;
-  height: 40px;
-  font-weight: 400;
-}
-
-.schedule-overview .overview-header .overview-titlebar .e-btn:not([disabled]):focus {
-  background-color: rgba(255, 255, 255, 0.4) !important;
-}
-
-.schedule-overview .overview-toolbar {
+.main-calendar .overview-toolbar {
   display: flex;
   height: 70px;
 }
 
-.schedule-overview .overview-toolbar .e-toolbar {
+.main-calendar .overview-toolbar .e-toolbar {
   border-radius: 0;
 }
 
-.schedule-overview .overview-toolbar .e-toolbar .e-toolbar-item .e-tbar-btn.e-tbtn-txt {
+.main-calendar .overview-toolbar .e-toolbar .e-toolbar-item .e-tbar-btn.e-tbtn-txt {
   display: inline-grid;
 }
 
-.schedule-overview .overview-toolbar .e-toolbar .e-toolbar-item.e-template {
+.main-calendar .overview-toolbar .e-toolbar .e-toolbar-item.e-template {
   margin: 0 5px;
 }
 
-.schedule-overview .overview-toolbar .overview-toolbar-settings {
+.main-calendar .overview-toolbar .overview-toolbar-settings {
   border-radius: 0;
   background-color: #f8f9fa;
   border-color: rgba(0, 0, 0, 0.15);
@@ -1400,18 +1367,18 @@ export default defineComponent({
   width: 100%;
 }
 
-.schedule-overview .overview-content {
+.main-calendar .overview-content {
   border: 1px solid #00000026;
   border-top: 0;
   display: flex;
 }
 
-.schedule-overview .overview-content .left-panel {
+.main-calendar .overview-content .left-panel {
   height: 1000px;
   width: 100%;
 }
 
-.schedule-overview .overview-content .right-panel {
+.main-calendar .overview-content .right-panel {
   display: block;
   height: 1000px;
   transform: translateX(0%);
@@ -1419,14 +1386,14 @@ export default defineComponent({
   width: 800px;
 }
 
-.schedule-overview .overview-content .right-panel.hide {
+.main-calendar .overview-content .right-panel.hide {
   display: none;
   transform: translateX(100%);
   transition: transform 0.5s ease, width 500ms;
   width: 0;
 }
 
-.schedule-overview .overview-content .right-panel .control-panel {
+.main-calendar .overview-content .right-panel .control-panel {
   background: #f8f9fa;
   border-left: 1px solid #00000026;
   font-size: 14px;
@@ -1436,46 +1403,46 @@ export default defineComponent({
   width: 100%;
 }
 
-.schedule-overview .overview-content .right-panel .control-panel .col-row {
+.main-calendar .overview-content .right-panel .control-panel .col-row {
   display: flex;
   flex-wrap: wrap;
 }
 
-.schedule-overview .overview-content .right-panel .control-panel label {
+.main-calendar .overview-content .right-panel .control-panel label {
   font-weight: 500;
 }
 
-.schedule-overview .overview-content .right-panel .control-panel .col-left {
+.main-calendar .overview-content .right-panel .control-panel .col-left {
   flex: 0 0 41.666667%;
   max-width: 41.666667%;
   margin-bottom: 1rem;
 }
 
-.schedule-overview .overview-content .right-panel .control-panel .col-right {
+.main-calendar .overview-content .right-panel .control-panel .col-right {
   flex: 0 0 58.333333%;
   max-width: 58.333333%;
   margin-bottom: 1rem;
 }
 
-.schedule-overview .overview-scheduler {
+.main-calendar .overview-scheduler {
   height: 100%;
   padding: 10px;
   width: 100%;
 }
 
-.schedule-overview .e-schedule .e-vertical-view .e-header-cells {
+.main-calendar .e-schedule .e-vertical-view .e-header-cells {
   text-align: center !important;
 }
 
-.schedule-overview .e-schedule .date-text {
+.main-calendar .e-schedule .date-text {
   font-size: 14px;
 }
 
-.schedule-overview .e-schedule.e-device .date-text {
+.main-calendar .e-schedule.e-device .date-text {
   font-size: 12px;
 }
 
-.schedule-overview .e-schedule .weather-image {
+.main-calendar .e-schedule .weather-image {
   width: 20px;
   height: 20px;
   background-position: center center;
@@ -1483,19 +1450,19 @@ export default defineComponent({
   background-size: cover;
 }
 
-.schedule-overview .e-schedule .weather-text {
+.main-calendar .e-schedule .weather-text {
   font-size: 11px;
 }
 
-.schedule-overview .e-schedule-toolbar .e-views,
-.schedule-overview .e-schedule-toolbar .e-schedule-seperator,
+.main-calendar .e-schedule-toolbar .e-views,
+.main-calendar .e-schedule-toolbar .e-schedule-seperator,
 .schedule-workweek.e-multi-select-list-wrapper.e-checkbox .e-filter-parent,
 .schedule-resource.e-multi-select-list-wrapper.e-checkbox .e-filter-parent {
   display: none !important;
 }
 
-.schedule-overview .e-timeline-view .e-resource-left-td,
-.schedule-overview .e-timeline-month-view .e-resource-left-td {
+.main-calendar .e-timeline-view .e-resource-left-td,
+.main-calendar .e-timeline-month-view .e-resource-left-td {
   width: 120px;
 }
 
@@ -1506,38 +1473,38 @@ export default defineComponent({
   user-select: none;
 }
 
-.schedule-overview .quick-info-header {
+.main-calendar .quick-info-header {
   background-color: white;
   padding: 8px 18px;
 }
 
-.schedule-overview .quick-info-header-content {
+.main-calendar .quick-info-header-content {
   justify-content: flex-end;
   display: flex;
   flex-direction: column;
   padding: 5px 10px 5px;
 }
 
-.schedule-overview .quick-info-title {
+.main-calendar .quick-info-title {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.48px;
   height: 22px;
 }
 
-.schedule-overview .duration-text {
+.main-calendar .duration-text {
   font-size: 11px;
   letter-spacing: 0.33px;
   height: 14px;
 }
 
-.schedule-overview .content-area {
+.main-calendar .content-area {
   padding: 10px;
   width: auto;
   margin: unset;
 }
 
-.schedule-overview .event-content {
+.main-calendar .event-content {
   height: 90px;
   display: flex;
   flex-direction: column;
@@ -1545,9 +1512,9 @@ export default defineComponent({
   padding: 0 15px;
 }
 
-.schedule-overview .meeting-type-wrap,
-.schedule-overview .meeting-subject-wrap,
-.schedule-overview .notes-wrap {
+.main-calendar .meeting-type-wrap,
+.main-calendar .meeting-subject-wrap,
+.main-calendar .notes-wrap {
   font-size: 11px;
   color: #666;
   letter-spacing: 0.33px;
@@ -1556,13 +1523,13 @@ export default defineComponent({
   display: flex;
 }
 
-.schedule-overview .event-content div label {
+.main-calendar .event-content div label {
   display: inline-block;
   min-width: 45px;
   color: #666;
 }
 
-.schedule-overview .event-content div span {
+.main-calendar .event-content div span {
   font-size: 11px;
   color: #151515;
   letter-spacing: 0.33px;
@@ -1573,48 +1540,48 @@ export default defineComponent({
   white-space: nowrap;
 }
 
-.schedule-overview .cell-footer.e-btn {
+.main-calendar .cell-footer.e-btn {
   background-color: #ffffff;
   border-color: #878787;
   color: #878787;
 }
 
-.schedule-overview .cell-footer {
+.main-calendar .cell-footer {
   padding-top: 10px;
 }
 
-.schedule-overview .e-quick-popup-wrapper.e-template .e-cell-popup .e-popup-content {
+.main-calendar .e-quick-popup-wrapper.e-template .e-cell-popup .e-popup-content {
   padding: 0 14px;
 }
 
-.schedule-overview .e-quick-popup-wrapper.e-template .e-event-popup .e-popup-footer {
+.main-calendar .e-quick-popup-wrapper.e-template .e-event-popup .e-popup-footer {
   display: block;
 }
 
-.schedule-overview .e-quick-popup-wrapper.e-template .e-popup-footer button:first-child {
+.main-calendar .e-quick-popup-wrapper.e-template .e-popup-footer button:first-child {
   margin-right: 5px;
 }
 
-.schedule-overview .calendar-import.e-upload {
+.main-calendar .calendar-import.e-upload {
   border: 0;
   padding-left: 0 !important;
 }
 
-.schedule-overview .calendar-import.e-upload .e-file-select-wrap {
+.main-calendar .calendar-import.e-upload .e-file-select-wrap {
   padding: 0;
 }
 
-.schedule-overview .calendar-import.e-upload .e-file-select-wrap .e-file-drop,
+.main-calendar .calendar-import.e-upload .e-file-select-wrap .e-file-drop,
 .calendar-import .e-upload-files {
   display: none;
 }
 
-.schedule-overview .quick-info-header {
+.main-calendar .quick-info-header {
   background-color: white;
   padding: 8px 18px;
 }
 
-.schedule-overview .content-area {
+.main-calendar .content-area {
   padding: 10px;
   width: 100%;
 }
@@ -1627,21 +1594,21 @@ export default defineComponent({
   font-size: 12px;
 }
 
-.schedule-overview.e-schedule .e-vertical-view .e-header-cells,
-.schedule-overview.e-schedule .e-timeline-month-view .e-header-cells {
+.main-calendar.e-schedule .e-vertical-view .e-header-cells,
+.main-calendar.e-schedule .e-timeline-month-view .e-header-cells {
   padding: 0;
   text-align: center !important;
 }
 
-.schedule-overview.e-schedule .date-text {
+.main-calendar.e-schedule .date-text {
   font-size: 14px;
 }
 
-.schedule-overview.e-schedule.e-device .date-text {
+.main-calendar.e-schedule.e-device .date-text {
   font-size: 12px;
 }
 
-.schedule-overview.e-schedule .weather-image {
+.main-calendar.e-schedule .weather-image {
   width: 20px;
   height: 20px;
   background-position: center center;
@@ -1649,104 +1616,104 @@ export default defineComponent({
   background-size: cover;
 }
 
-.schedule-overview.e-schedule .weather-text {
+.main-calendar.e-schedule .weather-text {
   font-size: 11px;
 }
 
-.schedule-overview.e-schedule .e-month-view .weather-image {
+.main-calendar.e-schedule .e-month-view .weather-image {
   float: right;
   margin: -20px 2px 0 0;
   width: 20px;
   height: 20px;
 }
 
-.schedule-overview .overview-toolbar .e-toolbar .e-toolbar-item .e-tbar-btn.e-btn {
+.main-calendar .overview-toolbar .e-toolbar .e-toolbar-item .e-tbar-btn.e-btn {
   height: 50px !important;
 }
 
-.schedule-overview .overview-toolbar .e-toolbar .e-toolbar-item:not(.e-separator) {
+.main-calendar .overview-toolbar .e-toolbar .e-toolbar-item:not(.e-separator) {
   padding: 3.5px;
 }
 
-.schedule-overview .overview-toolbar .e-toolbar .e-toolbar-item .e-tbar-btn {
+.main-calendar .overview-toolbar .e-toolbar .e-toolbar-item .e-tbar-btn {
   padding: 1.5px;
 }
 
-.e-bigger .schedule-overview .overview-toolbar .e-toolbar .e-toolbar-item:not(.e-separator) {
+.e-bigger .main-calendar .overview-toolbar .e-toolbar .e-toolbar-item:not(.e-separator) {
   padding: 5px;
 }
 
-.e-bigger .schedule-overview .overview-toolbar .e-toolbar .e-toolbar-item .e-tbar-btn {
+.e-bigger .main-calendar .overview-toolbar .e-toolbar .e-toolbar-item .e-tbar-btn {
   padding: 6px;
 }
 
-.schedule-overview .overview-toolbar .e-toolbar .e-toolbar-item .e-btn.e-tbar-btn .e-icons.e-btn-icon,
-.schedule-overview .overview-toolbar .e-toolbar .e-toolbar-item .e-btn.e-tbar-btn .e-tbar-btn-text {
+.main-calendar .overview-toolbar .e-toolbar .e-toolbar-item .e-btn.e-tbar-btn .e-icons.e-btn-icon,
+.main-calendar .overview-toolbar .e-toolbar .e-toolbar-item .e-btn.e-tbar-btn .e-tbar-btn-text {
   line-height: 23px !important;
   min-height: 23px !important;
   padding: 0px !important;
 }
 
-.schedule-overview .overview-toolbar .e-toolbar .e-toolbar-item.e-template .icon-child {
+.main-calendar .overview-toolbar .e-toolbar .e-toolbar-item.e-template .icon-child {
   height: 23px !important;
 }
 
-.schedule-overview .overview-toolbar .e-toolbar .e-toolbar-item.e-template .text-child {
+.main-calendar .overview-toolbar .e-toolbar .e-toolbar-item.e-template .text-child {
   line-height: 23px !important;
 }
 
-.bootstrap5 .schedule-overview .overview-toolbar .overview-toolbar-settings,
-.bootstrap5 .schedule-overview .overview-content .right-panel .control-panel {
+.bootstrap5 .main-calendar .overview-toolbar .overview-toolbar-settings,
+.bootstrap5 .main-calendar .overview-content .right-panel .control-panel {
   background-color: #f8f9fa;
   color: #212529;
   font-weight: 400;
 }
 
-.bootstrap5 .schedule-overview .overview-toolbar .overview-toolbar-settings:focus {
+.bootstrap5 .main-calendar .overview-toolbar .overview-toolbar-settings:focus {
   background-color: #5c636a;
   color: #fff;
 }
 
-.bootstrap5 .schedule-overview .overview-toolbar .e-toolbar {
+.bootstrap5 .main-calendar .overview-toolbar .e-toolbar {
   border: 1px solid #dee2e6;
 }
 
-.bootstrap5 .schedule-overview .overview-toolbar .overview-toolbar-settings {
+.bootstrap5 .main-calendar .overview-toolbar .overview-toolbar-settings {
   border-color: #dee2e6;
 }
 
-.schedule-overview .quick-info-template .quick-info-header {
+.main-calendar .quick-info-template .quick-info-header {
   background-color: white;
   padding: 8px 18px;
 }
 
-.schedule-overview .quick-info-template .quick-info-header-content {
+.main-calendar .quick-info-template .quick-info-header-content {
   justify-content: flex-end;
   display: flex;
   flex-direction: column;
   padding: 5px 10px 5px;
 }
 
-.schedule-overview .quick-info-template .quick-info-title {
+.main-calendar .quick-info-template .quick-info-title {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.48px;
   height: 22px;
 }
 
-.schedule-overview .quick-info-template .duration-text {
+.main-calendar .quick-info-template .duration-text {
   font-size: 11px;
   letter-spacing: 0.33px;
   height: 14px;
 }
 
-.schedule-overview .quick-info-template .quick-content-area {
+.main-calendar .quick-info-template .quick-content-area {
   margin: 0;
   padding: 10px;
   width: auto;
 }
 
-.schedule-overview .quick-info-template .event-content {
+.main-calendar .quick-info-template .event-content {
   height: 90px;
   display: flex;
   flex-direction: column;
@@ -1754,9 +1721,9 @@ export default defineComponent({
   padding: 0 15px;
 }
 
-.schedule-overview .quick-info-template .meeting-type-wrap,
-.schedule-overview .quick-info-template .meeting-subject-wrap,
-.schedule-overview .quick-info-template .notes-wrap {
+.main-calendar .quick-info-template .meeting-type-wrap,
+.main-calendar .quick-info-template .meeting-subject-wrap,
+.main-calendar .quick-info-template .notes-wrap {
   font-size: 11px;
   color: #666;
   letter-spacing: 0.33px;
@@ -1764,13 +1731,13 @@ export default defineComponent({
   padding: 5px;
 }
 
-.schedule-overview .quick-info-template .event-content div label {
+.main-calendar .quick-info-template .event-content div label {
   display: inline-block;
   min-width: 45px;
   color: #666;
 }
 
-.schedule-overview .quick-info-template .event-content div span {
+.main-calendar .quick-info-template .event-content div span {
   font-size: 11px;
   color: #151515;
   letter-spacing: 0.33px;
@@ -1778,13 +1745,13 @@ export default defineComponent({
   padding-left: 8px;
 }
 
-.schedule-overview .quick-info-template .cell-footer.e-btn {
+.main-calendar .quick-info-template .cell-footer.e-btn {
   background-color: #ffffff;
   border-color: #878787;
   color: #878787;
 }
 
-.schedule-overview .quick-info-template .cell-footer {
+.main-calendar .quick-info-template .cell-footer {
   padding-top: 10px;
 }
 
@@ -1867,41 +1834,15 @@ export default defineComponent({
   padding-top: 10px;
 }
 
-.material-dark .quick-info-template .quick-info-header {
-  background-color: #424242;
-}
-
-.highcontrast .quick-info-template .quick-info-header,
-.tailwind-dark .quick-info-template .quick-info-header,
-.bootstrap-dark .quick-info-template .quick-info-header,
-.bootstrap5-dark .quick-info-template .quick-info-header,
-.fluent-dark .quick-info-template .quick-info-header,
-.fabric-dark .quick-info-template .quick-info-header {
+.dark .quick-info-template .quick-info-header {
   background-color: transparent;
 }
 
-.tailwind-dark .quick-info-template .quick-info-header-content,
-.bootstrap-dark .quick-info-template .quick-info-header-content,
-.fabric-dark .quick-info-template .quick-info-header-content,
-.material-dark .quick-info-template .quick-info-header-content,
-.highcontrast .quick-info-template .quick-info-header-content {
+.dark .quick-info-template .quick-info-header-content {
   color: #fff !important;
 }
 
-.tailwind-dark .quick-info-template .event-content div label,
-.tailwind-dark .quick-info-template .event-content div span,
-.bootstrap-dark .quick-info-template .event-content div label,
-.bootstrap-dark .quick-info-template .event-content div span,
-.bootstrap5-dark .quick-info-template .event-content div label,
-.bootstrap5-dark .quick-info-template .event-content div span,
-.fluent-dark .quick-info-template .event-content div label,
-.fluent-dark .quick-info-template .event-content div span,
-.fabric-dark .quick-info-template .event-content div label,
-.fabric-dark .quick-info-template .event-content div span,
-.material-dark .quick-info-template .event-content div label,
-.material-dark .quick-info-template .event-content div span,
-.highcontrast .quick-info-template .event-content div label,
-.highcontrast .quick-info-template .event-content div span {
+.dark .quick-info-template .event-content div label {
   color: #fff;
 }
 
