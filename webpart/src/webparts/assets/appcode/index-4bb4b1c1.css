@@ -1,15 +1,495 @@
 @charset "UTF-8";
+#kanbanapp {
+  max-height: 1004px;
+  height: 1004px;
+  border: 2px solid red;
+}
 .e-tab .e-content {
-  min-height: 900px;
+  min-height: 820px;
+}
+.e-card .e-card-content {
+  padding: 0 !important;
 }
 .main {
-  min-height: 800px;
+  min-height: 1000px;
   border: 1px solid black;
 }
-.sidebar {
+.e-sidebar {
   left: 1.5rem;
-  min-height: 800px;
-  border: 1px solid black;
+  height: 918px !important;
+  /* border: 1px solid black; */
+}
+#tab {
+  padding: 0 !important;
+  min-height: 1000px !important;
+}
+.main-calendar .overview-toolbar {
+  display: flex;
+  height: 50px;
+}
+.main-calendar .overview-toolbar .e-toolbar {
+  border-radius: 0;
+}
+.main-calendar .overview-toolbar .e-toolbar .e-toolbar-item .e-tbar-btn.e-tbtn-txt {
+  display: inline-grid;
+}
+.main-calendar .overview-toolbar .e-toolbar .e-toolbar-item.e-template {
+  margin: 0 5px;
+}
+.main-calendar .overview-toolbar .overview-toolbar-settings {
+  border-radius: 0;
+  background-color: #f8f9fa;
+  border-color: rgba(0, 0, 0, 0.15);
+  border-left-width: 0;
+  border-top-width: 0;
+  box-shadow: none;
+  color: #495057;
+  height: 72px;
+  line-height: 1.6;
+  outline: none;
+  text-transform: capitalize;
+  width: 100%;
+}
+.main-calendar .overview-content {
+  border: 1px solid #00000026;
+  border-top: 0;
+  display: flex;
+}
+.main-calendar .overview-content .left-panel {
+  height: 1000px;
+  width: 100%;
+}
+.main-calendar .overview-content .right-panel {
+  display: block;
+  height: 1000px;
+  transform: translateX(0%);
+  transition: transform 1.5s ease, width 1500ms;
+  width: 800px;
+}
+.main-calendar .overview-content .right-panel.hide {
+  display: none;
+  transform: translateX(100%);
+  transition: transform 0.5s ease, width 500ms;
+  width: 0;
+}
+.main-calendar .overview-content .right-panel .control-panel {
+  background: #f8f9fa;
+  border-left: 1px solid #00000026;
+  font-size: 14px;
+  height: 100%;
+  overflow: auto;
+  padding: 15px;
+  width: 100%;
+}
+.main-calendar .overview-content .right-panel .control-panel .col-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-calendar .overview-content .right-panel .control-panel label {
+  font-weight: 500;
+}
+.main-calendar .overview-content .right-panel .control-panel .col-left {
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+  margin-bottom: 1rem;
+}
+.main-calendar .overview-content .right-panel .control-panel .col-right {
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+  margin-bottom: 1rem;
+}
+.main-calendar .overview-scheduler {
+  height: 100%;
+  padding: 10px;
+  width: 100%;
+}
+.main-calendar .e-schedule .e-vertical-view .e-header-cells {
+  text-align: center !important;
+}
+.main-calendar .e-schedule .date-text {
+  font-size: 14px;
+}
+.main-calendar .e-schedule.e-device .date-text {
+  font-size: 12px;
+}
+.main-calendar .e-schedule .weather-image {
+  width: 20px;
+  height: 20px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-calendar .e-schedule .weather-text {
+  font-size: 11px;
+}
+.main-calendar .e-schedule-toolbar .e-views,
+.main-calendar .e-schedule-toolbar .e-schedule-seperator,
+.schedule-workweek.e-multi-select-list-wrapper.e-checkbox .e-filter-parent,
+.schedule-resource.e-multi-select-list-wrapper.e-checkbox .e-filter-parent {
+  display: none !important;
+}
+.main-calendar .e-timeline-view .e-resource-left-td,
+.main-calendar .e-timeline-month-view .e-resource-left-td {
+  width: 120px;
+}
+.schedule-resource.e-multi-select-list-wrapper.e-checkbox .e-list-parent:first-child li:first-child {
+  background-image: none;
+  opacity: 0.5;
+  pointer-events: none;
+  user-select: none;
+}
+.main-calendar .quick-info-header {
+  background-color: white;
+  padding: 8px 18px;
+}
+.main-calendar .quick-info-header-content {
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px 5px;
+}
+.main-calendar .quick-info-title {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.48px;
+  height: 22px;
+}
+.main-calendar .duration-text {
+  font-size: 11px;
+  letter-spacing: 0.33px;
+  height: 14px;
+}
+.main-calendar .content-area {
+  padding: 10px;
+  width: auto;
+  margin: unset;
+}
+.main-calendar .event-content {
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 15px;
+}
+.main-calendar .meeting-type-wrap,
+.main-calendar .meeting-subject-wrap,
+.main-calendar .notes-wrap {
+  font-size: 11px;
+  color: #666;
+  letter-spacing: 0.33px;
+  height: 24px;
+  padding: 5px;
+  display: flex;
+}
+.main-calendar .event-content div label {
+  display: inline-block;
+  min-width: 45px;
+  color: #666;
+}
+.main-calendar .event-content div span {
+  font-size: 11px;
+  color: #151515;
+  letter-spacing: 0.33px;
+  line-height: 14px;
+  padding-left: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.main-calendar .cell-footer.e-btn {
+  background-color: #ffffff;
+  border-color: #878787;
+  color: #878787;
+}
+.main-calendar .cell-footer {
+  padding-top: 10px;
+}
+.main-calendar .e-quick-popup-wrapper.e-template .e-cell-popup .e-popup-content {
+  padding: 0 14px;
+}
+.main-calendar .e-quick-popup-wrapper.e-template .e-event-popup .e-popup-footer {
+  display: block;
+}
+.main-calendar .e-quick-popup-wrapper.e-template .e-popup-footer button:first-child {
+  margin-right: 5px;
+}
+.main-calendar .calendar-import.e-upload {
+  border: 0;
+  padding-left: 0 !important;
+}
+.main-calendar .calendar-import.e-upload .e-file-select-wrap {
+  padding: 0;
+}
+.main-calendar .calendar-import.e-upload .e-file-select-wrap .e-file-drop,
+.calendar-import .e-upload-files {
+  display: none;
+}
+.main-calendar .quick-info-header {
+  background-color: white;
+  padding: 8px 18px;
+}
+.main-calendar .content-area {
+  padding: 10px;
+  width: 100%;
+}
+.e-bigger .schedule-context-menu ul .e-menu-item .e-menu-icon {
+  font-size: 14px;
+}
+.schedule-context-menu ul .e-menu-item .e-menu-icon {
+  font-size: 12px;
+}
+.main-calendar.e-schedule .e-vertical-view .e-header-cells,
+.main-calendar.e-schedule .e-timeline-month-view .e-header-cells {
+  padding: 0;
+  text-align: center !important;
+}
+.main-calendar.e-schedule .date-text {
+  font-size: 14px;
+}
+.main-calendar.e-schedule.e-device .date-text {
+  font-size: 12px;
+}
+.main-calendar.e-schedule .weather-image {
+  width: 20px;
+  height: 20px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-calendar.e-schedule .weather-text {
+  font-size: 11px;
+}
+.main-calendar.e-schedule .e-month-view .weather-image {
+  float: right;
+  margin: -20px 2px 0 0;
+  width: 20px;
+  height: 20px;
+}
+.main-calendar .overview-toolbar .e-toolbar .e-toolbar-item .e-tbar-btn.e-btn {
+  height: 50px !important;
+}
+.main-calendar .overview-toolbar .e-toolbar .e-toolbar-item:not(.e-separator) {
+  padding: 3.5px;
+}
+.main-calendar .overview-toolbar .e-toolbar .e-toolbar-item .e-tbar-btn {
+  padding: 1.5px;
+}
+.e-bigger .main-calendar .overview-toolbar .e-toolbar .e-toolbar-item:not(.e-separator) {
+  padding: 5px;
+}
+.e-bigger .main-calendar .overview-toolbar .e-toolbar .e-toolbar-item .e-tbar-btn {
+  padding: 6px;
+}
+.main-calendar .overview-toolbar .e-toolbar .e-toolbar-item .e-btn.e-tbar-btn .e-icons.e-btn-icon,
+.main-calendar .overview-toolbar .e-toolbar .e-toolbar-item .e-btn.e-tbar-btn .e-tbar-btn-text {
+  line-height: 23px !important;
+  min-height: 23px !important;
+  padding: 0px !important;
+}
+.main-calendar .overview-toolbar .e-toolbar .e-toolbar-item.e-template .icon-child {
+  height: 23px !important;
+}
+.main-calendar .overview-toolbar .e-toolbar .e-toolbar-item.e-template .text-child {
+  line-height: 23px !important;
+}
+.bootstrap5 .main-calendar .overview-toolbar .overview-toolbar-settings,
+.bootstrap5 .main-calendar .overview-content .right-panel .control-panel {
+  background-color: #f8f9fa;
+  color: #212529;
+  font-weight: 400;
+}
+.bootstrap5 .main-calendar .overview-toolbar .overview-toolbar-settings:focus {
+  background-color: #5c636a;
+  color: #fff;
+}
+.bootstrap5 .main-calendar .overview-toolbar .e-toolbar {
+  border: 1px solid #dee2e6;
+}
+.bootstrap5 .main-calendar .overview-toolbar .overview-toolbar-settings {
+  border-color: #dee2e6;
+}
+.main-calendar .quick-info-template .quick-info-header {
+  background-color: white;
+  padding: 8px 18px;
+}
+.main-calendar .quick-info-template .quick-info-header-content {
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px 5px;
+}
+.main-calendar .quick-info-template .quick-info-title {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.48px;
+  height: 22px;
+}
+.main-calendar .quick-info-template .duration-text {
+  font-size: 11px;
+  letter-spacing: 0.33px;
+  height: 14px;
+}
+.main-calendar .quick-info-template .quick-content-area {
+  margin: 0;
+  padding: 10px;
+  width: auto;
+}
+.main-calendar .quick-info-template .event-content {
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 15px;
+}
+.main-calendar .quick-info-template .meeting-type-wrap,
+.main-calendar .quick-info-template .meeting-subject-wrap,
+.main-calendar .quick-info-template .notes-wrap {
+  font-size: 11px;
+  color: #666;
+  letter-spacing: 0.33px;
+  height: 24px;
+  padding: 5px;
+}
+.main-calendar .quick-info-template .event-content div label {
+  display: inline-block;
+  min-width: 45px;
+  color: #666;
+}
+.main-calendar .quick-info-template .event-content div span {
+  font-size: 11px;
+  color: #151515;
+  letter-spacing: 0.33px;
+  line-height: 14px;
+  padding-left: 8px;
+}
+.main-calendar .quick-info-template .cell-footer.e-btn {
+  background-color: #ffffff;
+  border-color: #878787;
+  color: #878787;
+}
+.main-calendar .quick-info-template .cell-footer {
+  padding-top: 10px;
+}
+.quick-info-template .e-template.e-quick-popup-wrapper .e-cell-popup .e-popup-content {
+  padding: 0 14px;
+}
+.quick-info-template .e-template.e-quick-popup-wrapper .e-event-popup .e-popup-footer {
+  display: block;
+}
+.quick-info-template .e-template.e-quick-popup-wrapper .e-popup-footer button:first-child {
+  margin-right: 5px;
+}
+.quick-info-header {
+  background-color: white;
+  padding: 8px 18px;
+}
+.quick-info-header-content {
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px 5px;
+}
+.quick-info-title {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.48px;
+  height: 22px;
+}
+.duration-text {
+  font-size: 11px;
+  letter-spacing: 0.33px;
+  height: 14px;
+}
+.event-content {
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 15px;
+}
+.meeting-type-wrap,
+.meeting-subject-wrap,
+.notes-wrap {
+  font-size: 11px;
+  color: #666;
+  letter-spacing: 0.33px;
+  height: 24px;
+  padding: 5px;
+}
+.event-content div label {
+  display: inline-block;
+  min-width: 45px;
+  color: #666;
+}
+.event-content div span {
+  font-size: 11px;
+  color: #151515;
+  letter-spacing: 0.33px;
+  line-height: 14px;
+  padding-left: 8px;
+}
+.cell-footer.e-btn {
+  background-color: #ffffff;
+  border-color: #878787;
+  color: #878787;
+}
+.cell-footer {
+  padding-top: 10px;
+}
+.dark .quick-info-template .quick-info-header {
+  background-color: transparent;
+}
+.dark .quick-info-template .quick-info-header-content {
+  color: #fff !important;
+}
+.dark .quick-info-template .event-content div label {
+  color: #fff;
+}
+.e-tab .e-content .e-item {
+  font-size: 12px;
+  padding: 10px;
+  text-align: justify;
+}
+.e-badge.e-badge-notification {
+  top: 0 !important;
+  margin-left: 3px;
+}
+.e-accordion .e-acrdn-item .e-acrdn-header {
+  border-radius: 0;
+  line-height: 22px !important;
+  min-height: 22px !important;
+  overflow: hidden;
+  padding: 3px !important;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 4px;
+}
+.e-accordion .e-acrdn-item .e-acrdn-panel .e-acrdn-content {
+  line-height: 1.5;
+  overflow: hidden;
+  padding: 5px !important;
+  text-overflow: ellipsis;
+}
+.mappedlistfield {
+  display: flex;
+  justify-content: space-between;
+}
+.e-sidebar {
+  overflow: hidden;
+}
+.overview-content .e-card .e-card-content {
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 0 !important;
+  min-height: 850px !important;
+}
+.e-tab .e-content .e-item {
+  padding: 0;
+  text-align: justify;
+}
+.e-dropdownbase .e-ul {
+  background-color: '#cccccc';
 }
 @font-face {
   font-family: "e-icons";

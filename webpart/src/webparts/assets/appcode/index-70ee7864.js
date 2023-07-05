@@ -15408,7 +15408,7 @@ function getParentContext(context, prefix) {
     return getParentContext(getValue("parentObj", context), prefix);
   }
 }
-var __extends$U = globalThis && globalThis.__extends || function() {
+var __extends$$ = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -15440,7 +15440,7 @@ var __decorate$P = globalThis && globalThis.__decorate || function(decorators, t
 var Animation$1 = (
   /** @class */
   function(_super) {
-    __extends$U(Animation2, _super);
+    __extends$$(Animation2, _super);
     function Animation2(options) {
       var _this = _super.call(this, options, void 0) || this;
       _this.easing = {
@@ -16181,7 +16181,7 @@ var createLicenseOverlay = function() {
     document.body.appendChild(errorBackground);
   }
 };
-var __extends$T = globalThis && globalThis.__extends || function() {
+var __extends$_ = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -16219,7 +16219,7 @@ var isBannerAdded = false;
 var Component = (
   /** @class */
   function(_super) {
-    __extends$T(Component2, _super);
+    __extends$_(Component2, _super);
     function Component2(options, selector) {
       var _this = _super.call(this, options, selector) || this;
       _this.randomId = uniqueID();
@@ -16523,7 +16523,7 @@ var Component = (
     );
   }
 })();
-var __extends$S = globalThis && globalThis.__extends || function() {
+var __extends$Z = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -16557,7 +16557,7 @@ var isDraggedObject = { isDragged: false };
 var Position = (
   /** @class */
   function(_super) {
-    __extends$S(Position2, _super);
+    __extends$Z(Position2, _super);
     function Position2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -16573,7 +16573,7 @@ var Position = (
 var Draggable = (
   /** @class */
   function(_super) {
-    __extends$S(Draggable2, _super);
+    __extends$Z(Draggable2, _super);
     function Draggable2(element2, options) {
       var _this = _super.call(this, options, element2) || this;
       _this.dragLimit = Draggable_1.getDefaultPosition();
@@ -17349,7 +17349,7 @@ var Draggable = (
     return Draggable2;
   }(Base)
 );
-var __extends$R = globalThis && globalThis.__extends || function() {
+var __extends$Y = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -17381,7 +17381,7 @@ var __decorate$M = globalThis && globalThis.__decorate || function(decorators, t
 var Droppable = (
   /** @class */
   function(_super) {
-    __extends$R(Droppable2, _super);
+    __extends$Y(Droppable2, _super);
     function Droppable2(element2, options) {
       var _this = _super.call(this, options, element2) || this;
       _this.mouseOver = false;
@@ -17476,7 +17476,7 @@ var Droppable = (
     return Droppable2;
   }(Base)
 );
-var __extends$Q = globalThis && globalThis.__extends || function() {
+var __extends$X = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -17553,7 +17553,7 @@ var keyCode = {
 var KeyboardEvents = (
   /** @class */
   function(_super) {
-    __extends$Q(KeyboardEvents2, _super);
+    __extends$X(KeyboardEvents2, _super);
     function KeyboardEvents2(element2, options) {
       var _this = _super.call(this, options, element2) || this;
       _this.keyPressHandler = function(e) {
@@ -17670,7 +17670,7 @@ var L10n = (
     return L10n2;
   }()
 );
-var __extends$P = globalThis && globalThis.__extends || function() {
+var __extends$W = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -17702,7 +17702,7 @@ var __decorate$K = globalThis && globalThis.__decorate || function(decorators, t
 var SwipeSettings = (
   /** @class */
   function(_super) {
-    __extends$P(SwipeSettings2, _super);
+    __extends$W(SwipeSettings2, _super);
     function SwipeSettings2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -17716,7 +17716,7 @@ var swipeRegex = /(Up|Down)/;
 var Touch = (
   /** @class */
   function(_super) {
-    __extends$P(Touch2, _super);
+    __extends$W(Touch2, _super);
     function Touch2(element2, options) {
       var _this = _super.call(this, options, element2) || this;
       _this.touchAction = true;
@@ -18764,7 +18764,7 @@ function getViewPortWidth() {
   var offsetWidth = isNullOrUndefined(document.documentElement) ? 0 : documentReact.width;
   return windowWidth - (windowWidth - offsetWidth);
 }
-var __extends$O = globalThis && globalThis.__extends || function() {
+var __extends$V = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -18796,7 +18796,7 @@ var __decorate$J = globalThis && globalThis.__decorate || function(decorators, t
 var PositionData = (
   /** @class */
   function(_super) {
-    __extends$O(PositionData2, _super);
+    __extends$V(PositionData2, _super);
     function PositionData2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -18818,7 +18818,7 @@ var CLASSNAMES$1 = {
 var Popup = (
   /** @class */
   function(_super) {
-    __extends$O(Popup2, _super);
+    __extends$V(Popup2, _super);
     function Popup2(element2, options) {
       return _super.call(this, options, element2) || this;
     }
@@ -19481,7 +19481,7 @@ function setHiddenInput(proxy2, wrap) {
     }));
   }
 }
-var __extends$N = globalThis && globalThis.__extends || function() {
+var __extends$U = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -19526,7 +19526,7 @@ var cssClassName = {
 var Button = (
   /** @class */
   function(_super) {
-    __extends$N(Button2, _super);
+    __extends$U(Button2, _super);
     function Button2(options, element2) {
       return _super.call(this, options, element2) || this;
     }
@@ -19769,7 +19769,7 @@ var Button = (
     return Button2;
   }(Component)
 );
-var __extends$M = globalThis && globalThis.__extends || function() {
+var __extends$T = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -19810,7 +19810,7 @@ var containerAttr$2 = ["title", "class", "style", "disabled", "readonly", "name"
 var CheckBox = (
   /** @class */
   function(_super) {
-    __extends$M(CheckBox2, _super);
+    __extends$T(CheckBox2, _super);
     function CheckBox2(options, element2) {
       var _this = _super.call(this, options, element2) || this;
       _this.isFocused = false;
@@ -20262,7 +20262,7 @@ var CheckBox = (
     return CheckBox2;
   }(Component)
 );
-var __extends$L = globalThis && globalThis.__extends || function() {
+var __extends$S = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -20299,7 +20299,7 @@ var ATTRIBUTES = ["title", "class", "style", "disabled", "readonly", "name", "va
 var RadioButton = (
   /** @class */
   function(_super) {
-    __extends$L(RadioButton2, _super);
+    __extends$S(RadioButton2, _super);
     function RadioButton2(options, element2) {
       var _this = _super.call(this, options, element2) || this;
       _this.isFocused = false;
@@ -20678,7 +20678,7 @@ var maxHeight;
 var minWidth;
 var maxWidth;
 var containerElement;
-var resizeStart = null;
+var resizeStart$1 = null;
 var resize = null;
 var resizeEnd = null;
 var resizeWestWidth;
@@ -20687,7 +20687,7 @@ var previousWidth = 0;
 var setWidth = true;
 var proxy;
 function createResize(args) {
-  resizeStart = args.resizeBegin;
+  resizeStart$1 = args.resizeBegin;
   resize = args.resizing;
   resizeEnd = args.resizeComplete;
   targetElement = getDOMElement(args.element);
@@ -20788,9 +20788,9 @@ function onMouseDown(e) {
   originalMouseX = e.pageX;
   originalMouseY = e.pageY;
   e.target.classList.add(FOCUSED_HANDLER);
-  if (!isNullOrUndefined(resizeStart)) {
+  if (!isNullOrUndefined(resizeStart$1)) {
     proxy = this;
-    if (resizeStart(e, proxy) === true) {
+    if (resizeStart$1(e, proxy) === true) {
       return;
     }
   }
@@ -20844,9 +20844,9 @@ function onTouchStart(e) {
   var coordinates = e.touches ? e.changedTouches[0] : e;
   originalMouseX = coordinates.pageX;
   originalMouseY = coordinates.pageY;
-  if (!isNullOrUndefined(resizeStart)) {
+  if (!isNullOrUndefined(resizeStart$1)) {
     proxy = this;
-    if (resizeStart(e, proxy) === true) {
+    if (resizeStart$1(e, proxy) === true) {
       return;
     }
   }
@@ -21090,7 +21090,7 @@ function removeResize() {
     }
   }
 }
-var __extends$K = globalThis && globalThis.__extends || function() {
+var __extends$R = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -21122,7 +21122,7 @@ var __decorate$F = globalThis && globalThis.__decorate || function(decorators, t
 var ButtonProps = (
   /** @class */
   function(_super) {
-    __extends$K(ButtonProps2, _super);
+    __extends$R(ButtonProps2, _super);
     function ButtonProps2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -21144,7 +21144,7 @@ var ButtonProps = (
 var AnimationSettings = (
   /** @class */
   function(_super) {
-    __extends$K(AnimationSettings2, _super);
+    __extends$R(AnimationSettings2, _super);
     function AnimationSettings2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -21196,7 +21196,7 @@ var DLG_DRAG = "e-draggable";
 var Dialog = (
   /** @class */
   function(_super) {
-    __extends$K(Dialog2, _super);
+    __extends$R(Dialog2, _super);
     function Dialog2(options, element2) {
       var _this = _super.call(this, options, element2) || this;
       _this.needsID = true;
@@ -22724,7 +22724,7 @@ var DialogUtility;
     return buttonProps;
   }
 })(DialogUtility || (DialogUtility = {}));
-var __extends$J = globalThis && globalThis.__extends || function() {
+var __extends$Q = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -22782,7 +22782,7 @@ var POPUP_CONTAINER = "e-tooltip-popup-container";
 var Animation = (
   /** @class */
   function(_super) {
-    __extends$J(Animation2, _super);
+    __extends$Q(Animation2, _super);
     function Animation2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -22798,7 +22798,7 @@ var Animation = (
 var Tooltip = (
   /** @class */
   function(_super) {
-    __extends$J(Tooltip2, _super);
+    __extends$Q(Tooltip2, _super);
     function Tooltip2(options, element2) {
       var _this = _super.call(this, options, element2) || this;
       _this.mouseMoveEvent = null;
@@ -26959,7 +26959,7 @@ var DataUtil = (
     return DataUtil2;
   }()
 );
-var __extends$I = globalThis && globalThis.__extends || function() {
+var __extends$P = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -27010,7 +27010,7 @@ var Adaptor = (
 var JsonAdaptor = (
   /** @class */
   function(_super) {
-    __extends$I(JsonAdaptor2, _super);
+    __extends$P(JsonAdaptor2, _super);
     function JsonAdaptor2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -27284,7 +27284,7 @@ var JsonAdaptor = (
 var UrlAdaptor = (
   /** @class */
   function(_super) {
-    __extends$I(UrlAdaptor2, _super);
+    __extends$P(UrlAdaptor2, _super);
     function UrlAdaptor2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -27642,7 +27642,7 @@ var UrlAdaptor = (
 var ODataAdaptor = (
   /** @class */
   function(_super) {
-    __extends$I(ODataAdaptor2, _super);
+    __extends$P(ODataAdaptor2, _super);
     function ODataAdaptor2(props2) {
       var _this = _super.call(this) || this;
       _this.options = extend({}, _this.options, {
@@ -28215,7 +28215,7 @@ var ODataAdaptor = (
   }(UrlAdaptor)
 );
 (function(_super) {
-  __extends$I(ODataV4Adaptor, _super);
+  __extends$P(ODataV4Adaptor, _super);
   function ODataV4Adaptor(props2) {
     var _this = _super.call(this, props2) || this;
     _this.options = extend({}, _this.options, {
@@ -28392,7 +28392,7 @@ var ODataAdaptor = (
   return ODataV4Adaptor;
 })(ODataAdaptor);
 (function(_super) {
-  __extends$I(WebApiAdaptor, _super);
+  __extends$P(WebApiAdaptor, _super);
   function WebApiAdaptor() {
     return _super !== null && _super.apply(this, arguments) || this;
   }
@@ -28537,7 +28537,7 @@ var ODataAdaptor = (
   return WebApiAdaptor;
 })(ODataAdaptor);
 (function(_super) {
-  __extends$I(WebMethodAdaptor, _super);
+  __extends$P(WebMethodAdaptor, _super);
   function WebMethodAdaptor() {
     return _super !== null && _super.apply(this, arguments) || this;
   }
@@ -28570,7 +28570,7 @@ var ODataAdaptor = (
 var RemoteSaveAdaptor = (
   /** @class */
   function(_super) {
-    __extends$I(RemoteSaveAdaptor2, _super);
+    __extends$P(RemoteSaveAdaptor2, _super);
     function RemoteSaveAdaptor2() {
       var _this = _super.call(this) || this;
       setValue("beforeSend", UrlAdaptor.prototype.beforeSend, _this);
@@ -28670,7 +28670,7 @@ var RemoteSaveAdaptor = (
 var CustomDataAdaptor = (
   /** @class */
   function(_super) {
-    __extends$I(CustomDataAdaptor2, _super);
+    __extends$P(CustomDataAdaptor2, _super);
     function CustomDataAdaptor2(props2) {
       var _this = _super.call(this) || this;
       _this.options = extend({}, _this.options, {
@@ -28690,7 +28690,7 @@ var CustomDataAdaptor = (
   }(UrlAdaptor)
 );
 (function(_super) {
-  __extends$I(GraphQLAdaptor, _super);
+  __extends$P(GraphQLAdaptor, _super);
   function GraphQLAdaptor(options) {
     var _this = _super.call(this) || this;
     _this.opt = options;
@@ -28787,7 +28787,7 @@ var CustomDataAdaptor = (
 var CacheAdaptor = (
   /** @class */
   function(_super) {
-    __extends$I(CacheAdaptor2, _super);
+    __extends$P(CacheAdaptor2, _super);
     function CacheAdaptor2(adaptor, timeStamp, pageSize) {
       var _this = _super.call(this) || this;
       _this.isCrudAction = false;
@@ -29397,9 +29397,9 @@ var cardRendered = "cardRendered";
 var queryCellInfo = "queryCellInfo";
 var dataBinding$1 = "dataBinding";
 var dataBound$1 = "dataBound";
-var dragStart = "dragStart";
-var drag = "drag";
-var dragStop = "dragStop";
+var dragStart$1 = "dragStart";
+var drag$1 = "drag";
+var dragStop$1 = "dragStop";
 var dialogOpen = "dialogOpen";
 var dialogClose = "dialogClose";
 var contentReady$1 = "content-ready";
@@ -29660,7 +29660,7 @@ var Data$1 = (
     return Data2;
   }()
 );
-var __extends$H = globalThis && globalThis.__extends || function() {
+var __extends$O = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -29692,7 +29692,7 @@ var __decorate$D = globalThis && globalThis.__decorate || function(decorators, t
 var SwimlaneSettings = (
   /** @class */
   function(_super) {
-    __extends$H(SwimlaneSettings2, _super);
+    __extends$O(SwimlaneSettings2, _super);
     function SwimlaneSettings2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -29729,7 +29729,7 @@ var SwimlaneSettings = (
     return SwimlaneSettings2;
   }(ChildProperty)
 );
-var __extends$G = globalThis && globalThis.__extends || function() {
+var __extends$N = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -29761,7 +29761,7 @@ var __decorate$C = globalThis && globalThis.__decorate || function(decorators, t
 var CardSettings = (
   /** @class */
   function(_super) {
-    __extends$G(CardSettings2, _super);
+    __extends$N(CardSettings2, _super);
     function CardSettings2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -29792,7 +29792,7 @@ var CardSettings = (
     return CardSettings2;
   }(ChildProperty)
 );
-var __extends$F = globalThis && globalThis.__extends || function() {
+var __extends$M = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -29824,7 +29824,7 @@ var __decorate$B = globalThis && globalThis.__decorate || function(decorators, t
 var DialogSettings = (
   /** @class */
   function(_super) {
-    __extends$F(DialogSettings2, _super);
+    __extends$M(DialogSettings2, _super);
     function DialogSettings2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -29840,7 +29840,7 @@ var DialogSettings = (
     return DialogSettings2;
   }(ChildProperty)
 );
-var __extends$E = globalThis && globalThis.__extends || function() {
+var __extends$L = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -29872,7 +29872,7 @@ var __decorate$A = globalThis && globalThis.__decorate || function(decorators, t
 var Columns = (
   /** @class */
   function(_super) {
-    __extends$E(Columns2, _super);
+    __extends$L(Columns2, _super);
     function Columns2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -29915,7 +29915,7 @@ var Columns = (
     return Columns2;
   }(ChildProperty)
 );
-var __extends$D = globalThis && globalThis.__extends || function() {
+var __extends$K = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -29947,7 +29947,7 @@ var __decorate$z = globalThis && globalThis.__decorate || function(decorators, t
 var StackedHeaders = (
   /** @class */
   function(_super) {
-    __extends$D(StackedHeaders2, _super);
+    __extends$K(StackedHeaders2, _super);
     function StackedHeaders2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -29960,7 +29960,7 @@ var StackedHeaders = (
     return StackedHeaders2;
   }(ChildProperty)
 );
-var __extends$C = globalThis && globalThis.__extends || function() {
+var __extends$J = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -29992,7 +29992,7 @@ var __decorate$y = globalThis && globalThis.__decorate || function(decorators, t
 var SortSettings = (
   /** @class */
   function(_super) {
-    __extends$C(SortSettings2, _super);
+    __extends$J(SortSettings2, _super);
     function SortSettings2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -30660,7 +30660,7 @@ var Crud$1 = (
     return Crud2;
   }()
 );
-var DragAndDrop = (
+var DragAndDrop$1 = (
   /** @class */
   function() {
     function DragAndDrop2(parent) {
@@ -30738,7 +30738,7 @@ var DragAndDrop = (
         this.dragObj.cardDetails = [this.parent.getCardDetails(this.dragObj.element)];
       }
       var dragArgs = { cancel: false, data: this.dragObj.cardDetails, event: e, element: this.dragObj.selectedCards };
-      this.parent.trigger(dragStart, dragArgs, function(dragEventArgs) {
+      this.parent.trigger(dragStart$1, dragArgs, function(dragEventArgs) {
         if (dragEventArgs.cancel) {
           _this.removeElement(_this.dragObj.cloneElement);
           _this.dragObj.instance.intDestroy(e);
@@ -30887,7 +30887,7 @@ var DragAndDrop = (
       }
       this.updateScrollPosition();
       var dragArgs = { data: this.dragObj.cardDetails, event: e, element: this.dragObj.selectedCards };
-      this.kanbanObj.trigger(drag, dragArgs);
+      this.kanbanObj.trigger(drag$1, dragArgs);
       this.parent.isExternalKanbanDrop = false;
       this.isExternalDrop = false;
     };
@@ -31070,7 +31070,7 @@ var DragAndDrop = (
         element: this.dragObj.selectedCards,
         dropIndex
       };
-      this.parent.trigger(dragStop, dragArgs, function(dragEventArgs) {
+      this.parent.trigger(dragStop$1, dragArgs, function(dragEventArgs) {
         _this.dragStopClear();
         if (!dragEventArgs.cancel) {
           if (contentCell || columnKey) {
@@ -32191,7 +32191,7 @@ function compileTemplate(template) {
   }
   return void 0;
 }
-var __extends$B = globalThis && globalThis.__extends || function() {
+var __extends$I = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -32223,7 +32223,7 @@ var __decorate$x = globalThis && globalThis.__decorate || function(decorators, t
 var FieldSettings = (
   /** @class */
   function(_super) {
-    __extends$B(FieldSettings2, _super);
+    __extends$I(FieldSettings2, _super);
     function FieldSettings2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -32272,7 +32272,7 @@ var HIDE_GROUPLIST = "e-hide-group-header";
 var DropDownBase = (
   /** @class */
   function(_super) {
-    __extends$B(DropDownBase2, _super);
+    __extends$I(DropDownBase2, _super);
     function DropDownBase2(options, element2) {
       var _this = _super.call(this, options, element2) || this;
       _this.preventChange = false;
@@ -33949,7 +33949,7 @@ var Input;
   }
   Input2.validateInputType = validateInputType;
 })(Input || (Input = {}));
-var __extends$A = globalThis && globalThis.__extends || function() {
+var __extends$H = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -33996,7 +33996,7 @@ var selectionTimeOut = 0;
 var NumericTextBox = (
   /** @class */
   function(_super) {
-    __extends$A(NumericTextBox2, _super);
+    __extends$H(NumericTextBox2, _super);
     function NumericTextBox2(options, element2) {
       var _this = _super.call(this, options, element2) || this;
       _this.isVue = false;
@@ -35230,7 +35230,7 @@ var NumericTextBox = (
     return NumericTextBox2;
   }(Component)
 );
-var __extends$z = globalThis && globalThis.__extends || function() {
+var __extends$G = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -35262,7 +35262,7 @@ var __decorate$v = globalThis && globalThis.__decorate || function(decorators, t
 var TicksData = (
   /** @class */
   function(_super) {
-    __extends$z(TicksData2, _super);
+    __extends$G(TicksData2, _super);
     function TicksData2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -35287,7 +35287,7 @@ var TicksData = (
 var ColorRangeData = (
   /** @class */
   function(_super) {
-    __extends$z(ColorRangeData2, _super);
+    __extends$G(ColorRangeData2, _super);
     function ColorRangeData2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -35306,7 +35306,7 @@ var ColorRangeData = (
 var LimitData = (
   /** @class */
   function(_super) {
-    __extends$z(LimitData2, _super);
+    __extends$G(LimitData2, _super);
     function LimitData2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -35337,7 +35337,7 @@ var LimitData = (
 var TooltipData = (
   /** @class */
   function(_super) {
-    __extends$z(TooltipData2, _super);
+    __extends$G(TooltipData2, _super);
     function TooltipData2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -35424,7 +35424,7 @@ var classNames$1 = {
 var Slider = (
   /** @class */
   function(_super) {
-    __extends$z(Slider2, _super);
+    __extends$G(Slider2, _super);
     function Slider2(options, element2) {
       var _this = _super.call(this, options, element2) || this;
       _this.horDir = "left";
@@ -37933,7 +37933,7 @@ var Slider = (
     return Slider2;
   }(Component)
 );
-var __extends$y = globalThis && globalThis.__extends || function() {
+var __extends$F = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -37981,7 +37981,7 @@ var ErrorOption;
 var FormValidator = (
   /** @class */
   function(_super) {
-    __extends$y(FormValidator2, _super);
+    __extends$F(FormValidator2, _super);
     function FormValidator2(element2, options) {
       var _this = _super.call(this, options, element2) || this;
       _this.validated = [];
@@ -38634,7 +38634,7 @@ var FormValidator = (
     return FormValidator2;
   }(Base)
 );
-var __extends$x = globalThis && globalThis.__extends || function() {
+var __extends$E = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -38768,7 +38768,7 @@ function setBlankIconStyle(popup, blankIcon) {
 var Item$1 = (
   /** @class */
   function(_super) {
-    __extends$x(Item2, _super);
+    __extends$E(Item2, _super);
     function Item2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -38793,7 +38793,7 @@ var Item$1 = (
     return Item2;
   }(ChildProperty)
 );
-var __extends$w = globalThis && globalThis.__extends || function() {
+var __extends$D = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -38835,7 +38835,7 @@ var classNames = {
 var DropDownButton = (
   /** @class */
   function(_super) {
-    __extends$w(DropDownButton2, _super);
+    __extends$D(DropDownButton2, _super);
     function DropDownButton2(options, element2) {
       var _this = _super.call(this, options, element2) || this;
       _this.isPopupCreated = true;
@@ -39472,7 +39472,7 @@ var DropDownButton = (
     return DropDownButton2;
   }(Component)
 );
-var __extends$v = globalThis && globalThis.__extends || function() {
+var __extends$C = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -39506,7 +39506,7 @@ var TAGNAME = "EJS-SPLITBUTTON";
 var SplitButton = (
   /** @class */
   function(_super) {
-    __extends$v(SplitButton2, _super);
+    __extends$C(SplitButton2, _super);
     function SplitButton2(options, element2) {
       return _super.call(this, options, element2) || this;
     }
@@ -39828,7 +39828,7 @@ var Deferred = (
     return Deferred2;
   }()
 );
-var __extends$u = globalThis && globalThis.__extends || function() {
+var __extends$B = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -39995,7 +39995,7 @@ var presets = {
 var ColorPicker = (
   /** @class */
   function(_super) {
-    __extends$u(ColorPicker2, _super);
+    __extends$B(ColorPicker2, _super);
     function ColorPicker2(options, element2) {
       return _super.call(this, options, element2) || this;
     }
@@ -41734,7 +41734,7 @@ var ColorPicker = (
     return ColorPicker2;
   }(Component)
 );
-var __extends$t = globalThis && globalThis.__extends || function() {
+var __extends$A = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -41769,7 +41769,7 @@ var containerAttr$1 = ["title", "style", "class"];
 var TextBox = (
   /** @class */
   function(_super) {
-    __extends$t(TextBox2, _super);
+    __extends$A(TextBox2, _super);
     function TextBox2(options, element2) {
       var _this = _super.call(this, options, element2) || this;
       _this.previousValue = null;
@@ -42380,7 +42380,7 @@ var TextBox = (
     return TextBox2;
   }(Component)
 );
-var __extends$s = globalThis && globalThis.__extends || function() {
+var __extends$z = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -42444,7 +42444,7 @@ var inputObject = {
 var DropDownList = (
   /** @class */
   function(_super) {
-    __extends$s(DropDownList2, _super);
+    __extends$z(DropDownList2, _super);
     function DropDownList2(options, element2) {
       var _this = _super.call(this, options, element2) || this;
       _this.isListSearched = false;
@@ -44996,7 +44996,7 @@ var DropDownList = (
     return DropDownList2;
   }(DropDownBase)
 );
-var __extends$r = globalThis && globalThis.__extends || function() {
+var __extends$y = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -45044,7 +45044,7 @@ var OVERLAY_MAXWID$1 = 40;
 var HScroll = (
   /** @class */
   function(_super) {
-    __extends$r(HScroll2, _super);
+    __extends$y(HScroll2, _super);
     function HScroll2(options, element2) {
       return _super.call(this, options, element2) || this;
     }
@@ -45427,7 +45427,7 @@ var HScroll = (
     return HScroll2;
   }(Component)
 );
-var __extends$q = globalThis && globalThis.__extends || function() {
+var __extends$x = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -45475,7 +45475,7 @@ var OVERLAY_MAXWID = 40;
 var VScroll = (
   /** @class */
   function(_super) {
-    __extends$q(VScroll2, _super);
+    __extends$x(VScroll2, _super);
     function VScroll2(options, element2) {
       return _super.call(this, options, element2) || this;
     }
@@ -45833,7 +45833,7 @@ var VScroll = (
     return VScroll2;
   }(Component)
 );
-var __extends$p = globalThis && globalThis.__extends || function() {
+var __extends$w = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -45905,7 +45905,7 @@ var CLS_EXTENDEDPOPOPEN = "e-tbar-extended";
 var Item = (
   /** @class */
   function(_super) {
-    __extends$p(Item2, _super);
+    __extends$w(Item2, _super);
     function Item2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -45969,7 +45969,7 @@ var Item = (
 var Toolbar = (
   /** @class */
   function(_super) {
-    __extends$p(Toolbar2, _super);
+    __extends$w(Toolbar2, _super);
     function Toolbar2(options, element2) {
       var _this = _super.call(this, options, element2) || this;
       _this.resizeContext = _this.resize.bind(_this);
@@ -47939,7 +47939,7 @@ var Toolbar = (
     return Toolbar2;
   }(Component)
 );
-var __extends$o = globalThis && globalThis.__extends || function() {
+var __extends$v = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -47995,7 +47995,7 @@ var CLS_CONTAINER = "e-accordion-container";
 var AccordionActionSettings = (
   /** @class */
   function(_super) {
-    __extends$o(AccordionActionSettings2, _super);
+    __extends$v(AccordionActionSettings2, _super);
     function AccordionActionSettings2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -48014,7 +48014,7 @@ var AccordionActionSettings = (
 var AccordionAnimationSettings = (
   /** @class */
   function(_super) {
-    __extends$o(AccordionAnimationSettings2, _super);
+    __extends$v(AccordionAnimationSettings2, _super);
     function AccordionAnimationSettings2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -48030,7 +48030,7 @@ var AccordionAnimationSettings = (
 var AccordionItem = (
   /** @class */
   function(_super) {
-    __extends$o(AccordionItem2, _super);
+    __extends$v(AccordionItem2, _super);
     function AccordionItem2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -48064,7 +48064,7 @@ var AccordionItem = (
 var Accordion = (
   /** @class */
   function(_super) {
-    __extends$o(Accordion2, _super);
+    __extends$v(Accordion2, _super);
     function Accordion2(options, element2) {
       var _this = _super.call(this, options, element2) || this;
       _this.keyConfigs = {
@@ -49179,7 +49179,7 @@ var Accordion = (
     return Accordion2;
   }(Component)
 );
-var __extends$n = globalThis && globalThis.__extends || function() {
+var __extends$u = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -49254,7 +49254,7 @@ var CLS_REORDER_ACTIVE_ITEM = "e-reorder-active-item";
 var TabActionSettings = (
   /** @class */
   function(_super) {
-    __extends$n(TabActionSettings2, _super);
+    __extends$u(TabActionSettings2, _super);
     function TabActionSettings2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -49273,7 +49273,7 @@ var TabActionSettings = (
 var TabAnimationSettings = (
   /** @class */
   function(_super) {
-    __extends$n(TabAnimationSettings2, _super);
+    __extends$u(TabAnimationSettings2, _super);
     function TabAnimationSettings2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -49289,7 +49289,7 @@ var TabAnimationSettings = (
 var Header = (
   /** @class */
   function(_super) {
-    __extends$n(Header2, _super);
+    __extends$u(Header2, _super);
     function Header2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -49308,7 +49308,7 @@ var Header = (
 var TabItem = (
   /** @class */
   function(_super) {
-    __extends$n(TabItem2, _super);
+    __extends$u(TabItem2, _super);
     function TabItem2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -49342,7 +49342,7 @@ var TabItem = (
 var Tab = (
   /** @class */
   function(_super) {
-    __extends$n(Tab2, _super);
+    __extends$u(Tab2, _super);
     function Tab2(options, element2) {
       var _this = _super.call(this, options, element2) || this;
       _this.show = {};
@@ -51403,7 +51403,7 @@ var Tab = (
     return Tab2;
   }(Component)
 );
-var __extends$m = globalThis && globalThis.__extends || function() {
+var __extends$t = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -51493,7 +51493,7 @@ var treeAriaAttr = {
 var FieldsSettings = (
   /** @class */
   function(_super) {
-    __extends$m(FieldsSettings2, _super);
+    __extends$t(FieldsSettings2, _super);
     function FieldsSettings2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -51554,7 +51554,7 @@ var FieldsSettings = (
 var ActionSettings = (
   /** @class */
   function(_super) {
-    __extends$m(ActionSettings2, _super);
+    __extends$t(ActionSettings2, _super);
     function ActionSettings2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -51573,7 +51573,7 @@ var ActionSettings = (
 var NodeAnimationSettings = (
   /** @class */
   function(_super) {
-    __extends$m(NodeAnimationSettings2, _super);
+    __extends$t(NodeAnimationSettings2, _super);
     function NodeAnimationSettings2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -51589,7 +51589,7 @@ var NodeAnimationSettings = (
 var TreeView = (
   /** @class */
   function(_super) {
-    __extends$m(TreeView2, _super);
+    __extends$t(TreeView2, _super);
     function TreeView2(options, element2) {
       var _this = _super.call(this, options, element2) || this;
       _this.isRefreshed = false;
@@ -56159,7 +56159,7 @@ var TreeView = (
     return TreeView2;
   }(Component)
 );
-var __extends$l = globalThis && globalThis.__extends || function() {
+var __extends$s = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -56210,7 +56210,7 @@ var SIDEBARABSOLUTE = "e-sidebar-absolute";
 var Sidebar = (
   /** @class */
   function(_super) {
-    __extends$l(Sidebar2, _super);
+    __extends$s(Sidebar2, _super);
     function Sidebar2(options, element2) {
       return _super.call(this, options, element2) || this;
     }
@@ -56898,7 +56898,7 @@ function encodePlaceholder(placeholder) {
   }
   return result;
 }
-var __extends$k = globalThis && globalThis.__extends || function() {
+var __extends$r = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -56966,7 +56966,7 @@ var FILTERINPUT = "e-input-filter";
 var MultiSelect = (
   /** @class */
   function(_super) {
-    __extends$k(MultiSelect2, _super);
+    __extends$r(MultiSelect2, _super);
     function MultiSelect2(option, element2) {
       var _this = _super.call(this, option, element2) || this;
       _this.clearIconWidth = 0;
@@ -62225,7 +62225,7 @@ var MobileLayout = (
     return MobileLayout2;
   }()
 );
-var __extends$j = globalThis && globalThis.__extends || function() {
+var __extends$q = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -62247,7 +62247,7 @@ var __extends$j = globalThis && globalThis.__extends || function() {
 var LayoutRender = (
   /** @class */
   function(_super) {
-    __extends$j(LayoutRender2, _super);
+    __extends$q(LayoutRender2, _super);
     function LayoutRender2(parent) {
       var _this = _super.call(this, parent) || this;
       _this.kanbanRows = [];
@@ -63367,7 +63367,7 @@ var LayoutRender = (
     return LayoutRender2;
   }(MobileLayout)
 );
-var __extends$i = globalThis && globalThis.__extends || function() {
+var __extends$p = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -63399,7 +63399,7 @@ var __decorate$f = globalThis && globalThis.__decorate || function(decorators, t
 var Kanban$1 = (
   /** @class */
   function(_super) {
-    __extends$i(Kanban2, _super);
+    __extends$p(Kanban2, _super);
     function Kanban2(options, element2) {
       var _this = _super.call(this, options, element2) || this;
       _this.needsID = true;
@@ -63607,7 +63607,7 @@ var Kanban$1 = (
       }
       this.actionModule = new Action(this);
       this.crudModule = new Crud$1(this);
-      this.dragAndDropModule = new DragAndDrop(this);
+      this.dragAndDropModule = new DragAndDrop$1(this);
       this.dialogModule = new KanbanDialog(this);
       if (this.enableTooltip) {
         this.tooltipModule = new KanbanTooltip(this);
@@ -64864,7 +64864,7 @@ var KanbanComponent = vueDefineComponent({
     }
   }
 });
-var __extends$h = globalThis && globalThis.__extends || function() {
+var __extends$o = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -64933,7 +64933,7 @@ var minutesMilliSeconds = 6e4;
 var CalendarBase = (
   /** @class */
   function(_super) {
-    __extends$h(CalendarBase2, _super);
+    __extends$o(CalendarBase2, _super);
     function CalendarBase2(options, element2) {
       var _this = _super.call(this, options, element2) || this;
       _this.effect = "";
@@ -66720,7 +66720,7 @@ var CalendarBase = (
 var Calendar = (
   /** @class */
   function(_super) {
-    __extends$h(Calendar2, _super);
+    __extends$o(Calendar2, _super);
     function Calendar2(options, element2) {
       return _super.call(this, options, element2) || this;
     }
@@ -67160,7 +67160,7 @@ var Calendar = (
     return Calendar2;
   }(CalendarBase)
 );
-var __extends$g = globalThis && globalThis.__extends || function() {
+var __extends$n = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -67213,7 +67213,7 @@ var containerAttr = ["title", "class", "style"];
 var DatePicker = (
   /** @class */
   function(_super) {
-    __extends$g(DatePicker2, _super);
+    __extends$n(DatePicker2, _super);
     function DatePicker2(options, element2) {
       var _this = _super.call(this, options, element2) || this;
       _this.isDateIconClicked = false;
@@ -68974,7 +68974,7 @@ var DatePicker = (
     return DatePicker2;
   }(Calendar)
 );
-var __extends$f = globalThis && globalThis.__extends || function() {
+var __extends$m = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -69049,7 +69049,7 @@ var TimePickerBase;
   TimePickerBase2.createListItems = createListItems;
 })(TimePickerBase || (TimePickerBase = {}));
 (function(_super) {
-  __extends$f(TimeMaskPlaceholder, _super);
+  __extends$m(TimeMaskPlaceholder, _super);
   function TimeMaskPlaceholder() {
     return _super !== null && _super.apply(this, arguments) || this;
   }
@@ -69077,7 +69077,7 @@ var TimePickerBase;
   return TimeMaskPlaceholder;
 })(ChildProperty);
 (function(_super) {
-  __extends$f(TimePicker, _super);
+  __extends$m(TimePicker, _super);
   function TimePicker(options, element2) {
     var _this = _super.call(this, options, element2) || this;
     _this.liCollections = [];
@@ -71329,7 +71329,7 @@ var TimePickerBase;
   ], TimePicker);
   return TimePicker;
 })(Component);
-var __extends$e = globalThis && globalThis.__extends || function() {
+var __extends$l = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -71390,7 +71390,7 @@ var OVERFLOW = "e-time-overflow";
 var DateTimePicker = (
   /** @class */
   function(_super) {
-    __extends$e(DateTimePicker2, _super);
+    __extends$l(DateTimePicker2, _super);
     function DateTimePicker2(options, element2) {
       var _this = _super.call(this, options, element2) || this;
       _this.valueWithMinutes = null;
@@ -72832,10 +72832,17 @@ var dataBinding = "dataBinding";
 var dataBound = "dataBound";
 var popupOpen = "popupOpen";
 var popupClose = "popupClose";
+var dragStart = "dragStart";
+var drag = "drag";
+var dragStop = "dragStop";
+var resizeStart = "resizeStart";
+var resizing = "resizing";
+var resizeStop = "resizeStop";
 var inlineClick = "inlineClick";
 var cellSelect = "cellSelect";
 var print = "print";
 var dataReady = "data-ready";
+var eventsLoaded = "events-loaded";
 var contentReady = "content-ready";
 var virtualScroll = "virtual-scroll";
 var scrollUiUpdate = "scroll-ui-update";
@@ -72843,6 +72850,7 @@ var uiUpdate = "ui-update";
 var documentClick = "document-click";
 var cellMouseDown = "cell-mouse-down";
 var WEEK_LENGTH = 7;
+var DEFAULT_WEEKS = 6;
 var MS_PER_DAY = 864e5;
 var MS_PER_MINUTE = 6e4;
 function getElementHeightFromClass(container, elementClass2) {
@@ -72898,6 +72906,13 @@ function getWeekNumber(date) {
 function getWeekMiddleDate(weekFirst, weekLast) {
   return new Date(weekLast.valueOf() - (weekLast.valueOf() - weekFirst.valueOf()) / 2);
 }
+function setTime(date, time) {
+  var tzOffsetBefore = date.getTimezoneOffset();
+  var d = new Date(date.getTime() + time);
+  var tzOffsetDiff = d.getTimezoneOffset() - tzOffsetBefore;
+  date.setTime(d.getTime() + tzOffsetDiff * MS_PER_MINUTE);
+  return date;
+}
 function resetTime(date) {
   return new Date(date.getFullYear(), date.getMonth(), date.getDate());
 }
@@ -72948,6 +72963,16 @@ function getDaysCount(startDate, endDate) {
 function getDateFromString(date) {
   return date.indexOf("Date") !== -1 ? new Date(parseInt(date.match(/\d+/g).toString(), 10)) : date.indexOf("T") !== -1 ? new Date(date) : new Date(date.replace(/-/g, "/"));
 }
+function getScrollBarWidth() {
+  var divNode = createElement("div");
+  var value = 0;
+  divNode.style.cssText = "width:100px;height: 100px;overflow: scroll;position: absolute;top: -9999px;";
+  document.body.appendChild(divNode);
+  var ratio = devicePixelRatio ? devicePixelRatio.toFixed(2) === "1.10" || devicePixelRatio <= 1 ? Math.ceil(devicePixelRatio % 1) : Math.floor(devicePixelRatio % 1) : 0;
+  value = divNode.offsetWidth - divNode.clientWidth - ratio | 0;
+  document.body.removeChild(divNode);
+  return value;
+}
 function findIndexInData(data, field, value, event, resourceCollection) {
   for (var i = 0, length_1 = data.length; i < length_1; i++) {
     if (data[parseInt(i.toString(), 10)]["" + field] === value) {
@@ -72975,6 +73000,11 @@ function removeChildren(element2) {
     var elementChild = elementChildren_1[_i];
     element2.removeChild(elementChild);
   }
+}
+function isDaylightSavingTime(date) {
+  var jan = new Date(date.getFullYear(), 0, 1);
+  var jul = new Date(date.getFullYear(), 6, 1);
+  return date.getTimezoneOffset() < Math.max(jan.getTimezoneOffset(), jul.getTimezoneOffset());
 }
 function getUniversalTime(date) {
   var year = date.getFullYear();
@@ -73014,6 +73044,7 @@ var ICON = "e-icons";
 var ENABLE_CLASS = "e-enable";
 var DISABLE_CLASS = "e-disable";
 var TABLE_CONTAINER_CLASS = "e-table-container";
+var SCHEDULE_TABLE_CLASS = "e-schedule-table";
 var ALLDAY_CELLS_CLASS = "e-all-day-cells";
 var HEADER_POPUP_CLASS = "e-header-popup";
 var HEADER_CALENDAR_CLASS = "e-header-calendar";
@@ -73023,8 +73054,14 @@ var WORK_CELLS_CLASS = "e-work-cells";
 var WORK_HOURS_CLASS = "e-work-hours";
 var POPUP_OPEN = "e-popup-open";
 var DATE_HEADER_WRAP_CLASS = "e-date-header-wrap";
+var DATE_HEADER_CONTAINER_CLASS = "e-date-header-container";
 var HEADER_CELLS_CLASS = "e-header-cells";
+var HEADER_WEEK_CELLS_CLASS = "e-header-week-cell";
+var HEADER_MONTH_CELLS_CLASS = "e-header-month-cell";
+var HEADER_YEAR_CELLS_CLASS = "e-header-year-cell";
+var WORKDAY_CLASS = "e-work-days";
 var OTHERMONTH_CLASS = "e-other-month";
+var CURRENT_DAY_CLASS = "e-current-day";
 var CURRENTDATE_CLASS = "e-current-date";
 var CURRENT_PANEL_CLASS = "e-current-panel";
 var PREVIOUS_PANEL_CLASS = "e-previous-panel";
@@ -73032,6 +73069,8 @@ var NEXT_PANEL_CLASS = "e-next-panel";
 var PREVIOUS_DATE_CLASS = "e-prev";
 var NEXT_DATE_CLASS = "e-next";
 var TRANSLATE_CLASS = "e-translate";
+var LEFT_INDENT_CLASS = "e-left-indent";
+var LEFT_INDENT_WRAP_CLASS = "e-left-indent-wrap";
 var EVENT_TABLE_CLASS = "e-event-table";
 var RESOURCE_LEFT_TD_CLASS = "e-resource-left-td";
 var RESOURCE_GROUP_CELLS_CLASS = "e-resource-group-cells";
@@ -73044,8 +73083,15 @@ var RESOURCE_EXPAND_CLASS = "e-resource-expand";
 var RESOURCE_COLLAPSE_CLASS = "e-resource-collapse";
 var RESOURCE_TREE_ICON_CLASS = "e-resource-tree-icon";
 var RESOURCE_CELLS_CLASS = "e-resource-cells";
+var TIME_CELLS_WRAP_CLASS = "e-time-cells-wrap";
+var TIME_CELLS_CLASS = "e-time-cells";
 var TIME_SLOT_CLASS = "e-time-slots";
+var ALTERNATE_CELLS_CLASS = "e-alternate-cells";
+var CURRENT_TIME_CLASS = "e-current-time";
 var CURRENT_TIMELINE_CLASS = "e-current-timeline";
+var PREVIOUS_TIMELINE_CLASS = "e-previous-timeline";
+var HIDE_CHILDS_CLASS = "e-hide-childs";
+var SCROLL_CONTAINER_CLASS = "e-scroll-container";
 var TIMELINE_WRAPPER_CLASS = "e-timeline-wrapper";
 var APPOINTMENT_WRAPPER_CLASS = "e-appointment-wrapper";
 var DAY_WRAPPER_CLASS = "e-day-wrapper";
@@ -73066,6 +73112,8 @@ var APPOINTMENT_DETAILS = "e-appointment-details";
 var SUBJECT_WRAP = "e-subject-wrap";
 var RESOURCE_NAME = "e-resource-name";
 var APPOINTMENT_TIME = "e-time";
+var TABLE_WRAP_CLASS = "e-table-wrap";
+var OUTER_TABLE_CLASS = "e-outer-table";
 var CONTENT_WRAP_CLASS = "e-content-wrap";
 var VIRTUAL_TRACK_CLASS = "e-virtual-track";
 var AGENDA_CELLS_CLASS = "e-agenda-cells";
@@ -73082,6 +73130,9 @@ var EVENT_ICON_LEFT_CLASS = "e-left-icon";
 var EVENT_ICON_RIGHT_CLASS = "e-right-icon";
 var EVENT_ACTION_CLASS = "e-event-action";
 var NEW_EVENT_CLASS = "e-new-event";
+var CLONE_ELEMENT_CLASS = "e-schedule-event-clone";
+var MONTH_CLONE_ELEMENT_CLASS = "e-month-event";
+var CLONE_TIME_INDICATOR_CLASS = "e-clone-time-indicator";
 var DRAG_CLONE_CLASS = "e-drag-clone";
 var EVENT_RESIZE_CLASS = "e-event-resize";
 var RESIZE_CLONE_CLASS = "e-resize-clone";
@@ -73175,7 +73226,10 @@ var CLOSE_ICON_CLASS = "e-close-icon";
 var ERROR_VALIDATION_CLASS = "e-schedule-error";
 var EVENT_TOOLTIP_ROOT_CLASS = "e-schedule-event-tooltip";
 var ALLDAY_ROW_ANIMATE_CLASS = "e-animate";
+var TIMESCALE_DISABLE = "e-timescale-disable";
+var DISABLE_DATE = "e-disable-date";
 var HIDDEN_CLASS = "e-hidden";
+var DISABLE_DATES = "e-disable-dates";
 var POPUP_WRAPPER_CLASS = "e-quick-popup-wrapper";
 var POPUP_TABLE_CLASS = "e-popup-table";
 var RESOURCE_MENU = "e-resource-menu";
@@ -73188,9 +73242,12 @@ var RESOURCE_CLASS = "e-resource";
 var RESOURCE_ICON_CLASS = "e-resource-icon";
 var RESOURCE_DETAILS_CLASS = "e-resource-details";
 var DATE_TIME_ICON_CLASS = "e-date-time-icon";
+var VIRTUAL_SCROLL_CLASS = "e-virtual-scroll";
 var ICON_DISABLE_CLASS = "e-icon-disable";
 var AUTO_HEIGHT = "e-auto-height";
+var IGNORE_WHITESPACE = "e-ignore-whitespace";
 var READ_ONLY = "e-read-only";
+var MONTH_HEADER_WRAPPER = "e-month-header-wrapper";
 var INLINE_SUBJECT_CLASS = "e-inline-subject";
 var INLINE_APPOINTMENT_CLASS = "e-inline-appointment";
 var SCROLL_HIDDEN = "e-scroll-hidden";
@@ -78114,7 +78171,7 @@ var EventBase = (
     return EventBase2;
   }()
 );
-var __extends$d = globalThis && globalThis.__extends || function() {
+var __extends$k = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -78136,7 +78193,7 @@ var __extends$d = globalThis && globalThis.__extends || function() {
 var VerticalEvent = (
   /** @class */
   function(_super) {
-    __extends$d(VerticalEvent2, _super);
+    __extends$k(VerticalEvent2, _super);
     function VerticalEvent2(parent) {
       var _this = _super.call(this, parent) || this;
       _this.dateRender = [];
@@ -78933,7 +78990,7 @@ var VerticalEvent = (
     return VerticalEvent2;
   }(EventBase)
 );
-var __extends$c = globalThis && globalThis.__extends || function() {
+var __extends$j = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -78952,11 +79009,11 @@ var __extends$c = globalThis && globalThis.__extends || function() {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
   };
 }();
-var EVENT_GAP$1 = 0;
+var EVENT_GAP$2 = 0;
 var MonthEvent = (
   /** @class */
   function(_super) {
-    __extends$c(MonthEvent2, _super);
+    __extends$j(MonthEvent2, _super);
     function MonthEvent2(parent) {
       var _this = _super.call(this, parent) || this;
       _this.renderedEvents = [];
@@ -79406,8 +79463,8 @@ var MonthEvent = (
       if (startTime.getTime() <= endTime.getTime()) {
         var appWidth = diffInDays * this.cellWidth - 5;
         var cellTd = this.workCells[parseInt(day.toString(), 10)];
-        var appTop = overlapCount * (this.eventHeight + EVENT_GAP$1);
-        var height = this.monthHeaderHeight + (overlapCount + 1) * (this.eventHeight + EVENT_GAP$1) + this.moreIndicatorHeight;
+        var appTop = overlapCount * (this.eventHeight + EVENT_GAP$2);
+        var height = this.monthHeaderHeight + (overlapCount + 1) * (this.eventHeight + EVENT_GAP$2) + this.moreIndicatorHeight;
         var enableAppRender = this.maxOrIndicator ? overlapCount < 1 ? true : false : this.cellHeight > height;
         if (this.parent.rowAutoHeight || enableAppRender) {
           this.renderedEvents.push(extend({}, event, null, true));
@@ -79609,7 +79666,7 @@ var MonthEvent = (
     return MonthEvent2;
   }(EventBase)
 );
-var __extends$b = globalThis && globalThis.__extends || function() {
+var __extends$i = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -79628,13 +79685,13 @@ var __extends$b = globalThis && globalThis.__extends || function() {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
   };
 }();
-var EVENT_GAP = 2;
+var EVENT_GAP$1 = 2;
 var BLOCK_INDICATOR_WIDTH = 22;
 var BLOCK_INDICATOR_HEIGHT = 18;
 var TimelineEvent = (
   /** @class */
   function(_super) {
-    __extends$b(TimelineEvent2, _super);
+    __extends$i(TimelineEvent2, _super);
     function TimelineEvent2(parent, type) {
       var _this = _super.call(this, parent) || this;
       _this.startHour = _this.parent.activeView.getStartHour();
@@ -79780,10 +79837,10 @@ var TimelineEvent = (
           this.cellTops[parseInt(resIndex.toString(), 10)] = this.getRowTop(resIndex);
         }
         var top_1 = this.cellTops[parseInt(resIndex.toString(), 10)];
-        var appTop = top_1 + (this.maxHeight ? 0 : EVENT_GAP) + overlapCount * (appHeight + EVENT_GAP);
+        var appTop = top_1 + (this.maxHeight ? 0 : EVENT_GAP$1) + overlapCount * (appHeight + EVENT_GAP$1);
         appLeft = this.parent.enableRtl ? 0 : position;
         appRight = this.parent.enableRtl ? position : 0;
-        var height = (overlapCount + 1) * (appHeight + EVENT_GAP) + this.moreIndicatorHeight;
+        var height = (overlapCount + 1) * (appHeight + EVENT_GAP$1) + this.moreIndicatorHeight;
         var renderApp = this.maxOrIndicator ? overlapCount < 1 ? true : false : this.cellHeight > height;
         if (this.parent.rowAutoHeight || renderApp) {
           var appointmentElement = void 0;
@@ -79851,8 +79908,8 @@ var TimelineEvent = (
         }
         var filterEvents = this.getFilterEvents(startDate, endDate, slotStartTime, slotEndTime, groupIndex, appointmentsList);
         var appArea = this.cellHeight - this.moreIndicatorHeight;
-        appHeight = this.withIndicator ? appArea - EVENT_GAP : appHeight;
-        var renderedAppCount = Math.floor(appArea / (appHeight + EVENT_GAP));
+        appHeight = this.withIndicator ? appArea - EVENT_GAP$1 : appHeight;
+        var renderedAppCount = Math.floor(appArea / (appHeight + EVENT_GAP$1));
         var count = filterEvents.length - renderedAppCount <= 0 ? 1 : filterEvents.length - renderedAppCount;
         var moreIndicatorElement = void 0;
         if (this.renderType === "day") {
@@ -80083,7 +80140,7 @@ var TimelineEvent = (
     };
     TimelineEvent2.prototype.setMaxEventHeight = function(event, cell) {
       setStyleAttribute(event, {
-        "height": this.cellHeight - (this.maxHeight ? 0 : EVENT_GAP) - (this.maxHeight ? 0 : this.moreIndicatorHeight) + "px"
+        "height": this.cellHeight - (this.maxHeight ? 0 : EVENT_GAP$1) - (this.maxHeight ? 0 : this.moreIndicatorHeight) + "px"
       });
     };
     TimelineEvent2.prototype.isDayProcess = function() {
@@ -81882,7 +81939,7 @@ var EventTooltip = (
     return EventTooltip2;
   }()
 );
-var __extends$a = globalThis && globalThis.__extends || function() {
+var __extends$h = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -82027,7 +82084,7 @@ var endOnDateClassList = [ENDONCOUNTWRAPPER];
 var RecurrenceEditor = (
   /** @class */
   function(_super) {
-    __extends$a(RecurrenceEditor2, _super);
+    __extends$h(RecurrenceEditor2, _super);
     function RecurrenceEditor2(options, element2) {
       var _this = _super.call(this, options, element2) || this;
       _this.defaultLocale = {
@@ -85229,7 +85286,7 @@ var Render = (
     return Render2;
   }()
 );
-var __extends$9 = globalThis && globalThis.__extends || function() {
+var __extends$g = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -85261,7 +85318,7 @@ var __decorate$9 = globalThis && globalThis.__decorate || function(decorators, t
 var WorkHours = (
   /** @class */
   function(_super) {
-    __extends$9(WorkHours2, _super);
+    __extends$g(WorkHours2, _super);
     function WorkHours2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -85277,7 +85334,7 @@ var WorkHours = (
     return WorkHours2;
   }(ChildProperty)
 );
-var __extends$8 = globalThis && globalThis.__extends || function() {
+var __extends$f = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -85309,7 +85366,7 @@ var __decorate$8 = globalThis && globalThis.__decorate || function(decorators, t
 var TimeScale = (
   /** @class */
   function(_super) {
-    __extends$8(TimeScale2, _super);
+    __extends$f(TimeScale2, _super);
     function TimeScale2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -85331,7 +85388,7 @@ var TimeScale = (
     return TimeScale2;
   }(ChildProperty)
 );
-var __extends$7 = globalThis && globalThis.__extends || function() {
+var __extends$e = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -85363,7 +85420,7 @@ var __decorate$7 = globalThis && globalThis.__decorate || function(decorators, t
 var QuickInfoTemplates = (
   /** @class */
   function(_super) {
-    __extends$7(QuickInfoTemplates2, _super);
+    __extends$e(QuickInfoTemplates2, _super);
     function QuickInfoTemplates2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -85382,7 +85439,7 @@ var QuickInfoTemplates = (
     return QuickInfoTemplates2;
   }(ChildProperty)
 );
-var __extends$6 = globalThis && globalThis.__extends || function() {
+var __extends$d = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -85414,7 +85471,7 @@ var __decorate$6 = globalThis && globalThis.__decorate || function(decorators, t
 var HeaderRows = (
   /** @class */
   function(_super) {
-    __extends$6(HeaderRows2, _super);
+    __extends$d(HeaderRows2, _super);
     function HeaderRows2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -86302,7 +86359,7 @@ var WorkCellInteraction = (
     return WorkCellInteraction2;
   }()
 );
-var __extends$5 = globalThis && globalThis.__extends || function() {
+var __extends$c = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -86334,7 +86391,7 @@ var __decorate$5 = globalThis && globalThis.__decorate || function(decorators, t
 var FieldOptions = (
   /** @class */
   function(_super) {
-    __extends$5(FieldOptions2, _super);
+    __extends$c(FieldOptions2, _super);
     function FieldOptions2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -86353,7 +86410,7 @@ var FieldOptions = (
     return FieldOptions2;
   }(ChildProperty)
 );
-var __extends$4 = globalThis && globalThis.__extends || function() {
+var __extends$b = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -86385,7 +86442,7 @@ var __decorate$4 = globalThis && globalThis.__decorate || function(decorators, t
 var Field = (
   /** @class */
   function(_super) {
-    __extends$4(Field2, _super);
+    __extends$b(Field2, _super);
     function Field2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -86437,7 +86494,7 @@ var Field = (
     return Field2;
   }(ChildProperty)
 );
-var __extends$3 = globalThis && globalThis.__extends || function() {
+var __extends$a = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -86469,7 +86526,7 @@ var __decorate$3 = globalThis && globalThis.__decorate || function(decorators, t
 var EventSettings = (
   /** @class */
   function(_super) {
-    __extends$3(EventSettings2, _super);
+    __extends$a(EventSettings2, _super);
     function EventSettings2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -86530,7 +86587,7 @@ var EventSettings = (
     return EventSettings2;
   }(ChildProperty)
 );
-var __extends$2 = globalThis && globalThis.__extends || function() {
+var __extends$9 = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -86562,7 +86619,7 @@ var __decorate$2 = globalThis && globalThis.__decorate || function(decorators, t
 var Group = (
   /** @class */
   function(_super) {
-    __extends$2(Group2, _super);
+    __extends$9(Group2, _super);
     function Group2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -86590,7 +86647,7 @@ var Group = (
     return Group2;
   }(ChildProperty)
 );
-var __extends$1 = globalThis && globalThis.__extends || function() {
+var __extends$8 = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -86622,7 +86679,7 @@ var __decorate$1 = globalThis && globalThis.__decorate || function(decorators, t
 var Resources = (
   /** @class */
   function(_super) {
-    __extends$1(Resources2, _super);
+    __extends$8(Resources2, _super);
     function Resources2() {
       return _super !== null && _super.apply(this, arguments) || this;
     }
@@ -87770,7 +87827,7 @@ var ResourceBase = (
     return ResourceBase2;
   }()
 );
-var __extends = globalThis && globalThis.__extends || function() {
+var __extends$7 = globalThis && globalThis.__extends || function() {
   var extendStatics = function(d, b) {
     extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
       d2.__proto__ = b2;
@@ -87802,7 +87859,7 @@ var __decorate = globalThis && globalThis.__decorate || function(decorators, tar
 var Schedule = (
   /** @class */
   function(_super) {
-    __extends(Schedule2, _super);
+    __extends$7(Schedule2, _super);
     function Schedule2(options, element2) {
       return _super.call(this, options, element2) || this;
     }
@@ -89945,6 +90002,4896 @@ var Schedule = (
     ], Schedule2);
     return Schedule2;
   }(Component)
+);
+var ActionBase = (
+  /** @class */
+  function() {
+    function ActionBase2(parent) {
+      this.daysVariation = 0;
+      this.parent = parent;
+      this.actionObj = {
+        X: 0,
+        Y: 0,
+        groupIndex: 0,
+        cellWidth: 0,
+        cellHeight: 0,
+        slotInterval: 0,
+        interval: 0,
+        actionIndex: 0,
+        cloneElement: [],
+        originalElement: [],
+        action: null,
+        isAllDay: null,
+        excludeSelectors: null,
+        index: 0,
+        navigationInterval: null,
+        scrollInterval: null
+      };
+      this.scrollArgs = { element: null, width: 0, height: 0 };
+      this.resizeEdges = { left: false, right: false, top: false, bottom: false };
+      this.scrollEdges = { left: false, right: false, top: false, bottom: false };
+    }
+    ActionBase2.prototype.getChangedData = function(multiData) {
+      var _this = this;
+      var eventObj = extend({}, this.actionObj.event, null, true);
+      eventObj[this.parent.eventFields.startTime] = this.actionObj.start;
+      eventObj[this.parent.eventFields.endTime] = this.actionObj.end;
+      if (!isNullOrUndefined(this.actionObj.isAllDay)) {
+        eventObj[this.parent.eventFields.isAllDay] = this.actionObj.isAllDay;
+      }
+      if (this.parent.activeViewOptions.group.resources.length > 0) {
+        var originalElement = this.getOriginalElement(this.actionObj.element);
+        if (originalElement) {
+          var indexCol_1 = originalElement.map(function(element2) {
+            return parseInt(element2.getAttribute("data-group-index"), 10);
+          });
+          if (indexCol_1.indexOf(this.actionObj.groupIndex) === -1 || !isNullOrUndefined(multiData) && multiData.length > 0) {
+            var cloneIndex_1 = parseInt(this.actionObj.clone.getAttribute("data-group-index"), 10);
+            indexCol_1 = indexCol_1.filter(function(index) {
+              return index !== cloneIndex_1;
+            });
+            indexCol_1.push(this.actionObj.groupIndex);
+            if (multiData && multiData.length > 0) {
+              multiData.forEach(function(data) {
+                _this.parent.resourceBase.getResourceData(data, _this.actionObj.groupIndex, indexCol_1);
+              });
+            } else {
+              this.parent.resourceBase.getResourceData(eventObj, this.actionObj.groupIndex, indexCol_1);
+            }
+          }
+        }
+      }
+      return eventObj;
+    };
+    ActionBase2.prototype.saveChangedData = function(eventArgs, isMultiSelect) {
+      if (isMultiSelect === void 0) {
+        isMultiSelect = false;
+      }
+      this.parent.activeEventData.event = this.actionObj.event;
+      this.parent.currentAction = "Save";
+      var currentAction;
+      var eventsCollection = [eventArgs.data];
+      if (isMultiSelect) {
+        eventsCollection = eventArgs.selectedData;
+      }
+      for (var _i = 0, eventsCollection_1 = eventsCollection; _i < eventsCollection_1.length; _i++) {
+        var eventObj = eventsCollection_1[_i];
+        var isSameResource = this.parent.activeViewOptions.group.resources.length > 0 ? parseInt(this.actionObj.element.getAttribute("data-group-index"), 10) === this.actionObj.groupIndex : true;
+        if (+eventObj[this.parent.eventFields.startTime] === +this.actionObj.event[this.parent.eventFields.startTime] && +eventObj[this.parent.eventFields.endTime] === +this.actionObj.event[this.parent.eventFields.endTime] && isSameResource) {
+          this.parent.crudModule.crudObj.isCrudAction = false;
+          return;
+        }
+        if (eventObj[this.parent.eventFields.recurrenceRule]) {
+          var eveId = eventObj[this.parent.eventFields.recurrenceID] || eventObj[this.parent.eventFields.id];
+          if (eventObj[this.parent.eventFields.id] === eventObj[this.parent.eventFields.recurrenceID]) {
+            eventObj[this.parent.eventFields.id] = this.parent.eventBase.getEventMaxID();
+            currentAction = "EditOccurrence";
+          }
+          if (this.parent.enableRecurrenceValidation && this.parent.eventWindow.editOccurrenceValidation(eveId, eventObj, this.actionObj.event)) {
+            return;
+          }
+        } else {
+          currentAction = null;
+        }
+        if (eventObj[this.parent.eventFields.startTimezone] || eventObj[this.parent.eventFields.endTimezone]) {
+          this.parent.eventBase.timezoneConvert(eventObj);
+        }
+        this.parent.crudModule.saveEvent(eventObj, currentAction);
+      }
+    };
+    ActionBase2.prototype.calculateIntervalTime = function(date) {
+      var intervalTime = /* @__PURE__ */ new Date(+date);
+      intervalTime.setMinutes(Math.floor(intervalTime.getMinutes() / this.actionObj.interval) * this.actionObj.interval);
+      return intervalTime;
+    };
+    ActionBase2.prototype.getContentAreaDimension = function() {
+      var viewElement = this.parent.element.querySelector("." + CONTENT_WRAP_CLASS);
+      var trElement = [].slice.call(viewElement.querySelector("tr").children);
+      if (!this.parent.activeView.isTimelineView() && this.parent.activeViewOptions.group.resources.length > 0 && !this.parent.isAdaptive && !this.parent.enableAdaptiveUI && !this.parent.virtualScrollModule) {
+        trElement = this.getResourceElements(trElement);
+      }
+      var leftOffset = trElement[0].getBoundingClientRect();
+      var rightOffset = trElement.slice(-1)[0].getBoundingClientRect();
+      var viewDimension = {
+        bottom: viewElement.scrollHeight - 5,
+        left: this.parent.enableRtl ? rightOffset.left : leftOffset.left,
+        right: this.parent.enableRtl ? leftOffset.right : rightOffset.right,
+        top: 0,
+        leftOffset: this.parent.enableRtl ? rightOffset.right : leftOffset.right,
+        rightOffset: this.parent.enableRtl ? leftOffset.left : rightOffset.left
+      };
+      return viewDimension;
+    };
+    ActionBase2.prototype.getIndex = function(index) {
+      var contentElements = [].slice.call(this.parent.getContentTable().querySelector("tr").children);
+      var indexes = { minIndex: 0, maxIndex: contentElements.length - 1 };
+      if (this.actionObj.action === "resize" && this.parent.activeViewOptions.group.resources.length > 0 && !this.parent.uiStateValues.isGroupAdaptive && !this.parent.activeView.isTimelineView()) {
+        var groupElements = this.getResourceElements(contentElements);
+        indexes.minIndex = groupElements[0].cellIndex;
+        indexes.maxIndex = groupElements.slice(-1)[0].cellIndex;
+      }
+      if (index < indexes.minIndex) {
+        index = indexes.minIndex;
+      }
+      if (index > indexes.maxIndex) {
+        index = indexes.maxIndex;
+      }
+      return index;
+    };
+    ActionBase2.prototype.updateTimePosition = function(date, multiData) {
+      var index = 0;
+      for (var _i = 0, _a = this.actionObj.cloneElement; _i < _a.length; _i++) {
+        var cloneElement = _a[_i];
+        var timeElement = cloneElement.querySelector("." + APPOINTMENT_TIME);
+        if (timeElement) {
+          var startTime = this.actionObj.start;
+          var endTime = this.actionObj.end;
+          if (multiData && multiData.length > 0) {
+            startTime = multiData[parseInt(index.toString(), 10)][this.parent.eventFields.startTime];
+            endTime = multiData[parseInt(index.toString(), 10)][this.parent.eventFields.endTime];
+          }
+          timeElement.innerHTML = this.parent.getTimeString(startTime) + " - " + this.parent.getTimeString(endTime);
+        }
+        index++;
+      }
+      if (!this.parent.activeViewOptions.timeScale.enable || !this.parent.isAdaptive || this.parent.currentView === "Month" || this.parent.currentView === "TimelineMonth") {
+        return;
+      }
+      var timeIndicator = this.parent.element.querySelector("." + CLONE_TIME_INDICATOR_CLASS);
+      if (!timeIndicator) {
+        timeIndicator = createElement("div", { className: CLONE_TIME_INDICATOR_CLASS });
+        var wrapperClass = this.parent.activeView.isTimelineView() ? DATE_HEADER_WRAP_CLASS : TIME_CELLS_WRAP_CLASS;
+        this.parent.element.querySelector("." + wrapperClass).appendChild(timeIndicator);
+      }
+      timeIndicator.innerHTML = this.parent.getTimeString(date);
+      var offsetValue = 0;
+      if (this.parent.activeView.isTimelineView()) {
+        if (this.parent.enableRtl) {
+          var rightValue = parseInt(this.actionObj.clone.style.right, 10);
+          offsetValue = this.actionObj.action === "drag" || this.resizeEdges.left ? rightValue + this.actionObj.clone.offsetWidth : rightValue;
+          timeIndicator.style.right = formatUnit(offsetValue);
+        } else {
+          var leftValue = parseInt(this.actionObj.clone.style.left, 10);
+          offsetValue = this.actionObj.action === "drag" || this.resizeEdges.left ? leftValue : leftValue + this.actionObj.clone.offsetWidth;
+          timeIndicator.style.left = formatUnit(offsetValue);
+        }
+      } else {
+        offsetValue = this.actionObj.action === "drag" || this.resizeEdges.top ? this.actionObj.clone.offsetTop : this.actionObj.clone.offsetTop + this.actionObj.clone.offsetHeight;
+        timeIndicator.style.top = formatUnit(offsetValue);
+      }
+    };
+    ActionBase2.prototype.getResourceElements = function(table) {
+      var _this = this;
+      return table.filter(function(element2) {
+        return parseInt(element2.getAttribute("data-group-index"), 10) === _this.actionObj.groupIndex;
+      });
+    };
+    ActionBase2.prototype.getOriginalElement = function(element2) {
+      var originalElement;
+      var guid = element2.getAttribute("data-guid");
+      var isMorePopup = element2.offsetParent && element2.offsetParent.classList.contains(MORE_EVENT_POPUP_CLASS);
+      if (isMorePopup || this.parent.activeView.isTimelineView() || this.actionObj.action !== "resize" && this.parent.virtualScrollModule) {
+        originalElement = [].slice.call(this.parent.element.querySelectorAll('[data-guid="' + guid + '"]'));
+      } else {
+        var tr = closest(element2, "tr");
+        if (tr) {
+          originalElement = [].slice.call(tr.querySelectorAll('[data-guid="' + guid + '"]'));
+        }
+      }
+      return originalElement;
+    };
+    ActionBase2.prototype.createCloneElement = function(element2) {
+      var cloneWrapper = createElement("div", { innerHTML: element2.outerHTML });
+      var cloneElement = cloneWrapper.children[0];
+      var cloneClassLists = [CLONE_ELEMENT_CLASS];
+      cloneClassLists.push(this.actionObj.action === "drag" ? DRAG_CLONE_CLASS : RESIZE_CLONE_CLASS);
+      if (this.parent.currentView === "Month" || this.parent.currentView === "TimelineMonth") {
+        cloneClassLists.push(MONTH_CLONE_ELEMENT_CLASS);
+      }
+      addClass([cloneElement], cloneClassLists);
+      addClass([element2], EVENT_ACTION_CLASS);
+      if (!isNullOrUndefined(element2.parentElement)) {
+        element2.parentElement.appendChild(cloneElement);
+      }
+      cloneElement.style.width = formatUnit(cloneElement.offsetWidth - 2);
+      var dragElement = document.querySelector(this.parent.eventDragArea);
+      if (this.parent.eventDragArea && this.actionObj.action === "drag" && dragElement) {
+        dragElement.appendChild(cloneElement);
+      }
+      setStyleAttribute(cloneElement, { border: "0px" });
+      return cloneElement;
+    };
+    ActionBase2.prototype.removeCloneElementClasses = function() {
+      var elements = this.actionObj.originalElement;
+      if (this.parent.currentView === "Month" || this.parent.currentView === "TimelineYear" || this.parent.currentView === "Day" || this.parent.currentView === "Week" || this.parent.currentView === "WorkWeek") {
+        elements = [].slice.call(this.parent.element.querySelectorAll("." + EVENT_ACTION_CLASS));
+      }
+      removeClass(elements, EVENT_ACTION_CLASS);
+    };
+    ActionBase2.prototype.removeCloneElement = function() {
+      this.actionObj.originalElement = [];
+      var dynamicEle = [].slice.call(this.parent.element.querySelectorAll(".e-dynamic-clone"));
+      for (var _i = 0, dynamicEle_1 = dynamicEle; _i < dynamicEle_1.length; _i++) {
+        var cloneEle = dynamicEle_1[_i];
+        remove(cloneEle);
+      }
+      for (var _a = 0, _b = this.actionObj.cloneElement; _a < _b.length; _a++) {
+        var cloneElement = _b[_a];
+        if (!isNullOrUndefined(cloneElement.parentNode)) {
+          remove(cloneElement);
+        }
+      }
+      this.actionObj.cloneElement = [];
+      var timeIndicator = this.parent.element.querySelector("." + CLONE_TIME_INDICATOR_CLASS);
+      if (timeIndicator) {
+        remove(timeIndicator);
+      }
+    };
+    ActionBase2.prototype.getCursorElement = function(e) {
+      var pages = this.parent.eventBase.getPageCoordinates(e);
+      return document.elementFromPoint(pages.clientX, pages.clientY);
+    };
+    ActionBase2.prototype.autoScroll = function() {
+      var parent = this.parent.element.querySelector("." + CONTENT_WRAP_CLASS);
+      var yIsScrollable = parent.offsetHeight <= parent.scrollHeight;
+      var xIsScrollable = parent.offsetWidth <= parent.scrollWidth;
+      var yInBounds = yIsScrollable && parent.scrollTop >= 0 && parent.scrollTop + parent.offsetHeight <= parent.scrollHeight;
+      var xInBounds = xIsScrollable && parent.scrollLeft >= 0 && parent.scrollLeft + parent.offsetWidth <= parent.scrollWidth;
+      if (this.actionObj.action === "resize" && this.scrollEdges.right && parent.scrollLeft + parent.offsetWidth > parent.scrollWidth) {
+        var tdCollections = [].slice.call(this.parent.getContentTable().querySelector("tr").children).length - 1;
+        var cellIndex = Math.ceil((this.actionObj.clone.offsetLeft + this.actionObj.clone.offsetWidth) / this.actionObj.cellWidth);
+        xInBounds = cellIndex === tdCollections;
+      }
+      if (yInBounds && (this.scrollEdges.top || this.scrollEdges.bottom)) {
+        parent.scrollTop += this.scrollEdges.top ? -this.actionObj.scroll.scrollBy : this.actionObj.scroll.scrollBy;
+        if (this.actionObj.action === "resize") {
+          if (parent.scrollHeight !== parent.offsetHeight + parent.scrollTop && parent.scrollTop > 0) {
+            this.actionObj.Y += this.scrollEdges.top ? this.actionObj.scroll.scrollBy : -this.actionObj.scroll.scrollBy;
+          }
+        }
+      }
+      if (xInBounds && (this.scrollEdges.left || this.scrollEdges.right)) {
+        parent.scrollLeft += this.scrollEdges.left ? -this.actionObj.scroll.scrollBy : this.actionObj.scroll.scrollBy;
+        if (this.actionObj.action === "resize") {
+          if (parent.scrollWidth !== parent.offsetWidth + parent.scrollLeft && parent.scrollLeft > 0) {
+            this.actionObj.X += this.scrollEdges.left ? this.actionObj.scroll.scrollBy : -this.actionObj.scroll.scrollBy;
+          }
+        }
+      }
+    };
+    ActionBase2.prototype.autoScrollValidation = function() {
+      if (!this.actionObj.scroll.enable) {
+        return false;
+      }
+      var res = this.parent.boundaryValidation(this.actionObj.pageY, this.actionObj.pageX);
+      this.scrollEdges = res;
+      return res.bottom || res.top || res.left || res.right;
+    };
+    ActionBase2.prototype.actionClass = function(type) {
+      if (type === "addClass") {
+        addClass([this.parent.element], EVENT_ACTION_CLASS);
+      } else {
+        removeClass([this.parent.element], EVENT_ACTION_CLASS);
+      }
+    };
+    ActionBase2.prototype.updateScrollPosition = function(e) {
+      var _this = this;
+      this.scrollEventArgs = e;
+      if (this.actionObj.scroll.enable && isNullOrUndefined(this.actionObj.scrollInterval)) {
+        this.actionObj.scrollInterval = window.setInterval(function() {
+          if (_this.autoScrollValidation() && !_this.actionObj.clone.classList.contains(ALLDAY_APPOINTMENT_CLASS)) {
+            if (_this.parent.activeView.isTimelineView() && _this.parent.activeViewOptions.group.resources.length > 0 && _this.actionObj.groupIndex < 0) {
+              return;
+            }
+            _this.autoScroll();
+            if (_this.actionObj.action === "drag") {
+              _this.parent.dragAndDropModule.updateDraggingDateTime(_this.scrollEventArgs);
+            } else {
+              _this.parent.resizeModule.updateResizingDirection(_this.scrollEventArgs);
+            }
+          }
+        }, this.actionObj.scroll.timeDelay);
+      }
+    };
+    ActionBase2.prototype.updateOriginalElement = function(cloneElement) {
+      var query = '[data-id="' + cloneElement.getAttribute("data-id") + '"]';
+      if (this.parent.activeViewOptions.group.resources.length > 0) {
+        query = query.concat('[data-group-index = "' + cloneElement.getAttribute("data-group-index") + '"]');
+      }
+      var elements = [].slice.call(this.parent.element.querySelectorAll(query));
+      addClass(elements, EVENT_ACTION_CLASS);
+      var eventWrappers = [].slice.call(this.parent.element.querySelectorAll("." + CLONE_ELEMENT_CLASS));
+      removeClass(eventWrappers, EVENT_ACTION_CLASS);
+    };
+    ActionBase2.prototype.getUpdatedEvent = function(startTime, endTime, eventObj) {
+      var event = JSON.parse(JSON.stringify(eventObj));
+      event[this.parent.eventFields.startTime] = startTime;
+      event[this.parent.eventFields.endTime] = endTime;
+      return event;
+    };
+    ActionBase2.prototype.dynamicYearlyEventsRendering = function(event, isResize) {
+      if (isResize === void 0) {
+        isResize = false;
+      }
+      var appWidth = this.actionObj.cellWidth - 7;
+      if (isResize && (this.resizeEdges.left || this.resizeEdges.right)) {
+        appWidth = this.actionObj.cellWidth * event.count;
+      }
+      if (!isResize && (this.parent.activeViewOptions.orientation === "Horizontal" && this.parent.activeViewOptions.group.resources.length === 0)) {
+        var eventObj = this.yearEvent.isSpannedEvent(event, event[this.parent.eventFields.startTime]);
+        if (eventObj[this.parent.eventFields.startTime].getTime() === eventObj[this.parent.eventFields.endTime].getTime()) {
+          eventObj.isSpanned.count = 1;
+        }
+        appWidth = eventObj.isSpanned.count * this.actionObj.cellWidth;
+      }
+      if (!isResize && this.parent.activeViewOptions.orientation === "Vertical" && this.parent.activeViewOptions.group.resources.length !== 0) {
+        var eventObj = this.yearEvent.isSpannedEvent(event, event[this.parent.eventFields.startTime]);
+        appWidth = eventObj.isSpanned.count * this.actionObj.cellWidth;
+      }
+      var appointmentElement = this.createAppointmentElement(this.actionObj.groupIndex, event[this.parent.eventFields.subject]);
+      appointmentElement.setAttribute("drag", "true");
+      addClass([appointmentElement], CLONE_ELEMENT_CLASS);
+      setStyleAttribute(appointmentElement, {
+        "width": appWidth + "px",
+        "border": "0px",
+        "pointer-events": "none",
+        "position": "absolute",
+        "overflow": "hidden",
+        "padding": "3px"
+      });
+      if (this.actionObj.clone.style.backgroundColor !== "") {
+        setStyleAttribute(appointmentElement, { "backgroundColor": this.actionObj.clone.style.backgroundColor });
+      }
+      var date = resetTime(event[this.parent.eventFields.startTime]).getTime();
+      var query = "." + WORK_CELLS_CLASS + '[data-date="' + date + '"]';
+      if (this.parent.activeViewOptions.group.resources.length > 0 && !this.parent.uiStateValues.isGroupAdaptive) {
+        query = "." + WORK_CELLS_CLASS + '[data-date="' + date + '"][data-group-index="' + this.actionObj.groupIndex + '"]';
+      }
+      var cellTd = this.parent.element.querySelector(query);
+      if (isNullOrUndefined(cellTd)) {
+        return;
+      }
+      if (isResize) {
+        var dateHeader = cellTd.querySelector("." + DATE_HEADER_CLASS);
+        var appHeight = this.actionObj.cellHeight * event.count - (dateHeader ? dateHeader.offsetHeight : 0) - 7;
+        if (this.resizeEdges.right || this.resizeEdges.left) {
+          appHeight = parseInt(this.actionObj.clone.style.height, 10);
+        }
+        setStyleAttribute(appointmentElement, { "height": appHeight + "px" });
+      }
+      this.renderDynamicElement(cellTd, appointmentElement, true);
+      this.actionObj.cloneElement.push(appointmentElement);
+    };
+    ActionBase2.prototype.renderDynamicElement = function(cellTd, element2, isAppointment) {
+      if (cellTd.querySelector("." + APPOINTMENT_WRAPPER_CLASS)) {
+        cellTd.querySelector("." + APPOINTMENT_WRAPPER_CLASS).appendChild(element2);
+      } else {
+        var wrapper = createElement("div", { className: APPOINTMENT_WRAPPER_CLASS });
+        wrapper.appendChild(element2);
+        cellTd.appendChild(wrapper);
+      }
+    };
+    ActionBase2.prototype.createAppointmentElement = function(resIndex, innerText) {
+      var appointmentWrapper = createElement("div", {
+        className: APPOINTMENT_CLASS,
+        innerHTML: innerText
+      });
+      if (this.parent.activeViewOptions.group.resources.length > 0) {
+        appointmentWrapper.setAttribute("data-group-index", resIndex.toString());
+      }
+      return appointmentWrapper;
+    };
+    ActionBase2.prototype.dynamicEventsRendering = function(event) {
+      var _this = this;
+      var dateRender = this.parent.activeView.renderDates;
+      var workCells = [].slice.call(this.parent.element.querySelectorAll("." + WORK_CELLS_CLASS));
+      var workDays = this.parent.activeViewOptions.workDays;
+      var groupOrder;
+      if (this.parent.activeViewOptions.group.resources.length > 0) {
+        var renderedResource = this.parent.virtualScrollModule && this.parent.virtualScrollModule.isHorizontalScroll ? this.parent.resourceBase.renderedResources : this.parent.resourceBase.lastResourceLevel;
+        var resources = renderedResource.filter(function(res) {
+          return res.groupIndex === _this.actionObj.groupIndex;
+        });
+        dateRender = resources[0].renderDates;
+        var elementSelector = "." + WORK_CELLS_CLASS + '[data-group-index="' + this.actionObj.groupIndex + '"]';
+        workCells = [].slice.call(this.parent.element.querySelectorAll(elementSelector));
+        workDays = resources[0].workDays;
+        groupOrder = resources[0].groupOrder;
+      }
+      this.monthEvent.dateRender = dateRender;
+      this.monthEvent.getSlotDates(workDays);
+      if (this.resizeEdges.left || this.resizeEdges.right) {
+        var eventWrappers = [].slice.call(this.parent.element.querySelectorAll("." + CLONE_ELEMENT_CLASS));
+        for (var _i = 0, eventWrappers_1 = eventWrappers; _i < eventWrappers_1.length; _i++) {
+          var wrapper = eventWrappers_1[_i];
+          remove(wrapper);
+        }
+      }
+      var spannedEvents = this.monthEvent.splitEvent(event, dateRender);
+      for (var _a = 0, spannedEvents_1 = spannedEvents; _a < spannedEvents_1.length; _a++) {
+        var event_1 = spannedEvents_1[_a];
+        var day = this.parent.getIndexOfDate(dateRender, resetTime(event_1[this.monthEvent.fields.startTime]));
+        var diffInDays = event_1.data.count;
+        var appWidth = diffInDays * this.actionObj.cellWidth - 7;
+        var appointmentElement = this.monthEvent.createAppointmentElement(event_1, this.actionObj.groupIndex, true);
+        appointmentElement.setAttribute("drag", "true");
+        addClass([appointmentElement], CLONE_ELEMENT_CLASS);
+        this.monthEvent.applyResourceColor(appointmentElement, event_1, "backgroundColor", groupOrder);
+        setStyleAttribute(appointmentElement, { "width": appWidth + "px", "border": "0px", "pointer-events": "none" });
+        var cellTd = workCells[parseInt(day.toString(), 10)];
+        if (cellTd && isNullOrUndefined(this.parent.eventDragArea)) {
+          this.monthEvent.renderElement(cellTd, appointmentElement, true);
+          this.actionObj.cloneElement.push(appointmentElement);
+        }
+      }
+    };
+    ActionBase2.prototype.destroy = function() {
+      if (!this.parent || this.parent && this.parent.isDestroyed) {
+        return;
+      }
+      this.actionObj = {};
+      this.scrollArgs = {};
+      this.resizeEdges = { left: false, right: false, top: false, bottom: false };
+      this.scrollEdges = { left: false, right: false, top: false, bottom: false };
+    };
+    return ActionBase2;
+  }()
+);
+var __extends$6 = globalThis && globalThis.__extends || function() {
+  var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
+      d2.__proto__ = b2;
+    } || function(d2, b2) {
+      for (var p2 in b2)
+        if (b2.hasOwnProperty(p2))
+          d2[p2] = b2[p2];
+    };
+    return extendStatics(d, b);
+  };
+  return function(d, b) {
+    extendStatics(d, b);
+    function __() {
+      this.constructor = d;
+    }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+  };
+}();
+var Resize = (
+  /** @class */
+  function(_super) {
+    __extends$6(Resize2, _super);
+    function Resize2() {
+      return _super !== null && _super.apply(this, arguments) || this;
+    }
+    Resize2.prototype.wireResizeEvent = function(element2) {
+      var resizeElement = [].slice.call(element2.querySelectorAll("." + EVENT_RESIZE_CLASS));
+      for (var _i = 0, resizeElement_1 = resizeElement; _i < resizeElement_1.length; _i++) {
+        var element_1 = resizeElement_1[_i];
+        EventHandler.add(element_1, Browser.touchStartEvent, this.resizeStart, this);
+      }
+    };
+    Resize2.prototype.resizeHelper = function() {
+      if (this.parent.activeViewOptions.group.resources.length > 0 && this.parent.activeViewOptions.group.allowGroupEdit) {
+        for (var i = 0, len = this.actionObj.originalElement.length; i < len; i++) {
+          var cloneElement = this.createCloneElement(this.actionObj.originalElement[parseInt(i.toString(), 10)]);
+          this.actionObj.cloneElement[parseInt(i.toString(), 10)] = cloneElement;
+          if (this.actionObj.element === this.actionObj.originalElement[parseInt(i.toString(), 10)]) {
+            this.actionObj.clone = cloneElement;
+          }
+        }
+      } else {
+        if (this.actionObj.element) {
+          this.actionObj.clone = this.createCloneElement(this.actionObj.element);
+        }
+        this.actionObj.cloneElement = [this.actionObj.clone];
+        this.actionObj.originalElement = [this.actionObj.element];
+      }
+    };
+    Resize2.prototype.resizeStart = function(e) {
+      var _this = this;
+      this.actionObj.action = "resize";
+      this.actionObj.slotInterval = this.parent.activeViewOptions.timeScale.interval / this.parent.activeViewOptions.timeScale.slotCount;
+      this.actionObj.interval = this.actionObj.slotInterval;
+      var resizeTarget = closest(e.target, "." + EVENT_RESIZE_CLASS);
+      this.actionObj.element = closest(resizeTarget, "." + APPOINTMENT_CLASS);
+      this.actionObj.event = this.parent.eventBase.getEventByGuid(this.actionObj.element.getAttribute("data-guid"));
+      var eventObj = extend({}, this.actionObj.event, null, true);
+      var resizeArgs = {
+        cancel: false,
+        data: eventObj,
+        element: this.actionObj.element,
+        event: e,
+        interval: this.actionObj.interval,
+        scroll: { enable: true, scrollBy: 30, timeDelay: 100 }
+      };
+      this.parent.trigger(resizeStart, resizeArgs, function(resizeEventArgs) {
+        if (resizeEventArgs.cancel) {
+          return;
+        }
+        _this.actionClass("addClass");
+        _this.parent.uiStateValues.action = true;
+        _this.resizeEdges = {
+          left: resizeTarget.classList.contains(LEFT_RESIZE_HANDLER),
+          right: resizeTarget.classList.contains(RIGHT_RESIZE_HANDLER),
+          top: resizeTarget.classList.contains(TOP_RESIZE_HANDLER),
+          bottom: resizeTarget.classList.contains(BOTTOM_RESIZE_HANDLER)
+        };
+        _this.actionObj.groupIndex = _this.parent.uiStateValues.isGroupAdaptive ? _this.parent.uiStateValues.groupIndex : 0;
+        var workCell = _this.parent.element.querySelector("." + WORK_CELLS_CLASS).getBoundingClientRect();
+        _this.actionObj.cellWidth = workCell.width;
+        _this.actionObj.cellHeight = workCell.height;
+        var hRows = _this.parent.activeViewOptions.headerRows.map(function(row) {
+          return row.option;
+        });
+        if (_this.parent.activeView.isTimelineView() && hRows.length > 0 && ["Date", "Hour"].indexOf(hRows.slice(-1)[0]) < 0) {
+          var tr = _this.parent.getContentTable().querySelector("tr");
+          var noOfDays = 0;
+          var tdCollections = [].slice.call(tr.children);
+          for (var _i = 0, tdCollections_1 = tdCollections; _i < tdCollections_1.length; _i++) {
+            var td = tdCollections_1[_i];
+            noOfDays += parseInt(td.getAttribute("colspan"), 10);
+          }
+          var trRect = tr.getBoundingClientRect();
+          _this.actionObj.cellWidth = trRect.width / noOfDays;
+          _this.actionObj.cellHeight = trRect.height;
+        }
+        var pages = _this.parent.eventBase.getPageCoordinates(e);
+        _this.actionObj.X = pages.pageX;
+        _this.actionObj.Y = pages.pageY;
+        _this.actionObj.groupIndex = parseInt(_this.actionObj.element.getAttribute("data-group-index") || "0", 10);
+        _this.actionObj.interval = resizeEventArgs.interval;
+        _this.actionObj.scroll = resizeEventArgs.scroll;
+        _this.actionObj.start = new Date(eventObj[_this.parent.eventFields.startTime].getTime());
+        _this.actionObj.end = new Date(eventObj[_this.parent.eventFields.endTime].getTime());
+        _this.actionObj.originalElement = _this.getOriginalElement(_this.actionObj.element);
+        if (_this.parent.currentView === "Month") {
+          _this.daysVariation = -1;
+          _this.monthEvent = new MonthEvent(_this.parent);
+        }
+        var viewElement = _this.parent.element.querySelector("." + CONTENT_WRAP_CLASS);
+        _this.scrollArgs = { element: viewElement, width: viewElement.scrollWidth, height: viewElement.scrollHeight };
+        EventHandler.add(document, Browser.touchMoveEvent, _this.resizing, _this);
+        EventHandler.add(document, Browser.touchEndEvent, _this.resizeStop, _this);
+      });
+    };
+    Resize2.prototype.resizing = function(e) {
+      if (this.parent.quickPopup) {
+        this.parent.quickPopup.quickPopupHide();
+      }
+      if (this.parent.element.querySelectorAll("." + RESIZE_CLONE_CLASS).length === 0) {
+        this.resizeHelper();
+      }
+      if (!isNullOrUndefined(e.target) && e.target.classList.contains(DISABLE_DATES)) {
+        return;
+      }
+      var pages = this.parent.eventBase.getPageCoordinates(e);
+      if (this.parent.currentView === "Month" || this.parent.currentView === "TimelineYear") {
+        var doc2 = document.documentElement;
+        var left = (window.pageXOffset || doc2.scrollLeft) - (doc2.clientLeft || 0);
+        var top_1 = (window.pageYOffset || doc2.scrollTop) - (doc2.clientTop || 0);
+        this.actionObj.pageX = pages.pageX - left;
+        this.actionObj.pageY = pages.pageY - top_1;
+      } else {
+        this.actionObj.pageX = pages.pageX;
+        this.actionObj.pageY = pages.pageY;
+      }
+      this.updateScrollPosition(e);
+      this.updateResizingDirection(e);
+      var eventObj = extend({}, this.actionObj.event, null, true);
+      var resizeArgs = {
+        cancel: false,
+        data: eventObj,
+        element: this.actionObj.element,
+        event: e,
+        startTime: this.actionObj.start,
+        endTime: this.actionObj.end
+      };
+      if (this.parent.group.resources.length > 0) {
+        resizeArgs.groupIndex = this.actionObj.groupIndex;
+      }
+      this.parent.trigger(resizing, resizeArgs);
+    };
+    Resize2.prototype.updateResizingDirection = function(e) {
+      if (this.parent.currentView === "Month" || this.parent.currentView === "TimelineYear") {
+        this.monthResizing();
+        return;
+      }
+      var resizeValidation = this.resizeValidation(e);
+      if (this.resizeEdges.left) {
+        if (resizeValidation) {
+          var leftStyles = this.getLeftRightStyles(e, true);
+          if (parseInt(leftStyles.width, 10) < 1) {
+            return;
+          }
+          for (var _i = 0, _a = this.actionObj.cloneElement; _i < _a.length; _i++) {
+            var cloneElement = _a[_i];
+            setStyleAttribute(cloneElement, leftStyles);
+            addClass([cloneElement], LEFT_RESIZE_HANDLER);
+          }
+        }
+        this.horizontalResizing(!this.parent.enableRtl);
+      }
+      if (this.resizeEdges.right) {
+        if (resizeValidation) {
+          var rightStyles = this.getLeftRightStyles(e, false);
+          if (parseInt(rightStyles.width, 10) < 1) {
+            return;
+          }
+          for (var _b = 0, _c = this.actionObj.cloneElement; _b < _c.length; _b++) {
+            var cloneElement = _c[_b];
+            setStyleAttribute(cloneElement, rightStyles);
+            addClass([cloneElement], RIGHT_RESIZE_HANDLER);
+          }
+        }
+        this.horizontalResizing(this.parent.enableRtl);
+      }
+      if (this.resizeEdges.top) {
+        if (resizeValidation) {
+          var topStyles = this.getTopBottomStyles(e, true);
+          if (parseInt(topStyles.height, 10) < 1) {
+            return;
+          }
+          for (var _d = 0, _e = this.actionObj.cloneElement; _d < _e.length; _d++) {
+            var cloneElement = _e[_d];
+            setStyleAttribute(cloneElement, topStyles);
+            addClass([cloneElement], TOP_RESIZE_HANDLER);
+          }
+        }
+        this.verticalResizing(true);
+      }
+      if (this.resizeEdges.bottom) {
+        if (resizeValidation) {
+          var bottomStyles = this.getTopBottomStyles(e, false);
+          if (parseInt(bottomStyles.height, 10) < 1) {
+            return;
+          }
+          for (var _f = 0, _g = this.actionObj.cloneElement; _f < _g.length; _f++) {
+            var cloneElement = _g[_f];
+            setStyleAttribute(cloneElement, bottomStyles);
+            addClass([cloneElement], BOTTOM_RESIZE_HANDLER);
+          }
+        }
+        this.verticalResizing(false);
+      }
+    };
+    Resize2.prototype.monthResizing = function() {
+      this.removeCloneElement();
+      if (isNullOrUndefined(this.actionObj.pageX) || isNullOrUndefined(this.actionObj.pageY)) {
+        return;
+      }
+      var td = document.elementFromPoint(this.actionObj.pageX, this.actionObj.pageY);
+      if (isNullOrUndefined(td)) {
+        return;
+      }
+      var resizeTime = this.parent.getDateFromElement(td);
+      var isSameCell = this.parent.activeViewOptions.group.resources.length > 0 ? parseInt(td.getAttribute("data-group-index"), 10) === this.actionObj.groupIndex : true;
+      var startTime = new Date(this.actionObj.event[this.parent.eventFields.startTime].getTime());
+      var endTime = new Date(this.actionObj.event[this.parent.eventFields.endTime].getTime());
+      if (!this.parent.enableRtl && this.resizeEdges.left || this.parent.enableRtl && this.resizeEdges.right || this.resizeEdges.top) {
+        startTime = resizeTime;
+      } else if (!this.parent.enableRtl && this.resizeEdges.right || this.parent.enableRtl && this.resizeEdges.left || this.resizeEdges.bottom) {
+        endTime = addDays(resizeTime, 1);
+      }
+      if (isSameCell && startTime < endTime) {
+        this.actionObj.start = startTime;
+        this.actionObj.end = endTime;
+        var event_1 = this.getUpdatedEvent(this.actionObj.start, this.actionObj.end, this.actionObj.event);
+        if (this.parent.currentView === "TimelineYear") {
+          this.yearEventsRendering(event_1);
+        } else {
+          this.dynamicEventsRendering(event_1);
+        }
+        this.updateOriginalElement(this.actionObj.clone);
+      }
+    };
+    Resize2.prototype.yearEventsRendering = function(event) {
+      var eventWrappers = [].slice.call(this.parent.element.querySelectorAll("." + CLONE_ELEMENT_CLASS));
+      for (var _i = 0, eventWrappers_1 = eventWrappers; _i < eventWrappers_1.length; _i++) {
+        var wrapper = eventWrappers_1[_i];
+        remove(wrapper);
+      }
+      var endDate = new Date(event[this.parent.eventFields.endTime]);
+      var monthDiff = 0;
+      if (this.parent.activeViewOptions.group.resources.length === 0) {
+        monthDiff = this.getMonthDiff(event[this.parent.eventFields.startTime], addDays(endDate, -1));
+      }
+      for (var i = 0; i <= monthDiff; i++) {
+        var eventObj = void 0;
+        if (this.parent.activeViewOptions.group.resources.length === 0) {
+          eventObj = this.getEventCount(event, this.actionObj.start.getMonth() + i);
+        } else {
+          eventObj = extend({}, event, null, true);
+          endDate = this.resizeEdges.left || this.resizeEdges.right ? addDays(endDate, -1) : endDate;
+          eventObj.count = this.getMonthDiff(event[this.parent.eventFields.startTime], endDate) + 1;
+        }
+        this.dynamicYearlyEventsRendering(eventObj, true);
+      }
+    };
+    Resize2.prototype.getMonthDiff = function(startDate, endDate) {
+      var months;
+      months = (endDate.getFullYear() - startDate.getFullYear()) * 12;
+      months -= startDate.getMonth();
+      months += endDate.getMonth();
+      return months <= 0 ? 0 : months;
+    };
+    Resize2.prototype.getEventCount = function(eventObj, month2) {
+      var eventData = extend({}, eventObj, null, true);
+      var eventStart = eventData[this.parent.eventFields.startTime];
+      var eventEnd = eventData[this.parent.eventFields.endTime];
+      var monthStart = new Date(this.parent.selectedDate.getFullYear(), month2, 1);
+      var monthEnd = addDays(new Date(this.parent.selectedDate.getFullYear(), month2 + 1, 0), 1);
+      var count = 1;
+      if (eventStart.getTime() < monthStart.getTime()) {
+        eventData[this.parent.eventFields.startTime] = monthStart;
+      }
+      if (eventEnd.getTime() > monthEnd.getTime()) {
+        eventData[this.parent.eventFields.endTime] = monthEnd;
+      }
+      if (this.parent.activeViewOptions.group.resources.length === 0) {
+        count = Math.ceil((eventData[this.parent.eventFields.endTime].getTime() - eventData[this.parent.eventFields.startTime].getTime()) / MS_PER_DAY);
+      }
+      eventData.count = count;
+      return eventData;
+    };
+    Resize2.prototype.resizeStop = function(e) {
+      var _this = this;
+      EventHandler.remove(document, Browser.touchMoveEvent, this.resizing);
+      EventHandler.remove(document, Browser.touchEndEvent, this.resizeStop);
+      clearInterval(this.actionObj.scrollInterval);
+      this.actionObj.scrollInterval = null;
+      this.removeCloneElementClasses();
+      this.removeCloneElement();
+      this.actionClass("removeClass");
+      this.parent.uiStateValues.action = false;
+      var resizeArgs = { cancel: false, data: this.getChangedData(), element: this.actionObj.element, event: e };
+      this.parent.trigger(resizeStop, resizeArgs, function(resizeEventArgs) {
+        if (resizeEventArgs.cancel) {
+          return;
+        }
+        if (_this.parent.isSpecificResourceEvents()) {
+          _this.parent.crudModule.crudObj.sourceEvent = [_this.parent.resourceBase.lastResourceLevel[parseInt(resizeEventArgs.element.getAttribute("data-group-index"), 10)]];
+          _this.parent.crudModule.crudObj.targetEvent = _this.parent.crudModule.crudObj.sourceEvent;
+          _this.parent.crudModule.crudObj.isCrudAction = true;
+        }
+        _this.saveChangedData(resizeEventArgs);
+      });
+    };
+    Resize2.prototype.verticalResizing = function(isTop) {
+      var offsetValue = this.actionObj.clone.offsetTop;
+      if (!isTop) {
+        offsetValue += this.actionObj.clone.offsetHeight;
+      }
+      var minutes = offsetValue / this.actionObj.cellHeight * this.actionObj.slotInterval;
+      var element2 = this.actionObj.clone.offsetParent;
+      if (isNullOrUndefined(element2)) {
+        return;
+      }
+      var resizeTime = resetTime(this.parent.getDateFromElement(element2));
+      resizeTime.setHours(this.parent.activeView.getStartHour().getHours());
+      resizeTime.setMinutes(minutes + this.parent.activeView.getStartHour().getMinutes());
+      if (isTop) {
+        this.actionObj.start = this.calculateIntervalTime(resizeTime);
+      } else {
+        this.actionObj.end = this.calculateIntervalTime(resizeTime);
+      }
+      this.updateTimePosition(resizeTime);
+    };
+    Resize2.prototype.horizontalResizing = function(isLeft) {
+      var eventStart = new Date(this.actionObj.event[this.parent.eventFields.startTime].getTime());
+      var eventEnd = new Date(this.actionObj.event[this.parent.eventFields.endTime].getTime());
+      var resizeTime;
+      var isDateHeader = false;
+      var headerName = this.parent.currentView;
+      var isTimeViews = ["TimelineDay", "TimelineWeek", "TimelineWorkWeek"].indexOf(this.parent.currentView) > -1;
+      var isTimelineMonth = this.parent.currentView === "TimelineMonth";
+      var isWithoutScale = isTimelineMonth || isTimeViews && !this.parent.activeViewOptions.timeScale.enable;
+      if (this.parent.activeView.isTimelineView()) {
+        var tr = this.parent.getContentTable().querySelector("tr");
+        if (this.parent.activeViewOptions.headerRows.length > 0) {
+          var rows = this.parent.activeViewOptions.headerRows.map(function(row) {
+            return row.option;
+          });
+          headerName = rows.slice(-1)[0];
+          if (isTimelineMonth && headerName === "Hour") {
+            headerName = rows.slice(-2)[0] || "Month";
+          }
+        }
+        resizeTime = isLeft ? eventStart : eventEnd;
+        var cellIndex = 0;
+        var tdCollections = [].slice.call(tr.children);
+        var isLastCell = false;
+        var pixelsPerMinute = this.actionObj.cellWidth / (this.parent.activeViewOptions.timeScale.interval / this.parent.activeViewOptions.timeScale.slotCount);
+        var offset = parseFloat(this.parent.enableRtl ? this.actionObj.clone.style.right : this.actionObj.clone.style.left);
+        offset = Math.round(offset / pixelsPerMinute) * pixelsPerMinute;
+        if (["Year", "Month", "Week", "Date"].indexOf(headerName) !== -1) {
+          var noOfDays = 0;
+          for (var _i = 0, tdCollections_2 = tdCollections; _i < tdCollections_2.length; _i++) {
+            var td = tdCollections_2[_i];
+            noOfDays += parseInt(td.getAttribute("colspan"), 10);
+          }
+          var offsetValue = this.parent.enableRtl ? parseInt(this.actionObj.clone.style.right, 10) : parseInt(this.actionObj.clone.style.left, 10);
+          offsetValue = Math.round(offsetValue / this.actionObj.cellWidth) * this.actionObj.cellWidth;
+          if (!isLeft) {
+            offsetValue += this.actionObj.clone.getBoundingClientRect().width - this.actionObj.cellWidth;
+          }
+          cellIndex = Math.floor(offsetValue / Math.floor(tr.getBoundingClientRect().width / noOfDays));
+          isDateHeader = isTimeViews && headerName === "Date";
+          cellIndex = isLeft ? cellIndex : isTimelineMonth ? cellIndex + 1 : cellIndex;
+          isLastCell = cellIndex === tdCollections.length;
+          cellIndex = cellIndex < 0 ? 0 : cellIndex >= noOfDays ? noOfDays - 1 : cellIndex;
+        } else {
+          var cellWidth = this.actionObj.cellWidth;
+          cellIndex = isLeft ? Math.floor(offset / this.actionObj.cellWidth) : Math.ceil((offset + (this.actionObj.clone.getBoundingClientRect().width - cellWidth)) / this.actionObj.cellWidth);
+          if (this.parent.enableRtl) {
+            var cellOffsetWidth = 0;
+            if (headerName === "TimelineMonth" || !this.parent.activeViewOptions.timeScale.enable && !isTimelineMonth) {
+              cellOffsetWidth = this.actionObj.cellWidth;
+            }
+            var offsetWidth = Math.floor(offset / this.actionObj.cellWidth) * this.actionObj.cellWidth + (isLeft ? 0 : this.actionObj.clone.getBoundingClientRect().width - cellOffsetWidth);
+            cellIndex = Math.floor(offsetWidth / this.actionObj.cellWidth);
+          }
+          isLastCell = cellIndex === tdCollections.length;
+          cellIndex = this.getIndex(cellIndex);
+        }
+        var resizeDate = void 0;
+        if (["Year", "Month", "Week", "Date"].indexOf(headerName) !== -1) {
+          resizeDate = new Date(this.parent.activeView.renderDates[parseInt(cellIndex.toString(), 10)].getTime());
+        } else {
+          resizeDate = this.parent.getDateFromElement(tr.children[parseInt(cellIndex.toString(), 10)]);
+        }
+        if (["TimelineMonth", "Year", "Month", "Week", "Date"].indexOf(headerName) !== -1 || !this.parent.activeViewOptions.timeScale.enable) {
+          resizeTime = new Date(resizeDate.setHours(resizeTime.getHours(), resizeTime.getMinutes(), resizeTime.getSeconds()));
+        } else {
+          if (!isLeft) {
+            offset += this.actionObj.clone.getBoundingClientRect().width;
+          }
+          var spanMinutes = Math.ceil(this.actionObj.slotInterval / this.actionObj.cellWidth * (offset - Math.floor(offset / this.actionObj.cellWidth) * this.actionObj.cellWidth));
+          spanMinutes = isLastCell || !isLeft && spanMinutes === 0 ? this.actionObj.slotInterval : spanMinutes;
+          resizeTime = new Date(resizeDate.getTime());
+          resizeTime.setMinutes(resizeTime.getMinutes() + spanMinutes);
+          this.updateTimePosition(resizeTime);
+        }
+      } else {
+        var cloneIndex = closest(this.actionObj.clone, "td").cellIndex;
+        var originalWidth2 = Math.ceil((isLeft ? this.actionObj.element.getBoundingClientRect().width : 0) / this.actionObj.cellWidth) * this.actionObj.cellWidth;
+        var noOfDays = Math.ceil((this.actionObj.clone.getBoundingClientRect().width - originalWidth2) / this.actionObj.cellWidth);
+        var tr = closest(this.actionObj.clone, "tr");
+        var dayIndex2 = isLeft ? cloneIndex - noOfDays : cloneIndex + noOfDays - 1;
+        dayIndex2 = this.getIndex(dayIndex2);
+        resizeTime = this.parent.getDateFromElement(tr.children[parseInt(dayIndex2.toString(), 10)]);
+        if (isLeft) {
+          resizeTime.setHours(eventStart.getHours(), eventStart.getMinutes(), eventStart.getSeconds());
+        } else {
+          resizeTime.setHours(eventEnd.getHours(), eventEnd.getMinutes(), eventEnd.getSeconds());
+        }
+      }
+      var isNotHourSlot = ["TimelineMonth", "Year", "Month", "Week", "Date"].indexOf(headerName) !== -1 || !this.parent.activeViewOptions.timeScale.enable;
+      if (isLeft) {
+        if (eventEnd.getTime() - resizeTime.getTime() <= 0) {
+          resizeTime = isWithoutScale ? resetTime(eventEnd) : eventStart;
+        }
+        this.actionObj.start = !isNotHourSlot ? this.calculateIntervalTime(resizeTime) : resizeTime;
+      } else {
+        var isTimeScaleViews = isTimeViews && this.parent.activeViewOptions.timeScale.enable;
+        var resizeEnd2 = (!isTimeScaleViews || isDateHeader || isTimeViews && ["Week", "Month", "Year"].indexOf(headerName) > -1) && resizeTime.getHours() === 0 && resizeTime.getMinutes() === 0 ? addDays(resizeTime, 1) : resizeTime;
+        if (isWithoutScale && resizeEnd2.getTime() - eventStart.getTime() <= 0) {
+          resizeEnd2 = addDays(resetTime(eventStart), 1);
+        }
+        this.actionObj.end = !isNotHourSlot ? this.calculateIntervalTime(resizeEnd2) : resizeEnd2;
+      }
+    };
+    Resize2.prototype.getTopBottomStyles = function(e, isTop) {
+      var viewElement = this.parent.element.querySelector("." + CONTENT_WRAP_CLASS);
+      var slotInterval = this.actionObj.cellHeight / this.actionObj.slotInterval * this.actionObj.interval;
+      var clnHeight = isTop ? this.actionObj.element.offsetHeight + (this.actionObj.Y - this.actionObj.pageY) : this.actionObj.element.offsetHeight + (this.actionObj.pageY - this.actionObj.Y);
+      var clnTop = isTop ? this.actionObj.element.offsetTop - (this.actionObj.Y - this.actionObj.pageY) : this.actionObj.clone.offsetTop;
+      clnHeight = clnTop < 0 ? this.actionObj.clone.offsetHeight : this.actionObj.clone.offsetTop + this.actionObj.clone.offsetHeight > this.scrollArgs.height ? this.actionObj.clone.offsetHeight : clnHeight;
+      clnTop = clnTop < 0 ? 0 : clnTop;
+      clnTop = isTop ? Math.floor(clnTop / slotInterval) * slotInterval : clnTop;
+      clnHeight = clnTop + clnHeight >= viewElement.scrollHeight ? viewElement.scrollHeight - clnTop : Math.ceil(clnHeight / slotInterval) * slotInterval;
+      if (!isTop && this.actionObj.clone.offsetTop + clnHeight >= this.parent.getContentTable().offsetHeight) {
+        clnHeight = this.parent.getContentTable().offsetHeight - this.actionObj.clone.offsetTop;
+      }
+      var styles = {
+        height: formatUnit(clnHeight < this.actionObj.cellHeight ? Math.floor(clnHeight / slotInterval) * slotInterval : clnHeight),
+        top: formatUnit(clnHeight < this.actionObj.cellHeight && isTop ? Math.ceil(clnTop / slotInterval) * slotInterval : clnTop),
+        left: "0px",
+        right: "0px",
+        width: "100%"
+      };
+      return styles;
+    };
+    Resize2.prototype.getLeftRightStyles = function(e, isLeft) {
+      var styles = {};
+      var isTimelineView = this.parent.activeView.isTimelineView();
+      var isTimeViews = ["TimelineDay", "TimelineWeek", "TimelineWorkWeek"].indexOf(this.parent.currentView) > -1 && this.parent.activeViewOptions.timeScale.enable;
+      var slotInterval = this.actionObj.cellWidth / this.actionObj.slotInterval * this.actionObj.interval;
+      var pageWidth = isLeft ? this.actionObj.X - this.actionObj.pageX : this.actionObj.pageX - this.actionObj.X;
+      var targetWidth = isTimelineView ? this.actionObj.element.getBoundingClientRect().width / this.actionObj.cellWidth * this.actionObj.cellWidth : this.parent.currentView === "Month" ? this.actionObj.element.getBoundingClientRect().width : Math.ceil(this.actionObj.element.getBoundingClientRect().width / this.actionObj.cellWidth) * this.actionObj.cellWidth;
+      var offsetWidth = targetWidth + Math.ceil(pageWidth / this.actionObj.cellWidth) * this.actionObj.cellWidth;
+      var left = this.parent.enableRtl ? parseInt(this.actionObj.element.style.right, 10) : this.actionObj.clone.offsetLeft;
+      if (isTimeViews) {
+        offsetWidth = targetWidth + Math.ceil(pageWidth / slotInterval) * slotInterval;
+        offsetWidth = Math.round((left + offsetWidth) / slotInterval) * slotInterval - left;
+        this.actionObj.event[this.parent.eventFields.isAllDay] = false;
+      }
+      var width = !isLeft && offsetWidth + this.actionObj.clone.offsetLeft > this.scrollArgs.width ? this.actionObj.clone.getBoundingClientRect().width : offsetWidth < this.actionObj.cellWidth ? offsetWidth : offsetWidth;
+      if (this.parent.enableRtl) {
+        var rightValue = isTimelineView ? parseInt(this.actionObj.element.style.right, 10) : -(offsetWidth - this.actionObj.cellWidth);
+        rightValue = isTimelineView ? rightValue : isLeft ? 0 : rightValue > 0 ? 0 : rightValue;
+        if (isTimelineView && !isLeft) {
+          rightValue = Math.ceil((this.actionObj.element.offsetLeft + (this.actionObj.element.getBoundingClientRect().width + (this.actionObj.pageX - this.actionObj.X))) / slotInterval) * slotInterval;
+          rightValue = rightValue < 0 ? Math.abs(rightValue) : -rightValue;
+        }
+        rightValue = rightValue >= this.scrollArgs.width ? this.scrollArgs.width - this.actionObj.cellWidth : rightValue;
+        styles.right = formatUnit(rightValue);
+        width = width + rightValue > this.scrollArgs.width ? this.actionObj.clone.getBoundingClientRect().width : width;
+      } else {
+        var offsetLeft = isLeft ? this.actionObj.element.offsetLeft - (this.actionObj.X - this.actionObj.pageX) : this.parent.enableRtl ? this.actionObj.element.offsetLeft : 0;
+        if (isTimelineView) {
+          offsetLeft = isLeft ? offsetLeft : parseInt(this.actionObj.clone.style.left, 10);
+          if (this.parent.enableRtl) {
+            offsetLeft = !isLeft ? this.actionObj.pageX < this.actionObj.X - this.actionObj.clone.getBoundingClientRect().width ? parseInt(this.actionObj.clone.style.right, 10) : offsetLeft : offsetLeft;
+          } else {
+            offsetLeft = isLeft ? this.actionObj.pageX > this.actionObj.X + this.actionObj.clone.getBoundingClientRect().width && this.actionObj.clone.getBoundingClientRect().width === this.actionObj.cellWidth ? parseInt(this.actionObj.clone.style.left, 10) : offsetLeft : offsetLeft;
+          }
+        }
+        var leftValue = offsetLeft;
+        offsetLeft = isTimelineView ? isTimeViews ? isLeft ? Math.floor(offsetLeft / slotInterval) * slotInterval : offsetLeft : Math.floor(offsetLeft / this.actionObj.cellWidth) * this.actionObj.cellWidth : Math.ceil(Math.abs(offsetLeft) / this.actionObj.cellWidth) * this.actionObj.cellWidth;
+        if (offsetLeft < 0) {
+          offsetLeft = 0;
+          width = this.actionObj.clone.getBoundingClientRect().width;
+        }
+        var cloneWidth = Math.ceil(this.actionObj.clone.getBoundingClientRect().width / this.actionObj.cellWidth) * this.actionObj.cellWidth;
+        if (isLeft) {
+          styles.left = formatUnit(isTimelineView ? offsetLeft : isLeft ? leftValue < 0 ? -offsetLeft : Math.ceil((targetWidth - cloneWidth) / this.actionObj.cellWidth) * this.actionObj.cellWidth : offsetLeft);
+        }
+      }
+      styles.width = formatUnit(width);
+      return styles;
+    };
+    Resize2.prototype.resizeValidation = function(e) {
+      var pages = this.parent.eventBase.getPageCoordinates(e);
+      var viewDimension = this.getContentAreaDimension();
+      var isTimeScale = this.parent.activeView.isTimelineView() && this.parent.activeViewOptions.timeScale.enable;
+      var cellWidth = this.actionObj.cellWidth;
+      var resizeValidation = false;
+      if (this.resizeEdges.left) {
+        if (pages.pageX < viewDimension.leftOffset && pages.pageX >= viewDimension.left && isTimeScale) {
+          cellWidth = 0;
+        }
+        resizeValidation = pages.pageX - cellWidth >= viewDimension.left;
+      }
+      if (this.resizeEdges.right) {
+        if (pages.pageX > viewDimension.rightOffset && pages.pageX <= viewDimension.right && isTimeScale) {
+          cellWidth = 0;
+        }
+        resizeValidation = pages.pageX + cellWidth <= viewDimension.right;
+      }
+      if (this.resizeEdges.top) {
+        resizeValidation = this.actionObj.clone.offsetTop >= viewDimension.top;
+      }
+      if (this.resizeEdges.bottom) {
+        resizeValidation = this.actionObj.clone.offsetTop + this.actionObj.clone.offsetHeight <= this.scrollArgs.height;
+      }
+      return resizeValidation;
+    };
+    Resize2.prototype.getModuleName = function() {
+      return "resize";
+    };
+    return Resize2;
+  }(ActionBase)
+);
+var __extends$5 = globalThis && globalThis.__extends || function() {
+  var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
+      d2.__proto__ = b2;
+    } || function(d2, b2) {
+      for (var p2 in b2)
+        if (b2.hasOwnProperty(p2))
+          d2[p2] = b2[p2];
+    };
+    return extendStatics(d, b);
+  };
+  return function(d, b) {
+    extendStatics(d, b);
+    function __() {
+      this.constructor = d;
+    }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+  };
+}();
+var EVENT_GAP = 2;
+var YearEvent = (
+  /** @class */
+  function(_super) {
+    __extends$5(YearEvent2, _super);
+    function YearEvent2(parent) {
+      var _this = _super.call(this, parent, "day") || this;
+      _this.isResource = false;
+      return _this;
+    }
+    YearEvent2.prototype.renderAppointments = function() {
+      if (this.parent.dragAndDropModule) {
+        this.parent.dragAndDropModule.setDragArea();
+      }
+      this.fields = this.parent.eventFields;
+      var elementSelector = this.parent.currentView === "Year" ? "." + APPOINTMENT_CLASS : "." + APPOINTMENT_WRAPPER_CLASS + ",." + MORE_INDICATOR_CLASS;
+      var eventWrappers = [].slice.call(this.parent.element.querySelectorAll(elementSelector));
+      for (var _i = 0, eventWrappers_1 = eventWrappers; _i < eventWrappers_1.length; _i++) {
+        var wrapper = eventWrappers_1[_i];
+        remove(wrapper);
+      }
+      this.renderedEvents = [];
+      if (this.parent.currentView === "Year") {
+        this.yearViewEvents();
+      } else {
+        this.removeCellHeight();
+        if (this.parent.activeViewOptions.group.resources.length > 0 && !this.parent.uiStateValues.isGroupAdaptive) {
+          this.isResource = true;
+          this.timelineResourceEvents();
+        } else {
+          this.timelineYearViewEvents();
+        }
+      }
+      this.parent.renderTemplates();
+      this.parent.notify(contentReady, {});
+    };
+    YearEvent2.prototype.yearViewEvents = function() {
+      var months = this.getMonths();
+      for (var _i = 0, months_1 = months; _i < months_1.length; _i++) {
+        var month2 = months_1[_i];
+        var queryString2 = ".e-month-calendar:nth-child(" + (months.indexOf(month2) + 1) + ") td.e-work-cells";
+        var workCells = [].slice.call(this.parent.element.querySelectorAll(queryString2));
+        var monthDate = new Date(this.parent.selectedDate.getFullYear(), month2, 1);
+        var monthStart = this.parent.calendarUtil.getMonthStartDate(new Date(monthDate.getTime()));
+        var monthEnd = this.parent.calendarUtil.getMonthEndDate(new Date(monthDate.getTime()));
+        var startDate = getWeekFirstDate(monthStart, this.parent.firstDayOfWeek);
+        var endDate = addDays(getWeekLastDate(monthEnd, this.parent.firstDayOfWeek), 1);
+        for (var index = 0; startDate.getTime() < endDate.getTime(); index++) {
+          var start = resetTime(new Date(startDate.getTime()));
+          var end = addDays(new Date(start.getTime()), 1);
+          startDate = addDays(new Date(startDate.getTime()), 1);
+          if (!this.parent.isMinMaxDate(start)) {
+            continue;
+          }
+          var filterEvents = this.parent.eventBase.filterEvents(start, end);
+          if (filterEvents.length > 0) {
+            var workCell = workCells[parseInt(index.toString(), 10)];
+            if (workCell) {
+              workCell.appendChild(createElement("div", { className: APPOINTMENT_CLASS }));
+            }
+          }
+        }
+      }
+    };
+    YearEvent2.prototype.timelineYearViewEvents = function() {
+      var _this = this;
+      var workCell = this.parent.element.querySelector("." + WORK_CELLS_CLASS + ":not(." + OTHERMONTH_CLASS + ")");
+      this.cellWidth = workCell.getBoundingClientRect().width;
+      this.cellHeader = getOuterHeight(workCell.querySelector("." + DATE_HEADER_CLASS));
+      var eventTable = this.parent.element.querySelector("." + EVENT_TABLE_CLASS);
+      this.eventHeight = getElementHeightFromClass(eventTable, APPOINTMENT_CLASS);
+      var wrapperCollection = [].slice.call(this.parent.element.querySelectorAll("." + APPOINTMENT_CONTAINER_CLASS));
+      var months = this.getMonths();
+      var groupIndex = this.parent.activeViewOptions.group.resources.length > 0 && this.parent.uiStateValues.isGroupAdaptive ? this.parent.uiStateValues.groupIndex : void 0;
+      for (var row = 0; row < months.length; row++) {
+        var wrapper = wrapperCollection[parseInt(row.toString(), 10)];
+        var td = row + 1;
+        var eventWrapper = createElement("div", { className: APPOINTMENT_WRAPPER_CLASS });
+        wrapper.appendChild(eventWrapper);
+        var monthStart = new Date(this.parent.selectedDate.getFullYear(), months[parseInt(row.toString(), 10)], 1);
+        var monthEnd = new Date(monthStart.getFullYear(), monthStart.getMonth() + 1, 0);
+        var dayIndex2 = monthStart.getDay();
+        var isSpannedCollection = [];
+        if (this.parent.activeViewOptions.orientation === "Horizontal") {
+          this.renderedEvents = [];
+        }
+        while (monthStart.getTime() <= monthEnd.getTime()) {
+          var leftValue = void 0;
+          var rightValue = void 0;
+          if (this.parent.activeViewOptions.orientation === "Vertical") {
+            var wrapper_1 = wrapperCollection[parseInt(dayIndex2.toString(), 10)];
+            td = dayIndex2 + 1;
+            eventWrapper = wrapper_1.querySelector("." + APPOINTMENT_WRAPPER_CLASS);
+            if (!eventWrapper) {
+              eventWrapper = createElement("div", { className: APPOINTMENT_WRAPPER_CLASS });
+              wrapper_1.appendChild(eventWrapper);
+            }
+            if (this.parent.enableRtl) {
+              rightValue = row * this.cellWidth;
+            } else {
+              leftValue = row * this.cellWidth;
+            }
+          } else {
+            if (this.parent.enableRtl) {
+              rightValue = (dayIndex2 + monthStart.getDate() - 1) * this.cellWidth;
+            } else {
+              leftValue = (dayIndex2 + monthStart.getDate() - 1) * this.cellWidth;
+            }
+          }
+          var rowTd = this.parent.element.querySelector(".e-content-wrap tr:nth-child(" + td + ") td");
+          this.cellHeight = rowTd.offsetHeight;
+          var dayStart = resetTime(new Date(monthStart.getTime()));
+          var dayEnd = addDays(new Date(dayStart.getTime()), 1);
+          var resource = void 0;
+          if (this.parent.uiStateValues.isGroupAdaptive) {
+            resource = this.parent.resourceBase.lastResourceLevel[this.parent.uiStateValues.groupIndex];
+          }
+          var dayEvents = this.parent.eventBase.filterEvents(dayStart, dayEnd, void 0, resource);
+          dayEvents = this.parent.eventBase.sortByDateTime(dayEvents);
+          var _loop_1 = function(index2, count2) {
+            var eventData = extend({}, dayEvents[parseInt(index2.toString(), 10)], null, true);
+            this_1.updateSpannedEvents(eventData, dayStart, dayEnd);
+            var overlapIndex = this_1.getIndex(dayStart);
+            eventData.Index = overlapIndex;
+            var availedHeight = this_1.cellHeader + this_1.eventHeight * (overlapIndex + 1) + EVENT_GAP + this_1.moreIndicatorHeight;
+            var appArea = this_1.cellHeight - this_1.cellHeader - this_1.moreIndicatorHeight;
+            var renderedAppCount = Math.floor(appArea / (this_1.eventHeight + EVENT_GAP));
+            var moreIndicatorCount = count2 - renderedAppCount <= 0 ? 1 : count2 - renderedAppCount;
+            if (this_1.parent.activeViewOptions.orientation === "Horizontal") {
+              var isRendered = this_1.renderedEvents.filter(function(eventObj) {
+                return eventObj.Guid === eventData.Guid;
+              });
+              var isSpanned = isSpannedCollection.filter(function(eventObj) {
+                return eventObj.Guid === eventData.Guid;
+              });
+              if (isRendered.length > 0 && isRendered[0].MoreIndicator || isSpanned.length > 0 && isSpanned[0].MoreIndicator) {
+                var moreIndex = this_1.parent.activeViewOptions.orientation === "Horizontal" ? row : dayIndex2;
+                this_1.renderMoreIndicator(eventWrapper, moreIndicatorCount, dayStart, moreIndex, leftValue, rightValue, groupIndex);
+                return "continue";
+              } else if (isRendered.length > 0 || isSpanned.length > 0) {
+                return "continue";
+              }
+            }
+            if (this_1.parent.rowAutoHeight || this_1.cellHeight > availedHeight) {
+              this_1.renderEvent(eventWrapper, eventData, row, leftValue, rightValue, monthStart, dayIndex2);
+              this_1.updateCellHeight(rowTd, availedHeight);
+              isSpannedCollection.push(eventData);
+            } else {
+              var moreIndex = this_1.parent.activeViewOptions.orientation === "Horizontal" ? row : dayIndex2;
+              this_1.renderMoreIndicator(eventWrapper, moreIndicatorCount, dayStart, moreIndex, leftValue, rightValue, groupIndex);
+              if (this_1.parent.activeViewOptions.orientation === "Horizontal") {
+                eventData.MoreIndicator = true;
+                this_1.renderedEvents.push(eventData);
+                isSpannedCollection.push(eventData);
+              }
+            }
+          };
+          var this_1 = this;
+          for (var index = 0, count = dayEvents.length; index < count; index++) {
+            _loop_1(index, count);
+          }
+          monthStart = addDays(new Date(monthStart.getTime()), 1);
+          if (this.parent.activeViewOptions.orientation === "Vertical") {
+            dayIndex2++;
+            this.renderedEvents = [];
+          }
+        }
+      }
+      if (this.parent.rowAutoHeight && this.parent.activeViewOptions.orientation === "Vertical") {
+        var appContainer = [].slice.call(this.parent.element.querySelectorAll("." + APPOINTMENT_CONTAINER_CLASS));
+        var tr_1 = [].slice.call(this.parent.element.querySelectorAll("." + CONTENT_TABLE_CLASS + " tbody tr"));
+        appContainer.forEach(function(ele, index2) {
+          var app = [].slice.call(ele.querySelectorAll("." + APPOINTMENT_CLASS));
+          var appTop = tr_1[parseInt(index2.toString(), 10)].offsetTop + _this.cellHeader + EVENT_GAP;
+          app.forEach(function(app2) {
+            var overlap = parseInt(app2.getAttribute("data-index"), 10);
+            app2.style.top = appTop + overlap * _this.eventHeight + "px";
+            app2.removeAttribute("data-index");
+          });
+        });
+      }
+    };
+    YearEvent2.prototype.updateSpannedEvents = function(eventObj, dayStart, dayEnd) {
+      var isLeftRightResize = this.isResource && this.parent.activeViewOptions.orientation === "Vertical" || !this.isResource && this.parent.activeViewOptions.orientation === "Horizontal";
+      var data = { isLeft: true, isRight: true, isBottom: true, isTop: true };
+      if (dayStart.getTime() <= eventObj[this.fields.startTime].getTime()) {
+        if (isLeftRightResize) {
+          data.isLeft = false;
+        } else {
+          data.isTop = false;
+        }
+      }
+      if (dayEnd.getTime() >= eventObj[this.fields.endTime].getTime() || isLeftRightResize && !this.isResource && addDays(dayEnd, -1).getMonth() === eventObj[this.fields.endTime].getMonth() || isLeftRightResize && this.isResource && dayEnd.getTime() <= eventObj[this.fields.endTime].getTime()) {
+        if (isLeftRightResize) {
+          data.isRight = false;
+        } else {
+          data.isBottom = false;
+        }
+      }
+      eventObj.data = data;
+    };
+    YearEvent2.prototype.timelineResourceEvents = function() {
+      var _this = this;
+      var contentTable = this.parent.element.querySelector("." + CONTENT_WRAP_CLASS);
+      var isVerticalScrollbarAvail = contentTable.offsetWidth > contentTable.clientWidth;
+      var workCell = this.parent.element.querySelector("." + WORK_CELLS_CLASS);
+      this.cellWidth = workCell.getBoundingClientRect().width;
+      this.cellHeader = 0;
+      var eventTable = this.parent.element.querySelector("." + EVENT_TABLE_CLASS);
+      this.eventHeight = getElementHeightFromClass(eventTable, APPOINTMENT_CLASS);
+      var wrapperCollection = [].slice.call(this.parent.element.querySelectorAll("." + APPOINTMENT_CONTAINER_CLASS));
+      var resources = this.parent.uiStateValues.isGroupAdaptive ? [this.parent.resourceBase.lastResourceLevel[this.parent.uiStateValues.groupIndex]] : this.parent.activeViewOptions.allowVirtualScrolling ? this.parent.resourceBase.renderedResources : this.parent.resourceBase.lastResourceLevel;
+      var months = this.getMonths();
+      if (this.parent.activeViewOptions.orientation === "Horizontal") {
+        for (var month2 = 0; month2 < months.length; month2++) {
+          var monthStart = new Date(this.parent.selectedDate.getFullYear(), months[parseInt(month2.toString(), 10)], 1);
+          for (var i = 0, len = resources.length; i < len; i++) {
+            this.renderedEvents = [];
+            this.renderResourceEvent(wrapperCollection[parseInt(month2.toString(), 10)], resources[parseInt(i.toString(), 10)], month2, i, monthStart);
+          }
+        }
+      } else {
+        for (var i = 0, len = resources.length; i < len; i++) {
+          this.renderedEvents = [];
+          for (var month2 = 0; month2 < months.length; month2++) {
+            var monthStart = new Date(this.parent.selectedDate.getFullYear(), months[parseInt(month2.toString(), 10)], 1);
+            this.renderResourceEvent(wrapperCollection[parseInt(i.toString(), 10)], resources[parseInt(i.toString(), 10)], month2, i, monthStart);
+          }
+        }
+      }
+      if (this.parent.rowAutoHeight && !isVerticalScrollbarAvail && contentTable.offsetWidth > contentTable.clientWidth) {
+        var appointments = [].slice.call(this.parent.element.querySelectorAll("." + APPOINTMENT_CLASS));
+        appointments.forEach(function(ele) {
+          ele.style.removeProperty("left");
+          ele.style.removeProperty("right");
+        });
+        var appContainer = [].slice.call(this.parent.element.querySelectorAll("." + APPOINTMENT_CONTAINER_CLASS));
+        var conTable_1 = this.parent.element.querySelector("." + CONTENT_TABLE_CLASS);
+        var tr_2 = [].slice.call(conTable_1.querySelectorAll("tbody tr"));
+        appContainer.forEach(function(ele, index) {
+          var appWrapper = [].slice.call(ele.children);
+          var row = tr_2[parseInt(index.toString(), 10)];
+          appWrapper.forEach(function(appWrap, cellIndex) {
+            var td = row.querySelector("td:nth-child(" + (cellIndex + 1) + ")");
+            var app = [].slice.call(appWrap.children);
+            var width = td.getBoundingClientRect().width;
+            var left = td.offsetLeft;
+            if (_this.parent.enableRtl) {
+              var right_1 = conTable_1.offsetWidth - left - td.offsetWidth;
+              app.forEach(function(app2) {
+                app2.style.width = Math.floor(parseInt(app2.style.width, 10) / width) * width + "px";
+                app2.style.right = right_1 + "px";
+              });
+            } else {
+              app.forEach(function(app2) {
+                app2.style.width = Math.floor(parseInt(app2.style.width, 10) / width) * width + "px";
+                app2.style.left = left + "px";
+              });
+            }
+          });
+        });
+      }
+    };
+    YearEvent2.prototype.renderResourceEvent = function(wrapper, resource, month2, index, monthStart) {
+      var eventWrapper = createElement("div", { className: APPOINTMENT_WRAPPER_CLASS });
+      wrapper.appendChild(eventWrapper);
+      var monthEnd = addDays(lastDateOfMonth(new Date(monthStart.getTime())), 1);
+      var eventDatas = this.parent.eventBase.filterEvents(monthStart, monthEnd, void 0, resource);
+      var rowIndex = this.parent.activeViewOptions.orientation === "Vertical" ? index : month2;
+      var td = this.parent.element.querySelector(".e-content-wrap tr:nth-child(" + (rowIndex + 1) + ") td");
+      this.cellHeight = td.offsetHeight;
+      this.groupOrder = resource.groupOrder;
+      var isSpannedCollection = [];
+      var _loop_2 = function(a2) {
+        var data = eventDatas[parseInt(a2.toString(), 10)];
+        var overlapIndex = void 0;
+        var eventData = extend({}, data, null, true);
+        if (this_2.parent.activeViewOptions.group.resources.length > 0) {
+          var eventObj = this_2.isSpannedEvent(eventData, monthStart);
+          overlapIndex = this_2.getIndex(eventObj[this_2.fields.startTime]);
+          eventData.Index = overlapIndex;
+        } else {
+          overlapIndex = this_2.getIndex(eventData[this_2.fields.startTime]);
+          eventData.Index = overlapIndex;
+        }
+        var availedHeight = this_2.cellHeader + this_2.eventHeight * (a2 + 1) + EVENT_GAP + this_2.moreIndicatorHeight;
+        var leftValue = this_2.parent.activeViewOptions.orientation === "Vertical" ? month2 * this_2.cellWidth : index * this_2.cellWidth;
+        if (!this_2.parent.isMinMaxDate(eventData[this_2.fields.startTime])) {
+          return { value: void 0 };
+        }
+        if (this_2.parent.activeViewOptions.orientation === "Vertical" && this_2.parent.activeViewOptions.group.resources.length > 0) {
+          var isRendered = this_2.renderedEvents.filter(function(eventObj2) {
+            return eventObj2.Guid === eventData.Guid;
+          });
+          var isSpanned = isSpannedCollection.filter(function(eventObj2) {
+            return eventObj2.Guid === eventData.Guid;
+          });
+          if (isRendered.length > 0 || isSpanned.length > 0) {
+            return "continue";
+          }
+        }
+        if (this_2.parent.rowAutoHeight || this_2.cellHeight > availedHeight) {
+          this_2.renderEvent(eventWrapper, eventData, month2, leftValue, leftValue, monthStart, index);
+          this_2.updateCellHeight(td, availedHeight);
+          isSpannedCollection.push(eventData);
+        } else {
+          var moreIndex = this_2.parent.activeViewOptions.orientation === "Horizontal" ? month2 : index;
+          this_2.renderMoreIndicator(eventWrapper, eventDatas.length - a2, monthStart, moreIndex, leftValue, leftValue, index);
+          if (this_2.parent.activeViewOptions.orientation === "Horizontal") {
+            for (var i = index; i < eventDatas.length; i++) {
+              this_2.renderedEvents.push(extend({}, eventDatas[parseInt(i.toString(), 10)], { Index: overlapIndex + i }, true));
+            }
+          }
+          return "break";
+        }
+      };
+      var this_2 = this;
+      for (var a = 0; a < eventDatas.length; a++) {
+        var state_1 = _loop_2(a);
+        if (typeof state_1 === "object")
+          return state_1.value;
+        if (state_1 === "break")
+          break;
+      }
+    };
+    YearEvent2.prototype.renderEvent = function(wrapper, eventData, row, left, right, monthDate, rowIndex) {
+      var _this = this;
+      var eventObj = this.isSpannedEvent(eventData, monthDate);
+      var wrap = this.createEventElement(eventObj);
+      var width;
+      var index;
+      if (eventObj.isSpanned.count === 1) {
+        var endTime = addDays(eventObj[this.fields.endTime], -1);
+        eventObj[this.fields.endTime] = endTime > eventObj[this.fields.startTime] ? endTime : eventObj[this.fields.endTime];
+      }
+      if (eventObj[this.fields.startTime] > eventObj[this.fields.endTime]) {
+        return;
+      }
+      if (this.parent.activeViewOptions.orientation === "Horizontal") {
+        index = row + 1;
+        if (eventObj[this.fields.startTime].getTime() === eventObj[this.fields.endTime].getTime()) {
+          eventObj.isSpanned.count = 1;
+        }
+        width = eventObj.isSpanned.count * this.cellWidth;
+      } else {
+        index = rowIndex + 1;
+        width = this.isResource ? eventObj.isSpanned.count * this.cellWidth : this.cellWidth;
+      }
+      var rowTd = this.parent.element.querySelector(".e-content-wrap tr:nth-child(" + index + ") td");
+      var top = rowTd.offsetTop + this.cellHeader + this.eventHeight * eventObj.Index + EVENT_GAP;
+      setStyleAttribute(wrap, {
+        "width": width + "px",
+        "height": this.eventHeight + "px",
+        "left": left + "px",
+        "right": right + "px",
+        "top": top + "px"
+      });
+      if (!this.isResource && this.parent.rowAutoHeight && this.parent.activeViewOptions.orientation === "Vertical") {
+        wrap.setAttribute("data-index", eventObj.Index.toString());
+      }
+      var args = { data: eventObj, element: wrap, cancel: false, type: "event" };
+      this.parent.trigger(eventRendered, args, function(eventArgs) {
+        if (!eventArgs.cancel) {
+          wrapper.appendChild(wrap);
+          _this.wireAppointmentEvents(wrap, eventObj);
+          if (_this.parent.activeViewOptions.group.resources.length > 0) {
+            _this.renderedEvents.push(extend({}, eventObj, null, true));
+          } else if (_this.parent.activeViewOptions.orientation === "Vertical") {
+            _this.renderedEvents.push(extend({}, eventObj, null, true));
+          } else if ((eventObj.isSpanned.isRight || eventObj.isSpanned.isLeft) && _this.parent.activeViewOptions.orientation === "Horizontal" || !eventObj.isSpanned.isRight) {
+            _this.renderedEvents.push(extend({}, eventObj, null, true));
+          }
+        }
+      });
+    };
+    YearEvent2.prototype.renderMoreIndicator = function(wrapper, count, startDate, row, left, right, index) {
+      if (this.parent.activeViewOptions.group.resources.length === 0 && wrapper.querySelector('[data-start-date="' + startDate.getTime() + '"]')) {
+        return;
+      }
+      var endDate;
+      if (this.parent.activeViewOptions.group.resources.length > 0 && !this.parent.uiStateValues.isGroupAdaptive) {
+        endDate = addDays(lastDateOfMonth(new Date(startDate.getTime())), 1);
+      } else {
+        endDate = addDays(new Date(startDate.getTime()), 1);
+      }
+      var moreIndicator = this.getMoreIndicatorElement(count, startDate, endDate);
+      var rowTr = this.parent.element.querySelector(".e-content-wrap tr:nth-child(" + (row + 1) + ")");
+      var top = rowTr.offsetTop + (this.cellHeight - this.moreIndicatorHeight);
+      left = Math.floor(left / this.cellWidth) * this.cellWidth;
+      right = Math.floor(right / this.cellWidth) * this.cellWidth;
+      setStyleAttribute(moreIndicator, { "width": this.cellWidth + "px", "left": left + "px", "right": right + "px", "top": top + "px" });
+      if (!isNullOrUndefined(index)) {
+        moreIndicator.setAttribute("data-group-index", index.toString());
+      }
+      wrapper.appendChild(moreIndicator);
+      EventHandler.add(moreIndicator, "click", this.moreIndicatorClick, this);
+    };
+    YearEvent2.prototype.createEventElement = function(record) {
+      var eventSubject = record[this.fields.subject] || this.parent.eventSettings.fields.subject.default || this.parent.localeObj.getConstant("addTitle");
+      var eventWrapper = createElement("div", {
+        className: APPOINTMENT_CLASS,
+        attrs: {
+          "data-id": "Appointment_" + record[this.fields.id],
+          "data-guid": record.Guid,
+          "role": "button",
+          "tabindex": "0",
+          "aria-disabled": this.parent.eventBase.getReadonlyAttribute(record),
+          "aria-label": this.parent.getAnnouncementString(record)
+        }
+      });
+      if (this.cssClass) {
+        addClass([eventWrapper], this.cssClass);
+      }
+      if (record[this.fields.isReadonly]) {
+        addClass([eventWrapper], READ_ONLY);
+      }
+      if (this.parent.activeViewOptions.group.resources.length > 0) {
+        var resIndex = this.getGroupIndexFromEvent(record);
+        eventWrapper.setAttribute("data-group-index", resIndex.toString());
+      }
+      var templateElement = [];
+      var eventObj = extend({}, record, null, true);
+      if (this.parent.activeViewOptions.eventTemplate) {
+        var templateId = this.parent.element.id + "_" + this.parent.activeViewOptions.eventTemplateName + "eventTemplate";
+        templateElement = this.parent.getAppointmentTemplate()(eventObj, this.parent, "eventTemplate", templateId, false);
+      } else {
+        var locationEle = record[this.fields.location] || this.parent.eventSettings.fields.location.default || "";
+        var subjectEle = createElement("div", {
+          className: SUBJECT_CLASS,
+          innerHTML: eventSubject + (locationEle ? ";&nbsp" + locationEle : "")
+        });
+        var startTimeEle = createElement("div", {
+          className: APPOINTMENT_TIME + (this.parent.isAdaptive ? " " + DISABLE_CLASS : ""),
+          innerHTML: this.parent.getTimeString(eventObj[this.fields.startTime])
+        });
+        var endTimeEle = createElement("div", {
+          className: APPOINTMENT_TIME + (this.parent.isAdaptive ? " " + DISABLE_CLASS : ""),
+          innerHTML: this.parent.getTimeString(eventObj[this.fields.endTime])
+        });
+        addClass([subjectEle], "e-text-center");
+        if (record[this.fields.isAllDay]) {
+          templateElement = [subjectEle];
+        } else if (!eventObj.isLeft && !eventObj.isRight) {
+          templateElement = [startTimeEle, subjectEle, endTimeEle];
+        } else {
+          if (!eventObj.isLeft) {
+            templateElement.push(startTimeEle);
+          }
+          templateElement.push(subjectEle);
+          if (!eventObj.isRight) {
+            templateElement.push(endTimeEle);
+          }
+        }
+      }
+      var appointmentDetails = createElement("div", { className: APPOINTMENT_DETAILS });
+      append2(templateElement, appointmentDetails);
+      eventWrapper.appendChild(appointmentDetails);
+      this.parent.eventBase.renderSpannedIcon(eventWrapper, record.isSpanned);
+      this.renderResizeHandler(eventWrapper, record.data, record[this.fields.isReadonly]);
+      this.applyResourceColor(eventWrapper, eventObj, "backgroundColor", this.groupOrder);
+      return eventWrapper;
+    };
+    YearEvent2.prototype.isSpannedEvent = function(eventObj, monthDate) {
+      var monthStart = new Date(monthDate.getFullYear(), monthDate.getMonth(), 1);
+      var monthEnd = addDays(new Date(monthDate.getFullYear(), monthDate.getMonth() + 1, 0), 1);
+      var eventData = extend({}, eventObj, null, true);
+      var eventStart = eventData[this.fields.startTime];
+      var eventEnd = eventData[this.fields.endTime];
+      var isSpanned = { isLeft: false, isRight: false, count: 1 };
+      var yearStart = new Date(this.parent.selectedDate.getFullYear(), this.parent.firstMonthOfYear, 1);
+      var yearEnd = addMonths(yearStart, this.parent.monthsCount);
+      if (this.isResource) {
+        this.updateSpannedEvents(eventObj, monthStart, monthEnd);
+      }
+      if (this.parent.activeViewOptions.orientation === "Vertical" && this.parent.activeViewOptions.group.resources.length > 0) {
+        this.updateSpannedEventDetails(eventStart, eventEnd, yearStart, yearEnd, eventData, isSpanned);
+        var originalStartTime = eventData[this.fields.startTime];
+        var originalEndTime = new Date(eventData[this.fields.endTime] - 1);
+        isSpanned.count = originalEndTime.getMonth() - originalStartTime.getMonth() + this.parent.monthsCount * (originalEndTime.getFullYear() - originalStartTime.getFullYear()) + 1;
+      } else {
+        this.updateSpannedEventDetails(eventStart, eventEnd, monthStart, monthEnd, eventData, isSpanned);
+        if (this.parent.activeViewOptions.group.resources.length === 0 || this.parent.uiStateValues.isGroupAdaptive) {
+          var end = resetTime(eventData[this.fields.endTime]).getTime();
+          var start = resetTime(eventData[this.fields.startTime]).getTime();
+          if (eventObj[this.fields.isAllDay] && end === eventObj[this.fields.endTime].getTime() || isSpanned.isRight) {
+            end = addDays(new Date(end), -1).getTime();
+          }
+          isSpanned.count = Math.ceil((end - start) / MS_PER_DAY) + 1;
+        }
+      }
+      eventData.isSpanned = isSpanned;
+      if (resetTime(eventStart).getTime() < resetTime(this.parent.minDate).getTime()) {
+        eventData[this.fields.startTime] = this.parent.minDate;
+      }
+      if (resetTime(eventEnd).getTime() > resetTime(this.parent.maxDate).getTime()) {
+        eventData[this.fields.endTime] = this.parent.maxDate;
+      }
+      return eventData;
+    };
+    YearEvent2.prototype.updateSpannedEventDetails = function(eventStart, eventEnd, viewStart, viewEnd, eventObj, isSpanned) {
+      if (eventStart.getTime() < viewStart.getTime()) {
+        eventObj[this.fields.startTime] = viewStart;
+        isSpanned.isLeft = true;
+      }
+      if (eventEnd.getTime() > viewEnd.getTime()) {
+        eventObj[this.fields.endTime] = viewEnd;
+        isSpanned.isRight = true;
+      }
+    };
+    YearEvent2.prototype.getOverlapEvents = function(date, appointments) {
+      var appointmentsList = [];
+      var dateStart;
+      var dateEnd;
+      if (this.parent.activeViewOptions.group.resources.length > 0 && !this.parent.uiStateValues.isGroupAdaptive) {
+        var monthStart = this.parent.calendarUtil.getMonthStartDate(new Date(date.getTime()));
+        var monthEnd = addDays(this.parent.calendarUtil.getMonthEndDate(new Date(date.getTime())), -1);
+        dateStart = resetTime(new Date(monthStart.getTime())).getTime();
+        dateEnd = resetTime(new Date(monthEnd.getTime())).getTime();
+      } else {
+        if (this.parent.rowAutoHeight) {
+          dateStart = resetTime(new Date(date.getTime())).getTime();
+          dateEnd = addDays(resetTime(new Date(date.getTime())), 1).getTime();
+        } else {
+          dateStart = dateEnd = resetTime(new Date(date.getTime())).getTime();
+        }
+      }
+      for (var _i = 0, appointments_1 = appointments; _i < appointments_1.length; _i++) {
+        var app = appointments_1[_i];
+        var appStart = new Date(app[this.fields.startTime].getTime());
+        var appEnd = new Date(app[this.fields.endTime].getTime());
+        var timeCondition = app[this.fields.isAllDay] ? resetTime(appEnd).getTime() > dateStart : resetTime(appEnd).getTime() >= dateStart;
+        if (resetTime(appStart).getTime() <= dateStart && timeCondition || resetTime(appStart).getTime() >= dateStart && resetTime(appEnd).getTime() <= dateEnd) {
+          appointmentsList.push(app);
+        }
+      }
+      return appointmentsList;
+    };
+    YearEvent2.prototype.getMonths = function() {
+      var _this = this;
+      return Array.apply(null, { length: this.parent.monthsCount }).map(function(value, index) {
+        return _this.parent.firstMonthOfYear + index;
+      });
+    };
+    YearEvent2.prototype.removeCellHeight = function() {
+      var elementSelector = "." + MONTH_HEADER_WRAPPER + " tbody tr,." + RESOURCE_COLUMN_TABLE_CLASS + " tbody tr,." + CONTENT_TABLE_CLASS + " tbody tr";
+      var rows = [].slice.call(this.element.querySelectorAll(elementSelector));
+      for (var _i = 0, rows_1 = rows; _i < rows_1.length; _i++) {
+        var row = rows_1[_i];
+        row.firstElementChild.style.height = "";
+      }
+    };
+    YearEvent2.prototype.destroy = function() {
+      _super.prototype.destroy.call(this);
+      this.parent = null;
+    };
+    return YearEvent2;
+  }(TimelineEvent)
+);
+var __extends$4 = globalThis && globalThis.__extends || function() {
+  var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
+      d2.__proto__ = b2;
+    } || function(d2, b2) {
+      for (var p2 in b2)
+        if (b2.hasOwnProperty(p2))
+          d2[p2] = b2[p2];
+    };
+    return extendStatics(d, b);
+  };
+  return function(d, b) {
+    extendStatics(d, b);
+    function __() {
+      this.constructor = d;
+    }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+  };
+}();
+var MINUTES_PER_DAY = 1440;
+var DragAndDrop = (
+  /** @class */
+  function(_super) {
+    __extends$4(DragAndDrop2, _super);
+    function DragAndDrop2() {
+      var _this = _super !== null && _super.apply(this, arguments) || this;
+      _this.widthUptoCursorPoint = 0;
+      _this.heightUptoCursorPoint = 0;
+      _this.cursorPointIndex = 0;
+      _this.isHeaderRows = false;
+      _this.isTimelineDayProcess = false;
+      _this.widthPerMinute = 0;
+      _this.heightPerMinute = 0;
+      _this.minDiff = 0;
+      _this.isStepDragging = false;
+      _this.isMorePopupOpened = false;
+      _this.isAllDayDrag = false;
+      _this.isMultiSelect = false;
+      _this.multiData = [];
+      _this.updatedData = [];
+      _this.swagData = [];
+      _this.startTime = 0;
+      _this.isAllDayTarget = false;
+      _this.targetTd = null;
+      _this.isCursorAhead = false;
+      return _this;
+    }
+    DragAndDrop2.prototype.wireDragEvent = function(element2) {
+      new Draggable(element2, {
+        abort: "." + EVENT_RESIZE_CLASS,
+        clone: true,
+        isDragScroll: true,
+        enableTapHold: this.parent.isAdaptive,
+        enableTailMode: this.parent.eventDragArea ? true : false,
+        cursorAt: this.parent.eventDragArea ? { left: -20, top: -20 } : { left: 0, top: 0 },
+        dragArea: this.dragArea,
+        dragStart: this.dragStart.bind(this),
+        drag: this.drag.bind(this),
+        dragStop: this.dragStop.bind(this),
+        enableAutoScroll: false,
+        helper: this.dragHelper.bind(this),
+        queryPositionInfo: this.dragPosition.bind(this)
+      });
+    };
+    DragAndDrop2.prototype.setDragArea = function() {
+      var dragElement = document.querySelector(this.parent.eventDragArea);
+      this.dragArea = this.parent.eventDragArea && dragElement ? dragElement : this.parent.element.querySelector("." + CONTENT_TABLE_CLASS);
+    };
+    DragAndDrop2.prototype.dragHelper = function(e) {
+      var _this = this;
+      this.setDragActionDefaultValues();
+      this.actionObj.element = e.element;
+      this.actionObj.action = "drag";
+      var elements = [];
+      if (!this.parent.allowMultiDrag || isNullOrUndefined(this.parent.selectedElements) || this.parent.selectedElements.length === 0 || this.parent.selectedElements.length > 0 && this.parent.selectedElements.indexOf(this.actionObj.element) === -1) {
+        elements = [e.element];
+      } else {
+        elements = this.parent.selectedElements;
+        this.isMultiSelect = true;
+      }
+      elements.forEach(function(ele) {
+        var cloneElement = _this.createCloneElement(ele);
+        if (ele.getAttribute("data-guid") === _this.actionObj.element.getAttribute("data-guid")) {
+          _this.actionObj.clone = cloneElement;
+          if (!_this.parent.eventDragArea && _this.parent.currentView !== "Month" && _this.parent.activeViewOptions.timeScale.enable && !_this.parent.activeView.isTimelineView() && !_this.actionObj.element.classList.contains(ALLDAY_APPOINTMENT_CLASS)) {
+            setStyleAttribute(_this.actionObj.clone, { cursor: "move", left: "0%", right: "0%", width: "100%" });
+          }
+          _this.actionObj.clone.style.top = formatUnit(_this.actionObj.element.offsetTop);
+        }
+        _this.actionObj.cloneElement.push(cloneElement);
+        _this.actionObj.originalElement.push(ele);
+      });
+      return this.actionObj.clone;
+    };
+    DragAndDrop2.prototype.dragPosition = function(e) {
+      if (this.parent.eventDragArea) {
+        return { left: e.left, top: e.top };
+      }
+      var cellHeight = this.actionObj.cellHeight / this.actionObj.slotInterval * this.actionObj.interval;
+      var leftValue = formatUnit(0);
+      if (this.parent.currentView === "Month") {
+        leftValue = e.left;
+      }
+      var cloneRight;
+      if (this.isStepDragging) {
+        cloneRight = Math.ceil(this.actionObj.clone.getBoundingClientRect().right) + this.actionObj.interval;
+      } else {
+        cloneRight = this.actionObj.clone.getBoundingClientRect().right;
+      }
+      var dragArea = this.parent.element.querySelector("." + CONTENT_WRAP_CLASS);
+      var contentWrapRight = dragArea.getBoundingClientRect().right;
+      if (this.parent.activeView.isTimelineView() && this.parent.currentView !== "TimelineYear" && !this.parent.enableRtl && this.actionObj.pageX > cloneRight && !this.isMorePopupOpened && !(this.actionObj.pageX > contentWrapRight)) {
+        this.isCursorAhead = true;
+      }
+      if (this.parent.activeView.isTimelineView()) {
+        leftValue = formatUnit(this.actionObj.clone.offsetLeft);
+      }
+      var topValue;
+      if (this.parent.activeView.isTimelineView() || !this.parent.timeScale.enable || !isNullOrUndefined(this.actionObj.clone.offsetParent) && this.actionObj.clone.offsetParent.classList.contains(MORE_EVENT_POPUP_CLASS)) {
+        topValue = formatUnit(this.actionObj.clone.offsetTop);
+      } else if (this.parent.currentView === "Month") {
+        topValue = formatUnit(0);
+      } else if (this.actionObj.clone.classList.contains(ALLDAY_APPOINTMENT_CLASS)) {
+        topValue = formatUnit(this.parent.element.querySelector("." + ALLDAY_ROW_CLASS).offsetTop);
+        setStyleAttribute(this.actionObj.clone, {
+          width: formatUnit(Math.ceil(this.actionObj.clone.offsetWidth / this.actionObj.cellWidth) * this.actionObj.cellWidth),
+          right: this.parent.enableRtl && formatUnit(0)
+        });
+      } else {
+        if (this.actionObj.element.classList.contains(ALLDAY_APPOINTMENT_CLASS) && !this.actionObj.clone.classList.contains(ALLDAY_APPOINTMENT_CLASS)) {
+          setStyleAttribute(this.actionObj.clone, {
+            height: formatUnit(this.actionObj.cellHeight),
+            width: formatUnit(this.actionObj.cellWidth - 1),
+            pointerEvents: "none"
+          });
+        }
+        var top_1 = parseInt(e.top, 10);
+        top_1 = top_1 < 0 ? 0 : top_1;
+        topValue = formatUnit(Math.ceil(top_1 / cellHeight) * cellHeight);
+        var scrollHeight = this.parent.element.querySelector(".e-content-wrap").scrollHeight;
+        var cloneBottom = parseInt(topValue, 10) + this.actionObj.clone.offsetHeight;
+        if (cloneBottom > scrollHeight) {
+          topValue = parseInt(topValue, 10) - (cloneBottom - scrollHeight) + "px";
+        }
+      }
+      return { left: leftValue, top: topValue };
+    };
+    DragAndDrop2.prototype.setDragActionDefaultValues = function() {
+      this.actionObj.action = "drag";
+      this.actionObj.isAllDay = null;
+      this.actionObj.slotInterval = this.parent.activeViewOptions.timeScale.interval / this.parent.activeViewOptions.timeScale.slotCount;
+      this.actionObj.interval = this.actionObj.slotInterval;
+      var workCell = this.parent.element.querySelector("." + WORK_CELLS_CLASS);
+      this.actionObj.cellWidth = workCell.offsetWidth;
+      this.actionObj.cellHeight = workCell.offsetHeight;
+    };
+    DragAndDrop2.prototype.dragStart = function(e) {
+      var _this = this;
+      var eventGuid = this.actionObj.element.getAttribute("data-guid");
+      this.actionObj.event = this.parent.eventBase.getEventByGuid(eventGuid);
+      var eventObj = extend({}, this.actionObj.event, null, true);
+      if (!isNullOrUndefined(eventObj)) {
+        this.startTime = eventObj[this.parent.eventFields.startTime].getTime();
+      }
+      var dragArgs = {
+        cancel: false,
+        data: eventObj,
+        selectedData: this.getSelectedData(),
+        event: e,
+        excludeSelectors: null,
+        element: this.actionObj.element,
+        interval: this.actionObj.interval,
+        navigation: { enable: false, timeDelay: 2e3 },
+        scroll: { enable: true, scrollBy: 30, timeDelay: 100 }
+      };
+      this.parent.trigger(dragStart, dragArgs, function(dragEventArgs) {
+        if (dragEventArgs.cancel || !isNullOrUndefined(_this.actionObj.element) && isNullOrUndefined(_this.actionObj.element.parentElement)) {
+          var dragObj = _this.actionObj.element.ej2_instances[0];
+          if (!isNullOrUndefined(dragObj)) {
+            dragObj.intDestroy(e.event);
+          }
+          _this.actionObj.action = "";
+          _this.removeCloneElementClasses();
+          _this.removeCloneElement();
+          return;
+        }
+        _this.actionClass("addClass");
+        _this.parent.uiStateValues.action = true;
+        _this.actionObj.start = eventObj[_this.parent.eventFields.startTime];
+        _this.actionObj.end = eventObj[_this.parent.eventFields.endTime];
+        _this.actionObj.groupIndex = parseInt(_this.actionObj.element.getAttribute("data-group-index") || "0", 10);
+        _this.actionObj.interval = dragEventArgs.interval;
+        _this.actionObj.navigation = dragEventArgs.navigation;
+        _this.actionObj.scroll = dragEventArgs.scroll;
+        _this.actionObj.excludeSelectors = dragEventArgs.excludeSelectors;
+        var viewElement = _this.parent.element.querySelector("." + CONTENT_WRAP_CLASS);
+        _this.scrollArgs = { element: viewElement, width: viewElement.scrollWidth, height: viewElement.scrollHeight };
+        _this.widthPerMinute = _this.actionObj.cellWidth / _this.actionObj.slotInterval * _this.actionObj.interval;
+        _this.heightPerMinute = _this.actionObj.cellHeight / _this.actionObj.slotInterval * _this.actionObj.interval;
+        _this.widthUptoCursorPoint = 0;
+        _this.heightUptoCursorPoint = 0;
+        _this.cursorPointIndex = -1;
+        _this.isHeaderRows = false;
+        _this.isTimelineDayProcess = false;
+        _this.minDiff = 0;
+        _this.isMorePopupOpened = false;
+        _this.daysVariation = -1;
+        _this.isAllDayTarget = _this.actionObj.clone.classList.contains(ALLDAY_APPOINTMENT_CLASS);
+        if ((_this.parent.activeView.isTimelineView() || !_this.parent.timeScale.enable) && _this.parent.currentView !== "TimelineYear") {
+          if (!isNullOrUndefined(_this.actionObj.clone.offsetParent) && _this.actionObj.clone.offsetParent.classList.contains(MORE_EVENT_POPUP_CLASS)) {
+            _this.isMorePopupOpened = true;
+          }
+          _this.actionObj.pageX = e.event.pageX;
+          var rows = _this.parent.activeViewOptions.headerRows;
+          _this.isHeaderRows = rows.length > 0 && rows[rows.length - 1].option !== "Hour" && rows[rows.length - 1].option !== "Date";
+          _this.isTimelineDayProcess = !_this.parent.activeViewOptions.timeScale.enable || _this.isHeaderRows || _this.parent.currentView === "TimelineMonth" || rows.length > 0 && rows[rows.length - 1].option === "Date";
+          _this.isStepDragging = !_this.isTimelineDayProcess && _this.actionObj.slotInterval !== _this.actionObj.interval;
+          if (_this.isTimelineDayProcess) {
+            _this.timelineEventModule = new TimelineEvent(_this.parent, "day");
+          } else {
+            _this.timelineEventModule = new TimelineEvent(_this.parent, "hour");
+          }
+        }
+        if (_this.parent.currentView === "TimelineYear") {
+          _this.yearEvent = new YearEvent(_this.parent);
+        }
+        if (_this.parent.currentView === "Month") {
+          _this.startTime = resetTime(new Date(_this.startTime)).getTime();
+          _this.updateOriginalElement(_this.actionObj.clone);
+          _this.monthEvent = new MonthEvent(_this.parent);
+        }
+        if (_this.parent.currentView === "Day" || _this.parent.currentView === "Week" || _this.parent.currentView === "WorkWeek") {
+          _this.verticalEvent = new VerticalEvent(_this.parent);
+          _this.verticalEvent.initializeValues();
+          var splitEvents = _this.splitEvent(_this.actionObj.event);
+          splitEvents.forEach(function(event) {
+            var query = '.e-day-wrapper[data-date="' + resetTime(event[_this.parent.eventFields.startTime]).getTime() + '"]';
+            if (_this.parent.activeViewOptions.group.resources.length > 0) {
+              query = query.concat('[data-group-index = "' + _this.actionObj.groupIndex + '"]');
+            }
+            var appWrap = _this.parent.element.querySelector(query);
+            if (appWrap) {
+              var appEle = appWrap.querySelector('[data-id="' + _this.actionObj.clone.getAttribute("data-id") + '"]');
+              if (appEle) {
+                addClass([appEle], EVENT_ACTION_CLASS);
+              }
+            }
+          });
+        }
+      });
+    };
+    DragAndDrop2.prototype.getSelectedData = function() {
+      if (this.isMultiSelect && this.multiData.length === 0 && this.parent.selectedElements.length > 0) {
+        for (var _i = 0, _a = this.parent.selectedElements; _i < _a.length; _i++) {
+          var element2 = _a[_i];
+          var eventGuid = element2.getAttribute("data-guid");
+          var data = this.parent.eventBase.getEventByGuid(eventGuid);
+          this.multiData.push(extend({}, data, null, true));
+        }
+      }
+      return this.multiData;
+    };
+    DragAndDrop2.prototype.drag = function(e) {
+      if (this.parent.quickPopup) {
+        this.parent.quickPopup.quickPopupHide(true);
+      }
+      if (!isNullOrUndefined(e.target) && e.target.classList.contains(DISABLE_DATES)) {
+        return;
+      }
+      var eventObj = extend({}, this.actionObj.event, null, true);
+      var eventArgs = this.parent.eventBase.getPageCoordinates(e);
+      this.actionObj.Y = this.actionObj.pageY = eventArgs.pageY;
+      this.actionObj.X = this.actionObj.pageX = eventArgs.pageX;
+      this.actionObj.target = e.target;
+      this.widthUptoCursorPoint = this.widthUptoCursorPoint === 0 ? Math.ceil(Math.abs(this.actionObj.clone.getBoundingClientRect().left - this.actionObj.X) / this.widthPerMinute) * this.widthPerMinute : this.widthUptoCursorPoint;
+      this.widthUptoCursorPoint = this.isMorePopupOpened ? this.actionObj.cellWidth : this.widthUptoCursorPoint;
+      this.heightUptoCursorPoint = this.heightUptoCursorPoint === 0 ? Math.ceil(Math.abs(this.actionObj.clone.getBoundingClientRect().top - this.actionObj.Y) / this.heightPerMinute) * this.heightPerMinute : this.heightUptoCursorPoint;
+      this.isAllDayDrag = this.parent.activeViewOptions.timeScale.enable ? this.actionObj.clone.classList.contains(ALLDAY_APPOINTMENT_CLASS) : this.actionObj.event[this.parent.eventFields.isAllDay];
+      if (this.isStepDragging && this.minDiff === 0) {
+        this.calculateMinutesDiff(eventObj);
+      }
+      if ((this.parent.currentView === "Month" || this.isAllDayDrag) && this.daysVariation < 0) {
+        var date = this.parent.getDateFromElement(this.actionObj.target);
+        if (!isNullOrUndefined(date)) {
+          var currentDate = resetTime(date);
+          var startDate = resetTime(new Date(eventObj[this.parent.eventFields.startTime].getTime()));
+          this.daysVariation = (currentDate.getTime() - startDate.getTime()) / MS_PER_DAY;
+        } else {
+          this.daysVariation = 0;
+        }
+      } else {
+        this.daysVariation = 0;
+      }
+      if (this.parent.eventDragArea) {
+        var targetElement2 = eventArgs.target;
+        this.actionObj.clone.style.top = formatUnit(targetElement2.offsetTop);
+        this.actionObj.clone.style.left = formatUnit(targetElement2.offsetLeft);
+        var currentTarget = closest(targetElement2, "." + ROOT);
+        if (!currentTarget) {
+          this.actionObj.clone.style.height = "";
+          this.actionObj.clone.style.width = "";
+        } else {
+          if (!(this.parent.currentView === "Week" || this.parent.currentView === "WorkWeek" || this.parent.currentView === "Day")) {
+            this.actionObj.clone.style.width = formatUnit(this.actionObj.element.offsetWidth);
+          }
+        }
+      }
+      this.updateScrollPosition(e);
+      this.updateNavigatingPosition(e);
+      this.updateDraggingDateTime(e);
+      var dragArgs = {
+        data: eventObj,
+        event: e,
+        element: this.actionObj.element,
+        startTime: this.actionObj.start,
+        endTime: this.actionObj.end,
+        selectedData: this.updatedData
+      };
+      if (this.parent.group.resources.length > 0) {
+        dragArgs.groupIndex = this.actionObj.groupIndex;
+      }
+      this.parent.trigger(drag, dragArgs);
+    };
+    DragAndDrop2.prototype.calculateMinutesDiff = function(eventObj) {
+      if (this.parent.enableRtl) {
+        this.minDiff = (this.actionObj.clone.offsetWidth - this.widthUptoCursorPoint) / this.widthPerMinute * this.actionObj.interval;
+      } else {
+        this.minDiff = this.widthUptoCursorPoint / this.widthPerMinute * this.actionObj.interval;
+      }
+      var startDate = eventObj[this.parent.eventFields.startTime];
+      var startTime = this.parent.activeView.renderDates[0];
+      var startEndHours = getStartEndHours(startTime, this.parent.activeView.getStartHour(), this.parent.activeView.getEndHour());
+      if (startEndHours.startHour.getTime() > startDate.getTime()) {
+        this.minDiff = this.minDiff + (startEndHours.startHour.getTime() - startDate.getTime()) / MS_PER_MINUTE;
+      }
+    };
+    DragAndDrop2.prototype.dragStop = function(e) {
+      var _this = this;
+      this.isCursorAhead = false;
+      this.removeCloneElementClasses();
+      this.removeCloneElement();
+      clearInterval(this.actionObj.navigationInterval);
+      this.actionObj.navigationInterval = null;
+      clearInterval(this.actionObj.scrollInterval);
+      this.actionObj.scrollInterval = null;
+      this.actionClass("removeClass");
+      this.parent.uiStateValues.action = false;
+      if (this.isAllowDrop(e)) {
+        return;
+      }
+      var target = !e.target.classList.contains("e-work-cells") && this.parent.cellTemplate ? closest(e.target, ".e-work-cells") : e.target;
+      var dragArgs = {
+        cancel: false,
+        data: this.getChangedData(this.updatedData),
+        selectedData: this.updatedData,
+        event: e,
+        element: this.actionObj.element,
+        target
+      };
+      this.actionObj.action = null;
+      this.parent.trigger(dragStop, dragArgs, function(dragEventArgs) {
+        if (dragEventArgs.cancel) {
+          return;
+        }
+        if (_this.parent.isSpecificResourceEvents()) {
+          _this.parent.crudModule.crudObj.isCrudAction = true;
+          _this.parent.crudModule.crudObj.sourceEvent = [_this.parent.resourceBase.lastResourceLevel[parseInt(dragArgs.element.getAttribute("data-group-index"), 10)]];
+          var currentGroupIndex = parseInt(dragArgs.target.getAttribute("data-group-index"), 10) || _this.actionObj.groupIndex;
+          _this.parent.crudModule.crudObj.targetEvent = [_this.parent.resourceBase.lastResourceLevel[parseInt(currentGroupIndex.toString(), 10)]];
+        }
+        _this.saveChangedData(dragEventArgs, _this.isMultiSelect);
+      });
+      this.updatedData = [];
+      this.multiData = [];
+      this.isMultiSelect = false;
+      this.parent.selectedElements = [];
+    };
+    DragAndDrop2.prototype.updateNavigatingPosition = function(e) {
+      var _this = this;
+      if (this.actionObj.navigation.enable) {
+        var currentDate_1 = this.parent.getCurrentTime();
+        if (isNullOrUndefined(this.actionObj.navigationInterval)) {
+          this.actionObj.navigationInterval = window.setInterval(function() {
+            if (currentDate_1) {
+              var crtDate = _this.parent.getCurrentTime();
+              var end = crtDate.getSeconds();
+              var start = currentDate_1.getSeconds() + _this.actionObj.navigation.timeDelay / 1e3;
+              start = start >= 60 ? start - 60 : start;
+              if (start === end) {
+                currentDate_1 = _this.parent.getCurrentTime();
+                _this.viewNavigation(e);
+                _this.updateDraggingDateTime(e);
+              }
+            }
+          }, this.actionObj.navigation.timeDelay);
+        }
+      }
+    };
+    DragAndDrop2.prototype.updateDraggingDateTime = function(e) {
+      if (!isNullOrUndefined(this.actionObj.clone.offsetParent) && this.actionObj.clone.offsetParent.classList.contains(MORE_EVENT_POPUP_CLASS)) {
+        this.morePopupEventDragging(e);
+      } else if (this.parent.activeView.isTimelineView() && this.parent.currentView !== "TimelineYear") {
+        this.timelineEventModule.dateRender = this.parent.activeView.renderDates;
+        this.timelineEventModule.cellWidth = this.actionObj.cellWidth;
+        this.timelineEventModule.getSlotDates();
+        this.actionObj.cellWidth = this.isHeaderRows ? this.timelineEventModule.cellWidth : this.parent.element.querySelector("." + WORK_CELLS_CLASS).getBoundingClientRect().width;
+        this.calculateTimelineTime(e);
+      } else {
+        if (this.parent.currentView === "Month" || this.parent.currentView === "TimelineYear") {
+          this.calculateVerticalDate(e);
+        } else {
+          this.calculateVerticalTime(e);
+        }
+      }
+    };
+    DragAndDrop2.prototype.navigationWrapper = function() {
+      if (!this.parent.activeView.isTimelineView()) {
+        if (this.parent.currentView === "Month" || !this.parent.timeScale.enable) {
+          var outerWrapperCls = [].slice.call(this.parent.element.querySelectorAll("." + WORK_CELLS_CLASS));
+          this.actionObj.index = this.parent.activeView.renderDates.length < this.actionObj.index ? this.parent.activeView.renderDates.length - 1 : this.actionObj.index;
+          var targetWrapper = outerWrapperCls[this.actionObj.index].querySelector("." + APPOINTMENT_WRAPPER_CLASS);
+          if (!targetWrapper) {
+            targetWrapper = createElement("div", { className: APPOINTMENT_WRAPPER_CLASS });
+            outerWrapperCls[this.actionObj.index].appendChild(targetWrapper);
+          }
+          targetWrapper.appendChild(this.actionObj.clone);
+        } else {
+          var wrapperClass = this.actionObj.clone.classList.contains(ALLDAY_APPOINTMENT_CLASS) ? "." + ALLDAY_APPOINTMENT_WRAPPER_CLASS : "." + APPOINTMENT_WRAPPER_CLASS;
+          this.parent.element.querySelectorAll(wrapperClass).item(this.actionObj.index).appendChild(this.actionObj.clone);
+          if (wrapperClass === "." + ALLDAY_APPOINTMENT_WRAPPER_CLASS) {
+            var elementHeight = this.getAllDayEventHeight();
+            var event_2 = [].slice.call(this.parent.element.querySelectorAll("." + ALLDAY_CELLS_CLASS + ":first-child"));
+            if (event_2[0].offsetHeight < elementHeight) {
+              for (var _i = 0, event_1 = event_2; _i < event_1.length; _i++) {
+                var e = event_1[_i];
+                e.style.height = (elementHeight + 2) / 12 + "em";
+              }
+            }
+            this.actionObj.clone.style.height = formatUnit(elementHeight);
+          }
+          this.actionObj.height = parseInt(this.actionObj.clone.style.height, 10);
+        }
+      } else {
+        var outWrapper = void 0;
+        if (this.parent.activeViewOptions.group.resources.length > 0) {
+          outWrapper = this.parent.element.querySelectorAll(".e-appointment-container:not(.e-hidden)").item(this.actionObj.index);
+        } else {
+          outWrapper = this.parent.element.querySelector("." + APPOINTMENT_CONTAINER_CLASS);
+        }
+        if (!isNullOrUndefined(outWrapper)) {
+          var tarWrapper_1 = outWrapper.querySelector("." + APPOINTMENT_WRAPPER_CLASS);
+          if (!tarWrapper_1) {
+            tarWrapper_1 = createElement("div", { className: APPOINTMENT_WRAPPER_CLASS });
+            outWrapper.appendChild(tarWrapper_1);
+          }
+          this.actionObj.cloneElement.forEach(function(ele) {
+            tarWrapper_1.appendChild(ele);
+          });
+        }
+      }
+    };
+    DragAndDrop2.prototype.viewNavigation = function(e) {
+      var navigationType;
+      var dragArea = this.parent.element.querySelector("." + CONTENT_WRAP_CLASS);
+      if (dragArea && (!this.scrollEdges.top && !this.scrollEdges.bottom || closest(this.actionObj.clone, "." + ALLDAY_APPOINTMENT_WRAPPER_CLASS))) {
+        if (dragArea.scrollLeft === 0 && Math.round(this.actionObj.X) <= Math.round(dragArea.getBoundingClientRect().left + this.actionObj.cellWidth + window.pageXOffset)) {
+          navigationType = this.parent.enableRtl ? "next" : "previous";
+        } else if (Math.round(dragArea.scrollLeft) + dragArea.clientWidth === dragArea.scrollWidth && Math.round(this.actionObj.X) >= Math.round(dragArea.getBoundingClientRect().right - this.actionObj.cellWidth + window.pageXOffset)) {
+          navigationType = this.parent.enableRtl ? "previous" : "next";
+        }
+        if (navigationType) {
+          this.parent.changeDate(this.parent.activeView.getNextPreviousDate(navigationType));
+        }
+      }
+    };
+    DragAndDrop2.prototype.morePopupEventDragging = function(e) {
+      if (isNullOrUndefined(e.target) || e.target && isNullOrUndefined(closest(e.target, "td"))) {
+        return;
+      }
+      var eventObj = extend({}, this.actionObj.event, null, true);
+      var eventDuration = eventObj[this.parent.eventFields.endTime].getTime() - eventObj[this.parent.eventFields.startTime].getTime();
+      var td = closest(e.target, "td");
+      if (this.parent.currentView === "TimelineYear" && (!td.classList.contains(WORK_CELLS_CLASS) || td.classList.contains(OTHERMONTH_CLASS))) {
+        return;
+      }
+      var dragStart2 = this.parent.getDateFromElement(td);
+      var dragEnd = new Date(dragStart2.getTime());
+      dragEnd.setMilliseconds(eventDuration);
+      if (this.parent.activeViewOptions.group.resources.length > 0) {
+        this.actionObj.groupIndex = parseInt(td.getAttribute("data-group-index"), 10);
+      }
+      this.actionObj.start = new Date(dragStart2.getTime());
+      this.actionObj.end = new Date(dragEnd.getTime());
+      this.actionObj.clone.style.top = formatUnit(td.offsetParent.offsetTop);
+      this.actionObj.clone.style.left = formatUnit(td.offsetLeft);
+      this.actionObj.clone.style.width = formatUnit(td.offsetWidth);
+      var eventContainer = td;
+      var eventWrapper;
+      if (this.parent.activeView.isTimelineView()) {
+        var rowIndex = closest(td, "tr").rowIndex;
+        eventContainer = this.parent.element.querySelectorAll(".e-appointment-container").item(rowIndex);
+      }
+      eventWrapper = eventContainer.querySelector("." + APPOINTMENT_WRAPPER_CLASS);
+      if (!eventWrapper) {
+        eventWrapper = createElement("div", { className: APPOINTMENT_WRAPPER_CLASS });
+        eventContainer.appendChild(eventWrapper);
+      }
+      this.appendCloneElement(eventWrapper);
+    };
+    DragAndDrop2.prototype.calculateVerticalTime = function(e) {
+      var _this = this;
+      if (isNullOrUndefined(this.actionObj.target) || this.actionObj.target && isNullOrUndefined(closest(this.actionObj.target, "tr")) || !closest(this.actionObj.target, "td").classList.contains(WORK_CELLS_CLASS) && !closest(this.actionObj.target, "td").classList.contains(ALLDAY_CELLS_CLASS)) {
+        return;
+      }
+      if (this.parent.activeViewOptions.timeScale.enable) {
+        this.swapDragging(e);
+      }
+      var dragArea = this.parent.element.querySelector("." + CONTENT_WRAP_CLASS);
+      var eventObj = extend({}, this.actionObj.event, null, true);
+      var eventStart = eventObj[this.parent.eventFields.startTime];
+      var eventEnd = eventObj[this.parent.eventFields.endTime];
+      var eventDuration = getUniversalTime(eventEnd) - getUniversalTime(eventStart);
+      var offsetTop = Math.floor(parseInt(this.actionObj.clone.style.top, 10) / this.actionObj.cellHeight) * this.actionObj.cellHeight;
+      offsetTop = offsetTop < 0 ? 0 : offsetTop;
+      if (this.scrollEdges.top || this.scrollEdges.bottom) {
+        offsetTop = this.scrollEdges.top ? dragArea.scrollTop - this.heightUptoCursorPoint + this.actionObj.cellHeight + window.pageYOffset : dragArea.scrollTop + dragArea.offsetHeight - this.actionObj.clone.offsetHeight + window.pageYOffset + (this.actionObj.clone.offsetHeight - this.heightUptoCursorPoint);
+        offsetTop = Math.round(offsetTop / this.actionObj.cellHeight) * this.actionObj.cellHeight;
+        this.actionObj.clone.style.top = formatUnit(offsetTop);
+      }
+      var rowIndex = this.parent.activeViewOptions.timeScale.enable ? offsetTop / this.actionObj.cellHeight : 0;
+      var heightPerMinute = this.actionObj.cellHeight / this.actionObj.slotInterval;
+      var diffInMinutes = parseInt(this.actionObj.clone.style.top, 10) - offsetTop;
+      var tr;
+      if (this.isAllDayDrag) {
+        tr = this.parent.element.querySelector("." + ALLDAY_ROW_CLASS);
+      } else {
+        var trCollections = [].slice.call(this.parent.getContentTable().querySelectorAll("tr"));
+        tr = trCollections[parseInt(rowIndex.toString(), 10)];
+      }
+      var index;
+      if (closest(this.actionObj.target, "td").classList.contains(WORK_CELLS_CLASS) || closest(this.actionObj.target, "td").classList.contains(ALLDAY_CELLS_CLASS)) {
+        index = closest(this.actionObj.target, "td").cellIndex;
+      }
+      var colIndex = isNullOrUndefined(index) ? closest(this.actionObj.clone, "td").cellIndex : index;
+      this.actionObj.index = colIndex;
+      if (isNullOrUndefined(tr)) {
+        return;
+      }
+      var td = tr.children[parseInt(colIndex.toString(), 10)];
+      if (this.parent.activeViewOptions.group.resources.length > 0 && !this.parent.uiStateValues.isGroupAdaptive) {
+        this.actionObj.groupIndex = parseInt(td.getAttribute("data-group-index"), 10);
+      }
+      var dragStart2;
+      var dragEnd;
+      if (this.parent.activeViewOptions.timeScale.enable && !this.isAllDayDrag) {
+        this.appendCloneElement(this.getEventWrapper(colIndex));
+        dragStart2 = this.parent.getDateFromElement(td);
+        dragStart2.setMinutes(dragStart2.getMinutes() + diffInMinutes / heightPerMinute);
+        dragEnd = new Date(dragStart2.getTime());
+        if (this.actionObj.element.classList.contains(ALLDAY_APPOINTMENT_CLASS)) {
+          dragEnd.setMinutes(dragEnd.getMinutes() + this.actionObj.slotInterval);
+        } else {
+          dragEnd.setMilliseconds(eventDuration);
+        }
+      } else {
+        dragStart2 = this.parent.getDateFromElement(td);
+        dragStart2.setDate(dragStart2.getDate() - this.daysVariation);
+        dragStart2.setHours(eventStart.getHours(), eventStart.getMinutes(), eventStart.getSeconds());
+        dragEnd = new Date(dragStart2.getTime());
+        dragEnd.setMilliseconds(eventDuration);
+        if (!this.actionObj.element.classList.contains(ALLDAY_APPOINTMENT_CLASS) && this.actionObj.clone.classList.contains(ALLDAY_APPOINTMENT_CLASS)) {
+          dragEnd = addDays(resetTime(dragEnd), 1);
+        }
+        var index_1 = this.parent.activeViewOptions.group.byDate || this.parent.virtualScrollModule && !this.parent.activeViewOptions.timeScale.enable ? colIndex : void 0;
+        this.updateAllDayEvents(dragStart2, dragEnd, index_1);
+      }
+      this.actionObj.start = /* @__PURE__ */ new Date(+dragStart2);
+      this.actionObj.end = /* @__PURE__ */ new Date(+dragEnd);
+      var event = this.getUpdatedEvent(this.actionObj.start, this.actionObj.end, this.actionObj.event);
+      var dynamicWrappers = [].slice.call(this.parent.element.querySelectorAll(".e-dynamic-clone"));
+      for (var _i = 0, dynamicWrappers_1 = dynamicWrappers; _i < dynamicWrappers_1.length; _i++) {
+        var wrapper = dynamicWrappers_1[_i];
+        remove(wrapper);
+      }
+      if (this.multiData.length > 0) {
+        if (this.isAllDayTarget && this.isAllDayDrag && !isNullOrUndefined(this.actionObj.isAllDay) && !this.actionObj.isAllDay) {
+          var targetCellTime_1 = parseInt(closest(this.actionObj.target, "td").getAttribute("data-date"), 10);
+          this.multiData.forEach(function(data) {
+            _this.swagData.push(extend({}, data, null, true));
+            if (data[_this.parent.eventFields.isAllDay]) {
+              data[_this.parent.eventFields.startTime] = new Date(data[_this.parent.eventFields.startTime].getTime() + (targetCellTime_1 - _this.startTime));
+              var startTime = new Date(data[_this.parent.eventFields.startTime]);
+              var endTime = new Date(startTime.setMinutes(startTime.getMinutes() + _this.actionObj.slotInterval));
+              data[_this.parent.eventFields.endTime] = endTime;
+              data[_this.parent.eventFields.isAllDay] = false;
+            }
+          });
+          this.startTime = targetCellTime_1;
+        }
+        if (this.isAllDayTarget && this.isAllDayDrag && !isNullOrUndefined(this.actionObj.isAllDay) && this.actionObj.isAllDay && this.swagData.length > 0) {
+          this.multiData = this.swagData;
+          this.swagData = [];
+          var eventObj_1 = extend({}, this.actionObj.event, null, true);
+          this.startTime = eventObj_1[this.parent.eventFields.startTime].getTime();
+        }
+        var startTimeDiff = event[this.parent.eventFields.startTime].getTime() - this.startTime;
+        for (var index_2 = 0; index_2 < this.multiData.length; index_2++) {
+          this.updatedData[parseInt(index_2.toString(), 10)] = this.updateMultipleData(this.multiData[parseInt(index_2.toString(), 10)], startTimeDiff);
+          var dayIndex2 = this.getDayIndex(this.updatedData[parseInt(index_2.toString(), 10)]);
+          if (dayIndex2 >= 0) {
+            var wrapper = this.getEventWrapper(dayIndex2, this.updatedData[parseInt(index_2.toString(), 10)][this.parent.eventFields.isAllDay]);
+            this.appendCloneElement(wrapper, this.actionObj.cloneElement[parseInt(index_2.toString(), 10)]);
+            this.updateEventHeight(this.updatedData[parseInt(index_2.toString(), 10)], index_2, dayIndex2);
+          } else {
+            if (!isNullOrUndefined(this.actionObj.cloneElement[parseInt(index_2.toString(), 10)].parentNode)) {
+              remove(this.actionObj.cloneElement[parseInt(index_2.toString(), 10)]);
+            }
+          }
+        }
+      } else {
+        this.updateEventHeight(event);
+      }
+      this.updateTimePosition(this.actionObj.start, this.updatedData);
+    };
+    DragAndDrop2.prototype.splitEvent = function(event) {
+      var eventFields = this.parent.eventFields;
+      var eventData = [];
+      var startTime = event[eventFields.startTime];
+      var endTime = event[eventFields.endTime];
+      if (resetTime(new Date(startTime.getTime())) < resetTime(new Date(endTime.getTime()))) {
+        var startReferenceDate = resetTime(new Date(startTime.getTime()));
+        var endReferenceDate = new Date(startReferenceDate.getTime());
+        for (var i = 0; startReferenceDate < new Date(endTime.getTime()); i++) {
+          endReferenceDate = new Date(endReferenceDate.setDate(startReferenceDate.getDate() + 1));
+          var eventObj = extend({}, event, null, true);
+          eventObj[eventFields.startTime] = new Date(startReferenceDate);
+          eventObj[eventFields.endTime] = new Date(endReferenceDate);
+          startReferenceDate = new Date(startReferenceDate.setDate(startReferenceDate.getDate() + 1));
+          eventData.push(eventObj);
+        }
+        var index = eventData.length - 1;
+        eventData[0][eventFields.startTime] = startTime;
+        eventData[parseInt(index.toString(), 10)][eventFields.endTime] = endTime;
+      } else {
+        eventData.push(event);
+      }
+      return eventData;
+    };
+    DragAndDrop2.prototype.updateMultipleData = function(data, timeDifference) {
+      var eventObj = extend({}, data, null, true);
+      if (!isNullOrUndefined(this.actionObj.isAllDay) && this.parent.activeViewOptions.timeScale.enable && (this.isAllDayTarget && eventObj[this.parent.eventFields.isAllDay] || !this.isAllDayTarget && !eventObj[this.parent.eventFields.isAllDay])) {
+        eventObj[this.parent.eventFields.isAllDay] = this.actionObj.isAllDay;
+      }
+      var endTimeDiff = eventObj[this.parent.eventFields.endTime].getTime() - eventObj[this.parent.eventFields.startTime].getTime();
+      if (eventObj[this.parent.eventFields.isAllDay]) {
+        var differInDays = Math.ceil(timeDifference / (1e3 * 3600 * 24));
+        var day = Math.ceil(endTimeDiff / (1e3 * 3600 * 24));
+        var startTime = new Date(eventObj[this.parent.eventFields.startTime]);
+        eventObj[this.parent.eventFields.startTime] = resetTime(new Date(startTime.setDate(startTime.getDate() + differInDays)));
+        eventObj[this.parent.eventFields.endTime] = addDays(eventObj[this.parent.eventFields.startTime], day);
+      } else {
+        eventObj[this.parent.eventFields.startTime] = new Date(eventObj[this.parent.eventFields.startTime].getTime() + timeDifference);
+        eventObj[this.parent.eventFields.endTime] = new Date(eventObj[this.parent.eventFields.startTime].getTime() + endTimeDiff);
+      }
+      return eventObj;
+    };
+    DragAndDrop2.prototype.getDayIndex = function(event) {
+      var eventObj = extend({}, event, null, true);
+      var startDate = resetTime(eventObj[this.parent.eventFields.startTime]);
+      if (this.parent.activeViewOptions.timeScale.enable && !eventObj[this.parent.eventFields.isAllDay]) {
+        var startHour = this.parent.activeView.getStartHour();
+        startDate.setMilliseconds(startHour.getTime() - resetTime(startHour).getTime());
+      }
+      var startTime = startDate.getTime();
+      var query = "";
+      var wrapper = DAY_WRAPPER_CLASS;
+      if (this.parent.activeViewOptions.timeScale.enable && eventObj[this.parent.eventFields.isAllDay]) {
+        wrapper = ALLDAY_APPOINTMENT_WRAPPER_CLASS;
+      } else {
+        wrapper = WORK_CELLS_CLASS;
+      }
+      query = "." + wrapper + '[data-date="' + startTime + '"]';
+      if (this.parent.activeViewOptions.group.resources.length > 0) {
+        query = query + '[data-group-index="' + this.actionObj.groupIndex + '"]';
+      }
+      this.targetTd = this.parent.element.querySelector(query);
+      if (isNullOrUndefined(this.targetTd)) {
+        return -1;
+      }
+      return this.targetTd.cellIndex;
+    };
+    DragAndDrop2.prototype.updateEventHeight = function(event, index, colIndex) {
+      this.verticalEvent.initializeValues();
+      var datesCount = this.verticalEvent.getStartCount();
+      if (!this.parent.uiStateValues.isGroupAdaptive) {
+        for (var i = 0; i < this.actionObj.groupIndex; i++) {
+          if (this.verticalEvent.dateRender[parseInt(i.toString(), 10)]) {
+            datesCount = datesCount + this.verticalEvent.dateRender[parseInt(i.toString(), 10)].length;
+          }
+        }
+      }
+      var indexGroup = this.parent.uiStateValues.isGroupAdaptive ? datesCount : this.actionObj.groupIndex;
+      var target = this.parent.activeViewOptions.group.byDate && !isNullOrUndefined(this.parent.getDateFromElement(this.actionObj.target)) ? true : false;
+      if (target || !this.parent.activeViewOptions.group.byDate) {
+        var dynamicIndex = -1;
+        var dayIndex2 = !this.parent.activeViewOptions.group.byDate ? isNullOrUndefined(index) ? this.actionObj.index - datesCount : colIndex - datesCount : this.parent.getIndexOfDate(this.verticalEvent.dateRender[parseInt(indexGroup.toString(), 10)], resetTime(
+          // eslint-disable-next-line max-len
+          this.parent.getDateFromElement(isNullOrUndefined(index) ? this.actionObj.target : this.targetTd)
+        ));
+        var splitEvents = this.splitEvent(event);
+        var events_1 = this.parent.eventBase.isAllDayAppointment(event) || splitEvents.length > 2 || this.parent.eventSettings.spannedEventPlacement !== "TimeSlot" ? [event] : splitEvents;
+        for (var i = 0; i < events_1.length; i++) {
+          if (i > 0) {
+            var filterQuery = '.e-day-wrapper[data-date="' + resetTime(events_1[parseInt(i.toString(), 10)][this.parent.eventFields.startTime]).getTime() + '"]';
+            if (this.parent.activeViewOptions.group.resources.length > 0) {
+              filterQuery = filterQuery.concat('[data-group-index = "' + this.actionObj.groupIndex + '"]');
+            }
+            var appWrap = this.parent.element.querySelector(filterQuery);
+            if (appWrap) {
+              dayIndex2 = dayIndex2 + 1;
+              dynamicIndex = appWrap.cellIndex;
+            } else {
+              dayIndex2 = -1;
+            }
+          }
+          if (dayIndex2 >= 0) {
+            var record = this.verticalEvent.isSpannedEvent(events_1[parseInt(i.toString(), 10)], dayIndex2, indexGroup);
+            var eStart = record[this.verticalEvent.fields.startTime];
+            var eEnd = record[this.verticalEvent.fields.endTime];
+            var appHeight = this.parent.activeViewOptions.timeScale.enable ? this.verticalEvent.getHeight(eStart, eEnd) : this.actionObj.element.offsetHeight;
+            var topValue = this.parent.activeViewOptions.timeScale.enable ? this.verticalEvent.getTopValue(eStart, dayIndex2, indexGroup) : this.actionObj.element.offsetTop;
+            if (isNullOrUndefined(index)) {
+              if (i === 0) {
+                this.actionObj.clone.style.top = formatUnit(topValue);
+                this.actionObj.clone.style.height = formatUnit(appHeight);
+              } else {
+                this.renderSpannedEvents(record, dynamicIndex, topValue, appHeight);
+              }
+            } else {
+              var appWidth = this.actionObj.cellWidth;
+              if (event[this.parent.eventFields.isAllDay]) {
+                topValue = this.parent.element.querySelector("." + ALLDAY_ROW_CLASS).offsetTop;
+                appHeight = this.getAllDayEventHeight();
+                var timeDiff = event[this.parent.eventFields.endTime].getTime() - event[this.parent.eventFields.startTime].getTime();
+                var allDayDifference = Math.ceil(timeDiff / (1e3 * 3600 * 24));
+                if (allDayDifference >= 0) {
+                  appWidth = allDayDifference * this.actionObj.cellWidth;
+                }
+              }
+              if (this.actionObj.cloneElement[parseInt(index.toString(), 10)]) {
+                if (i === 0) {
+                  this.actionObj.cloneElement[parseInt(index.toString(), 10)].style.top = formatUnit(topValue);
+                  this.actionObj.cloneElement[parseInt(index.toString(), 10)].style.height = formatUnit(appHeight);
+                  this.actionObj.cloneElement[parseInt(index.toString(), 10)].style.width = formatUnit(appWidth);
+                  this.actionObj.cloneElement[parseInt(index.toString(), 10)].style.left = formatUnit(0);
+                } else {
+                  this.renderSpannedEvents(record, dynamicIndex, topValue, appHeight);
+                }
+              }
+            }
+          }
+        }
+      }
+    };
+    DragAndDrop2.prototype.renderSpannedEvents = function(record, index, top, height) {
+      var startTime = record[this.parent.eventFields.startTime].getTime();
+      var endTime = record[this.parent.eventFields.endTime].getTime();
+      if (startTime !== endTime) {
+        var appointmentElement = this.verticalEvent.createAppointmentElement(record, false, record.isSpanned, this.actionObj.groupIndex);
+        addClass([appointmentElement], [CLONE_ELEMENT_CLASS, "e-dynamic-clone"]);
+        setStyleAttribute(appointmentElement, {
+          "width": "100%",
+          "height": height + "px",
+          "top": top + "px",
+          "border": "0px"
+        });
+        var appointmentWrap = [].slice.call(this.parent.element.querySelectorAll("." + APPOINTMENT_WRAPPER_CLASS));
+        appointmentWrap[parseInt(index.toString(), 10)].appendChild(appointmentElement);
+      }
+    };
+    DragAndDrop2.prototype.getRenderedDates = function() {
+      var _this = this;
+      var _a, _b;
+      var renderDates = this.parent.activeView.renderDates;
+      (_a = this.parent.eventBase.slots).push.apply(_a, this.parent.activeView.renderDates.map(function(date) {
+        return +date;
+      }));
+      if (this.parent.activeViewOptions.group.resources.length > 0) {
+        this.parent.eventBase.slots = [];
+        var resources = this.parent.resourceBase.lastResourceLevel.filter(function(res) {
+          return res.groupIndex === _this.actionObj.groupIndex;
+        });
+        renderDates = resources[0].renderDates;
+        (_b = this.parent.eventBase.slots).push.apply(_b, renderDates.map(function(date) {
+          return +date;
+        }));
+      }
+      return renderDates;
+    };
+    DragAndDrop2.prototype.updateAllDayEvents = function(startDate, endDate, colIndex) {
+      this.parent.eventBase.slots = [];
+      var event = this.getUpdatedEvent(startDate, endDate, this.actionObj.event);
+      var renderDates = this.getRenderedDates();
+      var events = this.parent.eventBase.splitEvent(event, renderDates);
+      var query = '.e-all-day-cells[data-date="' + events[0][this.parent.eventFields.startTime].getTime() + '"]';
+      if (this.parent.activeViewOptions.group.resources.length > 0 && !this.parent.uiStateValues.isGroupAdaptive) {
+        query = query.concat('[data-group-index = "' + this.actionObj.groupIndex + '"]');
+      }
+      var cell = [].slice.call(this.parent.element.querySelectorAll(query));
+      if (cell.length > 0 || !isNullOrUndefined(colIndex)) {
+        var cellIndex = !isNullOrUndefined(colIndex) ? colIndex : cell[0].cellIndex;
+        this.appendCloneElement(this.getEventWrapper(cellIndex));
+        this.actionObj.clone.style.width = formatUnit(events[0].data.count * this.actionObj.cellWidth);
+      }
+    };
+    DragAndDrop2.prototype.swapDragging = function(e) {
+      var colIndex = closest(this.actionObj.target, "td").cellIndex;
+      if (closest(this.actionObj.target, "." + DATE_HEADER_WRAP_CLASS) && !closest(this.actionObj.clone, "." + ALLDAY_APPOINTMENT_WRAPPER_CLASS)) {
+        addClass([this.actionObj.clone], ALLDAY_APPOINTMENT_CLASS);
+        this.appendCloneElement(this.getEventWrapper(colIndex));
+        this.actionObj.isAllDay = true;
+        var eventHeight = this.getAllDayEventHeight();
+        var allDayElement = [].slice.call(this.parent.element.querySelectorAll("." + ALLDAY_CELLS_CLASS + ":first-child"));
+        if (allDayElement[0].offsetHeight < eventHeight) {
+          for (var _i = 0, allDayElement_1 = allDayElement; _i < allDayElement_1.length; _i++) {
+            var element2 = allDayElement_1[_i];
+            element2.style.height = (eventHeight + 2) / 12 + "em";
+          }
+        }
+        setStyleAttribute(this.actionObj.clone, {
+          width: formatUnit(this.actionObj.cellWidth),
+          height: formatUnit(eventHeight),
+          top: formatUnit(this.parent.element.querySelector("." + ALLDAY_ROW_CLASS).offsetTop)
+        });
+      }
+      if (closest(this.actionObj.target, "." + WORK_CELLS_CLASS) && !closest(this.actionObj.clone, "." + DAY_WRAPPER_CLASS)) {
+        removeClass([this.actionObj.clone], ALLDAY_APPOINTMENT_CLASS);
+        this.appendCloneElement(this.getEventWrapper(colIndex));
+        this.actionObj.isAllDay = false;
+        var height = this.actionObj.element.offsetHeight === 0 ? this.actionObj.height : this.actionObj.element.offsetHeight;
+        setStyleAttribute(this.actionObj.clone, {
+          left: formatUnit(0),
+          height: formatUnit(height),
+          width: formatUnit(this.actionObj.cellWidth)
+        });
+      }
+    };
+    DragAndDrop2.prototype.calculateVerticalDate = function(e) {
+      if (isNullOrUndefined(e.target) || e.target && isNullOrUndefined(closest(e.target, "tr")) || e.target && e.target.tagName === "DIV") {
+        return;
+      }
+      var eventObj = extend({}, this.actionObj.event, null, true);
+      if (isNullOrUndefined(this.parent.eventDragArea)) {
+        this.removeCloneElement();
+      }
+      var eventDuration = getUniversalTime(eventObj[this.parent.eventFields.endTime]) - getUniversalTime(eventObj[this.parent.eventFields.startTime]);
+      var td = closest(this.actionObj.target, "td");
+      if (!isNullOrUndefined(td)) {
+        var tr = td.parentElement;
+        this.actionObj.index = tr.rowIndex * tr.children.length + td.cellIndex;
+        var workCells = [].slice.call(this.parent.element.querySelectorAll("." + WORK_CELLS_CLASS));
+        td = workCells[this.actionObj.index];
+        var currentDate = this.parent.getDateFromElement(td);
+        if (!isNullOrUndefined(currentDate)) {
+          if (this.parent.activeViewOptions.group.resources.length > 0) {
+            this.actionObj.groupIndex = parseInt(td.getAttribute("data-group-index"), 10);
+          }
+          var timeString = new Date(currentDate.setDate(currentDate.getDate() - this.daysVariation));
+          var dragStart2 = new Date(timeString.getTime());
+          var startTimeDiff = getUniversalTime(eventObj[this.parent.eventFields.startTime]) - getUniversalTime(resetTime(/* @__PURE__ */ new Date(+eventObj[this.parent.eventFields.startTime])));
+          dragStart2.setMilliseconds(startTimeDiff);
+          var dragEnd = new Date(dragStart2.getTime());
+          dragEnd.setMilliseconds(eventDuration);
+          this.actionObj.start = new Date(dragStart2.getTime());
+          this.actionObj.end = new Date(dragEnd.getTime());
+        }
+      }
+      var event = this.getUpdatedEvent(this.actionObj.start, this.actionObj.end, this.actionObj.event);
+      var eventWrappers = [].slice.call(this.parent.element.querySelectorAll("." + CLONE_ELEMENT_CLASS));
+      for (var _i = 0, eventWrappers_1 = eventWrappers; _i < eventWrappers_1.length; _i++) {
+        var wrapper = eventWrappers_1[_i];
+        remove(wrapper);
+      }
+      if (this.multiData && this.multiData.length > 0) {
+        var startTime = resetTime(new Date(event[this.parent.eventFields.startTime]));
+        var startTimeDiff = startTime.getTime() - this.startTime;
+        if (this.parent.currentView === "TimelineYear" && this.parent.group.resources.length > 0) {
+          startTimeDiff = (startTime.getFullYear() - new Date(this.startTime).getFullYear()) * 12;
+          startTimeDiff -= new Date(this.startTime).getMonth();
+          startTimeDiff += startTime.getMonth();
+        }
+        for (var index = 0; index < this.multiData.length; index++) {
+          this.updatedData[parseInt(index.toString(), 10)] = this.updateMultipleVerticalDate(this.multiData[parseInt(index.toString(), 10)], startTimeDiff);
+          if (this.parent.currentView === "TimelineYear") {
+            this.dynamicYearlyEventsRendering(this.updatedData[parseInt(index.toString(), 10)]);
+          } else {
+            this.dynamicEventsRendering(this.updatedData[parseInt(index.toString(), 10)]);
+          }
+        }
+      } else {
+        if (this.parent.currentView === "TimelineYear") {
+          this.dynamicYearlyEventsRendering(event);
+        } else {
+          this.dynamicEventsRendering(event);
+        }
+      }
+    };
+    DragAndDrop2.prototype.updateMultipleVerticalDate = function(data, timeDifference) {
+      var eventObj = extend({}, data, null, true);
+      var eventDuration = eventObj[this.parent.eventFields.endTime].getTime() - eventObj[this.parent.eventFields.startTime].getTime();
+      var startDate = new Date(eventObj[this.parent.eventFields.startTime]);
+      if (this.parent.currentView === "TimelineYear" && this.parent.group.resources.length > 0) {
+        eventObj[this.parent.eventFields.startTime] = new Date(startDate.setMonth(startDate.getMonth() + timeDifference));
+      } else {
+        var differInDays = Math.ceil(timeDifference / MS_PER_DAY);
+        eventObj[this.parent.eventFields.startTime] = new Date(startDate.setDate(startDate.getDate() + differInDays));
+      }
+      eventObj[this.parent.eventFields.endTime] = new Date(eventObj[this.parent.eventFields.startTime].getTime() + eventDuration);
+      return eventObj;
+    };
+    DragAndDrop2.prototype.calculateTimelineTime = function(e) {
+      var eventObj = extend({}, this.actionObj.event, null, true);
+      var eventDuration = getUniversalTime(eventObj[this.parent.eventFields.endTime]) - getUniversalTime(eventObj[this.parent.eventFields.startTime]);
+      var offsetLeft = this.parent.enableRtl ? Math.abs(this.actionObj.clone.offsetLeft) - this.actionObj.clone.offsetWidth : parseInt(this.actionObj.clone.style.left, 10);
+      offsetLeft = Math.floor(offsetLeft / Math.trunc(this.actionObj.cellWidth)) * this.actionObj.cellWidth;
+      var rightOffset;
+      if (this.parent.enableRtl) {
+        rightOffset = Math.abs(parseInt(this.actionObj.clone.style.right, 10));
+        this.actionObj.clone.style.right = formatUnit(rightOffset);
+      }
+      offsetLeft = this.getOffsetValue(offsetLeft, rightOffset);
+      var colIndex = this.getColumnIndex(offsetLeft);
+      var dragArea = this.parent.element.querySelector("." + CONTENT_WRAP_CLASS);
+      var contentWrapRight = dragArea.getBoundingClientRect().right;
+      var cursorDrag = this.parent.activeView.isTimelineView() && !this.parent.enableRtl && this.actionObj.pageX > this.actionObj.clone.getBoundingClientRect().right && !this.isMorePopupOpened && !(this.actionObj.pageX > contentWrapRight);
+      var leftVal = this.parent.eventDragArea ? dragArea.scrollLeft - dragArea.offsetLeft : 0;
+      if ((this.isCursorAhead || cursorDrag) && !this.isStepDragging) {
+        this.isCursorAhead = true;
+      }
+      var cloneIndex = Math.floor((this.actionObj.pageX - this.actionObj.clone.getBoundingClientRect().left + leftVal) / this.actionObj.cellWidth);
+      if (this.parent.enableRtl) {
+        cloneIndex = Math.abs(Math.floor((this.actionObj.pageX - this.actionObj.clone.getBoundingClientRect().right) / this.actionObj.cellWidth)) - 1;
+      }
+      if (this.cursorPointIndex < 0) {
+        this.cursorIndex(e, eventObj, offsetLeft, cloneIndex);
+      }
+      var tr = this.parent.getContentTable().querySelector("tr");
+      var index = this.getCursorCurrentIndex(colIndex, cloneIndex, tr);
+      index = index < 0 ? 0 : index;
+      var eventStart = this.isHeaderRows ? new Date(this.timelineEventModule.dateRender[parseInt(index.toString(), 10)].getTime()) : this.parent.getDateFromElement(tr.children[parseInt(index.toString(), 10)]);
+      if (this.isStepDragging) {
+        var widthDiff = this.getWidthDiff(tr, index);
+        if (widthDiff !== 0) {
+          var timeDiff = Math.round(widthDiff / this.widthPerMinute);
+          eventStart.setMinutes(eventStart.getMinutes() + timeDiff * this.actionObj.interval);
+          if (this.isCursorAhead || cursorDrag) {
+            eventStart.setMilliseconds(-eventDuration);
+          } else {
+            eventStart.setMinutes(eventStart.getMinutes() - this.minDiff);
+          }
+        } else {
+          eventStart = this.actionObj.start;
+        }
+      } else {
+        if (this.isCursorAhead || cursorDrag) {
+          eventStart.setMinutes(eventStart.getMinutes() + (this.isTimelineDayProcess ? MINUTES_PER_DAY : this.actionObj.slotInterval));
+          eventStart.setMilliseconds(-eventDuration);
+        } else {
+          eventStart.setMinutes(eventStart.getMinutes() - this.cursorPointIndex * (this.isTimelineDayProcess ? MINUTES_PER_DAY : this.actionObj.slotInterval));
+        }
+      }
+      eventStart = this.calculateIntervalTime(eventStart);
+      if (this.isTimelineDayProcess) {
+        var eventSrt = eventObj[this.parent.eventFields.startTime];
+        eventStart.setHours(eventSrt.getHours(), eventSrt.getMinutes(), eventSrt.getSeconds());
+      }
+      if (this.parent.eventDragArea) {
+        var targetDate = this.parent.getDateFromElement(e.target);
+        if (!isNullOrUndefined(targetDate)) {
+          if (!this.parent.activeViewOptions.timeScale.enable || this.parent.currentView === "TimelineMonth") {
+            var eventSrt = eventObj[this.parent.eventFields.startTime];
+            eventStart = new Date(targetDate.setHours(eventSrt.getHours(), eventSrt.getMinutes(), eventSrt.getSeconds()));
+          } else {
+            eventStart = targetDate;
+          }
+        }
+      }
+      var eventEnd = new Date(eventStart.getTime());
+      eventEnd.setMilliseconds(eventDuration);
+      var eventsData = [this.getUpdatedEvent(eventStart, eventEnd, this.actionObj.event)];
+      if (this.multiData.length > 0) {
+        var startTimeDiff = eventsData[0][this.parent.eventFields.startTime].getTime() - this.startTime;
+        for (var i = 0; i < this.multiData.length; i++) {
+          this.updatedData[parseInt(i.toString(), 10)] = this.updateMultipleData(this.multiData[parseInt(i.toString(), 10)], startTimeDiff);
+        }
+        eventsData = this.updatedData;
+      }
+      for (var dataIndex = 0; dataIndex < eventsData.length; dataIndex++) {
+        var cloneElement = this.multiData.length > 0 ? this.actionObj.cloneElement[parseInt(dataIndex.toString(), 10)] : this.actionObj.clone;
+        if (isNullOrUndefined(this.parent.eventDragArea)) {
+          var events_2 = this.timelineEventModule.splitEvent(eventsData[parseInt(dataIndex.toString(), 10)], this.timelineEventModule.dateRender);
+          var eventData = events_2[0].data;
+          var startTime = this.timelineEventModule.getStartTime(events_2[0], eventData);
+          var endTime = this.timelineEventModule.getEndTime(events_2[0], eventData);
+          var width = this.timelineEventModule.getEventWidth(startTime, endTime, eventObj[this.parent.eventFields.isAllDay], eventData.count);
+          var day = this.parent.getIndexOfDate(this.timelineEventModule.dateRender, resetTime(new Date(startTime.getTime())));
+          day = day < 0 ? 0 : day;
+          var left = this.timelineEventModule.getPosition(startTime, endTime, eventObj[this.parent.eventFields.isAllDay], day);
+          if (this.parent.enableRtl) {
+            cloneElement.style.right = formatUnit(left);
+          } else {
+            cloneElement.style.left = formatUnit(left);
+          }
+          if (!this.isMorePopupOpened) {
+            cloneElement.style.width = formatUnit(width);
+          }
+        }
+        if (this.parent.activeViewOptions.group.resources.length > 0) {
+          this.calculateResourceGroupingPosition(e, cloneElement);
+        }
+        this.actionObj.start = new Date(eventStart.getTime());
+        this.actionObj.end = new Date(eventEnd.getTime());
+        this.updateTimePosition(this.actionObj.start, this.updatedData);
+      }
+    };
+    DragAndDrop2.prototype.getOffsetValue = function(offsetLeft, rightOffset) {
+      if (this.scrollEdges.left || this.scrollEdges.right) {
+        var viewEle = this.parent.element.querySelector("." + CONTENT_WRAP_CLASS);
+        if (this.parent.enableRtl) {
+          rightOffset = viewEle.offsetWidth - viewEle.scrollLeft;
+          if (this.scrollEdges.right) {
+            rightOffset = rightOffset - viewEle.offsetWidth + this.actionObj.clone.offsetWidth - (this.actionObj.clone.offsetWidth - this.widthUptoCursorPoint);
+          } else {
+            rightOffset = rightOffset + this.widthUptoCursorPoint;
+            if (rightOffset - this.widthUptoCursorPoint >= viewEle.scrollWidth) {
+              this.actionObj.clone.style.width = formatUnit(this.actionObj.clone.offsetWidth - this.widthUptoCursorPoint + this.actionObj.cellWidth);
+              rightOffset = viewEle.scrollLeft - viewEle.scrollWidth;
+            }
+          }
+          if (isNullOrUndefined(this.parent.eventDragArea)) {
+            this.actionObj.clone.style.left = formatUnit(rightOffset);
+          }
+        } else {
+          if (this.scrollEdges.left) {
+            offsetLeft = viewEle.scrollLeft - this.widthUptoCursorPoint + this.actionObj.cellWidth;
+            if (viewEle.scrollLeft + viewEle.offsetWidth >= viewEle.offsetWidth) {
+              viewEle.scrollLeft = viewEle.scrollLeft - 1;
+            } else if (this.actionObj.clone.offsetLeft === 0) {
+              offsetLeft = viewEle.scrollLeft;
+            }
+          } else {
+            offsetLeft = viewEle.scrollLeft + viewEle.offsetWidth - this.actionObj.clone.offsetWidth + (this.actionObj.clone.offsetWidth - this.widthUptoCursorPoint);
+          }
+          offsetLeft = offsetLeft < 0 ? 0 : offsetLeft;
+          if (isNullOrUndefined(this.parent.eventDragArea)) {
+            this.actionObj.clone.style.left = formatUnit(offsetLeft);
+          }
+        }
+      }
+      return offsetLeft;
+    };
+    DragAndDrop2.prototype.getWidthDiff = function(tr, index) {
+      var pages = this.scrollArgs.element.getBoundingClientRect();
+      if (pages.left <= this.actionObj.pageX && pages.right >= this.actionObj.pageX) {
+        var targetLeft = tr.children[parseInt(index.toString(), 10)].offsetLeft;
+        var pageX = this.actionObj.pageX - pages.left;
+        if (this.parent.enableRtl) {
+          return targetLeft + this.actionObj.cellWidth - (this.scrollArgs.element.scrollLeft + pageX);
+        } else {
+          return this.scrollArgs.element.scrollLeft + pageX - targetLeft;
+        }
+      }
+      return 0;
+    };
+    DragAndDrop2.prototype.getColumnIndex = function(offsetLeft) {
+      var index = Math.floor(offsetLeft / Math.trunc(this.actionObj.cellWidth));
+      if (this.isHeaderRows) {
+        return index;
+      }
+      return this.getIndex(index);
+    };
+    DragAndDrop2.prototype.getCursorCurrentIndex = function(colIndex, cloneIndex, tr) {
+      var index = colIndex + cloneIndex;
+      if (this.isHeaderRows) {
+        var dateLength = Math.floor(tr.offsetWidth / this.actionObj.cellWidth);
+        return index > dateLength - 1 ? dateLength - 1 : index;
+      }
+      return index > tr.children.length - 1 ? tr.children.length - 1 : index;
+    };
+    DragAndDrop2.prototype.cursorIndex = function(e, event, left, index) {
+      var td = closest(e.target, ".e-work-cells");
+      if (!isNullOrUndefined(td) && !this.isMorePopupOpened) {
+        var targetDate = this.parent.getDateFromElement(td);
+        if (this.isHeaderRows) {
+          var currentIndex = Math.floor(left / this.actionObj.cellWidth);
+          targetDate = new Date(this.timelineEventModule.dateRender[currentIndex + index].getTime());
+        }
+        var timeDiff = targetDate.getTime() - event[this.parent.eventFields.startTime].getTime();
+        if (this.isTimelineDayProcess) {
+          this.cursorPointIndex = Math.abs(Math.ceil(timeDiff / MS_PER_DAY));
+        } else {
+          var widthDiff = Math.floor(timeDiff / MS_PER_MINUTE / (this.actionObj.slotInterval / this.actionObj.cellWidth));
+          this.cursorPointIndex = Math.floor(widthDiff / this.actionObj.cellWidth);
+          this.cursorPointIndex = this.cursorPointIndex < 0 ? 0 : this.cursorPointIndex;
+        }
+      } else {
+        this.cursorPointIndex = 0;
+      }
+    };
+    DragAndDrop2.prototype.calculateResourceGroupingPosition = function(e, cloneElement) {
+      var dragArea = this.parent.element.querySelector("." + CONTENT_WRAP_CLASS);
+      var trCollection = [].slice.call(this.parent.element.querySelectorAll(".e-content-wrap .e-content-table tr:not(.e-hidden)"));
+      var translateY = getTranslateY(dragArea.querySelector("table"));
+      translateY = isNullOrUndefined(translateY) ? 0 : translateY;
+      var rowHeight = this.parent.rowAutoHeight ? ~~(dragArea.querySelector("table").offsetHeight / trCollection.length) : this.actionObj.cellHeight;
+      var rowIndex = Math.floor(Math.floor(this.actionObj.Y + (dragArea.scrollTop - translateY - (window.scrollY || window.pageYOffset)) - dragArea.getBoundingClientRect().top) / rowHeight);
+      rowIndex = rowIndex < 0 ? 0 : rowIndex > trCollection.length - 1 ? trCollection.length - 1 : rowIndex;
+      this.actionObj.index = rowIndex;
+      var eventContainer = this.parent.element.querySelectorAll(".e-appointment-container:not(.e-hidden)").item(rowIndex);
+      var eventWrapper = eventContainer.querySelector("." + APPOINTMENT_WRAPPER_CLASS);
+      if (!eventWrapper) {
+        eventWrapper = createElement("div", { className: APPOINTMENT_WRAPPER_CLASS });
+        eventContainer.appendChild(eventWrapper);
+      }
+      this.appendCloneElement(eventWrapper, cloneElement);
+      var td = closest(this.actionObj.target, "td");
+      this.actionObj.groupIndex = td && !isNaN(parseInt(td.getAttribute("data-group-index"), 10)) ? parseInt(td.getAttribute("data-group-index"), 10) : this.actionObj.groupIndex;
+      if (!isNullOrUndefined(this.parent.eventDragArea)) {
+        return;
+      }
+      var top = trCollection[parseInt(rowIndex.toString(), 10)].getBoundingClientRect().height * rowIndex;
+      if (this.parent.rowAutoHeight) {
+        var cursorElement = this.getCursorElement(e);
+        if (cursorElement) {
+          top = cursorElement.classList.contains(WORK_CELLS_CLASS) ? cursorElement.offsetTop : cursorElement.offsetParent && cursorElement.offsetParent.classList.contains(APPOINTMENT_CLASS) ? cursorElement.offsetParent.offsetTop : top;
+        }
+      }
+      cloneElement.style.top = formatUnit(top);
+    };
+    DragAndDrop2.prototype.appendCloneElement = function(element2, cloneElement) {
+      if (cloneElement === void 0) {
+        cloneElement = null;
+      }
+      cloneElement = isNullOrUndefined(cloneElement) ? this.actionObj.clone : cloneElement;
+      var dragElement = document.querySelector(this.parent.eventDragArea);
+      if (this.parent.eventDragArea && dragElement) {
+        dragElement.appendChild(cloneElement);
+      } else {
+        element2.appendChild(cloneElement);
+      }
+    };
+    DragAndDrop2.prototype.getEventWrapper = function(index, isAllDayDrag) {
+      var eventWrapper;
+      if (isNullOrUndefined(isAllDayDrag)) {
+        isAllDayDrag = this.actionObj.clone.classList.contains(ALLDAY_APPOINTMENT_CLASS);
+      }
+      if (this.parent.activeViewOptions.timeScale.enable) {
+        var wrapperClass = isAllDayDrag ? "." + ALLDAY_APPOINTMENT_WRAPPER_CLASS : "." + APPOINTMENT_WRAPPER_CLASS;
+        eventWrapper = this.parent.element.querySelectorAll(wrapperClass).item(index);
+      } else {
+        var targetWrapper = this.parent.element.querySelectorAll("." + WORK_CELLS_CLASS).item(index);
+        eventWrapper = targetWrapper.querySelector("." + APPOINTMENT_WRAPPER_CLASS);
+        if (!eventWrapper) {
+          eventWrapper = createElement("div", { className: APPOINTMENT_WRAPPER_CLASS });
+          targetWrapper.appendChild(eventWrapper);
+        }
+      }
+      return eventWrapper;
+    };
+    DragAndDrop2.prototype.getAllDayEventHeight = function() {
+      var eventWrapper = createElement("div", { className: APPOINTMENT_CLASS });
+      this.parent.element.querySelector("." + ALLDAY_APPOINTMENT_WRAPPER_CLASS).appendChild(eventWrapper);
+      var eventHeight = eventWrapper.offsetHeight;
+      remove(eventWrapper);
+      return eventHeight;
+    };
+    DragAndDrop2.prototype.isAllowDrop = function(e) {
+      if (!this.actionObj.excludeSelectors) {
+        return false;
+      }
+      var dropSelectors = this.actionObj.excludeSelectors.split(",");
+      var isAllowDrop = false;
+      for (var _i = 0, dropSelectors_1 = dropSelectors; _i < dropSelectors_1.length; _i++) {
+        var selector = dropSelectors_1[_i];
+        if (e.target.classList.contains(selector)) {
+          isAllowDrop = true;
+          break;
+        }
+      }
+      return isAllowDrop;
+    };
+    DragAndDrop2.prototype.getModuleName = function() {
+      return "dragAndDrop";
+    };
+    return DragAndDrop2;
+  }(ActionBase)
+);
+var ViewBase = (
+  /** @class */
+  function() {
+    function ViewBase2(parent) {
+      this.previousNextAction = "next";
+      this.parent = parent;
+    }
+    ViewBase2.prototype.isTimelineView = function() {
+      return this.parent.currentView.indexOf("Timeline") !== -1;
+    };
+    ViewBase2.prototype.getContentRows = function() {
+      return [];
+    };
+    ViewBase2.prototype.refreshHeader = function() {
+    };
+    ViewBase2.prototype.refreshResourceHeader = function() {
+      remove(this.element.querySelector("tbody").lastElementChild.firstElementChild);
+      var resTd = createElement("td");
+      resTd.appendChild(this.parent.resourceBase.createResourceColumn());
+      prepend([resTd], this.element.querySelector("tbody").lastElementChild);
+      this.parent.notify(contentReady, {});
+    };
+    ViewBase2.prototype.getDayName = function(date) {
+      return this.parent.getDayNames("abbreviated")[date.getDay()];
+    };
+    ViewBase2.prototype.getDate = function(date) {
+      return this.parent.globalize.formatDate(date, { format: "d", calendar: this.parent.getCalendarMode() });
+    };
+    ViewBase2.prototype.getTime = function(date) {
+      if (this.parent.isAdaptive) {
+        if (this.parent.activeViewOptions.timeFormat === "HH:mm" || this.parent.activeViewOptions.timeFormat === "HH.mm") {
+          return this.parent.globalize.formatDate(date, { format: "H", calendar: this.parent.getCalendarMode() });
+        }
+        return this.parent.globalize.formatDate(date, { skeleton: "h", calendar: this.parent.getCalendarMode() });
+      }
+      return this.parent.getTimeString(date);
+    };
+    ViewBase2.prototype.getTimelineDate = function(date) {
+      var text = this.parent.globalize.formatDate(date, { skeleton: "MMMd", calendar: this.parent.getCalendarMode() }) + ", " + this.parent.getDayNames("wide")[date.getDay()];
+      return capitalizeFirstWord(text, "multiple");
+    };
+    ViewBase2.prototype.createEventTable = function(trCount) {
+      var eventTable = createElement("div", { className: EVENT_TABLE_CLASS });
+      append2(this.getEventRows(trCount), eventTable);
+      return eventTable;
+    };
+    ViewBase2.prototype.getEventRows = function(trCount) {
+      var eventRows = [];
+      var eventContainer;
+      for (var row = 0; row < trCount; row++) {
+        eventContainer = createElement("div", { className: APPOINTMENT_CONTAINER_CLASS });
+        if (this.parent.resourceBase && !this.parent.uiStateValues.isGroupAdaptive && this.parent.resourceBase.renderedResources) {
+          eventContainer.setAttribute("data-group-index", this.parent.resourceBase.renderedResources[parseInt(row.toString(), 10)].groupIndex.toString());
+        }
+        eventRows.push(eventContainer);
+      }
+      return eventRows;
+    };
+    ViewBase2.prototype.collapseRows = function(wrap) {
+      if (this.parent.activeViewOptions.group.resources.length > 0 && !this.parent.uiStateValues.isGroupAdaptive) {
+        this.parent.resourceBase.hideResourceRows(wrap.querySelector("tbody"));
+        this.parent.resourceBase.hideResourceRows(wrap.querySelector("." + EVENT_TABLE_CLASS));
+      }
+    };
+    ViewBase2.prototype.createTableLayout = function(className) {
+      var clsName = className || "";
+      var table = createElement("table", { className: SCHEDULE_TABLE_CLASS + " " + clsName });
+      var tbody = createElement("tbody");
+      table.appendChild(tbody);
+      return table;
+    };
+    ViewBase2.prototype.setAriaAttributes = function(table) {
+      table.setAttribute("role", "grid");
+      table.setAttribute("aria-label", this.getLabelText(this.parent.currentView));
+    };
+    ViewBase2.prototype.createColGroup = function(table, lastRow) {
+      var length = lastRow.length;
+      if (lastRow[0] && lastRow[0].colSpan) {
+        length = lastRow.map(function(value) {
+          return value.colSpan;
+        }).reduce(function(prev, next) {
+          return prev + next;
+        });
+      }
+      var colGroupEle = createElement("colgroup");
+      for (var i = 0; i < length; i++) {
+        colGroupEle.appendChild(createElement("col"));
+      }
+      prepend([colGroupEle], table);
+    };
+    ViewBase2.prototype.getScrollXIndent = function(content) {
+      return content.offsetHeight - content.clientHeight > 0 ? getScrollBarWidth() : 0;
+    };
+    ViewBase2.prototype.scrollTopPanel = function(target) {
+      this.getDatesHeaderElement().firstElementChild.scrollLeft = target.scrollLeft;
+    };
+    ViewBase2.prototype.scrollHeaderLabels = function(target) {
+      var headerTable = this.element.querySelector(".e-date-header-wrap table");
+      var colWidth = headerTable.offsetWidth / headerTable.querySelectorAll("colgroup col").length;
+      var applyLeft = function(headerCells2, isRtl) {
+        var currentCell;
+        var tdLeft = 0;
+        var colSpan = 0;
+        var hiddenLeft = isRtl ? -target.scrollLeft : target.scrollLeft;
+        for (var _i2 = 0, headerCells_2 = headerCells2; _i2 < headerCells_2.length; _i2++) {
+          var cell = headerCells_2[_i2];
+          colSpan += parseInt(cell.getAttribute("colSpan"), 10);
+          if (colSpan > Math.floor(hiddenLeft / colWidth)) {
+            currentCell = cell;
+            break;
+          }
+          tdLeft += cell.offsetWidth;
+        }
+        if (!isNullOrUndefined(currentCell)) {
+          currentCell.children[0].style[isRtl ? "right" : "left"] = hiddenLeft - tdLeft + "px";
+        }
+      };
+      var classNames2 = [".e-header-year-cell", ".e-header-month-cell", ".e-header-week-cell", ".e-header-cells"];
+      for (var _i = 0, classNames_1 = classNames2; _i < classNames_1.length; _i++) {
+        var className = classNames_1[_i];
+        var headerCells = [].slice.call(this.element.querySelectorAll(className));
+        if (headerCells.length > 0) {
+          for (var _a = 0, headerCells_1 = headerCells; _a < headerCells_1.length; _a++) {
+            var element2 = headerCells_1[_a];
+            element2.children[0].style[this.parent.enableRtl ? "right" : "left"] = "";
+          }
+          applyLeft(headerCells, this.parent.enableRtl);
+        }
+      }
+    };
+    ViewBase2.prototype.addAttributes = function(td, element2) {
+      if (td.template) {
+        append2(td.template, element2);
+      }
+      if (td.colSpan) {
+        element2.setAttribute("colspan", td.colSpan.toString());
+      }
+      if (td.className) {
+        addClass([element2], td.className);
+      }
+    };
+    ViewBase2.prototype.getHeaderBarHeight = function() {
+      var headerBarHeight = 2;
+      if (this.parent.headerModule) {
+        headerBarHeight += getOuterHeight(this.parent.headerModule.getHeaderElement());
+      }
+      if (this.parent.uiStateValues.isGroupAdaptive) {
+        var resHeader = this.parent.element.querySelector("." + RESOURCE_HEADER_TOOLBAR);
+        if (resHeader) {
+          headerBarHeight += resHeader.offsetHeight;
+        }
+      }
+      return headerBarHeight;
+    };
+    ViewBase2.prototype.renderPanel = function(type) {
+      if (type === PREVIOUS_PANEL_CLASS) {
+        prepend([this.element], this.parent.element.querySelector("." + TABLE_CONTAINER_CLASS));
+      } else {
+        this.parent.element.querySelector("." + TABLE_CONTAINER_CLASS).appendChild(this.element);
+      }
+    };
+    ViewBase2.prototype.setPanel = function(panel) {
+      this.element = panel;
+    };
+    ViewBase2.prototype.getPanel = function() {
+      return this.element;
+    };
+    ViewBase2.prototype.getDatesHeaderElement = function() {
+      return this.element.querySelector("." + DATE_HEADER_CONTAINER_CLASS);
+    };
+    ViewBase2.prototype.getDateSlots = function(renderDates, workDays) {
+      return [];
+    };
+    ViewBase2.prototype.generateColumnLevels = function() {
+      return [];
+    };
+    ViewBase2.prototype.getColumnLevels = function() {
+      return this.colLevels;
+    };
+    ViewBase2.prototype.highlightCurrentTime = function() {
+    };
+    ViewBase2.prototype.getStartDate = function() {
+      return this.renderDates[0];
+    };
+    ViewBase2.prototype.getEndDate = function() {
+      return this.renderDates[this.renderDates.length - 1];
+    };
+    ViewBase2.prototype.startDate = function() {
+      return this.renderDates[0];
+    };
+    ViewBase2.prototype.endDate = function() {
+      return addDays(this.renderDates[this.renderDates.length - 1], 1);
+    };
+    ViewBase2.prototype.getStartHour = function() {
+      var startHour = this.parent.getStartEndTime(this.parent.activeViewOptions.startHour);
+      if (isNullOrUndefined(startHour)) {
+        startHour = new Date(2e3, 0, 0, 0);
+      }
+      return startHour;
+    };
+    ViewBase2.prototype.getEndHour = function() {
+      var endHour = this.parent.getStartEndTime(this.parent.activeViewOptions.endHour);
+      if (isNullOrUndefined(endHour)) {
+        endHour = new Date(2e3, 0, 0, 0);
+      }
+      return endHour;
+    };
+    ViewBase2.prototype.isCurrentDate = function(date) {
+      return date.setHours(0, 0, 0, 0) === new Date(this.parent.currentTimezoneDate).setHours(0, 0, 0, 0);
+    };
+    ViewBase2.prototype.isCurrentMonth = function(date) {
+      if (this.parent.activeViewOptions.displayDate || this.parent.activeViewOptions.numberOfWeeks > 0) {
+        return this.parent.activeView.getStartDate().getTime() <= this.parent.getCurrentTime().getTime() && this.parent.activeView.getEndDate().getTime() >= this.parent.getCurrentTime().getTime();
+      }
+      return date.getFullYear() === this.parent.getCurrentTime().getFullYear() && date.getMonth() === this.parent.getCurrentTime().getMonth();
+    };
+    ViewBase2.prototype.isWorkDay = function(date, workDays) {
+      if (workDays === void 0) {
+        workDays = this.parent.activeViewOptions.workDays;
+      }
+      if (workDays.indexOf(date.getDay()) >= 0) {
+        return true;
+      }
+      return false;
+    };
+    ViewBase2.prototype.isWorkHour = function(date, startHour, endHour, workDays) {
+      if (isNullOrUndefined(startHour) || isNullOrUndefined(endHour)) {
+        return false;
+      }
+      startHour.setMilliseconds(0);
+      endHour.setMilliseconds(0);
+      return !(getDateInMs(date) < getDateInMs(startHour) || getDateInMs(date) >= getDateInMs(endHour) || !this.isWorkDay(date, workDays));
+    };
+    ViewBase2.prototype.getRenderDates = function(workDays) {
+      var renderDates = [];
+      if (this.parent.currentView === "Week" || this.parent.currentView === "TimelineWeek") {
+        var selectedDate = resetTime(this.parent.selectedDate);
+        var start = getWeekFirstDate(selectedDate, this.parent.activeViewOptions.firstDayOfWeek);
+        for (var i = 0, length_1 = WEEK_LENGTH * this.parent.activeViewOptions.interval; i < length_1; i++) {
+          if (this.parent.activeViewOptions.showWeekend) {
+            renderDates.push(start);
+          } else {
+            if (this.isWorkDay(start, workDays)) {
+              renderDates.push(start);
+            }
+          }
+          start = addDays(start, 1);
+        }
+      } else if (this.parent.currentView === "WorkWeek" || this.parent.currentView === "TimelineWorkWeek") {
+        var start = getWeekFirstDate(resetTime(this.parent.selectedDate), this.parent.activeViewOptions.firstDayOfWeek);
+        for (var i = 0, length_2 = WEEK_LENGTH * this.parent.activeViewOptions.interval; i < length_2; i++) {
+          if (this.isWorkDay(start, workDays)) {
+            renderDates.push(start);
+          }
+          start = addDays(start, 1);
+        }
+      } else {
+        var dayCount = this.parent.currentView === "Agenda" ? this.parent.agendaDaysCount : this.parent.activeViewOptions.interval;
+        var start = resetTime(this.parent.selectedDate);
+        do {
+          if (this.parent.activeViewOptions.showWeekend) {
+            renderDates.push(start);
+          } else {
+            if (this.isWorkDay(start, workDays)) {
+              renderDates.push(start);
+            }
+          }
+          start = addDays(start, 1);
+        } while (dayCount !== renderDates.length);
+      }
+      if (!workDays) {
+        this.renderDates = renderDates;
+      }
+      if (this.parent.headerModule) {
+        this.parent.headerModule.previousNextIconHandler();
+      }
+      return renderDates;
+    };
+    ViewBase2.prototype.getNextPreviousDate = function(type) {
+      this.previousNextAction = type;
+      if (this.parent.currentView === "Day" || this.parent.currentView === "TimelineDay") {
+        if (this.parent.activeViewOptions.showWeekend) {
+          var daysCount = this.parent.activeViewOptions.interval;
+          return addDays(this.parent.selectedDate, type === "next" ? daysCount : -daysCount);
+        } else {
+          var date = void 0;
+          if (type === "next") {
+            date = addDays(this.renderDates.slice(-1)[0], 1);
+            while (!this.isWorkDay(date)) {
+              date = addDays(date, 1);
+            }
+          } else {
+            date = addDays(this.renderDates[0], -1);
+            var count = 0;
+            do {
+              if (this.isWorkDay(date)) {
+                count += 1;
+              }
+              if (this.parent.activeViewOptions.interval !== count) {
+                date = addDays(date, -1);
+              }
+            } while (this.parent.activeViewOptions.interval !== count);
+          }
+          return date;
+        }
+      }
+      var weekLength = type === "next" ? WEEK_LENGTH : -WEEK_LENGTH;
+      return addDays(this.parent.selectedDate, weekLength * this.parent.activeViewOptions.interval);
+    };
+    ViewBase2.prototype.getLabelText = function(view) {
+      var viewStr = view.charAt(0).toLowerCase() + view.substring(1);
+      return this.parent.localeObj.getConstant(viewStr) + " of " + capitalizeFirstWord(this.parent.globalize.formatDate(this.parent.selectedDate, { skeleton: "long", calendar: this.parent.getCalendarMode() }), "single");
+    };
+    ViewBase2.prototype.getDateRangeText = function() {
+      if (this.parent.isAdaptive) {
+        var formatDate = this.parent.activeViewOptions.dateFormat ? this.parent.activeViewOptions.dateFormat : "MMMM y";
+        return capitalizeFirstWord(this.parent.globalize.formatDate(this.parent.selectedDate, { format: formatDate, calendar: this.parent.getCalendarMode() }), "single");
+      }
+      return this.formatDateRange(this.renderDates[0], this.renderDates[this.renderDates.length - 1]);
+    };
+    ViewBase2.prototype.formatDateRange = function(startDate, endDate) {
+      var globalize = this.parent.globalize;
+      var mode = this.parent.getCalendarMode();
+      if (startDate === endDate) {
+        endDate = null;
+      }
+      if (!isNullOrUndefined(this.parent.activeViewOptions.dateFormat)) {
+        var text = "";
+        if (!endDate) {
+          text = globalize.formatDate(startDate, { format: this.parent.activeViewOptions.dateFormat, calendar: mode });
+          return capitalizeFirstWord(text, "multiple");
+        }
+        text = globalize.formatDate(startDate, { format: this.parent.activeViewOptions.dateFormat, calendar: mode }) + " - " + globalize.formatDate(endDate, { format: this.parent.activeViewOptions.dateFormat, calendar: mode });
+        return capitalizeFirstWord(text, "multiple");
+      }
+      var formattedStr;
+      var longDateFormat;
+      if (this.parent.locale === "en" || this.parent.locale === "en-US") {
+        longDateFormat = getValue("dateFormats.long", getDefaultDateObject(mode));
+      } else {
+        longDateFormat = getValue("main." + this.parent.locale + ".dates.calendars." + mode + ".dateFormats.long", cldrData);
+      }
+      if (!endDate) {
+        return capitalizeFirstWord(globalize.formatDate(startDate, { format: longDateFormat, calendar: mode }), "single");
+      }
+      var dateFormat = longDateFormat.trim().toLocaleLowerCase();
+      if (dateFormat.substr(0, 1) === "d") {
+        if (startDate.getFullYear() === endDate.getFullYear()) {
+          if (startDate.getMonth() === endDate.getMonth()) {
+            formattedStr = globalize.formatDate(startDate, { format: "dd", calendar: mode }) + " - " + globalize.formatDate(endDate, { format: "dd MMMM yyyy", calendar: mode });
+          } else {
+            formattedStr = globalize.formatDate(startDate, { format: "dd MMM", calendar: mode }) + " - " + globalize.formatDate(endDate, { format: "dd MMM yyyy", calendar: mode });
+          }
+        } else {
+          formattedStr = globalize.formatDate(startDate, { format: "dd MMM yyyy", calendar: mode }) + " - " + globalize.formatDate(endDate, { format: "dd MMM yyyy", calendar: mode });
+        }
+      } else if (dateFormat.substr(0, 1) === "m") {
+        if (startDate.getFullYear() === endDate.getFullYear()) {
+          if (startDate.getMonth() === endDate.getMonth()) {
+            formattedStr = globalize.formatDate(startDate, { format: "MMMM dd", calendar: mode }) + " - " + globalize.formatDate(endDate, { format: "dd, yyyy", calendar: mode });
+          } else {
+            formattedStr = globalize.formatDate(startDate, { format: "MMM dd", calendar: mode }) + " - " + globalize.formatDate(endDate, { format: "MMM dd, yyyy", calendar: mode });
+          }
+        } else {
+          formattedStr = globalize.formatDate(startDate, { format: "MMM dd, yyyy", calendar: mode }) + " - " + globalize.formatDate(endDate, { format: "MMM dd, yyyy", calendar: mode });
+        }
+      } else {
+        formattedStr = globalize.formatDate(startDate, { format: longDateFormat, calendar: mode }) + " - " + globalize.formatDate(endDate, { format: longDateFormat, calendar: mode });
+      }
+      return capitalizeFirstWord(formattedStr, "multiple");
+    };
+    ViewBase2.prototype.getMobileDateElement = function(date, className) {
+      var wrap = createElement("div", {
+        className,
+        innerHTML: '<div class="e-m-date">' + this.parent.globalize.formatDate(date, { format: "d", calendar: this.parent.getCalendarMode() }) + '</div><div class="e-m-day">' + capitalizeFirstWord(this.parent.globalize.formatDate(date, { format: "E", calendar: this.parent.getCalendarMode() }), "single") + "</div>"
+      });
+      return wrap;
+    };
+    ViewBase2.prototype.setResourceHeaderContent = function(tdElement, tdData, className) {
+      if (className === void 0) {
+        className = TEXT_ELLIPSIS;
+      }
+      if (this.parent.activeViewOptions.resourceHeaderTemplate) {
+        var data = { resource: tdData.resource, resourceData: tdData.resourceData };
+        var scheduleId = this.parent.element.id + "_";
+        var viewName = this.parent.activeViewOptions.resourceHeaderTemplateName;
+        var templateId = scheduleId + viewName + "resourceHeaderTemplate";
+        var quickTemplate = [].slice.call(this.parent.getResourceHeaderTemplate()(data, this.parent, "resourceHeaderTemplate", templateId, false));
+        append2(quickTemplate, tdElement);
+      } else {
+        var resourceText = createElement("div", { className });
+        this.parent.sanitize(tdData.resourceData[tdData.resource.textField], resourceText);
+        tdElement.appendChild(resourceText);
+      }
+    };
+    ViewBase2.prototype.renderResourceMobileLayout = function() {
+      if (this.parent.resourceBase.lastResourceLevel && this.parent.resourceBase.lastResourceLevel.length <= 0) {
+        return;
+      }
+      this.parent.resourceBase.renderResourceHeader();
+      this.parent.resourceBase.renderResourceTree();
+    };
+    ViewBase2.prototype.addAutoHeightClass = function(element2) {
+      if (!this.parent.uiStateValues.isGroupAdaptive && this.parent.rowAutoHeight && this.isTimelineView() && this.parent.activeViewOptions.group.resources.length > 0) {
+        addClass([element2], AUTO_HEIGHT);
+      }
+    };
+    ViewBase2.prototype.getColElements = function() {
+      return [].slice.call(this.element.querySelectorAll("." + CONTENT_WRAP_CLASS + " col, ." + DATE_HEADER_WRAP_CLASS + " col"));
+    };
+    ViewBase2.prototype.setColWidth = function(content) {
+      if (this.isTimelineView()) {
+        var colElements = this.getColElements();
+        var contentBody = this.element.querySelector("." + CONTENT_TABLE_CLASS + " tbody");
+        var colWidth_1 = contentBody.getBoundingClientRect().width / (colElements.length / 2);
+        if (content.offsetHeight !== content.clientHeight) {
+          var resourceColumn = this.parent.element.querySelector("." + RESOURCE_COLUMN_WRAP_CLASS);
+          if (!isNullOrUndefined(resourceColumn)) {
+            setStyleAttribute(resourceColumn, { "height": formatUnit(content.clientHeight) });
+          }
+        }
+        var cssClass2 = "." + HEADER_CELLS_CLASS + ",." + TIME_SLOT_CLASS + ",." + HEADER_WEEK_CELLS_CLASS + ",." + HEADER_MONTH_CELLS_CLASS + ",." + HEADER_YEAR_CELLS_CLASS;
+        var headerCellElements = [].slice.call(this.element.querySelectorAll(cssClass2));
+        headerCellElements.forEach(function(ele) {
+          var colSpan = isNullOrUndefined(ele.getAttribute("colspan")) ? "1" : ele.getAttribute("colspan");
+          var headerCellColSpan = parseInt(colSpan, 10);
+          setStyleAttribute(ele, { "width": formatUnit(colWidth_1 * headerCellColSpan) });
+        });
+      }
+    };
+    ViewBase2.prototype.resetColWidth = function() {
+      var colElements = this.getColElements();
+      for (var _i = 0, colElements_1 = colElements; _i < colElements_1.length; _i++) {
+        var col = colElements_1[_i];
+        col.style.width = "";
+      }
+    };
+    ViewBase2.prototype.getContentAreaElement = function() {
+      return this.element.querySelector("." + CONTENT_WRAP_CLASS);
+    };
+    ViewBase2.prototype.wireExpandCollapseIconEvents = function() {
+      if (this.parent.resourceBase && this.parent.resourceBase.resourceCollection.length > 1) {
+        var treeIcons = [].slice.call(this.element.querySelectorAll("." + RESOURCE_TREE_ICON_CLASS));
+        for (var _i = 0, treeIcons_1 = treeIcons; _i < treeIcons_1.length; _i++) {
+          var icon = treeIcons_1[_i];
+          EventHandler.clearEvents(icon);
+          EventHandler.add(icon, "click", this.parent.resourceBase.onTreeIconClick, this.parent.resourceBase);
+        }
+      }
+    };
+    ViewBase2.prototype.scrollToDate = function(scrollDate) {
+      if (["Month", "TimelineMonth"].indexOf(this.parent.currentView) === -1 || isNullOrUndefined(scrollDate)) {
+        return;
+      }
+      var scrollWrap = this.getContentAreaElement();
+      var tdDate = new Date(resetTime(/* @__PURE__ */ new Date(+scrollDate)).getTime()).getTime();
+      var dateElement = scrollWrap.querySelector("." + WORK_CELLS_CLASS + '[data-date="' + tdDate + '"]');
+      if (this.parent.currentView === "Month" && dateElement) {
+        if (scrollWrap.scrollWidth > scrollWrap.clientWidth) {
+          if (!this.parent.enableRtl) {
+            scrollWrap.scrollLeft = dateElement.offsetLeft;
+          } else {
+            scrollWrap.scrollLeft = -(this.parent.getContentTable().offsetWidth - dateElement.offsetLeft - dateElement.offsetWidth);
+          }
+        }
+        scrollWrap.scrollTop = dateElement.offsetTop;
+      }
+      if (this.parent.currentView === "TimelineMonth" && dateElement) {
+        if (!this.parent.enableRtl) {
+          scrollWrap.scrollLeft = dateElement.offsetLeft;
+        } else {
+          scrollWrap.scrollLeft = -(this.parent.getContentTable().offsetWidth - dateElement.offsetLeft - dateElement.offsetWidth);
+        }
+      }
+    };
+    ViewBase2.prototype.setPersistence = function() {
+      if (this.parent.enablePersistence) {
+        var contentWrap = this.element.querySelector(".e-content-wrap");
+        if (!isNullOrUndefined(contentWrap)) {
+          this.parent.scrollLeft = contentWrap.scrollLeft;
+          this.parent.scrollTop = contentWrap.scrollTop;
+        }
+      }
+    };
+    ViewBase2.prototype.retainScrollPosition = function() {
+      if (this.parent.enablePersistence) {
+        var conWrap = this.parent.element.querySelector(".e-content-wrap");
+        if (!isNullOrUndefined(conWrap) && !isNullOrUndefined(this.parent.scrollLeft) && !isNullOrUndefined(this.parent.scrollTop)) {
+          conWrap.scrollTop = this.parent.scrollTop;
+          conWrap.scrollLeft = this.parent.scrollLeft;
+        }
+      }
+    };
+    ViewBase2.prototype.getViewStartDate = function() {
+      var startDate = this.renderDates[0];
+      if (this.parent.activeViewOptions.group.resources.length > 0 && this.parent.resourceBase.lastResourceLevel.length > 0) {
+        startDate = this.parent.resourceBase.getResourceRenderDates()[0];
+      }
+      return startDate;
+    };
+    ViewBase2.prototype.getViewEndDate = function() {
+      var endDate = addDays(this.renderDates[this.renderDates.length - 1], 1);
+      if (this.parent.activeViewOptions.group.resources.length > 0 && this.parent.resourceBase.lastResourceLevel.length > 0) {
+        endDate = addDays(this.parent.resourceBase.getResourceRenderDates().slice(-1)[0], 1);
+      }
+      return endDate;
+    };
+    ViewBase2.prototype.getAdjustedDate = function(startTime) {
+      if (!this.parent.activeViewOptions.timeScale.enable || this.parent.currentView === "Month" || this.parent.currentView === "TimelineYear" && this.parent.activeViewOptions.group.resources.length === 0) {
+        return new Date(startTime.setHours(0, 0, 0, 0));
+      } else if (this.parent.currentView === "TimelineYear" && this.parent.activeViewOptions.group.resources.length > 0) {
+        startTime.setHours(0, 0, 0, 0);
+        return new Date(startTime.setDate(1));
+      }
+      return null;
+    };
+    ViewBase2.prototype.resetColLevels = function() {
+      this.parent.resourceBase.expandedResources = [];
+      var renderedCount = this.parent.virtualScrollModule.getRenderedCount();
+      var lastLevel = this.parent.activeViewOptions.group.byDate ? this.colLevels[0] : this.parent.resourceBase.renderedResources;
+      var index = 0;
+      for (var i = 0; i < lastLevel.length; i++) {
+        if (index >= renderedCount) {
+          break;
+        }
+        index += lastLevel[parseInt(i.toString(), 10)].colSpan;
+        this.parent.resourceBase.expandedResources.push(lastLevel[parseInt(i.toString(), 10)]);
+      }
+      if (this.parent.activeViewOptions.group.byDate) {
+        this.colLevels[0] = this.parent.resourceBase.expandedResources;
+        this.parent.virtualScrollModule.setRenderedDates(this.parent.resourceBase.expandedResources);
+      } else {
+        this.colLevels[this.colLevels.length - 2] = this.parent.resourceBase.expandedResources;
+        this.parent.resourceBase.renderedResources = this.parent.resourceBase.expandedResources;
+      }
+      if (this.parent.currentView !== "Month") {
+        this.colLevels[this.colLevels.length - 1] = this.colLevels[this.colLevels.length - 1].slice(0, index);
+        this.parent.resourceBase.expandedResources = this.colLevels[this.colLevels.length - 1];
+      }
+    };
+    ViewBase2.prototype.destroy = function() {
+      if (this.element && this.element.parentNode) {
+        remove(this.element);
+      }
+      this.element = null;
+      this.renderDates = null;
+      this.colLevels = null;
+    };
+    return ViewBase2;
+  }()
+);
+var __extends$3 = globalThis && globalThis.__extends || function() {
+  var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
+      d2.__proto__ = b2;
+    } || function(d2, b2) {
+      for (var p2 in b2)
+        if (b2.hasOwnProperty(p2))
+          d2[p2] = b2[p2];
+    };
+    return extendStatics(d, b);
+  };
+  return function(d, b) {
+    extendStatics(d, b);
+    function __() {
+      this.constructor = d;
+    }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+  };
+}();
+var VerticalView = (
+  /** @class */
+  function(_super) {
+    __extends$3(VerticalView2, _super);
+    function VerticalView2(parent) {
+      var _this = _super.call(this, parent) || this;
+      _this.viewClass = "e-day-view";
+      _this.isInverseTableSelect = true;
+      _this.baseCssClass = "e-vertical-view";
+      _this.appointment = null;
+      return _this;
+    }
+    VerticalView2.prototype.getModuleName = function() {
+      return "verticalView";
+    };
+    VerticalView2.prototype.addEventListener = function() {
+      this.parent.on(scrollUiUpdate, this.scrollUiUpdate, this);
+      this.parent.on(dataReady, this.renderEvents, this);
+    };
+    VerticalView2.prototype.removeEventListener = function() {
+      if (this.parent) {
+        this.parent.off(scrollUiUpdate, this.scrollUiUpdate);
+        this.parent.off(dataReady, this.renderEvents);
+      }
+    };
+    VerticalView2.prototype.renderEvents = function() {
+      this.appointment = this.parent.activeViewOptions.timeScale.enable ? new VerticalEvent(this.parent) : new MonthEvent(this.parent);
+      this.appointment.renderAppointments();
+      this.parent.notify(eventsLoaded, {});
+    };
+    VerticalView2.prototype.onContentScroll = function(e) {
+      this.parent.removeNewEventElement();
+      var target = e.target;
+      this.parent.notify(virtualScroll, e);
+      this.scrollLeftPanel(target);
+      this.scrollTopPanel(target);
+      if (!this.parent.isAdaptive) {
+        this.parent.uiStateValues.top = target.scrollTop;
+      }
+      this.parent.uiStateValues.left = target.scrollLeft;
+      if (!isNullOrUndefined(this.parent.quickPopup)) {
+        this.parent.quickPopup.quickPopupHide();
+      }
+      this.setPersistence();
+    };
+    VerticalView2.prototype.onAdaptiveMove = function(e) {
+      if (this.parent.uiStateValues.action) {
+        e.preventDefault();
+      }
+    };
+    VerticalView2.prototype.onAdaptiveScroll = function(e) {
+      if (this.parent && !this.parent.isDestroyed) {
+        this.parent.removeNewEventElement();
+        this.parent.uiStateValues.top = e.target.scrollTop;
+      }
+    };
+    VerticalView2.prototype.scrollLeftPanel = function(target) {
+      var leftPanel = this.getLeftPanelElement();
+      if (!isNullOrUndefined(leftPanel)) {
+        leftPanel.scrollTop = target.scrollTop;
+      }
+    };
+    VerticalView2.prototype.scrollUiUpdate = function(args) {
+      if (!this.parent) {
+        return;
+      }
+      var dateHeader = this.parent.element.querySelector("." + DATE_HEADER_WRAP_CLASS);
+      var headerBarHeight = this.getHeaderBarHeight();
+      var timeCells = this.getLeftPanelElement();
+      var content = this.getScrollableElement();
+      var header = this.getDatesHeaderElement();
+      var scrollerHeight = this.parent.element.offsetHeight - headerBarHeight - header.offsetHeight;
+      this.setContentHeight(content, timeCells, scrollerHeight);
+      this.setColWidth(content);
+      var scrollBarWidth = getScrollBarWidth();
+      header.firstElementChild.style[args.cssProperties.rtlBorder] = "";
+      header.style[args.cssProperties.rtlPadding] = "";
+      var isDateHeaderScroll = this.parent.enableAllDayScroll ? !(content.offsetWidth - content.clientWidth <= dateHeader.offsetWidth - dateHeader.clientWidth && dateHeader.classList.contains("e-all-day-scroll")) : true;
+      if (content.offsetWidth - content.clientWidth > 0 && isDateHeaderScroll) {
+        header.firstElementChild.style[args.cssProperties.border] = scrollBarWidth > 0 ? "1px" : "0px";
+        header.style[args.cssProperties.padding] = scrollBarWidth > 0 ? scrollBarWidth - 1 + "px" : "0px";
+      } else {
+        header.firstElementChild.style[args.cssProperties.border] = "";
+        header.style[args.cssProperties.padding] = "";
+      }
+      if (!args.isPreventScrollUpdate) {
+        if (this.parent.uiStateValues.isInitial) {
+          if (this.parent.currentView.indexOf("Timeline") > -1) {
+            content.scrollTop = this.parent.uiStateValues.top;
+          }
+          this.scrollToWorkHour();
+          this.parent.uiStateValues.isInitial = false;
+        } else {
+          if (timeCells) {
+            timeCells.scrollTop = this.parent.uiStateValues.top;
+          }
+          content.scrollTop = this.parent.uiStateValues.top;
+          content.scrollLeft = this.parent.uiStateValues.left;
+        }
+      }
+      if (this.parent.activeViewOptions.timeScale.enable) {
+        this.highlightCurrentTime();
+      }
+      this.retainScrollPosition();
+    };
+    VerticalView2.prototype.setContentHeight = function(element2, leftPanelElement, height) {
+      if (this.parent.isAdaptive && !this.isTimelineView()) {
+        element2.style.height = this.parent.height === "auto" ? "auto" : formatUnit(height);
+      } else {
+        if (!isNullOrUndefined(leftPanelElement)) {
+          leftPanelElement.style.height = this.parent.height === "auto" ? "auto" : formatUnit(height - this.getScrollXIndent(element2));
+        }
+        element2.style.height = this.parent.height === "auto" ? "auto" : formatUnit(height);
+      }
+    };
+    VerticalView2.prototype.scrollToWorkHour = function() {
+      if (this.parent.workHours.highlight) {
+        var firstWorkHourCell = this.element.querySelector("." + WORK_HOURS_CLASS);
+        if (firstWorkHourCell) {
+          this.getScrollableElement().scrollTop = firstWorkHourCell.offsetTop;
+          this.parent.uiStateValues.top = firstWorkHourCell.offsetTop;
+          this.parent.uiStateValues.left = 0;
+        }
+      }
+    };
+    VerticalView2.prototype.scrollToHour = function(hour, scrollDate) {
+      var date = this.parent.getStartEndTime(hour);
+      if (!isNullOrUndefined(scrollDate)) {
+        var headerElement = this.element.querySelector("." + HEADER_CELLS_CLASS + '[data-date="' + new Date(resetTime(scrollDate)).getTime() + '"]');
+        if (headerElement) {
+          if (this.parent.enableRtl) {
+            var conWrap = this.element.querySelector("." + CONTENT_TABLE_CLASS);
+            this.getScrollableElement().scrollLeft = -(conWrap.offsetWidth - headerElement.offsetLeft - headerElement.offsetWidth);
+          } else {
+            this.getScrollableElement().scrollLeft = headerElement.offsetLeft;
+          }
+        }
+      }
+      if (isNullOrUndefined(date)) {
+        return;
+      }
+      this.getScrollableElement().scrollTop = this.getTopFromDateTime(date);
+    };
+    VerticalView2.prototype.scrollToDate = function(scrollDate) {
+      this.scrollToHour(null, scrollDate);
+    };
+    VerticalView2.prototype.generateColumnLevels = function() {
+      var level = this.getDateSlots(this.renderDates, this.parent.activeViewOptions.workDays);
+      var columnLevels = [];
+      if (this.parent.activeViewOptions.group.resources.length > 0) {
+        columnLevels = this.parent.resourceBase.generateResourceLevels(level);
+        if (this.parent.activeViewOptions.group.hideNonWorkingDays) {
+          while (columnLevels[0].length === 0) {
+            this.parent.setProperties({ selectedDate: this.parent.activeView.getNextPreviousDate(this.previousNextAction) }, true);
+            this.parent.activeView.getRenderDates();
+            if (this.parent.headerModule) {
+              this.parent.headerModule.setCalendarDate(this.parent.selectedDate);
+              this.parent.headerModule.updateDateRange();
+            }
+            level = this.getDateSlots(this.renderDates, this.parent.activeViewOptions.workDays);
+            columnLevels = this.parent.resourceBase.generateResourceLevels(level);
+          }
+        }
+        if (this.parent.uiStateValues.isGroupAdaptive && this.parent.resourceBase.lastResourceLevel.length > 0) {
+          var resourceLevel = this.parent.resourceBase.lastResourceLevel[this.parent.uiStateValues.groupIndex];
+          var resStartHour = resourceLevel.resourceData[resourceLevel.resource.startHourField];
+          var resEndHour = resourceLevel.resourceData[resourceLevel.resource.endHourField];
+          var dateSlots = this.getDateSlots(resourceLevel.renderDates, resourceLevel.workDays, resStartHour, resEndHour);
+          columnLevels = [dateSlots];
+        }
+      } else {
+        columnLevels.push(level);
+      }
+      this.colLevels = columnLevels;
+      return columnLevels;
+    };
+    VerticalView2.prototype.getDateSlots = function(renderDates, workDays, workStartHour, workEndHour) {
+      if (workStartHour === void 0) {
+        workStartHour = this.parent.workHours.start;
+      }
+      if (workEndHour === void 0) {
+        workEndHour = this.parent.workHours.end;
+      }
+      var dateCol = [];
+      var start = this.parent.getStartEndTime(workStartHour);
+      var end = this.parent.getStartEndTime(workEndHour);
+      for (var _i = 0, renderDates_1 = renderDates; _i < renderDates_1.length; _i++) {
+        var col = renderDates_1[_i];
+        var classList2 = [HEADER_CELLS_CLASS];
+        if (this.isCurrentDate(col)) {
+          classList2.push(CURRENT_DAY_CLASS);
+        }
+        dateCol.push({
+          date: col,
+          type: "dateHeader",
+          className: classList2,
+          colSpan: 1,
+          workDays,
+          startHour: /* @__PURE__ */ new Date(+start),
+          endHour: /* @__PURE__ */ new Date(+end)
+        });
+      }
+      return dateCol;
+    };
+    VerticalView2.prototype.isWorkHourRange = function(date) {
+      return this.getStartHour().getTime() <= date.getTime() && this.getEndHour().getTime() >= date.getTime();
+    };
+    VerticalView2.prototype.highlightCurrentTime = function() {
+      var _this = this;
+      if (this.parent.activeViewOptions.headerRows.length > 0 && this.parent.activeViewOptions.headerRows.slice(-1)[0].option !== "Hour") {
+        return;
+      }
+      var currentDate = this.parent.getCurrentTime();
+      if (this.parent.showTimeIndicator && this.isWorkHourRange(currentDate)) {
+        var currentDateIndex = this.getCurrentTimeIndicatorIndex();
+        if (currentDateIndex.length > 0) {
+          var workCells = [].slice.call(this.element.querySelectorAll("." + WORK_CELLS_CLASS));
+          if (workCells.length > 0) {
+            this.changeCurrentTimePosition();
+          }
+          if (isNullOrUndefined(this.currentTimeIndicatorTimer)) {
+            var interval = MS_PER_MINUTE - (currentDate.getSeconds() * 1e3 + currentDate.getMilliseconds());
+            if (interval <= MS_PER_MINUTE - 1e3) {
+              window.setTimeout(function() {
+                if (!isNullOrUndefined(_this.currentTimeIndicatorTimer)) {
+                  _this.clearCurrentTimeIndicatorTimer();
+                  _this.changeCurrentTimePosition();
+                  _this.updateCurrentTimeIndicatorTimer();
+                }
+              }, interval);
+            }
+            this.updateCurrentTimeIndicatorTimer();
+          }
+        } else {
+          this.clearCurrentTimeIndicatorTimer();
+        }
+      } else {
+        this.clearCurrentTimeIndicatorTimer();
+      }
+    };
+    VerticalView2.prototype.getCurrentTimeIndicatorIndex = function() {
+      var currentDateIndex = [];
+      if (!isNullOrUndefined(this.parent.resourceBase) && this.parent.activeViewOptions.group.resources.length > 0 && !this.parent.uiStateValues.isGroupAdaptive) {
+        var count = 0;
+        var currentDate = resetTime(this.parent.getCurrentTime());
+        if (this.parent.virtualScrollModule && this.parent.activeViewOptions.allowVirtualScrolling && this.parent.activeViewOptions.group.byDate) {
+          for (var _i = 0, _a = this.parent.resourceBase.expandedResources; _i < _a.length; _i++) {
+            var resource = _a[_i];
+            if (resetTime(resource.date).getTime() === currentDate.getTime()) {
+              currentDateIndex.push(count);
+            }
+            count += 1;
+          }
+        } else {
+          for (var _b = 0, _c = this.parent.resourceBase.renderedResources; _b < _c.length; _b++) {
+            var resource = _c[_b];
+            var index = this.parent.getIndexOfDate(resource.renderDates, currentDate);
+            if (index >= 0) {
+              var resIndex = this.parent.activeViewOptions.group.byDate ? this.parent.resourceBase.lastResourceLevel.length * index + count : count + index;
+              currentDateIndex.push(resIndex);
+            }
+            count += this.parent.activeViewOptions.group.byDate ? 1 : resource.renderDates.length;
+          }
+        }
+      } else {
+        var renderDates = this.parent.uiStateValues.isGroupAdaptive && this.parent.resourceBase.lastResourceLevel.length > 0 ? this.parent.resourceBase.lastResourceLevel[this.parent.uiStateValues.groupIndex].renderDates : this.renderDates;
+        var index = this.parent.getIndexOfDate(renderDates, resetTime(this.parent.getCurrentTime()));
+        if (index >= 0) {
+          currentDateIndex.push(index);
+        }
+      }
+      return currentDateIndex;
+    };
+    VerticalView2.prototype.clearCurrentTimeIndicatorTimer = function() {
+      if (!isNullOrUndefined(this.currentTimeIndicatorTimer)) {
+        window.clearInterval(this.currentTimeIndicatorTimer);
+        this.currentTimeIndicatorTimer = null;
+        this.removeCurrentTimeIndicatorElements();
+      }
+    };
+    VerticalView2.prototype.updateCurrentTimeIndicatorTimer = function() {
+      var _this = this;
+      this.currentTimeIndicatorTimer = window.setInterval(function() {
+        _this.changeCurrentTimePosition();
+      }, MS_PER_MINUTE);
+    };
+    VerticalView2.prototype.removeCurrentTimeIndicatorElements = function() {
+      var queryString2 = "." + PREVIOUS_TIMELINE_CLASS + ",." + CURRENT_TIMELINE_CLASS + ",." + CURRENT_TIME_CLASS;
+      var timeIndicator = [].slice.call(this.element.querySelectorAll(queryString2));
+      for (var _i = 0, timeIndicator_1 = timeIndicator; _i < timeIndicator_1.length; _i++) {
+        var indicator = timeIndicator_1[_i];
+        remove(indicator);
+      }
+    };
+    VerticalView2.prototype.changeCurrentTimePosition = function() {
+      if (!this.parent || this.parent && this.parent.isDestroyed) {
+        return;
+      }
+      this.removeCurrentTimeIndicatorElements();
+      var currentDateIndex = this.getCurrentTimeIndicatorIndex();
+      var firstRow = this.parent.getContentTable().rows[0];
+      var top = this.getTopFromDateTime(this.parent.getCurrentTime());
+      var topInPx = formatUnit(top);
+      var rowIndex = Math.floor(top / firstRow.cells[0].offsetHeight);
+      var timeCellsWrap = this.getLeftPanelElement();
+      var timeTrs = [].slice.call(timeCellsWrap.querySelectorAll("tr"));
+      if (isNullOrUndefined(rowIndex) || isNaN(rowIndex) || rowIndex === timeTrs.length) {
+        return;
+      }
+      var curTimeWrap = [].slice.call(this.element.querySelectorAll("." + TIMELINE_WRAPPER_CLASS));
+      for (var i = 0, length_1 = currentDateIndex[0]; i < length_1; i++) {
+        curTimeWrap[parseInt(i.toString(), 10)].appendChild(createElement("div", { className: PREVIOUS_TIMELINE_CLASS, styles: "top:" + topInPx }));
+      }
+      for (var _i = 0, currentDateIndex_1 = currentDateIndex; _i < currentDateIndex_1.length; _i++) {
+        var day = currentDateIndex_1[_i];
+        curTimeWrap[parseInt(day.toString(), 10)].appendChild(createElement("div", { className: CURRENT_TIMELINE_CLASS, styles: "top:" + topInPx }));
+      }
+      var currentTimeEle = createElement("div", {
+        innerHTML: this.parent.getTimeString(this.parent.getCurrentTime()),
+        className: CURRENT_TIME_CLASS,
+        styles: "top:" + topInPx
+      });
+      if (rowIndex <= timeTrs.length) {
+        removeClass(timeCellsWrap.querySelectorAll("." + HIDE_CHILDS_CLASS), HIDE_CHILDS_CLASS);
+        if (timeTrs[parseInt(rowIndex.toString(), 10)]) {
+          addClass([timeTrs[parseInt(rowIndex.toString(), 10)].lastElementChild], HIDE_CHILDS_CLASS);
+        }
+        prepend([currentTimeEle], timeCellsWrap);
+        currentTimeEle.style.top = formatUnit(currentTimeEle.offsetTop - currentTimeEle.offsetHeight / 2);
+      }
+    };
+    VerticalView2.prototype.getTopFromDateTime = function(date) {
+      var startHour = this.getStartHour();
+      var diffInMinutes = (date.getHours() - startHour.getHours()) * 60 + (date.getMinutes() - startHour.getMinutes());
+      return diffInMinutes * this.getWorkCellHeight() * this.parent.activeViewOptions.timeScale.slotCount / this.parent.activeViewOptions.timeScale.interval;
+    };
+    VerticalView2.prototype.getWorkCellHeight = function() {
+      return parseFloat(this.element.querySelector("." + WORK_CELLS_CLASS).getBoundingClientRect().height.toFixed(2));
+    };
+    VerticalView2.prototype.getTdContent = function(date, type, groupIndex) {
+      var cntEle;
+      var wrapper = createElement("div");
+      var templateName = "";
+      var templateId = this.parent.element.id + "_";
+      switch (type) {
+        case "dateHeader":
+          if (this.parent.activeViewOptions.dateHeaderTemplate) {
+            templateName = "dateHeaderTemplate";
+            var args = { date, type };
+            var viewName = this.parent.activeViewOptions.dateHeaderTemplateName;
+            cntEle = [].slice.call(this.parent.getDateHeaderTemplate()(args, this.parent, templateName, templateId + viewName + templateName, false));
+          } else {
+            wrapper.innerHTML = this.parent.activeView.isTimelineView() ? '<span class="e-header-date e-navigate">' + this.getTimelineDate(date) + "</span>" : '<div class="e-header-day">' + capitalizeFirstWord(this.getDayName(date), "single") + "</div>" + ('<div class="e-header-date e-navigate" role="link">' + this.getDate(date) + "</div>");
+            cntEle = [].slice.call(wrapper.childNodes);
+          }
+          break;
+        case "majorSlot":
+          if (this.parent.activeViewOptions.timeScale.majorSlotTemplate) {
+            templateName = "majorSlotTemplate";
+            var args = { date, type };
+            cntEle = [].slice.call(this.parent.getMajorSlotTemplate()(args, this.parent, templateName, templateId + templateName, false));
+          } else {
+            wrapper.innerHTML = "<span>" + this.getTime(date) + "</span>";
+            cntEle = [].slice.call(wrapper.childNodes);
+          }
+          break;
+        case "minorSlot":
+          if (this.parent.activeViewOptions.timeScale.minorSlotTemplate) {
+            templateName = "minorSlotTemplate";
+            var args = { date, type };
+            cntEle = [].slice.call(this.parent.getMinorSlotTemplate()(args, this.parent, templateName, templateId + templateName, false));
+          } else {
+            cntEle = [].slice.call(wrapper.childNodes);
+          }
+          break;
+        case "alldayCells":
+          if (this.parent.activeViewOptions.cellTemplate) {
+            var viewName = this.parent.activeViewOptions.cellTemplateName;
+            templateName = "cellTemplate";
+            var args = { date, type, groupIndex };
+            cntEle = [].slice.call(this.parent.getCellTemplate()(args, this.parent, templateName, templateId + viewName + templateName, false));
+          }
+          break;
+      }
+      return cntEle;
+    };
+    VerticalView2.prototype.refreshHeader = function() {
+      remove(this.element.querySelector("tbody tr"));
+      this.renderHeader();
+      this.parent.notify(contentReady, {});
+    };
+    VerticalView2.prototype.renderLayout = function(type) {
+      this.setPanel(createElement("div", { className: TABLE_WRAP_CLASS }));
+      var clsList = [this.baseCssClass, this.viewClass];
+      clsList.push(type);
+      if (this.parent.activeViewOptions.group.byDate) {
+        clsList.push("e-by-date");
+      }
+      if (!this.parent.activeViewOptions.timeScale.enable) {
+        addClass([this.element], [TIMESCALE_DISABLE, this.viewClass]);
+      }
+      if (this.parent.activeViewOptions.allowVirtualScrolling && !this.parent.uiStateValues.isGroupAdaptive) {
+        clsList.push(VIRTUAL_SCROLL_CLASS);
+      }
+      if (this.parent.rowAutoHeight && this.parent.eventSettings.ignoreWhitespace) {
+        clsList.push(IGNORE_WHITESPACE);
+      }
+      this.renderPanel(type);
+      addClass([this.element], clsList);
+      this.element.appendChild(this.createTableLayout(OUTER_TABLE_CLASS));
+      this.element.querySelector("table").setAttribute("role", "presentation");
+      this.colLevels = this.generateColumnLevels();
+      this.renderHeader();
+      this.renderContent();
+      if (this.parent.uiStateValues.isGroupAdaptive && !this.parent.element.querySelector("." + RESOURCE_TOOLBAR_CONTAINER)) {
+        this.renderResourceMobileLayout();
+      }
+      this.parent.notify(contentReady, {});
+    };
+    VerticalView2.prototype.renderHeader = function() {
+      var tr = createElement("tr");
+      var dateTd = createElement("td");
+      dateTd.appendChild(this.renderDatesHeader());
+      if (this.parent.activeViewOptions.timeScale.enable) {
+        var indentTd = createElement("td", { className: LEFT_INDENT_CLASS });
+        indentTd.appendChild(this.renderLeftIndent());
+        tr.appendChild(indentTd);
+      }
+      tr.appendChild(dateTd);
+      prepend([tr], this.element.querySelector("tbody"));
+    };
+    VerticalView2.prototype.renderContent = function() {
+      if (this.parent.activeViewOptions.group.resources.length > 0) {
+        this.parent.resourceBase.renderedResources = extend([], this.parent.resourceBase.lastResourceLevel, null, true);
+      }
+      var tr = createElement("tr");
+      var workTd = createElement("td");
+      if (this.parent.isAdaptive) {
+        workTd.setAttribute("colspan", this.parent.activeViewOptions.timeScale.enable ? "2" : "1");
+        var scrollContainer = createElement("div", { className: SCROLL_CONTAINER_CLASS });
+        if (this.parent.activeViewOptions.timeScale.enable) {
+          scrollContainer.appendChild(this.renderTimeCells());
+        }
+        scrollContainer.appendChild(this.renderContentArea());
+        workTd.appendChild(scrollContainer);
+        EventHandler.add(scrollContainer, "scroll", this.onAdaptiveScroll, this);
+        EventHandler.add(scrollContainer, Browser.touchMoveEvent, this.onAdaptiveMove, this);
+        tr.appendChild(workTd);
+      } else {
+        var levels = this.colLevels.slice(0);
+        if (this.parent.virtualScrollModule) {
+          this.resetColLevels();
+        }
+        var wrap = this.renderContentArea();
+        workTd.appendChild(wrap);
+        if (this.parent.activeViewOptions.timeScale.enable) {
+          var timesTd = createElement("td");
+          timesTd.appendChild(this.renderTimeCells());
+          tr.appendChild(timesTd);
+        }
+        tr.appendChild(workTd);
+        if (this.parent.virtualScrollModule) {
+          this.colLevels = levels;
+          this.parent.virtualScrollModule.renderVirtualTrack(wrap);
+        }
+      }
+      this.element.querySelector("tbody").appendChild(tr);
+    };
+    VerticalView2.prototype.renderLeftIndent = function() {
+      var wrap = createElement("div", { className: LEFT_INDENT_WRAP_CLASS });
+      var tbl = this.createTableLayout();
+      var trEle = createElement("tr");
+      var rowCount = this.colLevels.length;
+      var nth;
+      for (var i = 0; i < rowCount; i++) {
+        var ntr_1 = trEle.cloneNode();
+        var data_1 = { className: [this.colLevels[parseInt(i.toString(), 10)][0] && this.colLevels[parseInt(i.toString(), 10)][0].className[0]], type: "emptyCells" };
+        if (this.parent.activeViewOptions.showWeekNumber && data_1.className.indexOf(HEADER_CELLS_CLASS) !== -1) {
+          data_1.className.push(WEEK_NUMBER_CLASS);
+          var weekNo = this.parent.getWeekNumberContent(this.renderDates);
+          data_1.template = [createElement("span", {
+            innerHTML: "" + weekNo,
+            attrs: { title: this.parent.localeObj.getConstant("week") + " " + weekNo }
+          })];
+        }
+        nth = this.createTd(data_1);
+        this.parent.renderHeaderIndentTemplate(data_1, nth);
+        ntr_1.appendChild(nth);
+        tbl.querySelector("tbody").appendChild(ntr_1);
+      }
+      var ntr = trEle.cloneNode();
+      var appointmentExpandCollapse = createElement("div", {
+        attrs: {
+          "tabindex": "0",
+          "role": "list",
+          title: this.parent.localeObj.getConstant("expandAllDaySection"),
+          "aria-disabled": "false",
+          "aria-label": "Expand section"
+        },
+        className: ALLDAY_APPOINTMENT_SECTION_CLASS + " " + APPOINTMENT_ROW_EXPAND_CLASS + " " + ICON + " " + DISABLE_CLASS
+      });
+      var data = { className: [ALLDAY_CELLS_CLASS], type: "emptyCells" };
+      nth = this.createTd(data);
+      nth.appendChild(appointmentExpandCollapse);
+      this.parent.renderHeaderIndentTemplate(data, nth);
+      ntr.appendChild(nth);
+      tbl.querySelector("tbody").appendChild(ntr);
+      wrap.appendChild(tbl);
+      return wrap;
+    };
+    VerticalView2.prototype.renderDatesHeader = function() {
+      var container = createElement("div", { className: DATE_HEADER_CONTAINER_CLASS });
+      var wrap = createElement("div", { className: DATE_HEADER_WRAP_CLASS });
+      container.appendChild(wrap);
+      var tbl = this.createTableLayout();
+      var trEle = createElement("tr", { className: HEADER_ROW_CLASS });
+      var rowCount = this.colLevels.length;
+      var lastLevel = this.colLevels[rowCount - 1];
+      for (var i = 0; i < rowCount; i++) {
+        var ntr = trEle.cloneNode();
+        var level = this.colLevels[parseInt(i.toString(), 10)];
+        for (var j = 0; j < level.length; j++) {
+          ntr.appendChild(this.createTd(level[parseInt(j.toString(), 10)]));
+        }
+        tbl.querySelector("tbody").appendChild(ntr);
+      }
+      this.createAllDayRow(tbl, lastLevel);
+      this.createColGroup(tbl, lastLevel);
+      wrap.appendChild(tbl);
+      return container;
+    };
+    VerticalView2.prototype.createAllDayRow = function(table, tdData) {
+      var ntr = createElement("tr", { className: ALLDAY_ROW_CLASS });
+      for (var j = 0; j < tdData.length; j++) {
+        var td = extend({}, tdData[parseInt(j.toString(), 10)]);
+        td.className = [ALLDAY_CELLS_CLASS];
+        td.type = "alldayCells";
+        var ntd = this.createTd(td);
+        ntd.setAttribute("data-date", td.date.getTime().toString());
+        if (!isNullOrUndefined(td.groupIndex)) {
+          ntd.setAttribute("data-group-index", "" + td.groupIndex);
+        } else if (this.parent.uiStateValues.isGroupAdaptive) {
+          ntd.setAttribute("data-group-index", "" + this.parent.uiStateValues.groupIndex);
+        }
+        this.wireCellEvents(ntd);
+        ntr.appendChild(ntd);
+      }
+      table.querySelector("tbody").appendChild(ntr);
+      var thead = createElement("thead");
+      thead.appendChild(this.parent.eventBase.createEventWrapper("allDay"));
+      prepend([thead], table);
+    };
+    VerticalView2.prototype.createTd = function(td) {
+      var tdEle = createElement("td");
+      this.addAttributes(td, tdEle);
+      if (td.date && td.type) {
+        var ele = this.getTdContent(td.date, td.type, td.groupIndex);
+        if (ele && ele.length) {
+          append2(ele, tdEle);
+        }
+      }
+      if (!this.parent.isMinMaxDate(resetTime(/* @__PURE__ */ new Date("" + td.date)))) {
+        addClass([tdEle], DISABLE_DATES);
+      }
+      if (td.type === "resourceHeader") {
+        this.setResourceHeaderContent(tdEle, td);
+      }
+      if (td.type === "dateHeader" && td.className.indexOf(HEADER_CELLS_CLASS) >= 0) {
+        tdEle.setAttribute("data-date", td.date.getTime().toString());
+        if (!isNullOrUndefined(td.groupIndex)) {
+          tdEle.setAttribute("data-group-index", "" + td.groupIndex);
+        }
+        this.wireMouseEvents(tdEle);
+      }
+      var args = { elementType: td.type, element: tdEle, date: td.date, groupIndex: td.groupIndex };
+      this.parent.trigger(renderCell, args);
+      return tdEle;
+    };
+    VerticalView2.prototype.wireCellEvents = function(element2) {
+      EventHandler.add(element2, "mousedown", this.parent.workCellAction.cellMouseDown, this.parent.workCellAction);
+      this.wireMouseEvents(element2);
+    };
+    VerticalView2.prototype.wireMouseEvents = function(element2) {
+      EventHandler.add(element2, "click", this.parent.workCellAction.cellClick, this.parent.workCellAction);
+      if (!this.parent.isAdaptive) {
+        EventHandler.add(element2, "dblclick", this.parent.workCellAction.cellDblClick, this.parent.workCellAction);
+      }
+    };
+    VerticalView2.prototype.renderTimeCells = function() {
+      var _this = this;
+      var wrap = createElement("div", { className: TIME_CELLS_WRAP_CLASS });
+      var tbl = this.createTableLayout();
+      var trEle = createElement("tr");
+      var handler = function(r) {
+        r.type = r.first ? "majorSlot" : "minorSlot";
+        r.className = r.last ? [TIME_CELLS_CLASS, TIME_SLOT_CLASS] : [TIME_SLOT_CLASS];
+        var ntr = trEle.cloneNode();
+        var data = { date: r.date, type: r.type, className: r.className };
+        ntr.appendChild(_this.createTd(data));
+        tbl.querySelector("tbody").appendChild(ntr);
+        return r;
+      };
+      this.getTimeSlotRows(handler);
+      wrap.appendChild(tbl);
+      return wrap;
+    };
+    VerticalView2.prototype.renderContentArea = function() {
+      var wrap = createElement("div", { className: CONTENT_WRAP_CLASS });
+      var tbl = this.createTableLayout(CONTENT_TABLE_CLASS);
+      this.setAriaAttributes(tbl);
+      this.addAutoHeightClass(tbl);
+      this.renderContentTable(tbl);
+      this.createColGroup(tbl, this.colLevels.slice(-1)[0]);
+      wrap.appendChild(tbl);
+      this.wireCellEvents(tbl.querySelector("tbody"));
+      EventHandler.add(wrap, "scroll", this.onContentScroll, this);
+      EventHandler.add(wrap, Browser.touchMoveEvent, this.onAdaptiveMove, this);
+      return wrap;
+    };
+    VerticalView2.prototype.renderContentTable = function(table) {
+      var tBody = table.querySelector("tbody");
+      append2(this.getContentRows(), tBody);
+      this.renderContentTableHeader(table);
+    };
+    VerticalView2.prototype.getContentRows = function() {
+      var _this = this;
+      var rows = [];
+      var tr = createElement("tr");
+      var td = createElement("td", { attrs: { "aria-selected": "false" } });
+      var handler = function(r) {
+        var ntr = tr.cloneNode();
+        for (var _i = 0, _a = _this.colLevels[_this.colLevels.length - 1]; _i < _a.length; _i++) {
+          var tdData = _a[_i];
+          var ntd = _this.createContentTd(tdData, r, td);
+          ntr.appendChild(ntd);
+        }
+        rows.push(ntr);
+        return r;
+      };
+      this.getTimeSlotRows(handler);
+      return rows;
+    };
+    VerticalView2.prototype.createContentTd = function(tdData, r, td) {
+      var ntd = td.cloneNode();
+      if (tdData.colSpan) {
+        ntd.setAttribute("colspan", tdData.colSpan.toString());
+      }
+      var clsName = this.getContentTdClass(r);
+      var cellDate = resetTime(tdData.date);
+      if (!this.parent.isMinMaxDate(cellDate)) {
+        clsName.push(DISABLE_DATES);
+      }
+      setTime(cellDate, getDateInMs(r.date));
+      var type = "workCells";
+      if (tdData.className.indexOf(RESOURCE_PARENT_CLASS) !== -1) {
+        clsName.push(RESOURCE_GROUP_CELLS_CLASS);
+        type = "resourceGroupCells";
+      }
+      if (this.parent.workHours.highlight && (this.parent.activeViewOptions.timeScale.enable && this.isWorkHour(cellDate, tdData.startHour, tdData.endHour, tdData.workDays) || !this.parent.activeViewOptions.timeScale.enable && this.isWorkDay(cellDate, tdData.workDays))) {
+        clsName.push(WORK_HOURS_CLASS);
+      }
+      addClass([ntd], clsName);
+      if (this.parent.activeViewOptions.cellTemplate) {
+        var args_1 = { date: cellDate, type, groupIndex: tdData.groupIndex };
+        var scheduleId = this.parent.element.id + "_";
+        var viewName = this.parent.activeViewOptions.cellTemplateName;
+        var templateId = scheduleId + viewName + "cellTemplate";
+        var tooltipTemplate = [].slice.call(this.parent.getCellTemplate()(args_1, this.parent, "cellTemplate", templateId, false));
+        append2(tooltipTemplate, ntd);
+      }
+      ntd.setAttribute("data-date", cellDate.getTime().toString());
+      if (!isNullOrUndefined(tdData.groupIndex) || this.parent.uiStateValues.isGroupAdaptive) {
+        var groupIndex = this.parent.uiStateValues.isGroupAdaptive ? this.parent.uiStateValues.groupIndex : tdData.groupIndex;
+        ntd.setAttribute("data-group-index", "" + groupIndex);
+      }
+      var args = { elementType: type, element: ntd, date: cellDate, groupIndex: tdData.groupIndex };
+      this.parent.trigger(renderCell, args);
+      return ntd;
+    };
+    VerticalView2.prototype.getContentTdClass = function(r) {
+      return r.last ? [WORK_CELLS_CLASS] : [WORK_CELLS_CLASS, ALTERNATE_CELLS_CLASS];
+    };
+    VerticalView2.prototype.renderContentTableHeader = function(table) {
+      var thead = createElement("thead");
+      thead.appendChild(this.parent.eventBase.createEventWrapper());
+      if (this.parent.activeViewOptions.timeScale.enable) {
+        thead.appendChild(this.parent.eventBase.createEventWrapper("timeIndicator"));
+      }
+      prepend([thead], table);
+    };
+    VerticalView2.prototype.getScrollableElement = function() {
+      if (this.parent.isAdaptive && !this.isTimelineView()) {
+        return this.element.querySelector("." + SCROLL_CONTAINER_CLASS);
+      } else {
+        return this.getContentAreaElement();
+      }
+    };
+    VerticalView2.prototype.getLeftPanelElement = function() {
+      return this.element.querySelector("." + TIME_CELLS_WRAP_CLASS);
+    };
+    VerticalView2.prototype.getEndDateFromStartDate = function(start) {
+      var msMajorInterval = this.parent.activeViewOptions.timeScale.interval * MS_PER_MINUTE;
+      var msInterval = msMajorInterval / this.parent.activeViewOptions.timeScale.slotCount;
+      var end = new Date(start.getTime());
+      end.setMilliseconds(end.getMilliseconds() + msInterval);
+      return end;
+    };
+    VerticalView2.prototype.getTimeSlotRows = function(handler) {
+      var rows = [];
+      var startHour = this.getStartHour();
+      var endHour = this.getEndHour();
+      var msMajorInterval = this.parent.activeViewOptions.timeScale.interval * MS_PER_MINUTE;
+      var msInterval = msMajorInterval / this.parent.activeViewOptions.timeScale.slotCount;
+      var length = Math.round(MS_PER_DAY / msInterval);
+      var msStartHour = startHour.getTime();
+      var msEndHour = endHour.getTime();
+      if (msStartHour !== msEndHour) {
+        var duration = this.parent.activeViewOptions.timeScale.interval / this.parent.activeViewOptions.timeScale.slotCount;
+        length = Math.abs(msEndHour - msStartHour) / msInterval - (new Date(msEndHour).getTimezoneOffset() - new Date(msStartHour).getTimezoneOffset()) / duration;
+      }
+      if (!this.parent.activeViewOptions.timeScale.enable) {
+        length = 1;
+      }
+      var start = this.parent.getStartEndTime(this.parent.workHours.start);
+      var end = this.parent.getStartEndTime(this.parent.workHours.end);
+      for (var i = 0; i < length; i++) {
+        var dt = new Date(msStartHour + msInterval * i);
+        if (isDaylightSavingTime(dt) || new Date(msStartHour).getTimezoneOffset() !== dt.getTimezoneOffset()) {
+          var timeOffset = new Date(msStartHour).getTimezoneOffset() - dt.getTimezoneOffset();
+          dt = new Date(dt.getTime() - 1e3 * 60 * timeOffset);
+        }
+        var majorTickDivider = i % (msMajorInterval / msInterval);
+        var row = {
+          date: /* @__PURE__ */ new Date("" + dt),
+          startHour: start,
+          endHour: end,
+          first: majorTickDivider === 0,
+          middle: majorTickDivider < this.parent.activeViewOptions.timeScale.slotCount - 1,
+          last: majorTickDivider === this.parent.activeViewOptions.timeScale.slotCount - 1,
+          type: ""
+        };
+        if (handler) {
+          handler(row);
+        }
+        rows.push(row);
+      }
+      return rows;
+    };
+    VerticalView2.prototype.getAdjustedDate = function(startTime) {
+      if (!this.parent.activeViewOptions.timeScale.enable) {
+        return new Date(startTime.setHours(0, 0, 0, 0));
+      } else {
+        var timeSlots = this.getTimeSlotRows();
+        var startDate = new Date(new Date(timeSlots[0].date.getTime()).setHours(startTime.getHours(), startTime.getMinutes(), startTime.getMilliseconds()));
+        for (var i = 0; i < timeSlots.length; i++) {
+          if (timeSlots[parseInt(i.toString(), 10)].date.getTime() > startDate.getTime()) {
+            startTime.setHours(timeSlots[i - 1].date.getHours(), timeSlots[i - 1].date.getMinutes(), timeSlots[i - 1].date.getMilliseconds());
+            return new Date(startTime);
+          }
+        }
+      }
+      return null;
+    };
+    VerticalView2.prototype.destroy = function() {
+      if (!this.parent || this.parent && this.parent.isDestroyed) {
+        return;
+      }
+      this.clearCurrentTimeIndicatorTimer();
+      if (this.element) {
+        if (this.appointment) {
+          this.appointment.destroy();
+          this.appointment = null;
+        }
+        var contentScrollableEle = this.getContentAreaElement();
+        if (contentScrollableEle) {
+          EventHandler.remove(contentScrollableEle, "scroll", this.onContentScroll);
+          EventHandler.remove(contentScrollableEle, Browser.touchMoveEvent, this.onAdaptiveMove);
+        }
+        if (this.parent.resourceBase) {
+          this.parent.resourceBase.destroy();
+        }
+        if (this.parent.scheduleTouchModule) {
+          this.parent.scheduleTouchModule.resetValues();
+        }
+        _super.prototype.destroy.call(this);
+      }
+    };
+    return VerticalView2;
+  }(ViewBase)
+);
+var __extends$2 = globalThis && globalThis.__extends || function() {
+  var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
+      d2.__proto__ = b2;
+    } || function(d2, b2) {
+      for (var p2 in b2)
+        if (b2.hasOwnProperty(p2))
+          d2[p2] = b2[p2];
+    };
+    return extendStatics(d, b);
+  };
+  return function(d, b) {
+    extendStatics(d, b);
+    function __() {
+      this.constructor = d;
+    }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+  };
+}();
+var Day = (
+  /** @class */
+  function(_super) {
+    __extends$2(Day2, _super);
+    function Day2(parent) {
+      var _this = _super.call(this, parent) || this;
+      _this.viewClass = "e-day-view";
+      return _this;
+    }
+    Day2.prototype.getModuleName = function() {
+      return "day";
+    };
+    return Day2;
+  }(VerticalView)
+);
+var __extends$1 = globalThis && globalThis.__extends || function() {
+  var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
+      d2.__proto__ = b2;
+    } || function(d2, b2) {
+      for (var p2 in b2)
+        if (b2.hasOwnProperty(p2))
+          d2[p2] = b2[p2];
+    };
+    return extendStatics(d, b);
+  };
+  return function(d, b) {
+    extendStatics(d, b);
+    function __() {
+      this.constructor = d;
+    }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+  };
+}();
+var WorkWeek = (
+  /** @class */
+  function(_super) {
+    __extends$1(WorkWeek2, _super);
+    function WorkWeek2(parent) {
+      var _this = _super.call(this, parent) || this;
+      _this.viewClass = "e-work-week-view";
+      return _this;
+    }
+    WorkWeek2.prototype.startDate = function() {
+      return this.getViewStartDate();
+    };
+    WorkWeek2.prototype.endDate = function() {
+      return this.getViewEndDate();
+    };
+    WorkWeek2.prototype.getModuleName = function() {
+      return "workWeek";
+    };
+    return WorkWeek2;
+  }(VerticalView)
+);
+var __extends = globalThis && globalThis.__extends || function() {
+  var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
+      d2.__proto__ = b2;
+    } || function(d2, b2) {
+      for (var p2 in b2)
+        if (b2.hasOwnProperty(p2))
+          d2[p2] = b2[p2];
+    };
+    return extendStatics(d, b);
+  };
+  return function(d, b) {
+    extendStatics(d, b);
+    function __() {
+      this.constructor = d;
+    }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+  };
+}();
+var Month = (
+  /** @class */
+  function(_super) {
+    __extends(Month2, _super);
+    function Month2(parent) {
+      var _this = _super.call(this, parent) || this;
+      _this.dayNameFormat = "wide";
+      _this.viewClass = "e-month-view";
+      _this.isInverseTableSelect = false;
+      _this.monthEvent = null;
+      _this.monthDates = {};
+      return _this;
+    }
+    Month2.prototype.addEventListener = function() {
+      this.parent.on(scrollUiUpdate, this.onScrollUIUpdate, this);
+      this.parent.on(dataReady, this.onDataReady, this);
+      this.parent.on(cellClick, this.onCellClick, this);
+    };
+    Month2.prototype.removeEventListener = function() {
+      if (this.parent) {
+        this.parent.off(scrollUiUpdate, this.onScrollUIUpdate);
+        this.parent.off(dataReady, this.onDataReady);
+        this.parent.off(cellClick, this.onCellClick);
+      }
+    };
+    Month2.prototype.onDataReady = function(args) {
+      this.monthEvent = new MonthEvent(this.parent);
+      this.monthEvent.renderAppointments();
+      this.parent.notify(eventsLoaded, {});
+    };
+    Month2.prototype.onCellClick = function(event) {
+    };
+    Month2.prototype.onContentScroll = function(e) {
+      this.parent.removeNewEventElement();
+      this.parent.notify(virtualScroll, e);
+      this.scrollTopPanel(e.target);
+      this.scrollLeftPanel(e.target);
+      this.parent.uiStateValues.top = e.target.scrollTop;
+      this.parent.uiStateValues.left = e.target.scrollLeft;
+      this.setPersistence();
+    };
+    Month2.prototype.scrollLeftPanel = function(target) {
+      var leftPanel = this.getLeftPanelElement();
+      if (leftPanel) {
+        leftPanel.scrollTop = target.scrollTop;
+      }
+    };
+    Month2.prototype.getLeftPanelElement = function() {
+      return this.element.querySelector("." + WEEK_NUMBER_WRAPPER_CLASS);
+    };
+    Month2.prototype.onScrollUIUpdate = function(args) {
+      var headerHeight = this.getHeaderBarHeight();
+      var header = this.getDatesHeaderElement();
+      var content = this.getContentAreaElement();
+      var height = this.parent.element.offsetHeight - headerHeight - header.offsetHeight;
+      var leftPanel = this.getLeftPanelElement();
+      if (this.parent.height !== "auto") {
+        this.setContentHeight(content, leftPanel, height);
+      }
+      var scrollBarWidth = getScrollBarWidth();
+      header.firstElementChild.style[args.cssProperties.rtlBorder] = "";
+      header.style[args.cssProperties.rtlPadding] = "";
+      if (content.offsetWidth - content.clientWidth > 0) {
+        header.firstElementChild.style[args.cssProperties.border] = scrollBarWidth > 0 ? "1px" : "0px";
+        header.style[args.cssProperties.padding] = scrollBarWidth > 0 ? scrollBarWidth - 1 + "px" : "0px";
+      } else {
+        header.firstElementChild.style[args.cssProperties.border] = "";
+        header.style[args.cssProperties.padding] = "";
+      }
+      this.setColWidth(content);
+      if (args.scrollPosition || !args.isPreventScrollUpdate && this.parent.currentView === "TimelineMonth") {
+        var top_1 = this.parent.currentView === "TimelineMonth" ? this.parent.uiStateValues.top : args.scrollPosition.top;
+        if (leftPanel) {
+          leftPanel.scrollTop = top_1;
+        }
+        content.scrollTop = top_1;
+        if (this.parent.uiStateValues.isInitial) {
+          this.scrollToSelectedDate();
+          this.parent.uiStateValues.isInitial = false;
+        } else {
+          content.scrollLeft = this.parent.currentView === "TimelineMonth" ? this.parent.uiStateValues.left : args.scrollPosition.left;
+        }
+      } else {
+        this.scrollToSelectedDate();
+      }
+      this.retainScrollPosition();
+    };
+    Month2.prototype.scrollToSelectedDate = function() {
+      var headerCell = this.element.querySelector("." + HEADER_CELLS_CLASS + '[data-date="' + this.parent.selectedDate.getTime().toString() + '"]');
+      var content = this.getContentAreaElement();
+      if (!isNullOrUndefined(headerCell)) {
+        content.scrollLeft = !this.parent.enableRtl ? headerCell.offsetLeft : -(this.parent.getContentTable().offsetWidth - headerCell.offsetLeft - headerCell.offsetWidth);
+      } else {
+        content.scrollLeft = 0;
+      }
+      if (content.scrollLeft === 0 && this.parent.uiStateValues.isInitial) {
+        this.parent.uiStateValues.left = 0;
+      }
+    };
+    Month2.prototype.setContentHeight = function(content, leftPanelElement, height) {
+      content.style.height = "auto";
+      if (this.parent.currentView === "Month") {
+        content.style.height = formatUnit(height);
+      }
+      if (leftPanelElement) {
+        if (this.parent.currentView === "MonthAgenda") {
+          height = this.parent.activeViewOptions.interval > 1 ? this.getContentAreaElement().firstElementChild.offsetHeight : this.element.querySelector("." + CONTENT_TABLE_CLASS).offsetHeight;
+        }
+        leftPanelElement.style.height = "auto";
+        leftPanelElement.style.height = formatUnit(height - this.getScrollXIndent(content));
+      }
+    };
+    Month2.prototype.generateColumnLevels = function() {
+      var colLevels = [];
+      var level = this.getDateSlots(this.renderDates, this.parent.activeViewOptions.workDays);
+      if (this.parent.activeViewOptions.group.resources.length > 0) {
+        colLevels = this.parent.resourceBase.generateResourceLevels(level);
+        if (this.parent.currentView === "MonthAgenda") {
+          colLevels = [level];
+        }
+        if (this.parent.uiStateValues.isGroupAdaptive && this.parent.resourceBase.lastResourceLevel.length > 0) {
+          var resourceLevel = this.parent.resourceBase.lastResourceLevel[this.parent.uiStateValues.groupIndex];
+          var levels_1 = this.getDateSlots(resourceLevel.renderDates, resourceLevel.workDays);
+          if (this.parent.activeViewOptions.group.byDate && this.parent.activeViewOptions.group.hideNonWorkingDays) {
+            var index = levels_1.findIndex(function(x, index2) {
+              return index2 !== 0 && x.date.getDay() === levels_1[0].date.getDay();
+            });
+            levels_1 = index > -1 ? levels_1.slice(0, index) : levels_1;
+          }
+          colLevels = [levels_1];
+        }
+      } else {
+        colLevels.push(level);
+      }
+      this.colLevels = colLevels;
+      return colLevels;
+    };
+    Month2.prototype.getDateSlots = function(renderDates, workDays) {
+      var count = this.parent.activeViewOptions.showWeekend ? WEEK_LENGTH : workDays.length;
+      var dateSlots = [];
+      var isCurrentMonth = this.isCurrentMonth(this.parent.selectedDate);
+      for (var col = 0; col < count; col++) {
+        var classList2 = [HEADER_CELLS_CLASS];
+        var currentDateIndex = renderDates.slice(0, count).map(function(date) {
+          return date.getDay();
+        });
+        if (isCurrentMonth && currentDateIndex.indexOf(this.parent.currentTimezoneDate.getDay()) === col) {
+          classList2.push(CURRENT_DAY_CLASS);
+        }
+        dateSlots.push({ date: renderDates[parseInt(col.toString(), 10)], type: "monthDay", className: classList2, colSpan: 1, workDays });
+      }
+      return dateSlots;
+    };
+    Month2.prototype.getDayNameFormat = function() {
+      if (this.parent.isAdaptive || this.parent.activeViewOptions.group.resources.length > 0) {
+        return "abbreviated";
+      }
+      return "wide";
+    };
+    Month2.prototype.renderLayout = function(type) {
+      this.dayNameFormat = this.getDayNameFormat();
+      this.setPanel(createElement("div", { className: TABLE_WRAP_CLASS }));
+      var clsList = [this.viewClass];
+      clsList.push(type);
+      if (this.parent.activeViewOptions.group.byDate) {
+        clsList.push("e-by-date");
+        if (this.parent.currentView !== "Month") {
+          this.parent.activeViewOptions.group.hideNonWorkingDays = false;
+        }
+      }
+      if (this.parent.activeViewOptions.allowVirtualScrolling && !this.parent.uiStateValues.isGroupAdaptive) {
+        clsList.push(VIRTUAL_SCROLL_CLASS);
+      }
+      if (this.parent.rowAutoHeight && this.parent.eventSettings.ignoreWhitespace) {
+        clsList.push(IGNORE_WHITESPACE);
+      }
+      addClass([this.element], clsList);
+      this.renderPanel(type);
+      this.element.appendChild(this.createTableLayout(OUTER_TABLE_CLASS));
+      this.element.querySelector("table").setAttribute("role", "presentation");
+      this.colLevels = this.generateColumnLevels();
+      this.renderHeader();
+      this.renderContent();
+      var target = this.parent.currentView === "MonthAgenda" ? this.parent.activeView.getPanel() : this.parent.element;
+      if (this.parent.uiStateValues.isGroupAdaptive && !target.querySelector("." + RESOURCE_TOOLBAR_CONTAINER)) {
+        this.renderResourceMobileLayout();
+      }
+      this.parent.notify(contentReady, {});
+      if (this.parent.uiStateValues.isCustomMonth) {
+        this.parent.uiStateValues.isCustomMonth = false;
+      }
+    };
+    Month2.prototype.refreshHeader = function() {
+      remove(this.element.querySelector("tbody tr"));
+      this.renderHeader();
+      this.parent.notify(contentReady, {});
+    };
+    Month2.prototype.wireCellEvents = function(element2) {
+      EventHandler.add(element2, "mousedown", this.parent.workCellAction.cellMouseDown, this.parent.workCellAction);
+      EventHandler.add(element2, "click", this.parent.workCellAction.cellClick, this.parent.workCellAction);
+      if (!this.parent.isAdaptive) {
+        EventHandler.add(element2, "dblclick", this.parent.workCellAction.cellDblClick, this.parent.workCellAction);
+      }
+    };
+    Month2.prototype.renderHeader = function() {
+      var tr = createElement("tr");
+      this.renderLeftIndent(tr);
+      var dateTd = createElement("td");
+      dateTd.appendChild(this.renderDatesHeader());
+      tr.appendChild(dateTd);
+      prepend([tr], this.element.querySelector("tbody"));
+    };
+    Month2.prototype.renderLeftIndent = function(tr) {
+      if (this.parent.activeViewOptions.showWeekNumber) {
+        tr.appendChild(createElement("td", { className: "e-left-indent" }));
+      }
+    };
+    Month2.prototype.renderContent = function() {
+      if (this.parent.activeViewOptions.group.resources.length > 0) {
+        this.parent.resourceBase.renderedResources = extend([], this.parent.resourceBase.lastResourceLevel, null, true);
+      }
+      var tr = createElement("tr");
+      if (this.parent.activeViewOptions.showWeekNumber) {
+        tr.appendChild(this.renderWeekNumberContent());
+      }
+      var workTd = createElement("td");
+      var levels = this.colLevels.slice(0);
+      if (this.parent.virtualScrollModule) {
+        this.resetColLevels();
+      }
+      var wrap = createElement("div", { className: CONTENT_WRAP_CLASS });
+      var contentArea = this.renderContentArea();
+      if (this.parent.currentView === "Month") {
+        wrap.appendChild(contentArea);
+      } else {
+        var monthAgendaWrapper = createElement("div", { className: TABLE_CONTAINER_CLASS });
+        monthAgendaWrapper.appendChild(contentArea);
+        wrap.appendChild(monthAgendaWrapper);
+      }
+      EventHandler.add(wrap, "scroll", this.onContentScroll, this);
+      workTd.appendChild(wrap);
+      tr.appendChild(workTd);
+      if (this.parent.virtualScrollModule) {
+        this.colLevels = levels;
+        this.parent.virtualScrollModule.renderVirtualTrack(wrap);
+      }
+      this.element.querySelector("tbody").appendChild(tr);
+      this.renderAppointmentContainer();
+    };
+    Month2.prototype.renderWeekNumberContent = function() {
+      var dateCol = this.renderDates.map(function(date) {
+        return /* @__PURE__ */ new Date(+date);
+      });
+      var td = createElement("td");
+      var contentWrapper = createElement("div", { className: WEEK_NUMBER_WRAPPER_CLASS });
+      td.appendChild(contentWrapper);
+      var contentWrapTable = this.createTableLayout();
+      contentWrapper.appendChild(contentWrapTable);
+      var noOfDays = this.parent.activeViewOptions.showWeekend ? WEEK_LENGTH : this.parent.activeViewOptions.workDays.length;
+      for (var i = 0, length_1 = this.renderDates.length / noOfDays; i < length_1; i++) {
+        var dates = dateCol.splice(0, noOfDays);
+        var weekNumber = this.parent.getWeekNumberContent(dates);
+        contentWrapTable.querySelector("tbody").appendChild(this.createWeekNumberElement(weekNumber));
+      }
+      return td;
+    };
+    Month2.prototype.renderAppointmentContainer = function() {
+    };
+    Month2.prototype.renderDatesHeader = function() {
+      var container = createElement("div", { className: DATE_HEADER_CONTAINER_CLASS });
+      var wrap = createElement("div", { className: DATE_HEADER_WRAP_CLASS });
+      container.appendChild(wrap);
+      var table = this.createTableLayout();
+      if (this.parent.currentView === "Month") {
+        var thead = createElement("thead");
+        thead.appendChild(createElement("tr"));
+        prepend([thead], table);
+      }
+      this.createColGroup(table, this.colLevels[this.colLevels.length - 1]);
+      var trEle = createElement("tr");
+      for (var i = 0; i < this.colLevels.length; i++) {
+        var level = this.colLevels[parseInt(i.toString(), 10)];
+        var ntr = trEle.cloneNode();
+        for (var j = 0; j < level.length; j++) {
+          var td = level[parseInt(j.toString(), 10)];
+          ntr.appendChild(this.createHeaderCell(td));
+        }
+        table.querySelector("tbody").appendChild(ntr);
+      }
+      wrap.appendChild(table);
+      return container;
+    };
+    Month2.prototype.createHeaderCell = function(td) {
+      var tdEle = createElement("td");
+      this.addAttributes(td, tdEle);
+      if (td.type === "monthDay") {
+        var ele = createElement("span", { innerHTML: capitalizeFirstWord(this.parent.getDayNames(this.dayNameFormat)[td.date.getDay()], "single") });
+        tdEle.appendChild(ele);
+      }
+      if (td.type === "resourceHeader") {
+        this.setResourceHeaderContent(tdEle, td);
+      }
+      if (td.type === "dateHeader") {
+        addClass([tdEle], DATE_HEADER_CLASS);
+        tdEle.setAttribute("data-date", td.date.getTime().toString());
+        if (this.parent.activeViewOptions.dateHeaderTemplate) {
+          var cellArgs = { date: td.date, type: td.type };
+          var elementId = this.parent.element.id + "_";
+          var viewName = this.parent.activeViewOptions.dateHeaderTemplateName;
+          var templateId = elementId + viewName + "dateHeaderTemplate";
+          var dateTemplate = [].slice.call(this.parent.getDateHeaderTemplate()(cellArgs, this.parent, "dateHeaderTemplate", templateId, false));
+          if (dateTemplate && dateTemplate.length) {
+            append2(dateTemplate, tdEle);
+          }
+        } else {
+          var ele = createElement("span", { className: NAVIGATE_CLASS });
+          var skeleton = "full";
+          var title = this.parent.globalize.formatDate(td.date, { skeleton, calendar: this.parent.getCalendarMode() });
+          ele.setAttribute("title", capitalizeFirstWord(title, "multiple"));
+          var innerText = this.parent.calendarUtil.isMonthStart(td.date) && !this.isCurrentDate(td.date) && !this.parent.isAdaptive ? this.parent.globalize.formatDate(td.date, { format: "MMM d", calendar: this.parent.getCalendarMode() }) : this.parent.globalize.formatDate(td.date, { skeleton: "d", calendar: this.parent.getCalendarMode() });
+          ele.innerHTML = capitalizeFirstWord(innerText, "single");
+          tdEle.appendChild(ele);
+        }
+        this.wireCellEvents(tdEle);
+      }
+      var args = { elementType: td.type, element: tdEle, date: td.date, groupIndex: td.groupIndex };
+      this.parent.trigger(renderCell, args);
+      return tdEle;
+    };
+    Month2.prototype.getContentSlots = function() {
+      if (!(this.colLevels[this.colLevels.length - 1] && this.colLevels[this.colLevels.length - 1][0])) {
+        return [];
+      }
+      var slotDatas = [];
+      var prepareSlots = function(rowIndex, renderDate, resData, classList2) {
+        var data = {
+          date: /* @__PURE__ */ new Date(+renderDate),
+          groupIndex: resData.groupIndex,
+          workDays: resData.workDays,
+          type: "monthCells",
+          className: classList2 || [WORK_CELLS_CLASS]
+        };
+        if (!slotDatas[parseInt(rowIndex.toString(), 10)]) {
+          slotDatas[parseInt(rowIndex.toString(), 10)] = [];
+        }
+        slotDatas[parseInt(rowIndex.toString(), 10)].push(data);
+      };
+      var includeResource = this.parent.currentView !== "MonthAgenda" && this.parent.activeViewOptions.group.resources.length > 0;
+      if (includeResource && !this.parent.uiStateValues.isGroupAdaptive && !this.parent.activeViewOptions.group.byDate) {
+        for (var _i = 0, _a = this.colLevels[this.colLevels.length - 2]; _i < _a.length; _i++) {
+          var res = _a[_i];
+          var dates = res.renderDates.map(function(date) {
+            return /* @__PURE__ */ new Date(+date);
+          });
+          var count = this.parent.activeViewOptions.showWeekend ? WEEK_LENGTH : res.workDays.length;
+          for (var i = 0; i < res.renderDates.length / count; i++) {
+            var colDates = dates.splice(0, count);
+            for (var _b = 0, colDates_1 = colDates; _b < colDates_1.length; _b++) {
+              var colDate = colDates_1[_b];
+              prepareSlots(i, colDate, res);
+            }
+          }
+        }
+      } else {
+        var dates = this.renderDates.map(function(date) {
+          return /* @__PURE__ */ new Date(+date);
+        });
+        var count = this.parent.activeViewOptions.showWeekend ? WEEK_LENGTH : this.parent.activeViewOptions.workDays.length;
+        var level = this.colLevels.slice(0, 1)[0];
+        var startIndex = this.renderDates.map(Number).indexOf(+level[0].date);
+        for (var i = 0; i < this.renderDates.length / count; i++) {
+          var colDates = dates.splice(0, count);
+          var k = startIndex;
+          var _loop_1 = function(j2) {
+            var colDate2 = colDates[parseInt(k.toString(), 10)];
+            k++;
+            if (includeResource) {
+              var lastRow = this_1.colLevels[this_1.colLevels.length - 1];
+              var rowCount = lastRow.length / count;
+              var resourcesTd = lastRow.slice(0, rowCount);
+              if (this_1.parent.activeViewOptions.group.hideNonWorkingDays) {
+                resourcesTd = lastRow.filter(function(x) {
+                  return x.date.getDay() === colDate2.getDay();
+                });
+                if (resourcesTd.length === 0) {
+                  j2 = j2 - 1;
+                  return out_j_1 = j2, "continue";
+                }
+              }
+              for (var resIndex = 0; resIndex < resourcesTd.length; resIndex++) {
+                var clsList = void 0;
+                if (resIndex !== 0) {
+                  clsList = [WORK_CELLS_CLASS, DISABLE_DATE];
+                }
+                prepareSlots(i, colDate2, resourcesTd[parseInt(resIndex.toString(), 10)], clsList);
+              }
+            } else {
+              prepareSlots(i, colDate2, this_1.colLevels[this_1.colLevels.length - 1][0]);
+            }
+            out_j_1 = j2;
+          };
+          var this_1 = this, out_j_1;
+          for (var j = startIndex; j < this.colLevels[0].length + startIndex && j < colDates.length; j++) {
+            _loop_1(j);
+            j = out_j_1;
+          }
+        }
+      }
+      return slotDatas;
+    };
+    Month2.prototype.updateClassList = function(data) {
+      if (!this.isCustomMonth() && this.isOtherMonth(data.date)) {
+        data.className.push(OTHERMONTH_CLASS);
+      }
+      if (!this.parent.isMinMaxDate(data.date)) {
+        data.className.push(DISABLE_DATES);
+      }
+      this.updateSelectedCellClass(data);
+    };
+    Month2.prototype.updateSelectedCellClass = function(data) {
+      return;
+    };
+    Month2.prototype.isOtherMonth = function(date) {
+      return date.getTime() < this.monthDates.start.getTime() || date.getTime() > this.monthDates.end.getTime();
+    };
+    Month2.prototype.renderContentArea = function() {
+      var tbl = this.createTableLayout(CONTENT_TABLE_CLASS);
+      this.setAriaAttributes(tbl);
+      this.addAutoHeightClass(tbl);
+      if (this.parent.currentView === "TimelineMonth") {
+        this.createColGroup(tbl, this.colLevels[this.colLevels.length - 1]);
+      }
+      var monthDate = new Date(this.parent.selectedDate.getTime());
+      this.monthDates = {
+        start: this.parent.calendarUtil.firstDateOfMonth(monthDate),
+        end: this.parent.calendarUtil.lastDateOfMonth(addMonths(monthDate, this.parent.activeViewOptions.interval - 1))
+      };
+      var tBody = tbl.querySelector("tbody");
+      append2(this.getContentRows(), tBody);
+      this.wireCellEvents(tBody);
+      return tbl;
+    };
+    Month2.prototype.getContentRows = function() {
+      var trows = [];
+      var tr = createElement("tr");
+      var td = createElement("td", { attrs: { "aria-selected": "false" } });
+      var slotDatas = this.getContentSlots();
+      for (var row = 0; row < slotDatas.length; row++) {
+        var ntr = tr.cloneNode();
+        for (var col = 0; col < slotDatas[parseInt(row.toString(), 10)].length; col++) {
+          var ntd = this.createContentTd(slotDatas[parseInt(row.toString(), 10)][parseInt(col.toString(), 10)], td);
+          ntr.appendChild(ntd);
+        }
+        trows.push(ntr);
+      }
+      return trows;
+    };
+    Month2.prototype.createContentTd = function(data, td) {
+      var ntd = td.cloneNode();
+      if (data.colSpan) {
+        ntd.setAttribute("colspan", data.colSpan.toString());
+      }
+      this.updateClassList(data);
+      var type = data.type;
+      if (data.className.indexOf(RESOURCE_PARENT_CLASS) !== -1) {
+        data.className.push(RESOURCE_GROUP_CELLS_CLASS);
+        type = "resourceGroupCells";
+      }
+      if (this.parent.workHours.highlight && this.isWorkDay(data.date, data.workDays)) {
+        data.className.push(WORKDAY_CLASS);
+      }
+      if (this.isCurrentDate(data.date)) {
+        data.className.push(CURRENTDATE_CLASS);
+      }
+      addClass([ntd], data.className);
+      ntd.setAttribute("data-date", data.date.getTime().toString());
+      if (!isNullOrUndefined(data.groupIndex) || this.parent.uiStateValues.isGroupAdaptive) {
+        var groupIndex = this.parent.uiStateValues.isGroupAdaptive ? this.parent.uiStateValues.groupIndex : data.groupIndex;
+        ntd.setAttribute("data-group-index", "" + groupIndex);
+      }
+      this.renderDateHeaderElement(data, ntd);
+      if (this.parent.activeViewOptions.cellTemplate) {
+        var args_1 = { date: data.date, type, groupIndex: data.groupIndex };
+        var scheduleId = this.parent.element.id + "_";
+        var viewName = this.parent.activeViewOptions.cellTemplateName;
+        var templateId = scheduleId + viewName + "cellTemplate";
+        var cellTemplate = [].slice.call(this.parent.getCellTemplate()(args_1, this.parent, "cellTemplate", templateId, false));
+        append2(cellTemplate, ntd);
+      }
+      var args = { elementType: type, element: ntd, date: data.date, groupIndex: data.groupIndex };
+      this.parent.trigger(renderCell, args);
+      return ntd;
+    };
+    Month2.prototype.renderDateHeaderElement = function(data, ntd) {
+      if (this.parent.currentView === "TimelineMonth") {
+        return;
+      }
+      var dateHeader = createElement("div", { className: DATE_HEADER_CLASS });
+      if (this.parent.activeViewOptions.cellHeaderTemplate) {
+        var args = { date: data.date, type: data.type, groupIndex: data.groupIndex };
+        var scheduleId = this.parent.element.id + "_";
+        var viewName = this.parent.activeViewOptions.cellHeaderTemplateName;
+        var templateId = scheduleId + viewName + "cellHeaderTemplate";
+        var cellHeaderTemplate = [].slice.call(this.parent.getCellHeaderTemplate()(args, this.parent, "cellHeaderTemplate", templateId, false));
+        append2(cellHeaderTemplate, dateHeader);
+      } else {
+        var innerText = this.parent.calendarUtil.isMonthStart(data.date) && !this.isCurrentDate(data.date) && !this.parent.isAdaptive ? this.parent.globalize.formatDate(data.date, { format: "MMM d", calendar: this.parent.getCalendarMode() }) : this.parent.globalize.formatDate(data.date, { skeleton: "d", calendar: this.parent.getCalendarMode() });
+        dateHeader.innerHTML = capitalizeFirstWord(innerText, "single");
+      }
+      ntd.appendChild(dateHeader);
+      if (this.getModuleName() === "month") {
+        addClass([dateHeader], NAVIGATE_CLASS);
+        var skeleton = "full";
+        var announcementText = this.parent.globalize.formatDate(data.date, { skeleton, calendar: this.parent.getCalendarMode() });
+        ntd.setAttribute("aria-label", announcementText);
+      }
+    };
+    Month2.prototype.getMonthStart = function(currentDate) {
+      var useDisplayDate = this.parent.currentView === "Month" && !isNullOrUndefined(this.parent.activeViewOptions.displayDate) && (this.parent.uiStateValues.isCustomMonth || this.isCustomRange());
+      var date = useDisplayDate ? this.parent.activeViewOptions.displayDate : !(this.parent.uiStateValues.isCustomMonth || this.isCustomRange()) && this.isCustomMonth() ? currentDate : this.parent.calendarUtil.firstDateOfMonth(currentDate);
+      var monthStart = getWeekFirstDate(date, this.parent.activeViewOptions.firstDayOfWeek);
+      return new Date(monthStart.getFullYear(), monthStart.getMonth(), monthStart.getDate());
+    };
+    Month2.prototype.getMonthEnd = function(currentDate) {
+      if (this.isCustomMonth()) {
+        var start = this.getMonthStart(currentDate);
+        var numberOfDays = WEEK_LENGTH * (this.parent.activeViewOptions.numberOfWeeks > 0 ? this.parent.activeViewOptions.numberOfWeeks : DEFAULT_WEEKS);
+        return addDays(start, numberOfDays - 1);
+      } else {
+        var endDate = addMonths(currentDate, this.parent.activeViewOptions.interval - 1);
+        var lastWeekOfMonth = getWeekFirstDate(this.parent.calendarUtil.lastDateOfMonth(endDate), this.parent.activeViewOptions.firstDayOfWeek);
+        return addDays(lastWeekOfMonth, WEEK_LENGTH - 1);
+      }
+    };
+    Month2.prototype.isCustomRange = function() {
+      var dates = this.parent.getCurrentViewDates();
+      if (dates && dates.length > 0) {
+        var selectedTime = resetTime(this.parent.selectedDate).getTime();
+        var weekFirstDate = getWeekFirstDate(dates[dates.length - 1], this.parent.activeViewOptions.firstDayOfWeek);
+        return !(selectedTime >= getWeekFirstDate(dates[0], this.parent.activeViewOptions.firstDayOfWeek).getTime() && selectedTime <= addDays(weekFirstDate, 6).getTime());
+      }
+      return false;
+    };
+    Month2.prototype.getRenderDates = function(workDays) {
+      var renderDates = [];
+      var currentDate = resetTime(this.parent.selectedDate);
+      var start = this.getMonthStart(currentDate);
+      var monthEnd = this.getMonthEnd(currentDate);
+      do {
+        if (this.parent.activeViewOptions.showWeekend) {
+          renderDates.push(start);
+        } else {
+          if (this.isWorkDay(start, workDays)) {
+            renderDates.push(start);
+          }
+        }
+        start = addDays(start, 1);
+        if (start.getHours() > 0) {
+          start = resetTime(start);
+        }
+      } while (start.getTime() <= monthEnd.getTime());
+      if (!workDays) {
+        this.renderDates = renderDates;
+      }
+      if (this.parent.headerModule) {
+        this.parent.headerModule.previousNextIconHandler();
+      }
+      return renderDates;
+    };
+    Month2.prototype.getNextPreviousDate = function(type) {
+      if (this.isCustomMonth()) {
+        var dates = this.parent.getCurrentViewDates();
+        var date = getWeekFirstDate(type === "next" ? dates[dates.length - 1] : dates[0], this.parent.activeViewOptions.firstDayOfWeek);
+        return addDays(date, type === "next" ? WEEK_LENGTH : -(this.parent.activeViewOptions.numberOfWeeks > 0 ? this.parent.activeViewOptions.numberOfWeeks : DEFAULT_WEEKS) * WEEK_LENGTH);
+      } else {
+        return addMonths(this.parent.selectedDate, (type === "next" ? 1 : -1) * this.parent.activeViewOptions.interval);
+      }
+    };
+    Month2.prototype.getStartDate = function() {
+      return this.getMonthStart(this.parent.selectedDate);
+    };
+    Month2.prototype.getEndDate = function() {
+      return this.getMonthEnd(this.parent.selectedDate);
+    };
+    Month2.prototype.getEndDateFromStartDate = function(start) {
+      return addDays(new Date(start.getTime()), 1);
+    };
+    Month2.prototype.getDateRangeText = function() {
+      if (this.parent.isAdaptive || isNullOrUndefined(this.parent.activeViewOptions.dateFormat)) {
+        var startDate = this.parent.selectedDate;
+        var endDate = void 0;
+        var updateCustomRange = false;
+        if (this.isCustomMonth()) {
+          var dates = this.parent.getCurrentViewDates();
+          updateCustomRange = dates[0].getMonth() !== dates[dates.length - 1].getMonth() || dates[0].getFullYear() !== dates[dates.length - 1].getFullYear();
+          if (updateCustomRange) {
+            startDate = dates[0];
+            endDate = dates[dates.length - 1];
+          }
+        }
+        var isUpdateDateRange = this.parent.currentView !== "Month" || !this.isCustomMonth();
+        if (this.parent.activeViewOptions.interval > 1 && isUpdateDateRange || updateCustomRange) {
+          endDate = endDate ? endDate : addMonths(lastDateOfMonth(startDate), this.parent.activeViewOptions.interval - 1);
+          if (startDate.getFullYear() === endDate.getFullYear()) {
+            var monthNames = this.parent.globalize.formatDate(startDate, { format: "MMMM", calendar: this.parent.getCalendarMode() }) + " - " + this.parent.globalize.formatDate(endDate, { format: "MMMM ", calendar: this.parent.getCalendarMode() }) + this.parent.globalize.formatDate(endDate, { skeleton: "y", calendar: this.parent.getCalendarMode() });
+            return capitalizeFirstWord(monthNames, "single");
+          }
+          var text = this.parent.globalize.formatDate(startDate, { format: "MMMM", calendar: this.parent.getCalendarMode() }) + " " + startDate.getFullYear() + " - " + this.parent.globalize.formatDate(endDate, { format: "MMMM ", calendar: this.parent.getCalendarMode() }) + this.parent.globalize.formatDate(endDate, { skeleton: "y", calendar: this.parent.getCalendarMode() });
+          return capitalizeFirstWord(text, "single");
+        }
+        var format = this.parent.activeViewOptions.dateFormat ? this.parent.activeViewOptions.dateFormat : "MMMM y";
+        return capitalizeFirstWord(this.parent.globalize.formatDate(startDate, { format, calendar: this.parent.getCalendarMode() }), "single");
+      }
+      return this.formatDateRange(this.parent.selectedDate);
+    };
+    Month2.prototype.getLabelText = function(view) {
+      return this.parent.localeObj.getConstant(view) + " of " + capitalizeFirstWord(this.parent.globalize.formatDate(this.parent.selectedDate, { format: "MMMM y", calendar: this.parent.getCalendarMode() }), "single");
+    };
+    Month2.prototype.createWeekNumberElement = function(text) {
+      var tr = createElement("tr");
+      var td = createElement("td", {
+        className: WEEK_NUMBER_CLASS,
+        attrs: { "title": text ? this.parent.localeObj.getConstant("week") + " " + text : "" },
+        innerHTML: text || ""
+      });
+      tr.appendChild(td);
+      var args = { elementType: "weekNumberCell", element: td };
+      this.parent.trigger(renderCell, args);
+      return tr;
+    };
+    Month2.prototype.unWireEvents = function() {
+      var contentScrollableEle = this.element.querySelector("." + CONTENT_WRAP_CLASS);
+      if (contentScrollableEle) {
+        EventHandler.remove(contentScrollableEle, "scroll", this.onContentScroll);
+      }
+    };
+    Month2.prototype.isCustomMonth = function() {
+      return this.parent.currentView === "Month" && (!isNullOrUndefined(this.parent.activeViewOptions.displayDate) || this.parent.activeViewOptions.numberOfWeeks > 0);
+    };
+    Month2.prototype.getModuleName = function() {
+      return "month";
+    };
+    Month2.prototype.destroy = function() {
+      if (!this.parent || this.parent && this.parent.isDestroyed) {
+        return;
+      }
+      if (this.element) {
+        if (this.monthEvent) {
+          this.monthEvent.destroy();
+          this.monthEvent = null;
+        }
+        this.unWireEvents();
+        if (this.parent.resourceBase) {
+          this.parent.resourceBase.destroy();
+        }
+        if (this.parent.scheduleTouchModule) {
+          this.parent.scheduleTouchModule.resetValues();
+        }
+        _super.prototype.destroy.call(this);
+      }
+    };
+    return Month2;
+  }(ViewBase)
 );
 var ViewsDirective = vueDefineComponent({
   inject: { custom: { default: null } },
@@ -92139,7 +97086,7 @@ var _sfc_main$1 = defineComponent({
       document.body.classList.add("bootstrap5");
       this.getDigest().then(function() {
         that.getSitesForUser().then(function() {
-          that.gitRdone(that.CalendarID);
+          that.gitRdone(that.KanbanID);
         });
       });
     });
@@ -92668,37 +97615,40 @@ var _sfc_main$1 = defineComponent({
                   let start = new Date(j[a][list.Fields.StartTime]);
                   let end = new Date(j[a][list.Fields.EndTime]);
                   let guid = String(UUID());
-                  that.idcount += 1;
-                  that.events.push({
-                    Id: that.idcount,
-                    // Fake Id as this is a required field of Scheduler but we don't need the event ID as we have the uri
-                    Subject: String(j[a][list.Fields.Subject]),
-                    Description: String(j[a][list.Fields.Description]),
-                    StartTime: start,
-                    // will address start time later
-                    EndTime: end,
-                    Location: String(j[a][list.Fields.Location]),
-                    Category: String(j[a][list.Fields.Category]),
-                    CategoryId: catid,
-                    guid,
-                    etag: String(j[a]["__metadata"]["etag"]),
-                    uri: String(j[a]["__metadata"]["uri"]),
-                    type: String(j[a]["__metadata"]["type"])
-                  });
-                  Schedule2.addEvent({
-                    Id: that.idcount,
-                    Subject: String(j[a][list.Fields.Subject]),
-                    Description: String(j[a][list.Fields.Description]),
-                    StartTime: start,
-                    EndTime: end,
-                    Location: String(j[a][list.Fields.Location]),
-                    Category: String(j[a][list.Fields.Category]),
-                    CategoryId: catid,
-                    guid,
-                    etag: String(j[a]["__metadata"]["etag"]),
-                    uri: String(j[a]["__metadata"]["uri"]),
-                    type: String(j[a]["__metadata"]["type"])
-                  });
+                  try {
+                    that.idcount += 1;
+                    that.events.push({
+                      Id: that.idcount,
+                      // Fake Id as this is a required field of Scheduler but we don't need the event ID as we have the uri
+                      Subject: String(j[a][list.Fields.Subject]),
+                      Description: String(j[a][list.Fields.Description]),
+                      StartTime: start,
+                      // will address start time later
+                      EndTime: end,
+                      Location: String(j[a][list.Fields.Location]),
+                      Category: String(j[a][list.Fields.Category]),
+                      CategoryId: catid,
+                      guid,
+                      etag: String(j[a]["__metadata"]["etag"]),
+                      uri: String(j[a]["__metadata"]["uri"]),
+                      type: String(j[a]["__metadata"]["type"])
+                    });
+                    Schedule2.addEvent({
+                      Id: that.idcount,
+                      Subject: String(j[a][list.Fields.Subject]),
+                      Description: String(j[a][list.Fields.Description]),
+                      StartTime: start,
+                      EndTime: end,
+                      Location: String(j[a][list.Fields.Location]),
+                      Category: String(j[a][list.Fields.Category]),
+                      CategoryId: catid,
+                      guid,
+                      etag: String(j[a]["__metadata"]["etag"]),
+                      uri: String(j[a]["__metadata"]["uri"]),
+                      type: String(j[a]["__metadata"]["type"])
+                    });
+                  } catch (e) {
+                  }
                 }
               }
             }
@@ -92717,6 +97667,9 @@ var _sfc_main$1 = defineComponent({
       }
       return true;
     }
+  },
+  provide: {
+    schedule: [Day, WorkWeek, Month, DragAndDrop, Resize]
   }
 });
 var Kanban_vue_vue_type_style_index_0_lang = "";
@@ -92727,7 +97680,7 @@ var _export_sfc = (sfc, props2) => {
   }
   return target;
 };
-const _hoisted_1$1 = { class: "container-fluid" };
+const _hoisted_1$1 = { class: "container-fluid px-0" };
 const _hoisted_2 = { class: "row" };
 const _hoisted_3 = /* @__PURE__ */ createBaseVNode("div", { class: "container p-0 m-0" }, [
   /* @__PURE__ */ createBaseVNode("div", { class: "row p-0 m-0 text-center" }, [
@@ -92798,244 +97751,244 @@ const _hoisted_16 = { class: "content-wrapper" };
 const _hoisted_17 = { class: "e-card" };
 const _hoisted_18 = { class: "e-card-content" };
 const _hoisted_19 = {
-  id: "kanbantab",
+  id: "calendartab",
   style: { "display": "none" }
 };
 const _hoisted_20 = { class: "container-fluid" };
 const _hoisted_21 = { class: "row" };
-const _hoisted_22 = { class: "toolbar" };
-const _hoisted_23 = /* @__PURE__ */ createBaseVNode("div", { class: "main-menu main-menu-kanban" }, [
-  /* @__PURE__ */ createBaseVNode("div", null, "SIDEBAR STUFF HERE")
-], -1);
-const _hoisted_24 = { class: "row" };
-const _hoisted_25 = { class: "main main-kanban" };
-const _hoisted_26 = {
-  id: "calendartab",
-  style: { "display": "none" }
-};
-const _hoisted_27 = { class: "container-fluid" };
-const _hoisted_28 = { class: "row" };
-const _hoisted_29 = { class: "toolbar" };
-const _hoisted_30 = { class: "main-menu main-menu-calendar" };
-const _hoisted_31 = /* @__PURE__ */ createBaseVNode("div", { class: "container p-0 m-0" }, [
+const _hoisted_22 = { class: "toolbar px-0" };
+const _hoisted_23 = { class: "main-menu main-menu-calendar px-0" };
+const _hoisted_24 = /* @__PURE__ */ createBaseVNode("div", { class: "container p-0 m-0" }, [
   /* @__PURE__ */ createBaseVNode("div", { class: "row p-0 m-0 text-center" }, [
     /* @__PURE__ */ createBaseVNode("span", null, "Are you sure?")
   ])
 ], -1);
-const _hoisted_32 = /* @__PURE__ */ createBaseVNode("div", { class: "container p-0 m-0" }, [
+const _hoisted_25 = /* @__PURE__ */ createBaseVNode("div", { class: "container p-0 m-0" }, [
   /* @__PURE__ */ createBaseVNode("div", { class: "row p-0 m-0 text-center" }, [
     /* @__PURE__ */ createBaseVNode("span", null, "This will add the category to all selected lists.")
   ])
 ], -1);
-const _hoisted_33 = { class: "container p-0 m-0" };
-const _hoisted_34 = { class: "row p-0 m-0" };
-const _hoisted_35 = { class: "col-8" };
-const _hoisted_36 = { class: "col-4" };
-const _hoisted_37 = { class: "e-card" };
-const _hoisted_38 = { class: "e-card-content" };
-const _hoisted_39 = {
+const _hoisted_26 = { class: "container p-0 m-0" };
+const _hoisted_27 = { class: "row p-0 m-0" };
+const _hoisted_28 = { class: "col-8" };
+const _hoisted_29 = { class: "col-4" };
+const _hoisted_30 = { class: "e-card" };
+const _hoisted_31 = { class: "e-card-content" };
+const _hoisted_32 = {
   id: "settings",
   style: { "display": "none" }
 };
-const _hoisted_40 = { class: "container p-0 m-0" };
-const _hoisted_41 = { class: "row p-0 m-0 mb-1" };
-const _hoisted_42 = { class: "col-12 text-center" };
-const _hoisted_43 = /* @__PURE__ */ createBaseVNode("div", { class: "row p-0 m-0 mb-1" }, [
+const _hoisted_33 = { class: "container p-0 m-0" };
+const _hoisted_34 = { class: "row p-0 m-0 mb-1" };
+const _hoisted_35 = { class: "col-12 text-center" };
+const _hoisted_36 = /* @__PURE__ */ createBaseVNode("div", { class: "row p-0 m-0 mb-1" }, [
   /* @__PURE__ */ createBaseVNode("div", { class: "col-12 text-center bg-dark text-white" }, "Sites")
 ], -1);
-const _hoisted_44 = { class: "row p-0 m-0 mb-1" };
-const _hoisted_45 = { class: "col-8" };
-const _hoisted_46 = { class: "col-4" };
-const _hoisted_47 = {
+const _hoisted_37 = { class: "row p-0 m-0 mb-1" };
+const _hoisted_38 = { class: "col-8" };
+const _hoisted_39 = { class: "col-4" };
+const _hoisted_40 = {
   key: 0,
   class: "row p-0 m-0 mb-1"
 };
-const _hoisted_48 = /* @__PURE__ */ createBaseVNode("div", { class: "col-12 text-center bg-dark text-white" }, "Lists:", -1);
-const _hoisted_49 = [
-  _hoisted_48
+const _hoisted_41 = /* @__PURE__ */ createBaseVNode("div", { class: "col-12 text-center bg-dark text-white" }, "Lists:", -1);
+const _hoisted_42 = [
+  _hoisted_41
 ];
-const _hoisted_50 = {
+const _hoisted_43 = {
   key: 1,
   class: "row p-0 m-0"
 };
-const _hoisted_51 = { class: "col-12 p-0" };
-const _hoisted_52 = {
+const _hoisted_44 = { class: "col-12 p-0" };
+const _hoisted_45 = {
   id: "tblLists",
   class: "p-0 px1000"
 };
-const _hoisted_53 = /* @__PURE__ */ createBaseVNode("thead", null, [
+const _hoisted_46 = /* @__PURE__ */ createBaseVNode("thead", null, [
   /* @__PURE__ */ createBaseVNode("th", { class: "text-center bg-dark text-white p-0 px60" }, "Select"),
   /* @__PURE__ */ createBaseVNode("th", { class: "text-center bg-dark text-white p-0 px150" }, "Site"),
   /* @__PURE__ */ createBaseVNode("th", { class: "text-center bg-dark text-white p-0 px150" }, "List"),
   /* @__PURE__ */ createBaseVNode("th", { class: "text-center bg-dark text-white p-0 px640" }, "Field Mappings")
 ], -1);
-const _hoisted_54 = { class: "text-center" };
-const _hoisted_55 = { class: "p-0" };
-const _hoisted_56 = { class: "row p-0 m-0" };
-const _hoisted_57 = { class: "p-0 px150" };
-const _hoisted_58 = ["id"];
-const _hoisted_59 = {
+const _hoisted_47 = { class: "text-center" };
+const _hoisted_48 = { class: "p-0" };
+const _hoisted_49 = { class: "row p-0 m-0" };
+const _hoisted_50 = { class: "p-0 px150" };
+const _hoisted_51 = ["id"];
+const _hoisted_52 = {
   class: "e-spinner",
   style: { "width": "20px", "height": "20px" }
 };
-const _hoisted_60 = { class: "e-spinner-pane e-spin-show" };
-const _hoisted_61 = { class: "e-spinner-inner" };
-const _hoisted_62 = {
+const _hoisted_53 = { class: "e-spinner-pane e-spin-show" };
+const _hoisted_54 = { class: "e-spinner-inner" };
+const _hoisted_55 = {
   class: "e-spin-bootstrap5",
   id: "OM4vl",
   viewBox: "0 0 16 16",
   style: { "height": "16px", "width": "16px", "transform-origin": "8px 8px 8px" }
 };
-const _hoisted_63 = /* @__PURE__ */ createBaseVNode("path", {
+const _hoisted_56 = /* @__PURE__ */ createBaseVNode("path", {
   class: "e-path-circle",
   d: "M8,0.8A7.2,7.2 0 1 1 0.8,8"
 }, null, -1);
-const _hoisted_64 = [
-  _hoisted_63
+const _hoisted_57 = [
+  _hoisted_56
 ];
-const _hoisted_65 = { class: "p-0 px440" };
-const _hoisted_66 = ["id"];
-const _hoisted_67 = { class: "px440" };
-const _hoisted_68 = /* @__PURE__ */ createBaseVNode("thead", null, [
+const _hoisted_58 = { class: "p-0 px440" };
+const _hoisted_59 = ["id"];
+const _hoisted_60 = { class: "px440" };
+const _hoisted_61 = /* @__PURE__ */ createBaseVNode("thead", null, [
   /* @__PURE__ */ createBaseVNode("th", { class: "text-center bg-dark text-white" }, "Calendar Field"),
   /* @__PURE__ */ createBaseVNode("th", { class: "text-center bg-dark text-white" }, "Mapped List Field")
 ], -1);
-const _hoisted_69 = /* @__PURE__ */ createBaseVNode("td", null, [
+const _hoisted_62 = /* @__PURE__ */ createBaseVNode("td", null, [
   /* @__PURE__ */ createBaseVNode("div", { class: "px100" }, "Title")
+], -1);
+const _hoisted_63 = { class: "mappedlistfield px330" };
+const _hoisted_64 = { class: "px280" };
+const _hoisted_65 = /* @__PURE__ */ createBaseVNode("td", null, [
+  /* @__PURE__ */ createBaseVNode("div", { class: "px100" }, "StartDate")
+], -1);
+const _hoisted_66 = { class: "mappedlistfield px330" };
+const _hoisted_67 = { class: "px280" };
+const _hoisted_68 = { class: "px35" };
+const _hoisted_69 = /* @__PURE__ */ createBaseVNode("td", null, [
+  /* @__PURE__ */ createBaseVNode("div", { class: "px100" }, "EndDate")
 ], -1);
 const _hoisted_70 = { class: "mappedlistfield px330" };
 const _hoisted_71 = { class: "px280" };
-const _hoisted_72 = /* @__PURE__ */ createBaseVNode("td", null, [
-  /* @__PURE__ */ createBaseVNode("div", { class: "px100" }, "StartDate")
-], -1);
-const _hoisted_73 = { class: "mappedlistfield px330" };
-const _hoisted_74 = { class: "px280" };
-const _hoisted_75 = { class: "px35" };
-const _hoisted_76 = /* @__PURE__ */ createBaseVNode("td", null, [
-  /* @__PURE__ */ createBaseVNode("div", { class: "px100" }, "EndDate")
-], -1);
-const _hoisted_77 = { class: "mappedlistfield px330" };
-const _hoisted_78 = { class: "px280" };
-const _hoisted_79 = { class: "px35" };
-const _hoisted_80 = /* @__PURE__ */ createBaseVNode("td", null, [
+const _hoisted_72 = { class: "px35" };
+const _hoisted_73 = /* @__PURE__ */ createBaseVNode("td", null, [
   /* @__PURE__ */ createBaseVNode("div", { class: "px100" }, "Category")
 ], -1);
-const _hoisted_81 = { class: "mappedlistfield px330" };
-const _hoisted_82 = { class: "px280" };
-const _hoisted_83 = { class: "px35" };
-const _hoisted_84 = /* @__PURE__ */ createBaseVNode("td", null, [
+const _hoisted_74 = { class: "mappedlistfield px330" };
+const _hoisted_75 = { class: "px280" };
+const _hoisted_76 = { class: "px35" };
+const _hoisted_77 = /* @__PURE__ */ createBaseVNode("td", null, [
   /* @__PURE__ */ createBaseVNode("div", { class: "px100" }, "Location")
 ], -1);
-const _hoisted_85 = { class: "mappedlistfield px330" };
-const _hoisted_86 = { class: "px280" };
-const _hoisted_87 = { class: "px35" };
-const _hoisted_88 = /* @__PURE__ */ createBaseVNode("td", null, [
+const _hoisted_78 = { class: "mappedlistfield px330" };
+const _hoisted_79 = { class: "px280" };
+const _hoisted_80 = { class: "px35" };
+const _hoisted_81 = /* @__PURE__ */ createBaseVNode("td", null, [
   /* @__PURE__ */ createBaseVNode("div", { class: "px100" }, "Description")
 ], -1);
-const _hoisted_89 = { class: "mappedlistfield px330" };
-const _hoisted_90 = { class: "px280" };
-const _hoisted_91 = { class: "px35" };
-const _hoisted_92 = /* @__PURE__ */ createBaseVNode("td", null, [
+const _hoisted_82 = { class: "mappedlistfield px330" };
+const _hoisted_83 = { class: "px280" };
+const _hoisted_84 = { class: "px35" };
+const _hoisted_85 = /* @__PURE__ */ createBaseVNode("td", null, [
   /* @__PURE__ */ createBaseVNode("div", { class: "px100" }, "Recurrence")
 ], -1);
-const _hoisted_93 = { class: "mappedlistfield px330" };
-const _hoisted_94 = { class: "px280" };
-const _hoisted_95 = { class: "px35" };
-const _hoisted_96 = /* @__PURE__ */ createBaseVNode("div", { class: "p-0 px50 bg-success" }, null, -1);
-const _hoisted_97 = /* @__PURE__ */ createBaseVNode("div", { class: "row p-0 m-0 mb-1" }, [
+const _hoisted_86 = { class: "mappedlistfield px330" };
+const _hoisted_87 = { class: "px280" };
+const _hoisted_88 = { class: "px35" };
+const _hoisted_89 = /* @__PURE__ */ createBaseVNode("div", { class: "p-0 px50 bg-success" }, null, -1);
+const _hoisted_90 = /* @__PURE__ */ createBaseVNode("div", { class: "row p-0 m-0 mb-1" }, [
   /* @__PURE__ */ createBaseVNode("div", { class: "col-12 text-center bg-dark text-white" }, "Categories:")
 ], -1);
-const _hoisted_98 = { class: "row p-0 m-0 mb-1" };
-const _hoisted_99 = { class: "col-12 p-0" };
-const _hoisted_100 = {
+const _hoisted_91 = { class: "row p-0 m-0 mb-1" };
+const _hoisted_92 = { class: "col-12 p-0" };
+const _hoisted_93 = {
   id: "tblCats",
   class: "p-0 px1000"
 };
-const _hoisted_101 = /* @__PURE__ */ createBaseVNode("thead", null, [
+const _hoisted_94 = /* @__PURE__ */ createBaseVNode("thead", null, [
   /* @__PURE__ */ createBaseVNode("th", { class: "text-center bg-dark text-white px150" }, "Category"),
   /* @__PURE__ */ createBaseVNode("th", { class: "text-center bg-dark text-white px100" }, "Color")
 ], -1);
-const _hoisted_102 = { colspan: "2" };
-const _hoisted_103 = { class: "text-center" };
-const _hoisted_104 = /* @__PURE__ */ createBaseVNode("div", {
+const _hoisted_95 = { colspan: "2" };
+const _hoisted_96 = { class: "text-center" };
+const _hoisted_97 = /* @__PURE__ */ createBaseVNode("div", {
   id: "instructions",
   style: { "display": "none" }
 }, "INSTRUCTIONS", -1);
-const _hoisted_105 = /* @__PURE__ */ createBaseVNode("div", {
+const _hoisted_98 = /* @__PURE__ */ createBaseVNode("div", {
   id: "errors",
   style: { "display": "none" }
 }, [
   /* @__PURE__ */ createBaseVNode("div", null, "The following errors need to be resolved for full proper functionality.")
 ], -1);
-const _hoisted_106 = { style: { "position": "relative", "display": "inline-block", "margin": "10px" } };
-const _hoisted_107 = /* @__PURE__ */ createBaseVNode("div", { class: "errortext" }, "Errors", -1);
-const _hoisted_108 = {
+const _hoisted_99 = { style: { "position": "relative", "display": "inline-block", "margin": "10px" } };
+const _hoisted_100 = /* @__PURE__ */ createBaseVNode("div", { class: "errortext" }, "Errors", -1);
+const _hoisted_101 = {
   key: 0,
   class: "e-badge e-badge-danger e-badge-notification e-badge-circle"
 };
-const _hoisted_109 = /* @__PURE__ */ createBaseVNode("div", { class: "e-card-separator" }, null, -1);
-const _hoisted_110 = { class: "e-card-actions" };
-const _hoisted_111 = { class: "container" };
-const _hoisted_112 = { class: "row" };
-const _hoisted_113 = { class: "col-2" };
-const _hoisted_114 = { class: "col-10" };
-const _hoisted_115 = { class: "row" };
-const _hoisted_116 = { class: "main main-calendar" };
-const _hoisted_117 = { class: "quick-info-header" };
-const _hoisted_118 = {
+const _hoisted_102 = /* @__PURE__ */ createBaseVNode("div", { class: "e-card-separator" }, null, -1);
+const _hoisted_103 = { class: "e-card-actions" };
+const _hoisted_104 = { class: "container" };
+const _hoisted_105 = { class: "row" };
+const _hoisted_106 = { class: "col-2" };
+const _hoisted_107 = { class: "col-10" };
+const _hoisted_108 = { class: "row" };
+const _hoisted_109 = { class: "main main-calendar px-0" };
+const _hoisted_110 = { class: "quick-info-header" };
+const _hoisted_111 = {
   key: 0,
   class: "quick-info-header-content",
   style: { "align-items": "center", color: "#919191" }
 };
-const _hoisted_119 = { class: "quick-info-title" };
-const _hoisted_120 = { class: "duration-text" };
-const _hoisted_121 = { class: "quick-info-title" };
-const _hoisted_122 = { class: "duration-text" };
-const _hoisted_123 = { class: "quick-info-content" };
-const _hoisted_124 = {
+const _hoisted_112 = { class: "quick-info-title" };
+const _hoisted_113 = { class: "duration-text" };
+const _hoisted_114 = { class: "quick-info-title" };
+const _hoisted_115 = { class: "duration-text" };
+const _hoisted_116 = { class: "quick-info-content" };
+const _hoisted_117 = {
   key: 0,
   class: "e-cell-content"
 };
-const _hoisted_125 = { class: "quick-content-area" };
-const _hoisted_126 = { class: "quick-content-area" };
-const _hoisted_127 = { class: "quick-content-area" };
-const _hoisted_128 = {
+const _hoisted_118 = { class: "quick-content-area" };
+const _hoisted_119 = { class: "quick-content-area" };
+const _hoisted_120 = { class: "quick-content-area" };
+const _hoisted_121 = {
   key: 1,
   class: "event-content"
 };
-const _hoisted_129 = { class: "meeting-type-wrap" };
-const _hoisted_130 = /* @__PURE__ */ createBaseVNode("label", null, "Subject", -1);
-const _hoisted_131 = { class: "meeting-subject-wrap" };
-const _hoisted_132 = /* @__PURE__ */ createBaseVNode("label", null, "Category", -1);
-const _hoisted_133 = { class: "notes-wrap" };
-const _hoisted_134 = /* @__PURE__ */ createBaseVNode("label", null, "Description", -1);
-const _hoisted_135 = { class: "quick-info-footer" };
-const _hoisted_136 = {
+const _hoisted_122 = { class: "meeting-type-wrap" };
+const _hoisted_123 = /* @__PURE__ */ createBaseVNode("label", null, "Subject", -1);
+const _hoisted_124 = { class: "meeting-subject-wrap" };
+const _hoisted_125 = /* @__PURE__ */ createBaseVNode("label", null, "Category", -1);
+const _hoisted_126 = { class: "notes-wrap" };
+const _hoisted_127 = /* @__PURE__ */ createBaseVNode("label", null, "Description", -1);
+const _hoisted_128 = { class: "quick-info-footer" };
+const _hoisted_129 = {
   key: 0,
   class: "cell-footer"
 };
-const _hoisted_137 = {
+const _hoisted_130 = {
   key: 1,
   class: "event-footer"
 };
+const _hoisted_131 = {
+  id: "kanbantab",
+  style: { "display": "none" }
+};
+const _hoisted_132 = { class: "container-fluid" };
+const _hoisted_133 = { class: "row" };
+const _hoisted_134 = { class: "toolbar px-0" };
+const _hoisted_135 = /* @__PURE__ */ createBaseVNode("div", { class: "main-menu main-menu-kanban px-0" }, [
+  /* @__PURE__ */ createBaseVNode("div", null, "SIDEBAR STUFF HERE")
+], -1);
+const _hoisted_136 = { class: "row" };
+const _hoisted_137 = { class: "main main-kanban px-0" };
 const _hoisted_138 = {
   id: "gantttab",
   style: { "display": "none" }
 };
 const _hoisted_139 = { class: "container-fluid" };
 const _hoisted_140 = { class: "row" };
-const _hoisted_141 = { class: "toolbar" };
-const _hoisted_142 = /* @__PURE__ */ createBaseVNode("div", { class: "main-menu main-menu-gantt" }, [
+const _hoisted_141 = { class: "toolbar px-0" };
+const _hoisted_142 = /* @__PURE__ */ createBaseVNode("div", { class: "main-menu main-menu-gantt px-0" }, [
   /* @__PURE__ */ createBaseVNode("div", null, "SIDEBAR STUFF HERE")
 ], -1);
 const _hoisted_143 = /* @__PURE__ */ createBaseVNode("div", { class: "row" }, [
-  /* @__PURE__ */ createBaseVNode("div", { class: "main main-gantt" }, "GANTT")
+  /* @__PURE__ */ createBaseVNode("div", { class: "main main-gantt px-0" }, "GANTT")
 ], -1);
 const _hoisted_144 = /* @__PURE__ */ createBaseVNode("div", { style: { "position": "relative", "display": "inline-block", "margin": "10px" } }, [
-  /* @__PURE__ */ createBaseVNode("div", { class: "tabtext" }, "Kanban")
+  /* @__PURE__ */ createBaseVNode("div", { class: "tabtext" }, "Calendar")
 ], -1);
 const _hoisted_145 = /* @__PURE__ */ createBaseVNode("div", { style: { "position": "relative", "display": "inline-block", "margin": "10px" } }, [
-  /* @__PURE__ */ createBaseVNode("div", { class: "tabtext" }, "Calendar")
+  /* @__PURE__ */ createBaseVNode("div", { class: "tabtext" }, "Kanban")
 ], -1);
 const _hoisted_146 = /* @__PURE__ */ createBaseVNode("div", { style: { "position": "relative", "display": "inline-block", "margin": "10px" } }, [
   /* @__PURE__ */ createBaseVNode("div", { class: "tabtext" }, "Gantt")
@@ -93046,10 +97999,6 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_e_item = resolveComponent("e-item");
   const _component_e_items = resolveComponent("e-items");
   const _component_ejs_toolbar = resolveComponent("ejs-toolbar");
-  const _component_ejs_sidebar = resolveComponent("ejs-sidebar");
-  const _component_e_column = resolveComponent("e-column");
-  const _component_e_columns = resolveComponent("e-columns");
-  const _component_ejs_kanban = resolveComponent("ejs-kanban");
   const _component_ejs_textbox = resolveComponent("ejs-textbox");
   const _component_ejs_multiselect = resolveComponent("ejs-multiselect");
   const _component_ejs_checkbox = resolveComponent("ejs-checkbox");
@@ -93061,11 +98010,15 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_e_tabitem = resolveComponent("e-tabitem");
   const _component_e_tabitems = resolveComponent("e-tabitems");
   const _component_ejs_tab = resolveComponent("ejs-tab");
+  const _component_ejs_sidebar = resolveComponent("ejs-sidebar");
   const _component_e_view = resolveComponent("e-view");
   const _component_e_views = resolveComponent("e-views");
   const _component_e_resource = resolveComponent("e-resource");
   const _component_e_resources = resolveComponent("e-resources");
   const _component_ejs_schedule = resolveComponent("ejs-schedule");
+  const _component_e_column = resolveComponent("e-column");
+  const _component_e_columns = resolveComponent("e-columns");
+  const _component_ejs_kanban = resolveComponent("ejs-kanban");
   return openBlock(), createElementBlock("div", _hoisted_1$1, [
     createBaseVNode("div", _hoisted_2, [
       createVNode(_component_ejs_dialog, {
@@ -93137,84 +98090,8 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                   createBaseVNode("div", _hoisted_21, [
                     createBaseVNode("div", _hoisted_22, [
                       createVNode(_component_ejs_toolbar, {
-                        id: "toolbar_kanban_options",
-                        height: "70px",
-                        overflowMode: "Scrollable",
-                        scrollStep: "100",
-                        clicked: _ctx.onToolbarItemClicked
-                      }, {
-                        default: withCtx(() => [
-                          createVNode(_component_e_items, null, {
-                            default: withCtx(() => [
-                              createVNode(_component_e_item, {
-                                prefixIcon: "e-icons e-menu",
-                                tooltipText: "Settings Menu",
-                                id: "menukanban"
-                              })
-                            ]),
-                            _: 1
-                          })
-                        ]),
-                        _: 1
-                      }, 8, ["clicked"])
-                    ])
-                  ]),
-                  createVNode(_component_ejs_sidebar, {
-                    id: "sideKanban",
-                    class: "sidebar",
-                    ref: "sidebarKanban",
-                    width: "290px",
-                    target: ".main-kanban",
-                    type: "Push",
-                    isOpen: _ctx.datafalse,
-                    showBackdrop: _ctx.datafalse,
-                    enablePersistence: _ctx.datafalse
-                  }, {
-                    default: withCtx(() => [
-                      _hoisted_23
-                    ]),
-                    _: 1
-                  }, 8, ["isOpen", "showBackdrop", "enablePersistence"]),
-                  createBaseVNode("div", _hoisted_24, [
-                    createBaseVNode("div", _hoisted_25, [
-                      createVNode(_component_ejs_kanban, {
-                        id: "kanban",
-                        keyField: "Status",
-                        dataSource: _ctx.kanbanData,
-                        cardSettings: _ctx.cardSettings
-                      }, {
-                        default: withCtx(() => [
-                          createVNode(_component_e_columns, null, {
-                            default: withCtx(() => [
-                              createVNode(_component_e_column, {
-                                headerText: "To Do",
-                                keyField: "Open"
-                              }),
-                              createVNode(_component_e_column, {
-                                headerText: "In Progress",
-                                keyField: "InProgress"
-                              }),
-                              createVNode(_component_e_column, {
-                                headerText: "Done",
-                                keyField: "Close"
-                              })
-                            ]),
-                            _: 1
-                          })
-                        ]),
-                        _: 1
-                      }, 8, ["dataSource", "cardSettings"])
-                    ])
-                  ])
-                ])
-              ]),
-              createBaseVNode("div", _hoisted_26, [
-                createBaseVNode("div", _hoisted_27, [
-                  createBaseVNode("div", _hoisted_28, [
-                    createBaseVNode("div", _hoisted_29, [
-                      createVNode(_component_ejs_toolbar, {
                         id: "toolbar_calendar_options",
-                        height: "70px",
+                        height: "50px",
                         overflowMode: "Scrollable",
                         scrollStep: "100",
                         clicked: _ctx.onToolbarItemClicked
@@ -93285,7 +98162,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                     enablePersistence: _ctx.datafalse
                   }, {
                     default: withCtx(() => [
-                      createBaseVNode("div", _hoisted_30, [
+                      createBaseVNode("div", _hoisted_23, [
                         createBaseVNode("div", null, [
                           createVNode(_component_ejs_dialog, {
                             ref: "dlgCategory",
@@ -93299,22 +98176,22 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                             width: "500px"
                           }, {
                             dialogHeader: withCtx(() => [
-                              _hoisted_31
+                              _hoisted_24
                             ]),
                             dialogContent: withCtx(() => [
-                              _hoisted_32
+                              _hoisted_25
                             ]),
                             dialogFooter: withCtx(() => [
-                              createBaseVNode("div", _hoisted_33, [
-                                createBaseVNode("div", _hoisted_34, [
-                                  createBaseVNode("div", _hoisted_35, [
+                              createBaseVNode("div", _hoisted_26, [
+                                createBaseVNode("div", _hoisted_27, [
+                                  createBaseVNode("div", _hoisted_28, [
                                     createVNode(_component_ejs_textbox, {
                                       modelValue: _ctx.addcategory,
                                       "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => _ctx.addcategory = $event),
                                       placeholder: "New Category"
                                     }, null, 8, ["modelValue"])
                                   ]),
-                                  createBaseVNode("div", _hoisted_36, [
+                                  createBaseVNode("div", _hoisted_29, [
                                     createVNode(_component_ejs_button, {
                                       id: "add-cat",
                                       cssClass: "e-success mr-1",
@@ -93333,12 +98210,12 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                             ]),
                             _: 1
                           }, 8, ["visible", "showCloseIcon", "target"]),
-                          createBaseVNode("div", _hoisted_37, [
-                            createBaseVNode("div", _hoisted_38, [
-                              createBaseVNode("div", _hoisted_39, [
-                                createBaseVNode("div", _hoisted_40, [
-                                  createBaseVNode("div", _hoisted_41, [
-                                    createBaseVNode("div", _hoisted_42, [
+                          createBaseVNode("div", _hoisted_30, [
+                            createBaseVNode("div", _hoisted_31, [
+                              createBaseVNode("div", _hoisted_32, [
+                                createBaseVNode("div", _hoisted_33, [
+                                  createBaseVNode("div", _hoisted_34, [
+                                    createBaseVNode("div", _hoisted_35, [
                                       createVNode(_component_ejs_textbox, {
                                         modelValue: _ctx.calprops.Title,
                                         "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => _ctx.calprops.Title = $event),
@@ -93346,9 +98223,9 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                       }, null, 8, ["modelValue"])
                                     ])
                                   ]),
-                                  _hoisted_43,
-                                  createBaseVNode("div", _hoisted_44, [
-                                    createBaseVNode("div", _hoisted_45, [
+                                  _hoisted_36,
+                                  createBaseVNode("div", _hoisted_37, [
+                                    createBaseVNode("div", _hoisted_38, [
                                       createVNode(_component_ejs_multiselect, {
                                         id: "msSitesA",
                                         ref: "msSitesA",
@@ -93363,7 +98240,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                         filterBarPlaceholder: "Search Sites"
                                       }, null, 8, ["modelValue", "dataSource", "fields", "showDropDownIcon", "showSelectAll"])
                                     ]),
-                                    createBaseVNode("div", _hoisted_46, [
+                                    createBaseVNode("div", _hoisted_39, [
                                       createVNode(_component_ejs_button, {
                                         id: "get-lists",
                                         cssClass: "e-success",
@@ -93372,18 +98249,18 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                       }, null, 8, ["onClick"])
                                     ])
                                   ]),
-                                  _ctx.calprops.Lists.length > 0 ? (openBlock(), createElementBlock("div", _hoisted_47, _hoisted_49)) : createCommentVNode("", true),
-                                  _ctx.calprops.Lists.length > 0 ? (openBlock(), createElementBlock("div", _hoisted_50, [
-                                    createBaseVNode("div", _hoisted_51, [
-                                      createBaseVNode("table", _hoisted_52, [
-                                        _hoisted_53,
+                                  _ctx.calprops.Lists.length > 0 ? (openBlock(), createElementBlock("div", _hoisted_40, _hoisted_42)) : createCommentVNode("", true),
+                                  _ctx.calprops.Lists.length > 0 ? (openBlock(), createElementBlock("div", _hoisted_43, [
+                                    createBaseVNode("div", _hoisted_44, [
+                                      createBaseVNode("table", _hoisted_45, [
+                                        _hoisted_46,
                                         createBaseVNode("tbody", null, [
                                           (openBlock(true), createElementBlock(Fragment, null, renderList(_ctx.calprops.Lists, (list, index) => {
                                             return openBlock(), createElementBlock("tr", {
                                               key: list.Id,
                                               class: "p-0"
                                             }, [
-                                              createBaseVNode("td", _hoisted_54, [
+                                              createBaseVNode("td", _hoisted_47, [
                                                 createVNode(_component_ejs_checkbox, {
                                                   modelValue: list.Selected,
                                                   "onUpdate:modelValue": ($event) => list.Selected = $event
@@ -93392,9 +98269,9 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                               createBaseVNode("td", null, toDisplayString(list.Site), 1),
                                               createBaseVNode("td", null, toDisplayString(list.Title), 1),
                                               createBaseVNode("td", null, [
-                                                createBaseVNode("div", _hoisted_55, [
-                                                  createBaseVNode("div", _hoisted_56, [
-                                                    createBaseVNode("div", _hoisted_57, [
+                                                createBaseVNode("div", _hoisted_48, [
+                                                  createBaseVNode("div", _hoisted_49, [
+                                                    createBaseVNode("div", _hoisted_50, [
                                                       createBaseVNode("div", {
                                                         id: "spinner" + index,
                                                         ref_for: true,
@@ -93402,14 +98279,14 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                         class: "e-control e-progress-btn e-lib e-round e-small e-success e-icon-btn e-btn e-spin-center",
                                                         style: { "padding-top": "3px", "visibility": "hidden" }
                                                       }, [
-                                                        createBaseVNode("span", _hoisted_59, [
-                                                          createBaseVNode("div", _hoisted_60, [
-                                                            createBaseVNode("div", _hoisted_61, [
-                                                              (openBlock(), createElementBlock("svg", _hoisted_62, _hoisted_64))
+                                                        createBaseVNode("span", _hoisted_52, [
+                                                          createBaseVNode("div", _hoisted_53, [
+                                                            createBaseVNode("div", _hoisted_54, [
+                                                              (openBlock(), createElementBlock("svg", _hoisted_55, _hoisted_57))
                                                             ])
                                                           ])
                                                         ])
-                                                      ], 8, _hoisted_58),
+                                                      ], 8, _hoisted_51),
                                                       createVNode(_component_ejs_button, {
                                                         id: "btn" + index,
                                                         onClick: _ctx.mapfields,
@@ -93419,18 +98296,18 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                         content: "Map Fields"
                                                       }, null, 8, ["id", "onClick", "data-index", "data-button"])
                                                     ]),
-                                                    createBaseVNode("div", _hoisted_65, [
+                                                    createBaseVNode("div", _hoisted_58, [
                                                       createBaseVNode("div", {
                                                         id: "ac_" + index,
                                                         style: { "display": "none" }
                                                       }, [
-                                                        createBaseVNode("table", _hoisted_67, [
-                                                          _hoisted_68,
+                                                        createBaseVNode("table", _hoisted_60, [
+                                                          _hoisted_61,
                                                           createBaseVNode("tbody", null, [
                                                             createBaseVNode("tr", null, [
-                                                              _hoisted_69,
-                                                              createBaseVNode("td", _hoisted_70, [
-                                                                createBaseVNode("div", _hoisted_71, [
+                                                              _hoisted_62,
+                                                              createBaseVNode("td", _hoisted_63, [
+                                                                createBaseVNode("div", _hoisted_64, [
                                                                   createVNode(_component_ejs_dropdownlist, {
                                                                     dataSource: list.ListFields,
                                                                     fields: _ctx.fieldfields,
@@ -93443,9 +98320,9 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                               ])
                                                             ]),
                                                             createBaseVNode("tr", null, [
-                                                              _hoisted_72,
-                                                              createBaseVNode("td", _hoisted_73, [
-                                                                createBaseVNode("div", _hoisted_74, [
+                                                              _hoisted_65,
+                                                              createBaseVNode("td", _hoisted_66, [
+                                                                createBaseVNode("div", _hoisted_67, [
                                                                   createVNode(_component_ejs_dropdownlist, {
                                                                     dataSource: list.ListFields,
                                                                     fields: _ctx.fieldfields,
@@ -93455,7 +98332,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                                     style: normalizeStyle(list.Fields.StartTime === "" ? "border: 1px solid red" : "border: 1px solid green")
                                                                   }, null, 8, ["dataSource", "fields", "modelValue", "onUpdate:modelValue", "style"])
                                                                 ]),
-                                                                createBaseVNode("div", _hoisted_75, [
+                                                                createBaseVNode("div", _hoisted_68, [
                                                                   createVNode(_component_ejs_button, {
                                                                     onClick: ($event) => _ctx.addfield(list, index, "StartDate"),
                                                                     cssClass: "e-round e-success",
@@ -93467,9 +98344,9 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                               ])
                                                             ]),
                                                             createBaseVNode("tr", null, [
-                                                              _hoisted_76,
-                                                              createBaseVNode("td", _hoisted_77, [
-                                                                createBaseVNode("div", _hoisted_78, [
+                                                              _hoisted_69,
+                                                              createBaseVNode("td", _hoisted_70, [
+                                                                createBaseVNode("div", _hoisted_71, [
                                                                   createVNode(_component_ejs_dropdownlist, {
                                                                     dataSource: list.ListFields,
                                                                     fields: _ctx.fieldfields,
@@ -93479,7 +98356,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                                     cssClass: list.Fields.EndTime === "" ? "e-danger" : "e-success"
                                                                   }, null, 8, ["dataSource", "fields", "modelValue", "onUpdate:modelValue", "cssClass"])
                                                                 ]),
-                                                                createBaseVNode("div", _hoisted_79, [
+                                                                createBaseVNode("div", _hoisted_72, [
                                                                   createVNode(_component_ejs_button, {
                                                                     onClick: ($event) => _ctx.addfield(list, index, "EndDate"),
                                                                     cssClass: "e-round e-success",
@@ -93491,9 +98368,9 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                               ])
                                                             ]),
                                                             createBaseVNode("tr", null, [
-                                                              _hoisted_80,
-                                                              createBaseVNode("td", _hoisted_81, [
-                                                                createBaseVNode("div", _hoisted_82, [
+                                                              _hoisted_73,
+                                                              createBaseVNode("td", _hoisted_74, [
+                                                                createBaseVNode("div", _hoisted_75, [
                                                                   createVNode(_component_ejs_dropdownlist, {
                                                                     dataSource: list.ListFields,
                                                                     fields: _ctx.fieldfields,
@@ -93503,7 +98380,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                                     cssClass: list.Fields.Category === "" ? "e-danger" : "e-success"
                                                                   }, null, 8, ["dataSource", "fields", "modelValue", "onUpdate:modelValue", "cssClass"])
                                                                 ]),
-                                                                createBaseVNode("div", _hoisted_83, [
+                                                                createBaseVNode("div", _hoisted_76, [
                                                                   createVNode(_component_ejs_button, {
                                                                     onClick: ($event) => _ctx.addfield(list, index, "Category"),
                                                                     cssClass: "e-round e-success",
@@ -93515,9 +98392,9 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                               ])
                                                             ]),
                                                             createBaseVNode("tr", null, [
-                                                              _hoisted_84,
-                                                              createBaseVNode("td", _hoisted_85, [
-                                                                createBaseVNode("div", _hoisted_86, [
+                                                              _hoisted_77,
+                                                              createBaseVNode("td", _hoisted_78, [
+                                                                createBaseVNode("div", _hoisted_79, [
                                                                   createVNode(_component_ejs_dropdownlist, {
                                                                     dataSource: list.ListFields,
                                                                     fields: _ctx.fieldfields,
@@ -93526,7 +98403,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                                     "onUpdate:modelValue": ($event) => list.Fields.Location = $event
                                                                   }, null, 8, ["dataSource", "fields", "modelValue", "onUpdate:modelValue"])
                                                                 ]),
-                                                                createBaseVNode("div", _hoisted_87, [
+                                                                createBaseVNode("div", _hoisted_80, [
                                                                   createVNode(_component_ejs_button, {
                                                                     onClick: ($event) => _ctx.addfield(list, index, "Location"),
                                                                     cssClass: "e-round e-success",
@@ -93538,9 +98415,9 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                               ])
                                                             ]),
                                                             createBaseVNode("tr", null, [
-                                                              _hoisted_88,
-                                                              createBaseVNode("td", _hoisted_89, [
-                                                                createBaseVNode("div", _hoisted_90, [
+                                                              _hoisted_81,
+                                                              createBaseVNode("td", _hoisted_82, [
+                                                                createBaseVNode("div", _hoisted_83, [
                                                                   createVNode(_component_ejs_dropdownlist, {
                                                                     dataSource: list.ListFields,
                                                                     fields: _ctx.fieldfields,
@@ -93550,7 +98427,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                                     cssClass: list.Fields.Description === "" ? "e-danger" : "e-success"
                                                                   }, null, 8, ["dataSource", "fields", "modelValue", "onUpdate:modelValue", "cssClass"])
                                                                 ]),
-                                                                createBaseVNode("div", _hoisted_91, [
+                                                                createBaseVNode("div", _hoisted_84, [
                                                                   createVNode(_component_ejs_button, {
                                                                     onClick: ($event) => _ctx.addfield(list, index, "Description"),
                                                                     cssClass: "e-round e-success",
@@ -93562,9 +98439,9 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                               ])
                                                             ]),
                                                             createBaseVNode("tr", null, [
-                                                              _hoisted_92,
-                                                              createBaseVNode("td", _hoisted_93, [
-                                                                createBaseVNode("div", _hoisted_94, [
+                                                              _hoisted_85,
+                                                              createBaseVNode("td", _hoisted_86, [
+                                                                createBaseVNode("div", _hoisted_87, [
                                                                   createVNode(_component_ejs_dropdownlist, {
                                                                     dataSource: list.ListFields,
                                                                     fields: _ctx.fieldfields,
@@ -93573,7 +98450,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                                     "onUpdate:modelValue": ($event) => list.Fields.Recurrence = $event
                                                                   }, null, 8, ["dataSource", "fields", "modelValue", "onUpdate:modelValue"])
                                                                 ]),
-                                                                createBaseVNode("div", _hoisted_95, [
+                                                                createBaseVNode("div", _hoisted_88, [
                                                                   createVNode(_component_ejs_button, {
                                                                     onClick: ($event) => _ctx.addfield(list, index, "Recurrence"),
                                                                     cssClass: "e-round e-success",
@@ -93586,7 +98463,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                             ])
                                                           ])
                                                         ])
-                                                      ], 8, _hoisted_66),
+                                                      ], 8, _hoisted_59),
                                                       createVNode(_component_ejs_accordion, null, {
                                                         default: withCtx(() => [
                                                           createVNode(_component_e_accordionitems, null, {
@@ -93604,7 +98481,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                         _: 2
                                                       }, 1024)
                                                     ]),
-                                                    _hoisted_96
+                                                    _hoisted_89
                                                   ])
                                                 ])
                                               ])
@@ -93614,11 +98491,11 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                       ])
                                     ])
                                   ])) : createCommentVNode("", true),
-                                  _hoisted_97,
-                                  createBaseVNode("div", _hoisted_98, [
-                                    createBaseVNode("div", _hoisted_99, [
-                                      createBaseVNode("table", _hoisted_100, [
-                                        _hoisted_101,
+                                  _hoisted_90,
+                                  createBaseVNode("div", _hoisted_91, [
+                                    createBaseVNode("div", _hoisted_92, [
+                                      createBaseVNode("table", _hoisted_93, [
+                                        _hoisted_94,
                                         createBaseVNode("tbody", null, [
                                           (openBlock(true), createElementBlock(Fragment, null, renderList(_ctx.basecats, (category) => {
                                             return openBlock(), createElementBlock("tr", {
@@ -93639,8 +98516,8 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                             ]);
                                           }), 128)),
                                           createBaseVNode("tr", null, [
-                                            createBaseVNode("td", _hoisted_102, [
-                                              createBaseVNode("div", _hoisted_103, [
+                                            createBaseVNode("td", _hoisted_95, [
+                                              createBaseVNode("div", _hoisted_96, [
                                                 createVNode(_component_ejs_button, {
                                                   id: "show-cat-dialog",
                                                   cssClass: "e-success",
@@ -93656,10 +98533,9 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                   ])
                                 ])
                               ]),
-                              _hoisted_104,
-                              _hoisted_105,
+                              _hoisted_97,
+                              _hoisted_98,
                               createVNode(_component_ejs_tab, {
-                                id: "tab",
                                 heightAdjustMode: "Auto",
                                 showCloseButton: false
                               }, {
@@ -93679,9 +98555,9 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                         content: "#errors"
                                       }, {
                                         TabHeaderTemplate: withCtx(({}) => [
-                                          createBaseVNode("div", _hoisted_106, [
-                                            _hoisted_107,
-                                            _ctx.errorcount > 0 ? (openBlock(), createElementBlock("span", _hoisted_108, toDisplayString(_ctx.errorcount), 1)) : createCommentVNode("", true)
+                                          createBaseVNode("div", _hoisted_99, [
+                                            _hoisted_100,
+                                            _ctx.errorcount > 0 ? (openBlock(), createElementBlock("span", _hoisted_101, toDisplayString(_ctx.errorcount), 1)) : createCommentVNode("", true)
                                           ])
                                         ]),
                                         _: 1
@@ -93693,11 +98569,11 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                 _: 1
                               })
                             ]),
-                            _hoisted_109,
-                            createBaseVNode("div", _hoisted_110, [
-                              createBaseVNode("div", _hoisted_111, [
-                                createBaseVNode("div", _hoisted_112, [
-                                  createBaseVNode("div", _hoisted_113, [
+                            _hoisted_102,
+                            createBaseVNode("div", _hoisted_103, [
+                              createBaseVNode("div", _hoisted_104, [
+                                createBaseVNode("div", _hoisted_105, [
+                                  createBaseVNode("div", _hoisted_106, [
                                     createVNode(_component_ejs_button, {
                                       id: "save-settings",
                                       cssClass: "e-success",
@@ -93705,7 +98581,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                       onClick: _ctx.handleit
                                     }, null, 8, ["onClick"])
                                   ]),
-                                  createBaseVNode("div", _hoisted_114, [
+                                  createBaseVNode("div", _hoisted_107, [
                                     createVNode(_component_ejs_textbox, {
                                       modelValue: _ctx.message,
                                       "onUpdate:modelValue": _cache[3] || (_cache[3] = ($event) => _ctx.message = $event)
@@ -93720,14 +98596,14 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                     ]),
                     _: 1
                   }, 8, ["isOpen", "showBackdrop", "enablePersistence"]),
-                  createBaseVNode("div", _hoisted_115, [
-                    createBaseVNode("div", _hoisted_116, [
+                  createBaseVNode("div", _hoisted_108, [
+                    createBaseVNode("div", _hoisted_109, [
                       createVNode(_component_ejs_schedule, {
                         id: "scheduler",
                         ref: "scheduleObj",
-                        height: "900px",
+                        height: "920px",
                         width: "100%",
-                        cssClass: "schedule-overview",
+                        cssClass: "main-calendar",
                         quickInfoTemplates: _ctx.quickInfoTemplates,
                         currentView: _ctx.currentView,
                         popupOpen: _ctx.onPopupOpen,
@@ -93736,31 +98612,31 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                         actionBegin: _ctx.onActionBegin
                       }, {
                         headerTemplate: withCtx(({ data }) => [
-                          createBaseVNode("div", _hoisted_117, [
-                            data.elementType == "cell" ? (openBlock(), createElementBlock("div", _hoisted_118, [
-                              createBaseVNode("div", _hoisted_119, toDisplayString(_ctx.getHeaderTitle(data)), 1),
-                              createBaseVNode("div", _hoisted_120, toDisplayString(_ctx.getHeaderDetails(data)), 1)
+                          createBaseVNode("div", _hoisted_110, [
+                            data.elementType == "cell" ? (openBlock(), createElementBlock("div", _hoisted_111, [
+                              createBaseVNode("div", _hoisted_112, toDisplayString(_ctx.getHeaderTitle(data)), 1),
+                              createBaseVNode("div", _hoisted_113, toDisplayString(_ctx.getHeaderDetails(data)), 1)
                             ])) : (openBlock(), createElementBlock("div", {
                               key: 1,
                               class: "quick-info-header-content",
                               style: normalizeStyle({ "background-color": _ctx.getHeaderStyles(data), color: "#FFFFFF" })
                             }, [
-                              createBaseVNode("div", _hoisted_121, toDisplayString(_ctx.getHeaderTitle(data)), 1),
-                              createBaseVNode("div", _hoisted_122, toDisplayString(_ctx.getHeaderDetails(data)), 1)
+                              createBaseVNode("div", _hoisted_114, toDisplayString(_ctx.getHeaderTitle(data)), 1),
+                              createBaseVNode("div", _hoisted_115, toDisplayString(_ctx.getHeaderDetails(data)), 1)
                             ], 4))
                           ])
                         ]),
                         contentTemplate: withCtx(({ data }) => [
-                          createBaseVNode("div", _hoisted_123, [
-                            data.elementType === "cell" ? (openBlock(), createElementBlock("div", _hoisted_124, [
-                              createBaseVNode("div", _hoisted_125, [
+                          createBaseVNode("div", _hoisted_116, [
+                            data.elementType === "cell" ? (openBlock(), createElementBlock("div", _hoisted_117, [
+                              createBaseVNode("div", _hoisted_118, [
                                 createVNode(_component_ejs_textbox, {
                                   ref: "titleObj",
                                   id: "title",
                                   placeholder: "Title"
                                 }, null, 512)
                               ]),
-                              createBaseVNode("div", _hoisted_126, [
+                              createBaseVNode("div", _hoisted_119, [
                                 createVNode(_component_ejs_dropdownlist, {
                                   ref: "eventTypeObj",
                                   id: "eventType",
@@ -93771,26 +98647,26 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                   placeholder: "Choose Category"
                                 }, null, 8, ["dataSource", "fields"])
                               ]),
-                              createBaseVNode("div", _hoisted_127, [
+                              createBaseVNode("div", _hoisted_120, [
                                 createVNode(_component_ejs_textbox, {
                                   ref: "notesObj",
                                   id: "notes",
                                   placeholder: "Notes"
                                 }, null, 512)
                               ])
-                            ])) : (openBlock(), createElementBlock("div", _hoisted_128, [
-                              createBaseVNode("div", _hoisted_129, [
-                                _hoisted_130,
+                            ])) : (openBlock(), createElementBlock("div", _hoisted_121, [
+                              createBaseVNode("div", _hoisted_122, [
+                                _hoisted_123,
                                 createTextVNode(":"),
                                 createBaseVNode("span", null, toDisplayString(data.Subject), 1)
                               ]),
-                              createBaseVNode("div", _hoisted_131, [
-                                _hoisted_132,
+                              createBaseVNode("div", _hoisted_124, [
+                                _hoisted_125,
                                 createTextVNode(":"),
                                 createBaseVNode("span", null, toDisplayString(_ctx.getEventType(data)), 1)
                               ]),
-                              createBaseVNode("div", _hoisted_133, [
-                                _hoisted_134,
+                              createBaseVNode("div", _hoisted_126, [
+                                _hoisted_127,
                                 createTextVNode(":"),
                                 createBaseVNode("span", null, toDisplayString(data.Description), 1)
                               ])
@@ -93798,8 +98674,8 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                           ])
                         ]),
                         footerTemplate: withCtx(({ data }) => [
-                          createBaseVNode("div", _hoisted_135, [
-                            data.elementType === "cell" ? (openBlock(), createElementBlock("div", _hoisted_136, [
+                          createBaseVNode("div", _hoisted_128, [
+                            data.elementType === "cell" ? (openBlock(), createElementBlock("div", _hoisted_129, [
                               createVNode(_component_ejs_button, {
                                 id: "more-details",
                                 cssClass: "e-flat",
@@ -93813,7 +98689,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                 isPrimary: true,
                                 onClick: _ctx.buttonClickActions
                               }, null, 8, ["onClick"])
-                            ])) : (openBlock(), createElementBlock("div", _hoisted_137, [
+                            ])) : (openBlock(), createElementBlock("div", _hoisted_130, [
                               createVNode(_component_ejs_button, {
                                 id: "delete",
                                 cssClass: "e-flat",
@@ -93869,13 +98745,89 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                   ])
                 ])
               ]),
+              createBaseVNode("div", _hoisted_131, [
+                createBaseVNode("div", _hoisted_132, [
+                  createBaseVNode("div", _hoisted_133, [
+                    createBaseVNode("div", _hoisted_134, [
+                      createVNode(_component_ejs_toolbar, {
+                        id: "toolbar_kanban_options",
+                        height: "50px",
+                        overflowMode: "Scrollable",
+                        scrollStep: "100",
+                        clicked: _ctx.onToolbarItemClicked
+                      }, {
+                        default: withCtx(() => [
+                          createVNode(_component_e_items, null, {
+                            default: withCtx(() => [
+                              createVNode(_component_e_item, {
+                                prefixIcon: "e-icons e-menu",
+                                tooltipText: "Settings Menu",
+                                id: "menukanban"
+                              })
+                            ]),
+                            _: 1
+                          })
+                        ]),
+                        _: 1
+                      }, 8, ["clicked"])
+                    ])
+                  ]),
+                  createVNode(_component_ejs_sidebar, {
+                    id: "sideKanban",
+                    class: "sidebar",
+                    ref: "sidebarKanban",
+                    width: "290px",
+                    target: ".main-kanban",
+                    type: "Push",
+                    isOpen: _ctx.datafalse,
+                    showBackdrop: _ctx.datafalse,
+                    enablePersistence: _ctx.datafalse
+                  }, {
+                    default: withCtx(() => [
+                      _hoisted_135
+                    ]),
+                    _: 1
+                  }, 8, ["isOpen", "showBackdrop", "enablePersistence"]),
+                  createBaseVNode("div", _hoisted_136, [
+                    createBaseVNode("div", _hoisted_137, [
+                      createVNode(_component_ejs_kanban, {
+                        id: "kanban",
+                        keyField: "Status",
+                        dataSource: _ctx.kanbanData,
+                        cardSettings: _ctx.cardSettings
+                      }, {
+                        default: withCtx(() => [
+                          createVNode(_component_e_columns, null, {
+                            default: withCtx(() => [
+                              createVNode(_component_e_column, {
+                                headerText: "To Do",
+                                keyField: "Open"
+                              }),
+                              createVNode(_component_e_column, {
+                                headerText: "In Progress",
+                                keyField: "InProgress"
+                              }),
+                              createVNode(_component_e_column, {
+                                headerText: "Done",
+                                keyField: "Close"
+                              })
+                            ]),
+                            _: 1
+                          })
+                        ]),
+                        _: 1
+                      }, 8, ["dataSource", "cardSettings"])
+                    ])
+                  ])
+                ])
+              ]),
               createBaseVNode("div", _hoisted_138, [
                 createBaseVNode("div", _hoisted_139, [
                   createBaseVNode("div", _hoisted_140, [
                     createBaseVNode("div", _hoisted_141, [
                       createVNode(_component_ejs_toolbar, {
                         id: "toolbar_gantt_options",
-                        height: "70px",
+                        height: "50px",
                         overflowMode: "Scrollable",
                         scrollStep: "100",
                         clicked: _ctx.onToolbarItemClicked
@@ -93924,19 +98876,19 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                   createVNode(_component_e_tabitems, null, {
                     default: withCtx(() => [
                       createVNode(_component_e_tabitem, {
-                        headerTemplate: "KanbanTemplate",
-                        content: "#kanbantab"
+                        headerTemplate: "CalendarTemplate",
+                        content: "#calendartab"
                       }, {
-                        KanbanTemplate: withCtx(({}) => [
+                        CalendarTemplate: withCtx(({}) => [
                           _hoisted_144
                         ]),
                         _: 1
                       }),
                       createVNode(_component_e_tabitem, {
-                        headerTemplate: "CalendarTemplate",
-                        content: "#calendartab"
+                        headerTemplate: "KanbanTemplate",
+                        content: "#kanbantab"
                       }, {
-                        CalendarTemplate: withCtx(({}) => [
+                        KanbanTemplate: withCtx(({}) => [
                           _hoisted_145
                         ]),
                         _: 1

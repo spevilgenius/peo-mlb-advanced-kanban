@@ -1,7 +1,7 @@
 import { Version } from '@microsoft/sp-core-library';
 import { IPropertyPaneConfiguration } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
-import "../assets/appcode/index-e632907f.css";
+import "../assets/appcode/index-4bb4b1c1.css";
 export interface IVue3KanbanWebPartProps {
     heading: string;
     description: string;

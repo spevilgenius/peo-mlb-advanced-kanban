@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div class="container-fluid px-0">
     <div class="row">
       <ejs-dialog ref="dlgSpinner" :visible="datafalse" :header="'dlgSpinHeader'" :content="'dlgSpinContent'" :showCloseIcon="datatrue" :target="apptarget" position="center center" width="500px" height="500px">
         <template v-slot:dlgSpinHeader>
@@ -59,40 +59,11 @@
         <div class="content-wrapper">
           <div class="e-card">
             <div class="e-card-content">
-              <div id="kanbantab" style="display: none">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="toolbar">
-                      <ejs-toolbar id="toolbar_kanban_options" height="70px" overflowMode="Scrollable" scrollStep="100" :clicked="onToolbarItemClicked">
-                        <e-items>
-                          <e-item prefixIcon="e-icons e-menu" tooltipText="Settings Menu" id="menukanban"></e-item>
-                        </e-items>
-                      </ejs-toolbar>
-                    </div>
-                  </div>
-                  <ejs-sidebar id="sideKanban" class="sidebar" ref="sidebarKanban" width="290px" target=".main-kanban" type="Push" :isOpen="datafalse" :showBackdrop="datafalse" :enablePersistence="datafalse">
-                    <div class="main-menu main-menu-kanban">
-                      <div>SIDEBAR STUFF HERE</div>
-                    </div>
-                  </ejs-sidebar>
-                  <div class="row">
-                    <div class="main main-kanban">
-                      <ejs-kanban id="kanban" keyField="Status" :dataSource="kanbanData" :cardSettings="cardSettings">
-                        <e-columns>
-                          <e-column headerText="To Do" keyField="Open"></e-column>
-                          <e-column headerText="In Progress" keyField="InProgress"></e-column>
-                          <e-column headerText="Done" keyField="Close"></e-column>
-                        </e-columns>
-                      </ejs-kanban>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <div id="calendartab" style="display: none">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="toolbar">
-                      <ejs-toolbar id="toolbar_calendar_options" height="70px" overflowMode="Scrollable" scrollStep="100" :clicked="onToolbarItemClicked">
+                    <div class="toolbar px-0">
+                      <ejs-toolbar id="toolbar_calendar_options" height="50px" overflowMode="Scrollable" scrollStep="100" :clicked="onToolbarItemClicked">
                         <e-items>
                           <e-item prefixIcon="e-icons e-menu" tooltipText="Settings Menu" id="menucalendar"></e-item>
                           <e-item type="Separator"></e-item>
@@ -108,7 +79,7 @@
                     </div>
                   </div>
                   <ejs-sidebar id="sideCalendar" class="sidebar" ref="sidebarCalendar" width="1000px" target=".main-calendar" type="Push" :isOpen="datafalse" :showBackdrop="datafalse" :enablePersistence="datafalse">
-                    <div class="main-menu main-menu-calendar">
+                    <div class="main-menu main-menu-calendar px-0">
                       <div>
                         <ejs-dialog ref="dlgCategory" :visible="datafalse" :header="'dialogHeader'" :footerTemplate="'dialogFooter'" :content="'dialogContent'" :showCloseIcon="datatrue" :target="sidebartarget" position="center center" width="500px">
                           <template v-slot:dialogHeader>
@@ -299,7 +270,7 @@
                             <div id="errors" style="display: none">
                               <div>The following errors need to be resolved for full proper functionality.</div>
                             </div>
-                            <ejs-tab id="tab" heightAdjustMode="Auto" :showCloseButton="false">
+                            <ejs-tab heightAdjustMode="Auto" :showCloseButton="false">
                               <e-tabitems>
                                 <e-tabitem :header="SettingsTab" content="#settings"></e-tabitem>
                                 <e-tabitem :header="InstructionsTab" content="#instructions"></e-tabitem>
@@ -332,8 +303,8 @@
                     </div>
                   </ejs-sidebar>
                   <div class="row">
-                    <div class="main main-calendar">
-                      <ejs-schedule id="scheduler" ref="scheduleObj" height="900px" width="100%" cssClass="main-calendar" :quickInfoTemplates="quickInfoTemplates" :currentView="currentView" :popupOpen="onPopupOpen" :selectedDate="selectedDate" :eventSettings="eventSettings" :actionBegin="onActionBegin">
+                    <div class="main main-calendar px-0">
+                      <ejs-schedule id="scheduler" ref="scheduleObj" height="920px" width="100%" cssClass="main-calendar" :quickInfoTemplates="quickInfoTemplates" :currentView="currentView" :popupOpen="onPopupOpen" :selectedDate="selectedDate" :eventSettings="eventSettings" :actionBegin="onActionBegin">
                         <e-views>
                           <e-view option="Day"></e-view>
                           <e-view option="WorkWeek" startHour="10:00" endHour="18:00"></e-view>
@@ -395,11 +366,40 @@
                   </div>
                 </div>
               </div>
+              <div id="kanbantab" style="display: none">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="toolbar px-0">
+                      <ejs-toolbar id="toolbar_kanban_options" height="50px" overflowMode="Scrollable" scrollStep="100" :clicked="onToolbarItemClicked">
+                        <e-items>
+                          <e-item prefixIcon="e-icons e-menu" tooltipText="Settings Menu" id="menukanban"></e-item>
+                        </e-items>
+                      </ejs-toolbar>
+                    </div>
+                  </div>
+                  <ejs-sidebar id="sideKanban" class="sidebar" ref="sidebarKanban" width="290px" target=".main-kanban" type="Push" :isOpen="datafalse" :showBackdrop="datafalse" :enablePersistence="datafalse">
+                    <div class="main-menu main-menu-kanban px-0">
+                      <div>SIDEBAR STUFF HERE</div>
+                    </div>
+                  </ejs-sidebar>
+                  <div class="row">
+                    <div class="main main-kanban px-0">
+                      <ejs-kanban id="kanban" keyField="Status" :dataSource="kanbanData" :cardSettings="cardSettings">
+                        <e-columns>
+                          <e-column headerText="To Do" keyField="Open"></e-column>
+                          <e-column headerText="In Progress" keyField="InProgress"></e-column>
+                          <e-column headerText="Done" keyField="Close"></e-column>
+                        </e-columns>
+                      </ejs-kanban>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div id="gantttab" style="display: none">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="toolbar">
-                      <ejs-toolbar id="toolbar_gantt_options" height="70px" overflowMode="Scrollable" scrollStep="100" :clicked="onToolbarItemClicked">
+                    <div class="toolbar px-0">
+                      <ejs-toolbar id="toolbar_gantt_options" height="50px" overflowMode="Scrollable" scrollStep="100" :clicked="onToolbarItemClicked">
                         <e-items>
                           <e-item prefixIcon="e-icons e-menu" tooltipText="Settings Menu" id="menugantt"></e-item>
                         </e-items>
@@ -407,28 +407,28 @@
                     </div>
                   </div>
                   <ejs-sidebar id="sideGantt" class="sidebar" ref="sidebarGantt" width="600px" target=".main-gantt" type="Push" :isOpen="datafalse" :showBackdrop="datafalse" :enablePersistence="datafalse">
-                    <div class="main-menu main-menu-gantt">
+                    <div class="main-menu main-menu-gantt px-0">
                       <div>SIDEBAR STUFF HERE</div>
                     </div>
                   </ejs-sidebar>
                   <div class="row">
-                    <div class="main main-gantt">GANTT</div>
+                    <div class="main main-gantt px-0">GANTT</div>
                   </div>
                 </div>
               </div>
               <ejs-tab id="tab" heightAdjustMode="Auto" :showCloseButton="false">
                 <e-tabitems>
-                  <e-tabitem :headerTemplate="'KanbanTemplate'" content="#kanbantab">
-                    <template v-slot:KanbanTemplate="{}">
-                      <div style="position: relative; display: inline-block; margin: 10px">
-                        <div class="tabtext">Kanban</div>
-                      </div>
-                    </template>
-                  </e-tabitem>
                   <e-tabitem :headerTemplate="'CalendarTemplate'" content="#calendartab">
                     <template v-slot:CalendarTemplate="{}">
                       <div style="position: relative; display: inline-block; margin: 10px">
                         <div class="tabtext">Calendar</div>
+                      </div>
+                    </template>
+                  </e-tabitem>
+                  <e-tabitem :headerTemplate="'KanbanTemplate'" content="#kanbantab">
+                    <template v-slot:KanbanTemplate="{}">
+                      <div style="position: relative; display: inline-block; margin: 10px">
+                        <div class="tabtext">Kanban</div>
                       </div>
                     </template>
                   </e-tabitem>
@@ -619,7 +619,7 @@ export default defineComponent({
       document.body.classList.add('bootstrap5')
       this.getDigest().then(function () {
         that.getSitesForUser().then(function () {
-          that.gitRdone(that.CalendarID)
+          that.gitRdone(that.KanbanID)
         })
       })
     })
@@ -1265,35 +1265,39 @@ export default defineComponent({
                     let start = new Date(j[a][list.Fields.StartTime])
                     let end = new Date(j[a][list.Fields.EndTime])
                     let guid = String(UUID())
-                    that.idcount += 1
-                    that.events.push({
-                      Id: that.idcount, // Fake Id as this is a required field of Scheduler but we don't need the event ID as we have the uri
-                      Subject: String(j[a][list.Fields.Subject]),
-                      Description: String(j[a][list.Fields.Description]),
-                      StartTime: start, // will address start time later
-                      EndTime: end,
-                      Location: String(j[a][list.Fields.Location]),
-                      Category: String(j[a][list.Fields.Category]),
-                      CategoryId: catid,
-                      guid: guid,
-                      etag: String(j[a]['__metadata']['etag']),
-                      uri: String(j[a]['__metadata']['uri']),
-                      type: String(j[a]['__metadata']['type'])
-                    })
-                    Schedule.addEvent({
-                      Id: that.idcount,
-                      Subject: String(j[a][list.Fields.Subject]),
-                      Description: String(j[a][list.Fields.Description]),
-                      StartTime: start,
-                      EndTime: end,
-                      Location: String(j[a][list.Fields.Location]),
-                      Category: String(j[a][list.Fields.Category]),
-                      CategoryId: catid,
-                      guid: guid,
-                      etag: String(j[a]['__metadata']['etag']),
-                      uri: String(j[a]['__metadata']['uri']),
-                      type: String(j[a]['__metadata']['type'])
-                    })
+                    try {
+                      that.idcount += 1
+                      that.events.push({
+                        Id: that.idcount, // Fake Id as this is a required field of Scheduler but we don't need the event ID as we have the uri
+                        Subject: String(j[a][list.Fields.Subject]),
+                        Description: String(j[a][list.Fields.Description]),
+                        StartTime: start, // will address start time later
+                        EndTime: end,
+                        Location: String(j[a][list.Fields.Location]),
+                        Category: String(j[a][list.Fields.Category]),
+                        CategoryId: catid,
+                        guid: guid,
+                        etag: String(j[a]['__metadata']['etag']),
+                        uri: String(j[a]['__metadata']['uri']),
+                        type: String(j[a]['__metadata']['type'])
+                      })
+                      Schedule.addEvent({
+                        Id: that.idcount,
+                        Subject: String(j[a][list.Fields.Subject]),
+                        Description: String(j[a][list.Fields.Description]),
+                        StartTime: start,
+                        EndTime: end,
+                        Location: String(j[a][list.Fields.Location]),
+                        Category: String(j[a][list.Fields.Category]),
+                        CategoryId: catid,
+                        guid: guid,
+                        etag: String(j[a]['__metadata']['etag']),
+                        uri: String(j[a]['__metadata']['uri']),
+                        type: String(j[a]['__metadata']['type'])
+                      })
+                    } catch (e) {
+                      // not gonna do it
+                    }
                   }
                 }
               }
@@ -1315,29 +1319,47 @@ export default defineComponent({
       }
       return true
     }
+  },
+  provide: {
+    schedule: [Day, WorkWeek, Month, DragAndDrop, Resize]
   }
 })
 </script>
 
 <style>
+#kanbanapp {
+  max-height: 1004px;
+  height: 1004px;
+  border: 2px solid red;
+}
+
 .e-tab .e-content {
-  min-height: 900px;
+  min-height: 820px;
+}
+
+.e-card .e-card-content {
+  padding: 0 !important;
 }
 
 .main {
-  min-height: 800px;
+  min-height: 1000px;
   border: 1px solid black;
 }
 
-.sidebar {
+.e-sidebar {
   left: 1.5rem;
-  min-height: 800px;
-  border: 1px solid black;
+  height: 918px !important;
+  /* border: 1px solid black; */
+}
+
+#tab {
+  padding: 0 !important;
+  min-height: 1000px !important;
 }
 
 .main-calendar .overview-toolbar {
   display: flex;
-  height: 70px;
+  height: 50px;
 }
 
 .main-calendar .overview-toolbar .e-toolbar {
