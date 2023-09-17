@@ -11,7 +11,7 @@ import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 
 import { getVueDOMElementHTML } from "../../lib/WebpartProperties";
 
-import { renderVue } from "../assets/appcode/index-70ee7864.js";
+import { renderVue } from "../assets/appcode/index-67c7b816.js";
 import "../assets/appcode/index-4bb4b1c1.css";
 
 const APPCLIENTID = "Vue3Kanban";

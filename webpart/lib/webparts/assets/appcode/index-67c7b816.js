@@ -97046,7 +97046,7 @@ var _sfc_main$1 = defineComponent({
       },
       fields: { text: "CategoryText", value: "CategoryId" },
       eventSettings: {
-        dataSource: new Array()
+        dataSource: []
       },
       kanbanData: [
         {
@@ -97429,6 +97429,18 @@ var _sfc_main$1 = defineComponent({
           break;
       }
     },
+    onCellClicked: function(args) {
+      console.log("CELL CLICKED: " + args);
+      this.$refs["scheduleObj"].openEditor(args, "Add");
+    },
+    onEventClicked: function(args) {
+      console.log("EVENT CLICKED: " + args);
+      if (!args.event.RecurrenceRule) {
+        this.$refs["scheduleObj"].openEditor(args.event, "Save");
+      } else {
+        this.$refs["scheduleObj"].quickPopup.openRecurrenceAlert();
+      }
+    },
     onPopupOpen: function(args) {
       console.log("POPUP OPEN: " + args);
       if ((args.type == "QuickInfo" || args.type == "ViewEventInfo") && !args.element.classList.contains("e-template")) {
@@ -97461,22 +97473,53 @@ var _sfc_main$1 = defineComponent({
       let resourceData = resources.dataSource.filter((resource) => resource.CategoryId === data.CategoryId)[0];
       return resourceData.CategoryText;
     },
+    eventClickActions: function(data) {
+      alert(JSON.stringify(data));
+    },
+    editEvent: function(data) {
+      let currentAction = "";
+      this.$refs["scheduleObj"].openEditor(data, currentAction, true);
+    },
     buttonClickActions: function(e) {
+      var _a;
       console.log("BUTTON CLICK: " + e);
       const scheduleObj = document.querySelector(".e-schedule");
+      const quickPopup = closest(e.target, ".e-quick-popup-wrapper");
+      const getSlotData = function() {
+        const titleObj = quickPopup.querySelector("#title");
+        const notesObj = quickPopup.querySelector("#notes");
+        const eventTypeObj = quickPopup.querySelector("#eventType");
+        let addObj = {};
+        addObj.Id = scheduleObj.getEventMaxID();
+        addObj.Subject = isNullOrUndefined(titleObj.value) ? "Add title" : titleObj.value;
+        addObj.StartTime = new Date(scheduleObj.ej2Instances.activeCellsData.startTime);
+        addObj.EndTime = new Date(scheduleObj.ej2Instances.activeCellsData.endTime);
+        addObj.IsAllDay = scheduleObj.ej2Instances.activeCellsData.isAllDay;
+        addObj.Description = isNullOrUndefined(notesObj.value) ? "Add notes" : notesObj.value;
+        addObj.CategoryId = eventTypeObj.value;
+        return addObj;
+      };
       if (e.target.id === "add") {
-        this.$refs.dlgForm.setProperties({ visible: true }, false);
-        this.$refs.dlgForm.show();
+        const addObj = getSlotData();
+        scheduleObj.addEvent(addObj);
       }
       if (e.target.id === "delete") {
         const eventDetails = scheduleObj.ej2Instances.activeEventData.event;
-        if (eventDetails.RecurrenceRule)
-          ;
+        let currentAction = "Delete";
+        if (eventDetails.RecurrenceRule) {
+          currentAction = "DeleteOccurrence";
+        }
+        scheduleObj.deleteEvent(eventDetails, currentAction);
         this.message = "Deleting Item...";
       }
       if (e.target.id === "more-details") {
-        this.$refs.dlgForm.setProperties({ visible: true }, false);
-        this.$refs.dlgForm.show();
+        const isCellPopup = (_a = quickPopup.firstElementChild) == null ? void 0 : _a.classList.contains("e-cell-popup");
+        const eventDetails = isCellPopup ? getSlotData() : scheduleObj.ej2Instances.activeEventData.event;
+        let currentAction = isCellPopup ? "Add" : "Save";
+        if (eventDetails.RecurrenceRule) {
+          currentAction = "EditOccurrence";
+        }
+        scheduleObj.openEditor(eventDetails, currentAction, true);
       }
       scheduleObj.closeQuickInfoPopup();
     },
@@ -97573,11 +97616,9 @@ var _sfc_main$1 = defineComponent({
     async getEvents() {
       this.events = [];
       let j = [];
-      let Schedule2 = this.$refs["scheduleObj"];
-      let events = Schedule2.getEvents();
-      for (let c = 0; c < events.length; c++) {
-        Schedule2.deleteEvent(events[c]);
-      }
+      let Schedule2 = that.$refs["scheduleObj"];
+      let oldevents = Schedule2.getEvents();
+      Schedule2.deleteEvent(oldevents);
       async function getAllEvents(url, list) {
         console.log("GETALLEVENTS: " + url);
         await axios$1.get(url, {
@@ -97633,23 +97674,11 @@ var _sfc_main$1 = defineComponent({
                       uri: String(j[a]["__metadata"]["uri"]),
                       type: String(j[a]["__metadata"]["type"])
                     });
-                    Schedule2.addEvent({
-                      Id: that.idcount,
-                      Subject: String(j[a][list.Fields.Subject]),
-                      Description: String(j[a][list.Fields.Description]),
-                      StartTime: start,
-                      EndTime: end,
-                      Location: String(j[a][list.Fields.Location]),
-                      Category: String(j[a][list.Fields.Category]),
-                      CategoryId: catid,
-                      guid,
-                      etag: String(j[a]["__metadata"]["etag"]),
-                      uri: String(j[a]["__metadata"]["uri"]),
-                      type: String(j[a]["__metadata"]["type"])
-                    });
                   } catch (e) {
                   }
                 }
+                let Schedule3 = that.$refs["scheduleObj"];
+                Schedule3.addEvent(that.events);
               }
             }
           }
@@ -97730,276 +97759,223 @@ const _hoisted_4 = /* @__PURE__ */ createBaseVNode("div", { class: "container p-
     ])
   ])
 ], -1);
-const _hoisted_5 = { class: "e-card" };
-const _hoisted_6 = /* @__PURE__ */ createBaseVNode("div", { class: "e-card-header" }, [
-  /* @__PURE__ */ createBaseVNode("div", { class: "container" }, [
-    /* @__PURE__ */ createBaseVNode("div", { class: "row" }, [
-      /* @__PURE__ */ createBaseVNode("div", { class: "col-12 text-center" }, "Edit Item")
-    ])
-  ])
-], -1);
-const _hoisted_7 = /* @__PURE__ */ createBaseVNode("div", { class: "e-card-separator" }, null, -1);
-const _hoisted_8 = /* @__PURE__ */ createBaseVNode("div", { class: "e-card-content" }, null, -1);
-const _hoisted_9 = /* @__PURE__ */ createBaseVNode("div", { class: "e-card-separator" }, null, -1);
-const _hoisted_10 = { class: "e-card-actions" };
-const _hoisted_11 = { class: "container" };
-const _hoisted_12 = { class: "row" };
-const _hoisted_13 = /* @__PURE__ */ createBaseVNode("div", { class: "col-8" }, null, -1);
-const _hoisted_14 = { class: "col-4" };
-const _hoisted_15 = { class: "col-12" };
-const _hoisted_16 = { class: "content-wrapper" };
-const _hoisted_17 = { class: "e-card" };
-const _hoisted_18 = { class: "e-card-content" };
-const _hoisted_19 = {
+const _hoisted_5 = { class: "col-12" };
+const _hoisted_6 = { class: "content-wrapper" };
+const _hoisted_7 = { class: "e-card" };
+const _hoisted_8 = { class: "e-card-content" };
+const _hoisted_9 = {
   id: "calendartab",
   style: { "display": "none" }
 };
-const _hoisted_20 = { class: "container-fluid" };
-const _hoisted_21 = { class: "row" };
-const _hoisted_22 = { class: "toolbar px-0" };
-const _hoisted_23 = { class: "main-menu main-menu-calendar px-0" };
-const _hoisted_24 = /* @__PURE__ */ createBaseVNode("div", { class: "container p-0 m-0" }, [
+const _hoisted_10 = { class: "container-fluid" };
+const _hoisted_11 = { class: "row" };
+const _hoisted_12 = { class: "toolbar px-0" };
+const _hoisted_13 = { class: "main-menu main-menu-calendar px-0" };
+const _hoisted_14 = /* @__PURE__ */ createBaseVNode("div", { class: "container p-0 m-0" }, [
   /* @__PURE__ */ createBaseVNode("div", { class: "row p-0 m-0 text-center" }, [
     /* @__PURE__ */ createBaseVNode("span", null, "Are you sure?")
   ])
 ], -1);
-const _hoisted_25 = /* @__PURE__ */ createBaseVNode("div", { class: "container p-0 m-0" }, [
+const _hoisted_15 = /* @__PURE__ */ createBaseVNode("div", { class: "container p-0 m-0" }, [
   /* @__PURE__ */ createBaseVNode("div", { class: "row p-0 m-0 text-center" }, [
     /* @__PURE__ */ createBaseVNode("span", null, "This will add the category to all selected lists.")
   ])
 ], -1);
-const _hoisted_26 = { class: "container p-0 m-0" };
-const _hoisted_27 = { class: "row p-0 m-0" };
-const _hoisted_28 = { class: "col-8" };
-const _hoisted_29 = { class: "col-4" };
-const _hoisted_30 = { class: "e-card" };
-const _hoisted_31 = { class: "e-card-content" };
-const _hoisted_32 = {
+const _hoisted_16 = { class: "container p-0 m-0" };
+const _hoisted_17 = { class: "row p-0 m-0" };
+const _hoisted_18 = { class: "col-8" };
+const _hoisted_19 = { class: "col-4" };
+const _hoisted_20 = { class: "e-card" };
+const _hoisted_21 = { class: "e-card-content" };
+const _hoisted_22 = {
   id: "settings",
   style: { "display": "none" }
 };
-const _hoisted_33 = { class: "container p-0 m-0" };
-const _hoisted_34 = { class: "row p-0 m-0 mb-1" };
-const _hoisted_35 = { class: "col-12 text-center" };
-const _hoisted_36 = /* @__PURE__ */ createBaseVNode("div", { class: "row p-0 m-0 mb-1" }, [
+const _hoisted_23 = { class: "container p-0 m-0" };
+const _hoisted_24 = { class: "row p-0 m-0 mb-1" };
+const _hoisted_25 = { class: "col-12 text-center" };
+const _hoisted_26 = /* @__PURE__ */ createBaseVNode("div", { class: "row p-0 m-0 mb-1" }, [
   /* @__PURE__ */ createBaseVNode("div", { class: "col-12 text-center bg-dark text-white" }, "Sites")
 ], -1);
-const _hoisted_37 = { class: "row p-0 m-0 mb-1" };
-const _hoisted_38 = { class: "col-8" };
-const _hoisted_39 = { class: "col-4" };
-const _hoisted_40 = {
+const _hoisted_27 = { class: "row p-0 m-0 mb-1" };
+const _hoisted_28 = { class: "col-8" };
+const _hoisted_29 = { class: "col-4" };
+const _hoisted_30 = {
   key: 0,
   class: "row p-0 m-0 mb-1"
 };
-const _hoisted_41 = /* @__PURE__ */ createBaseVNode("div", { class: "col-12 text-center bg-dark text-white" }, "Lists:", -1);
-const _hoisted_42 = [
-  _hoisted_41
+const _hoisted_31 = /* @__PURE__ */ createBaseVNode("div", { class: "col-12 text-center bg-dark text-white" }, "Lists:", -1);
+const _hoisted_32 = [
+  _hoisted_31
 ];
-const _hoisted_43 = {
+const _hoisted_33 = {
   key: 1,
   class: "row p-0 m-0"
 };
-const _hoisted_44 = { class: "col-12 p-0" };
-const _hoisted_45 = {
+const _hoisted_34 = { class: "col-12 p-0" };
+const _hoisted_35 = {
   id: "tblLists",
   class: "p-0 px1000"
 };
-const _hoisted_46 = /* @__PURE__ */ createBaseVNode("thead", null, [
+const _hoisted_36 = /* @__PURE__ */ createBaseVNode("thead", null, [
   /* @__PURE__ */ createBaseVNode("th", { class: "text-center bg-dark text-white p-0 px60" }, "Select"),
   /* @__PURE__ */ createBaseVNode("th", { class: "text-center bg-dark text-white p-0 px150" }, "Site"),
   /* @__PURE__ */ createBaseVNode("th", { class: "text-center bg-dark text-white p-0 px150" }, "List"),
   /* @__PURE__ */ createBaseVNode("th", { class: "text-center bg-dark text-white p-0 px640" }, "Field Mappings")
 ], -1);
-const _hoisted_47 = { class: "text-center" };
-const _hoisted_48 = { class: "p-0" };
-const _hoisted_49 = { class: "row p-0 m-0" };
-const _hoisted_50 = { class: "p-0 px150" };
-const _hoisted_51 = ["id"];
-const _hoisted_52 = {
+const _hoisted_37 = { class: "text-center" };
+const _hoisted_38 = { class: "p-0" };
+const _hoisted_39 = { class: "row p-0 m-0" };
+const _hoisted_40 = { class: "p-0 px150" };
+const _hoisted_41 = ["id"];
+const _hoisted_42 = {
   class: "e-spinner",
   style: { "width": "20px", "height": "20px" }
 };
-const _hoisted_53 = { class: "e-spinner-pane e-spin-show" };
-const _hoisted_54 = { class: "e-spinner-inner" };
-const _hoisted_55 = {
+const _hoisted_43 = { class: "e-spinner-pane e-spin-show" };
+const _hoisted_44 = { class: "e-spinner-inner" };
+const _hoisted_45 = {
   class: "e-spin-bootstrap5",
   id: "OM4vl",
   viewBox: "0 0 16 16",
   style: { "height": "16px", "width": "16px", "transform-origin": "8px 8px 8px" }
 };
-const _hoisted_56 = /* @__PURE__ */ createBaseVNode("path", {
+const _hoisted_46 = /* @__PURE__ */ createBaseVNode("path", {
   class: "e-path-circle",
   d: "M8,0.8A7.2,7.2 0 1 1 0.8,8"
 }, null, -1);
-const _hoisted_57 = [
-  _hoisted_56
+const _hoisted_47 = [
+  _hoisted_46
 ];
-const _hoisted_58 = { class: "p-0 px440" };
-const _hoisted_59 = ["id"];
-const _hoisted_60 = { class: "px440" };
-const _hoisted_61 = /* @__PURE__ */ createBaseVNode("thead", null, [
+const _hoisted_48 = { class: "p-0 px440" };
+const _hoisted_49 = ["id"];
+const _hoisted_50 = { class: "px440" };
+const _hoisted_51 = /* @__PURE__ */ createBaseVNode("thead", null, [
   /* @__PURE__ */ createBaseVNode("th", { class: "text-center bg-dark text-white" }, "Calendar Field"),
   /* @__PURE__ */ createBaseVNode("th", { class: "text-center bg-dark text-white" }, "Mapped List Field")
 ], -1);
-const _hoisted_62 = /* @__PURE__ */ createBaseVNode("td", null, [
+const _hoisted_52 = /* @__PURE__ */ createBaseVNode("td", null, [
   /* @__PURE__ */ createBaseVNode("div", { class: "px100" }, "Title")
 ], -1);
-const _hoisted_63 = { class: "mappedlistfield px330" };
-const _hoisted_64 = { class: "px280" };
-const _hoisted_65 = /* @__PURE__ */ createBaseVNode("td", null, [
+const _hoisted_53 = { class: "mappedlistfield px330" };
+const _hoisted_54 = { class: "px280" };
+const _hoisted_55 = /* @__PURE__ */ createBaseVNode("td", null, [
   /* @__PURE__ */ createBaseVNode("div", { class: "px100" }, "StartDate")
 ], -1);
-const _hoisted_66 = { class: "mappedlistfield px330" };
-const _hoisted_67 = { class: "px280" };
-const _hoisted_68 = { class: "px35" };
-const _hoisted_69 = /* @__PURE__ */ createBaseVNode("td", null, [
+const _hoisted_56 = { class: "mappedlistfield px330" };
+const _hoisted_57 = { class: "px280" };
+const _hoisted_58 = { class: "px35" };
+const _hoisted_59 = /* @__PURE__ */ createBaseVNode("td", null, [
   /* @__PURE__ */ createBaseVNode("div", { class: "px100" }, "EndDate")
 ], -1);
-const _hoisted_70 = { class: "mappedlistfield px330" };
-const _hoisted_71 = { class: "px280" };
-const _hoisted_72 = { class: "px35" };
-const _hoisted_73 = /* @__PURE__ */ createBaseVNode("td", null, [
+const _hoisted_60 = { class: "mappedlistfield px330" };
+const _hoisted_61 = { class: "px280" };
+const _hoisted_62 = { class: "px35" };
+const _hoisted_63 = /* @__PURE__ */ createBaseVNode("td", null, [
   /* @__PURE__ */ createBaseVNode("div", { class: "px100" }, "Category")
 ], -1);
-const _hoisted_74 = { class: "mappedlistfield px330" };
-const _hoisted_75 = { class: "px280" };
-const _hoisted_76 = { class: "px35" };
-const _hoisted_77 = /* @__PURE__ */ createBaseVNode("td", null, [
+const _hoisted_64 = { class: "mappedlistfield px330" };
+const _hoisted_65 = { class: "px280" };
+const _hoisted_66 = { class: "px35" };
+const _hoisted_67 = /* @__PURE__ */ createBaseVNode("td", null, [
   /* @__PURE__ */ createBaseVNode("div", { class: "px100" }, "Location")
 ], -1);
-const _hoisted_78 = { class: "mappedlistfield px330" };
-const _hoisted_79 = { class: "px280" };
-const _hoisted_80 = { class: "px35" };
-const _hoisted_81 = /* @__PURE__ */ createBaseVNode("td", null, [
+const _hoisted_68 = { class: "mappedlistfield px330" };
+const _hoisted_69 = { class: "px280" };
+const _hoisted_70 = { class: "px35" };
+const _hoisted_71 = /* @__PURE__ */ createBaseVNode("td", null, [
   /* @__PURE__ */ createBaseVNode("div", { class: "px100" }, "Description")
 ], -1);
-const _hoisted_82 = { class: "mappedlistfield px330" };
-const _hoisted_83 = { class: "px280" };
-const _hoisted_84 = { class: "px35" };
-const _hoisted_85 = /* @__PURE__ */ createBaseVNode("td", null, [
+const _hoisted_72 = { class: "mappedlistfield px330" };
+const _hoisted_73 = { class: "px280" };
+const _hoisted_74 = { class: "px35" };
+const _hoisted_75 = /* @__PURE__ */ createBaseVNode("td", null, [
   /* @__PURE__ */ createBaseVNode("div", { class: "px100" }, "Recurrence")
 ], -1);
-const _hoisted_86 = { class: "mappedlistfield px330" };
-const _hoisted_87 = { class: "px280" };
-const _hoisted_88 = { class: "px35" };
-const _hoisted_89 = /* @__PURE__ */ createBaseVNode("div", { class: "p-0 px50 bg-success" }, null, -1);
-const _hoisted_90 = /* @__PURE__ */ createBaseVNode("div", { class: "row p-0 m-0 mb-1" }, [
+const _hoisted_76 = { class: "mappedlistfield px330" };
+const _hoisted_77 = { class: "px280" };
+const _hoisted_78 = { class: "px35" };
+const _hoisted_79 = /* @__PURE__ */ createBaseVNode("div", { class: "p-0 px50 bg-success" }, null, -1);
+const _hoisted_80 = /* @__PURE__ */ createBaseVNode("div", { class: "row p-0 m-0 mb-1" }, [
   /* @__PURE__ */ createBaseVNode("div", { class: "col-12 text-center bg-dark text-white" }, "Categories:")
 ], -1);
-const _hoisted_91 = { class: "row p-0 m-0 mb-1" };
-const _hoisted_92 = { class: "col-12 p-0" };
-const _hoisted_93 = {
+const _hoisted_81 = { class: "row p-0 m-0 mb-1" };
+const _hoisted_82 = { class: "col-12 p-0" };
+const _hoisted_83 = {
   id: "tblCats",
   class: "p-0 px1000"
 };
-const _hoisted_94 = /* @__PURE__ */ createBaseVNode("thead", null, [
+const _hoisted_84 = /* @__PURE__ */ createBaseVNode("thead", null, [
   /* @__PURE__ */ createBaseVNode("th", { class: "text-center bg-dark text-white px150" }, "Category"),
   /* @__PURE__ */ createBaseVNode("th", { class: "text-center bg-dark text-white px100" }, "Color")
 ], -1);
-const _hoisted_95 = { colspan: "2" };
-const _hoisted_96 = { class: "text-center" };
-const _hoisted_97 = /* @__PURE__ */ createBaseVNode("div", {
+const _hoisted_85 = { colspan: "2" };
+const _hoisted_86 = { class: "text-center" };
+const _hoisted_87 = /* @__PURE__ */ createBaseVNode("div", {
   id: "instructions",
   style: { "display": "none" }
 }, "INSTRUCTIONS", -1);
-const _hoisted_98 = /* @__PURE__ */ createBaseVNode("div", {
+const _hoisted_88 = /* @__PURE__ */ createBaseVNode("div", {
   id: "errors",
   style: { "display": "none" }
 }, [
   /* @__PURE__ */ createBaseVNode("div", null, "The following errors need to be resolved for full proper functionality.")
 ], -1);
-const _hoisted_99 = { style: { "position": "relative", "display": "inline-block", "margin": "10px" } };
-const _hoisted_100 = /* @__PURE__ */ createBaseVNode("div", { class: "errortext" }, "Errors", -1);
-const _hoisted_101 = {
+const _hoisted_89 = { style: { "position": "relative", "display": "inline-block", "margin": "10px" } };
+const _hoisted_90 = /* @__PURE__ */ createBaseVNode("div", { class: "errortext" }, "Errors", -1);
+const _hoisted_91 = {
   key: 0,
   class: "e-badge e-badge-danger e-badge-notification e-badge-circle"
 };
-const _hoisted_102 = /* @__PURE__ */ createBaseVNode("div", { class: "e-card-separator" }, null, -1);
-const _hoisted_103 = { class: "e-card-actions" };
-const _hoisted_104 = { class: "container" };
-const _hoisted_105 = { class: "row" };
-const _hoisted_106 = { class: "col-2" };
-const _hoisted_107 = { class: "col-10" };
-const _hoisted_108 = { class: "row" };
-const _hoisted_109 = { class: "main main-calendar px-0" };
-const _hoisted_110 = { class: "quick-info-header" };
-const _hoisted_111 = {
-  key: 0,
-  class: "quick-info-header-content",
-  style: { "align-items": "center", color: "#919191" }
-};
-const _hoisted_112 = { class: "quick-info-title" };
-const _hoisted_113 = { class: "duration-text" };
-const _hoisted_114 = { class: "quick-info-title" };
-const _hoisted_115 = { class: "duration-text" };
-const _hoisted_116 = { class: "quick-info-content" };
-const _hoisted_117 = {
-  key: 0,
-  class: "e-cell-content"
-};
-const _hoisted_118 = { class: "quick-content-area" };
-const _hoisted_119 = { class: "quick-content-area" };
-const _hoisted_120 = { class: "quick-content-area" };
-const _hoisted_121 = {
-  key: 1,
-  class: "event-content"
-};
-const _hoisted_122 = { class: "meeting-type-wrap" };
-const _hoisted_123 = /* @__PURE__ */ createBaseVNode("label", null, "Subject", -1);
-const _hoisted_124 = { class: "meeting-subject-wrap" };
-const _hoisted_125 = /* @__PURE__ */ createBaseVNode("label", null, "Category", -1);
-const _hoisted_126 = { class: "notes-wrap" };
-const _hoisted_127 = /* @__PURE__ */ createBaseVNode("label", null, "Description", -1);
-const _hoisted_128 = { class: "quick-info-footer" };
-const _hoisted_129 = {
-  key: 0,
-  class: "cell-footer"
-};
-const _hoisted_130 = {
-  key: 1,
-  class: "event-footer"
-};
-const _hoisted_131 = {
+const _hoisted_92 = /* @__PURE__ */ createBaseVNode("div", { class: "e-card-separator" }, null, -1);
+const _hoisted_93 = { class: "e-card-actions" };
+const _hoisted_94 = { class: "container" };
+const _hoisted_95 = { class: "row" };
+const _hoisted_96 = { class: "col-2" };
+const _hoisted_97 = { class: "col-10" };
+const _hoisted_98 = { class: "row" };
+const _hoisted_99 = { class: "main main-calendar px-0" };
+const _hoisted_100 = {
   id: "kanbantab",
   style: { "display": "none" }
 };
-const _hoisted_132 = { class: "container-fluid" };
-const _hoisted_133 = { class: "row" };
-const _hoisted_134 = { class: "toolbar px-0" };
-const _hoisted_135 = /* @__PURE__ */ createBaseVNode("div", { class: "main-menu main-menu-kanban px-0" }, [
+const _hoisted_101 = { class: "container-fluid" };
+const _hoisted_102 = { class: "row" };
+const _hoisted_103 = { class: "toolbar px-0" };
+const _hoisted_104 = /* @__PURE__ */ createBaseVNode("div", { class: "main-menu main-menu-kanban px-0" }, [
   /* @__PURE__ */ createBaseVNode("div", null, "SIDEBAR STUFF HERE")
 ], -1);
-const _hoisted_136 = { class: "row" };
-const _hoisted_137 = { class: "main main-kanban px-0" };
-const _hoisted_138 = {
+const _hoisted_105 = { class: "row" };
+const _hoisted_106 = { class: "main main-kanban px-0" };
+const _hoisted_107 = {
   id: "gantttab",
   style: { "display": "none" }
 };
-const _hoisted_139 = { class: "container-fluid" };
-const _hoisted_140 = { class: "row" };
-const _hoisted_141 = { class: "toolbar px-0" };
-const _hoisted_142 = /* @__PURE__ */ createBaseVNode("div", { class: "main-menu main-menu-gantt px-0" }, [
+const _hoisted_108 = { class: "container-fluid" };
+const _hoisted_109 = { class: "row" };
+const _hoisted_110 = { class: "toolbar px-0" };
+const _hoisted_111 = /* @__PURE__ */ createBaseVNode("div", { class: "main-menu main-menu-gantt px-0" }, [
   /* @__PURE__ */ createBaseVNode("div", null, "SIDEBAR STUFF HERE")
 ], -1);
-const _hoisted_143 = /* @__PURE__ */ createBaseVNode("div", { class: "row" }, [
+const _hoisted_112 = /* @__PURE__ */ createBaseVNode("div", { class: "row" }, [
   /* @__PURE__ */ createBaseVNode("div", { class: "main main-gantt px-0" }, "GANTT")
 ], -1);
-const _hoisted_144 = /* @__PURE__ */ createBaseVNode("div", { style: { "position": "relative", "display": "inline-block", "margin": "10px" } }, [
+const _hoisted_113 = /* @__PURE__ */ createBaseVNode("div", { style: { "position": "relative", "display": "inline-block", "margin": "10px" } }, [
   /* @__PURE__ */ createBaseVNode("div", { class: "tabtext" }, "Calendar")
 ], -1);
-const _hoisted_145 = /* @__PURE__ */ createBaseVNode("div", { style: { "position": "relative", "display": "inline-block", "margin": "10px" } }, [
+const _hoisted_114 = /* @__PURE__ */ createBaseVNode("div", { style: { "position": "relative", "display": "inline-block", "margin": "10px" } }, [
   /* @__PURE__ */ createBaseVNode("div", { class: "tabtext" }, "Kanban")
 ], -1);
-const _hoisted_146 = /* @__PURE__ */ createBaseVNode("div", { style: { "position": "relative", "display": "inline-block", "margin": "10px" } }, [
+const _hoisted_115 = /* @__PURE__ */ createBaseVNode("div", { style: { "position": "relative", "display": "inline-block", "margin": "10px" } }, [
   /* @__PURE__ */ createBaseVNode("div", { class: "tabtext" }, "Gantt")
 ], -1);
 function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_ejs_dialog = resolveComponent("ejs-dialog");
-  const _component_ejs_button = resolveComponent("ejs-button");
   const _component_e_item = resolveComponent("e-item");
   const _component_e_items = resolveComponent("e-items");
   const _component_ejs_toolbar = resolveComponent("ejs-toolbar");
   const _component_ejs_textbox = resolveComponent("ejs-textbox");
+  const _component_ejs_button = resolveComponent("ejs-button");
   const _component_ejs_multiselect = resolveComponent("ejs-multiselect");
   const _component_ejs_checkbox = resolveComponent("ejs-checkbox");
   const _component_ejs_dropdownlist = resolveComponent("ejs-dropdownlist");
@@ -98040,55 +98016,14 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
         ]),
         _: 1
       }, 8, ["visible", "showCloseIcon", "target"]),
-      createVNode(_component_ejs_dialog, {
-        ref: "dlgForm",
-        visible: _ctx.datafalse,
-        content: "dlgFormContent",
-        showCloseIcon: _ctx.datatrue,
-        target: _ctx.apptarget,
-        position: "center center",
-        width: "600px",
-        height: "800px"
-      }, {
-        dlgFormContent: withCtx(() => [
-          createBaseVNode("div", _hoisted_5, [
-            _hoisted_6,
-            _hoisted_7,
-            _hoisted_8,
-            _hoisted_9,
-            createBaseVNode("div", _hoisted_10, [
-              createBaseVNode("div", _hoisted_11, [
-                createBaseVNode("div", _hoisted_12, [
-                  _hoisted_13,
-                  createBaseVNode("div", _hoisted_14, [
-                    createVNode(_component_ejs_button, {
-                      id: "save-form",
-                      cssClass: "e-success",
-                      content: "Save",
-                      onClick: _ctx.handleit
-                    }, null, 8, ["onClick"]),
-                    createVNode(_component_ejs_button, {
-                      id: "close-form",
-                      cssClass: "e-secondary",
-                      content: "Close",
-                      onClick: _ctx.handleit
-                    }, null, 8, ["onClick"])
-                  ])
-                ])
-              ])
-            ])
-          ])
-        ]),
-        _: 1
-      }, 8, ["visible", "showCloseIcon", "target"]),
-      createBaseVNode("div", _hoisted_15, [
-        createBaseVNode("div", _hoisted_16, [
-          createBaseVNode("div", _hoisted_17, [
-            createBaseVNode("div", _hoisted_18, [
-              createBaseVNode("div", _hoisted_19, [
-                createBaseVNode("div", _hoisted_20, [
-                  createBaseVNode("div", _hoisted_21, [
-                    createBaseVNode("div", _hoisted_22, [
+      createBaseVNode("div", _hoisted_5, [
+        createBaseVNode("div", _hoisted_6, [
+          createBaseVNode("div", _hoisted_7, [
+            createBaseVNode("div", _hoisted_8, [
+              createBaseVNode("div", _hoisted_9, [
+                createBaseVNode("div", _hoisted_10, [
+                  createBaseVNode("div", _hoisted_11, [
+                    createBaseVNode("div", _hoisted_12, [
                       createVNode(_component_ejs_toolbar, {
                         id: "toolbar_calendar_options",
                         height: "50px",
@@ -98162,7 +98097,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                     enablePersistence: _ctx.datafalse
                   }, {
                     default: withCtx(() => [
-                      createBaseVNode("div", _hoisted_23, [
+                      createBaseVNode("div", _hoisted_13, [
                         createBaseVNode("div", null, [
                           createVNode(_component_ejs_dialog, {
                             ref: "dlgCategory",
@@ -98176,22 +98111,22 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                             width: "500px"
                           }, {
                             dialogHeader: withCtx(() => [
-                              _hoisted_24
+                              _hoisted_14
                             ]),
                             dialogContent: withCtx(() => [
-                              _hoisted_25
+                              _hoisted_15
                             ]),
                             dialogFooter: withCtx(() => [
-                              createBaseVNode("div", _hoisted_26, [
-                                createBaseVNode("div", _hoisted_27, [
-                                  createBaseVNode("div", _hoisted_28, [
+                              createBaseVNode("div", _hoisted_16, [
+                                createBaseVNode("div", _hoisted_17, [
+                                  createBaseVNode("div", _hoisted_18, [
                                     createVNode(_component_ejs_textbox, {
                                       modelValue: _ctx.addcategory,
                                       "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => _ctx.addcategory = $event),
                                       placeholder: "New Category"
                                     }, null, 8, ["modelValue"])
                                   ]),
-                                  createBaseVNode("div", _hoisted_29, [
+                                  createBaseVNode("div", _hoisted_19, [
                                     createVNode(_component_ejs_button, {
                                       id: "add-cat",
                                       cssClass: "e-success mr-1",
@@ -98210,12 +98145,12 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                             ]),
                             _: 1
                           }, 8, ["visible", "showCloseIcon", "target"]),
-                          createBaseVNode("div", _hoisted_30, [
-                            createBaseVNode("div", _hoisted_31, [
-                              createBaseVNode("div", _hoisted_32, [
-                                createBaseVNode("div", _hoisted_33, [
-                                  createBaseVNode("div", _hoisted_34, [
-                                    createBaseVNode("div", _hoisted_35, [
+                          createBaseVNode("div", _hoisted_20, [
+                            createBaseVNode("div", _hoisted_21, [
+                              createBaseVNode("div", _hoisted_22, [
+                                createBaseVNode("div", _hoisted_23, [
+                                  createBaseVNode("div", _hoisted_24, [
+                                    createBaseVNode("div", _hoisted_25, [
                                       createVNode(_component_ejs_textbox, {
                                         modelValue: _ctx.calprops.Title,
                                         "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => _ctx.calprops.Title = $event),
@@ -98223,9 +98158,9 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                       }, null, 8, ["modelValue"])
                                     ])
                                   ]),
-                                  _hoisted_36,
-                                  createBaseVNode("div", _hoisted_37, [
-                                    createBaseVNode("div", _hoisted_38, [
+                                  _hoisted_26,
+                                  createBaseVNode("div", _hoisted_27, [
+                                    createBaseVNode("div", _hoisted_28, [
                                       createVNode(_component_ejs_multiselect, {
                                         id: "msSitesA",
                                         ref: "msSitesA",
@@ -98240,7 +98175,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                         filterBarPlaceholder: "Search Sites"
                                       }, null, 8, ["modelValue", "dataSource", "fields", "showDropDownIcon", "showSelectAll"])
                                     ]),
-                                    createBaseVNode("div", _hoisted_39, [
+                                    createBaseVNode("div", _hoisted_29, [
                                       createVNode(_component_ejs_button, {
                                         id: "get-lists",
                                         cssClass: "e-success",
@@ -98249,18 +98184,18 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                       }, null, 8, ["onClick"])
                                     ])
                                   ]),
-                                  _ctx.calprops.Lists.length > 0 ? (openBlock(), createElementBlock("div", _hoisted_40, _hoisted_42)) : createCommentVNode("", true),
-                                  _ctx.calprops.Lists.length > 0 ? (openBlock(), createElementBlock("div", _hoisted_43, [
-                                    createBaseVNode("div", _hoisted_44, [
-                                      createBaseVNode("table", _hoisted_45, [
-                                        _hoisted_46,
+                                  _ctx.calprops.Lists.length > 0 ? (openBlock(), createElementBlock("div", _hoisted_30, _hoisted_32)) : createCommentVNode("", true),
+                                  _ctx.calprops.Lists.length > 0 ? (openBlock(), createElementBlock("div", _hoisted_33, [
+                                    createBaseVNode("div", _hoisted_34, [
+                                      createBaseVNode("table", _hoisted_35, [
+                                        _hoisted_36,
                                         createBaseVNode("tbody", null, [
                                           (openBlock(true), createElementBlock(Fragment, null, renderList(_ctx.calprops.Lists, (list, index) => {
                                             return openBlock(), createElementBlock("tr", {
                                               key: list.Id,
                                               class: "p-0"
                                             }, [
-                                              createBaseVNode("td", _hoisted_47, [
+                                              createBaseVNode("td", _hoisted_37, [
                                                 createVNode(_component_ejs_checkbox, {
                                                   modelValue: list.Selected,
                                                   "onUpdate:modelValue": ($event) => list.Selected = $event
@@ -98269,9 +98204,9 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                               createBaseVNode("td", null, toDisplayString(list.Site), 1),
                                               createBaseVNode("td", null, toDisplayString(list.Title), 1),
                                               createBaseVNode("td", null, [
-                                                createBaseVNode("div", _hoisted_48, [
-                                                  createBaseVNode("div", _hoisted_49, [
-                                                    createBaseVNode("div", _hoisted_50, [
+                                                createBaseVNode("div", _hoisted_38, [
+                                                  createBaseVNode("div", _hoisted_39, [
+                                                    createBaseVNode("div", _hoisted_40, [
                                                       createBaseVNode("div", {
                                                         id: "spinner" + index,
                                                         ref_for: true,
@@ -98279,14 +98214,14 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                         class: "e-control e-progress-btn e-lib e-round e-small e-success e-icon-btn e-btn e-spin-center",
                                                         style: { "padding-top": "3px", "visibility": "hidden" }
                                                       }, [
-                                                        createBaseVNode("span", _hoisted_52, [
-                                                          createBaseVNode("div", _hoisted_53, [
-                                                            createBaseVNode("div", _hoisted_54, [
-                                                              (openBlock(), createElementBlock("svg", _hoisted_55, _hoisted_57))
+                                                        createBaseVNode("span", _hoisted_42, [
+                                                          createBaseVNode("div", _hoisted_43, [
+                                                            createBaseVNode("div", _hoisted_44, [
+                                                              (openBlock(), createElementBlock("svg", _hoisted_45, _hoisted_47))
                                                             ])
                                                           ])
                                                         ])
-                                                      ], 8, _hoisted_51),
+                                                      ], 8, _hoisted_41),
                                                       createVNode(_component_ejs_button, {
                                                         id: "btn" + index,
                                                         onClick: _ctx.mapfields,
@@ -98296,18 +98231,18 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                         content: "Map Fields"
                                                       }, null, 8, ["id", "onClick", "data-index", "data-button"])
                                                     ]),
-                                                    createBaseVNode("div", _hoisted_58, [
+                                                    createBaseVNode("div", _hoisted_48, [
                                                       createBaseVNode("div", {
                                                         id: "ac_" + index,
                                                         style: { "display": "none" }
                                                       }, [
-                                                        createBaseVNode("table", _hoisted_60, [
-                                                          _hoisted_61,
+                                                        createBaseVNode("table", _hoisted_50, [
+                                                          _hoisted_51,
                                                           createBaseVNode("tbody", null, [
                                                             createBaseVNode("tr", null, [
-                                                              _hoisted_62,
-                                                              createBaseVNode("td", _hoisted_63, [
-                                                                createBaseVNode("div", _hoisted_64, [
+                                                              _hoisted_52,
+                                                              createBaseVNode("td", _hoisted_53, [
+                                                                createBaseVNode("div", _hoisted_54, [
                                                                   createVNode(_component_ejs_dropdownlist, {
                                                                     dataSource: list.ListFields,
                                                                     fields: _ctx.fieldfields,
@@ -98320,9 +98255,9 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                               ])
                                                             ]),
                                                             createBaseVNode("tr", null, [
-                                                              _hoisted_65,
-                                                              createBaseVNode("td", _hoisted_66, [
-                                                                createBaseVNode("div", _hoisted_67, [
+                                                              _hoisted_55,
+                                                              createBaseVNode("td", _hoisted_56, [
+                                                                createBaseVNode("div", _hoisted_57, [
                                                                   createVNode(_component_ejs_dropdownlist, {
                                                                     dataSource: list.ListFields,
                                                                     fields: _ctx.fieldfields,
@@ -98332,7 +98267,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                                     style: normalizeStyle(list.Fields.StartTime === "" ? "border: 1px solid red" : "border: 1px solid green")
                                                                   }, null, 8, ["dataSource", "fields", "modelValue", "onUpdate:modelValue", "style"])
                                                                 ]),
-                                                                createBaseVNode("div", _hoisted_68, [
+                                                                createBaseVNode("div", _hoisted_58, [
                                                                   createVNode(_component_ejs_button, {
                                                                     onClick: ($event) => _ctx.addfield(list, index, "StartDate"),
                                                                     cssClass: "e-round e-success",
@@ -98344,9 +98279,9 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                               ])
                                                             ]),
                                                             createBaseVNode("tr", null, [
-                                                              _hoisted_69,
-                                                              createBaseVNode("td", _hoisted_70, [
-                                                                createBaseVNode("div", _hoisted_71, [
+                                                              _hoisted_59,
+                                                              createBaseVNode("td", _hoisted_60, [
+                                                                createBaseVNode("div", _hoisted_61, [
                                                                   createVNode(_component_ejs_dropdownlist, {
                                                                     dataSource: list.ListFields,
                                                                     fields: _ctx.fieldfields,
@@ -98356,7 +98291,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                                     cssClass: list.Fields.EndTime === "" ? "e-danger" : "e-success"
                                                                   }, null, 8, ["dataSource", "fields", "modelValue", "onUpdate:modelValue", "cssClass"])
                                                                 ]),
-                                                                createBaseVNode("div", _hoisted_72, [
+                                                                createBaseVNode("div", _hoisted_62, [
                                                                   createVNode(_component_ejs_button, {
                                                                     onClick: ($event) => _ctx.addfield(list, index, "EndDate"),
                                                                     cssClass: "e-round e-success",
@@ -98368,9 +98303,9 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                               ])
                                                             ]),
                                                             createBaseVNode("tr", null, [
-                                                              _hoisted_73,
-                                                              createBaseVNode("td", _hoisted_74, [
-                                                                createBaseVNode("div", _hoisted_75, [
+                                                              _hoisted_63,
+                                                              createBaseVNode("td", _hoisted_64, [
+                                                                createBaseVNode("div", _hoisted_65, [
                                                                   createVNode(_component_ejs_dropdownlist, {
                                                                     dataSource: list.ListFields,
                                                                     fields: _ctx.fieldfields,
@@ -98380,7 +98315,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                                     cssClass: list.Fields.Category === "" ? "e-danger" : "e-success"
                                                                   }, null, 8, ["dataSource", "fields", "modelValue", "onUpdate:modelValue", "cssClass"])
                                                                 ]),
-                                                                createBaseVNode("div", _hoisted_76, [
+                                                                createBaseVNode("div", _hoisted_66, [
                                                                   createVNode(_component_ejs_button, {
                                                                     onClick: ($event) => _ctx.addfield(list, index, "Category"),
                                                                     cssClass: "e-round e-success",
@@ -98392,9 +98327,9 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                               ])
                                                             ]),
                                                             createBaseVNode("tr", null, [
-                                                              _hoisted_77,
-                                                              createBaseVNode("td", _hoisted_78, [
-                                                                createBaseVNode("div", _hoisted_79, [
+                                                              _hoisted_67,
+                                                              createBaseVNode("td", _hoisted_68, [
+                                                                createBaseVNode("div", _hoisted_69, [
                                                                   createVNode(_component_ejs_dropdownlist, {
                                                                     dataSource: list.ListFields,
                                                                     fields: _ctx.fieldfields,
@@ -98403,7 +98338,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                                     "onUpdate:modelValue": ($event) => list.Fields.Location = $event
                                                                   }, null, 8, ["dataSource", "fields", "modelValue", "onUpdate:modelValue"])
                                                                 ]),
-                                                                createBaseVNode("div", _hoisted_80, [
+                                                                createBaseVNode("div", _hoisted_70, [
                                                                   createVNode(_component_ejs_button, {
                                                                     onClick: ($event) => _ctx.addfield(list, index, "Location"),
                                                                     cssClass: "e-round e-success",
@@ -98415,9 +98350,9 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                               ])
                                                             ]),
                                                             createBaseVNode("tr", null, [
-                                                              _hoisted_81,
-                                                              createBaseVNode("td", _hoisted_82, [
-                                                                createBaseVNode("div", _hoisted_83, [
+                                                              _hoisted_71,
+                                                              createBaseVNode("td", _hoisted_72, [
+                                                                createBaseVNode("div", _hoisted_73, [
                                                                   createVNode(_component_ejs_dropdownlist, {
                                                                     dataSource: list.ListFields,
                                                                     fields: _ctx.fieldfields,
@@ -98427,7 +98362,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                                     cssClass: list.Fields.Description === "" ? "e-danger" : "e-success"
                                                                   }, null, 8, ["dataSource", "fields", "modelValue", "onUpdate:modelValue", "cssClass"])
                                                                 ]),
-                                                                createBaseVNode("div", _hoisted_84, [
+                                                                createBaseVNode("div", _hoisted_74, [
                                                                   createVNode(_component_ejs_button, {
                                                                     onClick: ($event) => _ctx.addfield(list, index, "Description"),
                                                                     cssClass: "e-round e-success",
@@ -98439,9 +98374,9 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                               ])
                                                             ]),
                                                             createBaseVNode("tr", null, [
-                                                              _hoisted_85,
-                                                              createBaseVNode("td", _hoisted_86, [
-                                                                createBaseVNode("div", _hoisted_87, [
+                                                              _hoisted_75,
+                                                              createBaseVNode("td", _hoisted_76, [
+                                                                createBaseVNode("div", _hoisted_77, [
                                                                   createVNode(_component_ejs_dropdownlist, {
                                                                     dataSource: list.ListFields,
                                                                     fields: _ctx.fieldfields,
@@ -98450,7 +98385,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                                     "onUpdate:modelValue": ($event) => list.Fields.Recurrence = $event
                                                                   }, null, 8, ["dataSource", "fields", "modelValue", "onUpdate:modelValue"])
                                                                 ]),
-                                                                createBaseVNode("div", _hoisted_88, [
+                                                                createBaseVNode("div", _hoisted_78, [
                                                                   createVNode(_component_ejs_button, {
                                                                     onClick: ($event) => _ctx.addfield(list, index, "Recurrence"),
                                                                     cssClass: "e-round e-success",
@@ -98463,7 +98398,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                             ])
                                                           ])
                                                         ])
-                                                      ], 8, _hoisted_59),
+                                                      ], 8, _hoisted_49),
                                                       createVNode(_component_ejs_accordion, null, {
                                                         default: withCtx(() => [
                                                           createVNode(_component_e_accordionitems, null, {
@@ -98481,7 +98416,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                                         _: 2
                                                       }, 1024)
                                                     ]),
-                                                    _hoisted_89
+                                                    _hoisted_79
                                                   ])
                                                 ])
                                               ])
@@ -98491,11 +98426,11 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                       ])
                                     ])
                                   ])) : createCommentVNode("", true),
-                                  _hoisted_90,
-                                  createBaseVNode("div", _hoisted_91, [
-                                    createBaseVNode("div", _hoisted_92, [
-                                      createBaseVNode("table", _hoisted_93, [
-                                        _hoisted_94,
+                                  _hoisted_80,
+                                  createBaseVNode("div", _hoisted_81, [
+                                    createBaseVNode("div", _hoisted_82, [
+                                      createBaseVNode("table", _hoisted_83, [
+                                        _hoisted_84,
                                         createBaseVNode("tbody", null, [
                                           (openBlock(true), createElementBlock(Fragment, null, renderList(_ctx.basecats, (category) => {
                                             return openBlock(), createElementBlock("tr", {
@@ -98516,8 +98451,8 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                             ]);
                                           }), 128)),
                                           createBaseVNode("tr", null, [
-                                            createBaseVNode("td", _hoisted_95, [
-                                              createBaseVNode("div", _hoisted_96, [
+                                            createBaseVNode("td", _hoisted_85, [
+                                              createBaseVNode("div", _hoisted_86, [
                                                 createVNode(_component_ejs_button, {
                                                   id: "show-cat-dialog",
                                                   cssClass: "e-success",
@@ -98533,8 +98468,8 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                   ])
                                 ])
                               ]),
-                              _hoisted_97,
-                              _hoisted_98,
+                              _hoisted_87,
+                              _hoisted_88,
                               createVNode(_component_ejs_tab, {
                                 heightAdjustMode: "Auto",
                                 showCloseButton: false
@@ -98555,9 +98490,9 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                         content: "#errors"
                                       }, {
                                         TabHeaderTemplate: withCtx(({}) => [
-                                          createBaseVNode("div", _hoisted_99, [
-                                            _hoisted_100,
-                                            _ctx.errorcount > 0 ? (openBlock(), createElementBlock("span", _hoisted_101, toDisplayString(_ctx.errorcount), 1)) : createCommentVNode("", true)
+                                          createBaseVNode("div", _hoisted_89, [
+                                            _hoisted_90,
+                                            _ctx.errorcount > 0 ? (openBlock(), createElementBlock("span", _hoisted_91, toDisplayString(_ctx.errorcount), 1)) : createCommentVNode("", true)
                                           ])
                                         ]),
                                         _: 1
@@ -98569,11 +98504,11 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                 _: 1
                               })
                             ]),
-                            _hoisted_102,
-                            createBaseVNode("div", _hoisted_103, [
-                              createBaseVNode("div", _hoisted_104, [
-                                createBaseVNode("div", _hoisted_105, [
-                                  createBaseVNode("div", _hoisted_106, [
+                            _hoisted_92,
+                            createBaseVNode("div", _hoisted_93, [
+                              createBaseVNode("div", _hoisted_94, [
+                                createBaseVNode("div", _hoisted_95, [
+                                  createBaseVNode("div", _hoisted_96, [
                                     createVNode(_component_ejs_button, {
                                       id: "save-settings",
                                       cssClass: "e-success",
@@ -98581,7 +98516,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                                       onClick: _ctx.handleit
                                     }, null, 8, ["onClick"])
                                   ]),
-                                  createBaseVNode("div", _hoisted_107, [
+                                  createBaseVNode("div", _hoisted_97, [
                                     createVNode(_component_ejs_textbox, {
                                       modelValue: _ctx.message,
                                       "onUpdate:modelValue": _cache[3] || (_cache[3] = ($event) => _ctx.message = $event)
@@ -98596,116 +98531,20 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                     ]),
                     _: 1
                   }, 8, ["isOpen", "showBackdrop", "enablePersistence"]),
-                  createBaseVNode("div", _hoisted_108, [
-                    createBaseVNode("div", _hoisted_109, [
+                  createBaseVNode("div", _hoisted_98, [
+                    createBaseVNode("div", _hoisted_99, [
                       createVNode(_component_ejs_schedule, {
                         id: "scheduler",
                         ref: "scheduleObj",
                         height: "920px",
                         width: "100%",
                         cssClass: "main-calendar",
-                        quickInfoTemplates: _ctx.quickInfoTemplates,
+                        eventClick: _ctx.onEventClicked,
                         currentView: _ctx.currentView,
-                        popupOpen: _ctx.onPopupOpen,
                         selectedDate: _ctx.selectedDate,
                         eventSettings: _ctx.eventSettings,
                         actionBegin: _ctx.onActionBegin
                       }, {
-                        headerTemplate: withCtx(({ data }) => [
-                          createBaseVNode("div", _hoisted_110, [
-                            data.elementType == "cell" ? (openBlock(), createElementBlock("div", _hoisted_111, [
-                              createBaseVNode("div", _hoisted_112, toDisplayString(_ctx.getHeaderTitle(data)), 1),
-                              createBaseVNode("div", _hoisted_113, toDisplayString(_ctx.getHeaderDetails(data)), 1)
-                            ])) : (openBlock(), createElementBlock("div", {
-                              key: 1,
-                              class: "quick-info-header-content",
-                              style: normalizeStyle({ "background-color": _ctx.getHeaderStyles(data), color: "#FFFFFF" })
-                            }, [
-                              createBaseVNode("div", _hoisted_114, toDisplayString(_ctx.getHeaderTitle(data)), 1),
-                              createBaseVNode("div", _hoisted_115, toDisplayString(_ctx.getHeaderDetails(data)), 1)
-                            ], 4))
-                          ])
-                        ]),
-                        contentTemplate: withCtx(({ data }) => [
-                          createBaseVNode("div", _hoisted_116, [
-                            data.elementType === "cell" ? (openBlock(), createElementBlock("div", _hoisted_117, [
-                              createBaseVNode("div", _hoisted_118, [
-                                createVNode(_component_ejs_textbox, {
-                                  ref: "titleObj",
-                                  id: "title",
-                                  placeholder: "Title"
-                                }, null, 512)
-                              ]),
-                              createBaseVNode("div", _hoisted_119, [
-                                createVNode(_component_ejs_dropdownlist, {
-                                  ref: "eventTypeObj",
-                                  id: "eventType",
-                                  dataSource: _ctx.basecats,
-                                  index: 0,
-                                  fields: _ctx.fields,
-                                  popupHeight: "200px",
-                                  placeholder: "Choose Category"
-                                }, null, 8, ["dataSource", "fields"])
-                              ]),
-                              createBaseVNode("div", _hoisted_120, [
-                                createVNode(_component_ejs_textbox, {
-                                  ref: "notesObj",
-                                  id: "notes",
-                                  placeholder: "Notes"
-                                }, null, 512)
-                              ])
-                            ])) : (openBlock(), createElementBlock("div", _hoisted_121, [
-                              createBaseVNode("div", _hoisted_122, [
-                                _hoisted_123,
-                                createTextVNode(":"),
-                                createBaseVNode("span", null, toDisplayString(data.Subject), 1)
-                              ]),
-                              createBaseVNode("div", _hoisted_124, [
-                                _hoisted_125,
-                                createTextVNode(":"),
-                                createBaseVNode("span", null, toDisplayString(_ctx.getEventType(data)), 1)
-                              ]),
-                              createBaseVNode("div", _hoisted_126, [
-                                _hoisted_127,
-                                createTextVNode(":"),
-                                createBaseVNode("span", null, toDisplayString(data.Description), 1)
-                              ])
-                            ]))
-                          ])
-                        ]),
-                        footerTemplate: withCtx(({ data }) => [
-                          createBaseVNode("div", _hoisted_128, [
-                            data.elementType === "cell" ? (openBlock(), createElementBlock("div", _hoisted_129, [
-                              createVNode(_component_ejs_button, {
-                                id: "more-details",
-                                cssClass: "e-flat",
-                                content: "More Details",
-                                onClick: _ctx.buttonClickActions
-                              }, null, 8, ["onClick"]),
-                              createVNode(_component_ejs_button, {
-                                id: "add",
-                                cssClass: "e-flat",
-                                content: "Add",
-                                isPrimary: true,
-                                onClick: _ctx.buttonClickActions
-                              }, null, 8, ["onClick"])
-                            ])) : (openBlock(), createElementBlock("div", _hoisted_130, [
-                              createVNode(_component_ejs_button, {
-                                id: "delete",
-                                cssClass: "e-flat",
-                                content: "Delete",
-                                onClick: _ctx.buttonClickActions
-                              }, null, 8, ["onClick"]),
-                              createVNode(_component_ejs_button, {
-                                id: "more-details",
-                                cssClass: "e-flat",
-                                content: "More Details",
-                                isPrimary: true,
-                                onClick: _ctx.buttonClickActions
-                              }, null, 8, ["onClick"])
-                            ]))
-                          ])
-                        ]),
                         default: withCtx(() => [
                           createVNode(_component_e_views, null, {
                             default: withCtx(() => [
@@ -98740,15 +98579,15 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                           })
                         ]),
                         _: 1
-                      }, 8, ["quickInfoTemplates", "currentView", "popupOpen", "selectedDate", "eventSettings", "actionBegin"])
+                      }, 8, ["eventClick", "currentView", "selectedDate", "eventSettings", "actionBegin"])
                     ])
                   ])
                 ])
               ]),
-              createBaseVNode("div", _hoisted_131, [
-                createBaseVNode("div", _hoisted_132, [
-                  createBaseVNode("div", _hoisted_133, [
-                    createBaseVNode("div", _hoisted_134, [
+              createBaseVNode("div", _hoisted_100, [
+                createBaseVNode("div", _hoisted_101, [
+                  createBaseVNode("div", _hoisted_102, [
+                    createBaseVNode("div", _hoisted_103, [
                       createVNode(_component_ejs_toolbar, {
                         id: "toolbar_kanban_options",
                         height: "50px",
@@ -98784,12 +98623,12 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                     enablePersistence: _ctx.datafalse
                   }, {
                     default: withCtx(() => [
-                      _hoisted_135
+                      _hoisted_104
                     ]),
                     _: 1
                   }, 8, ["isOpen", "showBackdrop", "enablePersistence"]),
-                  createBaseVNode("div", _hoisted_136, [
-                    createBaseVNode("div", _hoisted_137, [
+                  createBaseVNode("div", _hoisted_105, [
+                    createBaseVNode("div", _hoisted_106, [
                       createVNode(_component_ejs_kanban, {
                         id: "kanban",
                         keyField: "Status",
@@ -98821,10 +98660,10 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                   ])
                 ])
               ]),
-              createBaseVNode("div", _hoisted_138, [
-                createBaseVNode("div", _hoisted_139, [
-                  createBaseVNode("div", _hoisted_140, [
-                    createBaseVNode("div", _hoisted_141, [
+              createBaseVNode("div", _hoisted_107, [
+                createBaseVNode("div", _hoisted_108, [
+                  createBaseVNode("div", _hoisted_109, [
+                    createBaseVNode("div", _hoisted_110, [
                       createVNode(_component_ejs_toolbar, {
                         id: "toolbar_gantt_options",
                         height: "50px",
@@ -98860,11 +98699,11 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                     enablePersistence: _ctx.datafalse
                   }, {
                     default: withCtx(() => [
-                      _hoisted_142
+                      _hoisted_111
                     ]),
                     _: 1
                   }, 8, ["isOpen", "showBackdrop", "enablePersistence"]),
-                  _hoisted_143
+                  _hoisted_112
                 ])
               ]),
               createVNode(_component_ejs_tab, {
@@ -98880,7 +98719,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                         content: "#calendartab"
                       }, {
                         CalendarTemplate: withCtx(({}) => [
-                          _hoisted_144
+                          _hoisted_113
                         ]),
                         _: 1
                       }),
@@ -98889,7 +98728,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                         content: "#kanbantab"
                       }, {
                         KanbanTemplate: withCtx(({}) => [
-                          _hoisted_145
+                          _hoisted_114
                         ]),
                         _: 1
                       }),
@@ -98898,7 +98737,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
                         content: "#gantttab"
                       }, {
                         GanttTemplate: withCtx(({}) => [
-                          _hoisted_146
+                          _hoisted_115
                         ]),
                         _: 1
                       })

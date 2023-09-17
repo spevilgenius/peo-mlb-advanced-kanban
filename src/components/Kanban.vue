@@ -28,33 +28,6 @@
           </div>
         </template>
       </ejs-dialog>
-      <ejs-dialog ref="dlgForm" :visible="datafalse" :content="'dlgFormContent'" :showCloseIcon="datatrue" :target="apptarget" position="center center" width="600px" height="800px">
-        <template v-slot:dlgFormContent>
-          <div class="e-card">
-            <div class="e-card-header">
-              <div class="container">
-                <div class="row">
-                  <div class="col-12 text-center">Edit Item</div>
-                </div>
-              </div>
-            </div>
-            <div class="e-card-separator"></div>
-            <div class="e-card-content"></div>
-            <div class="e-card-separator"></div>
-            <div class="e-card-actions">
-              <div class="container">
-                <div class="row">
-                  <div class="col-8"></div>
-                  <div class="col-4">
-                    <ejs-button id="save-form" cssClass="e-success" content="Save" v-on:click="handleit"></ejs-button>
-                    <ejs-button id="close-form" cssClass="e-secondary" content="Close" v-on:click="handleit"></ejs-button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </template>
-      </ejs-dialog>
       <div class="col-12">
         <div class="content-wrapper">
           <div class="e-card">
@@ -304,7 +277,7 @@
                   </ejs-sidebar>
                   <div class="row">
                     <div class="main main-calendar px-0">
-                      <ejs-schedule id="scheduler" ref="scheduleObj" height="920px" width="100%" cssClass="main-calendar" :quickInfoTemplates="quickInfoTemplates" :currentView="currentView" :popupOpen="onPopupOpen" :selectedDate="selectedDate" :eventSettings="eventSettings" :actionBegin="onActionBegin">
+                      <ejs-schedule id="scheduler" ref="scheduleObj" height="920px" width="100%" cssClass="main-calendar" :popupOpen="onPopupOpen" :eventClick="onEventClicked" :currentView="currentView" :selectedDate="selectedDate" :eventSettings="eventSettings" :actionBegin="onActionBegin">
                         <e-views>
                           <e-view option="Day"></e-view>
                           <e-view option="WorkWeek" startHour="10:00" endHour="18:00"></e-view>
@@ -313,7 +286,7 @@
                         <e-resources>
                           <e-resource field="CategoryId" ref="Categories" title="Categories" name="Categories" :allowMultiple="datatrue" :dataSource="basecats" textField="CategoryText" idField="CategoryId" colorField="CategoryColor"> </e-resource>
                         </e-resources>
-                        <template v-slot:headerTemplate="{ data }">
+                        <!-- <template v-slot:headerTemplate="{ data }">
                           <div class="quick-info-header">
                             <div class="quick-info-header-content" v-if="data.elementType == 'cell'" :style="{ 'align-items': 'center', color: '#919191' }">
                               <div class="quick-info-title">{{ getHeaderTitle(data) }}</div>
@@ -357,10 +330,10 @@
                             </div>
                             <div class="event-footer" v-else>
                               <ejs-button id="delete" cssClass="e-flat" content="Delete" v-on:click="buttonClickActions"></ejs-button>
-                              <ejs-button id="more-details" cssClass="e-flat" content="More Details" :isPrimary="true" v-on:click="buttonClickActions"></ejs-button>
+                              <ejs-button id="more-details" cssClass="e-flat" content="More Details" :isPrimary="true" v-on:click="editEvent(data)"></ejs-button>
                             </div>
                           </div>
-                        </template>
+                        </template> -->
                       </ejs-schedule>
                     </div>
                   </div>
@@ -461,7 +434,7 @@ import { defineComponent, Ref } from 'vue'
 import axios from 'axios'
 import { KanbanComponent, ColumnsDirective, ColumnDirective } from '@syncfusion/ej2-vue-kanban'
 import { Internationalization, isNullOrUndefined, closest, extend } from '@syncfusion/ej2-base'
-import { ScheduleComponent, Day, WorkWeek, Month, Agenda, DragAndDrop, Resize, ViewsDirective, ViewDirective, ResourcesDirective, ResourceDirective, EJ2Instance, ResourcesModel } from '@syncfusion/ej2-vue-schedule'
+import { ScheduleComponent, Day, WorkWeek, Month, Agenda, DragAndDrop, Resize, ViewsDirective, ViewDirective, ResourcesDirective, ResourceDirective, EJ2Instance, ResourcesModel, Schedule } from '@syncfusion/ej2-vue-schedule'
 import { ButtonComponent, SwitchComponent, CheckBoxComponent } from '@syncfusion/ej2-vue-buttons'
 import { TextBoxComponent, ColorPickerComponent } from '@syncfusion/ej2-vue-inputs'
 import { ToolbarComponent, ItemDirective, ItemsDirective, TabComponent, TabItemsDirective, TabItemDirective, SidebarComponent, AccordionComponent, AccordionItemsDirective, AccordionItemDirective } from '@syncfusion/ej2-vue-navigations'
@@ -489,6 +462,8 @@ var UUID = function () {
 }
 
 let that: any
+
+/* let events = new Array<Event>() */
 
 var slash = '/'
 var tp1 = String(window.location.protocol)
@@ -579,7 +554,7 @@ export default defineComponent({
       },
       fields: { text: 'CategoryText', value: 'CategoryId' },
       eventSettings: {
-        dataSource: new Array<any>()
+        dataSource: []
       },
       kanbanData: [
         {
@@ -996,8 +971,21 @@ export default defineComponent({
           break
       }
     },
+    onCellClicked: function (args: any) {
+      console.log('CELL CLICKED: ' + args)
+      ;(this.$refs['scheduleObj'] as ScheduleComponent).openEditor(args, 'Add')
+    },
+    onEventClicked: function (args: any) {
+      console.log('EVENT CLICKED: ' + args)
+      if (!(args.event as any).RecurrenceRule) {
+        ;(this.$refs['scheduleObj'] as ScheduleComponent).openEditor(args.event, 'Save')
+      } else {
+        ;(this.$refs['scheduleObj'] as ScheduleComponent).quickPopup.openRecurrenceAlert()
+      }
+    },
     onPopupOpen: function (args: any) {
-      console.log('POPUP OPEN: ' + args)
+      args.cancel = true
+      /* console.log('POPUP OPEN: ' + args)
       if ((args.type == 'QuickInfo' || args.type == 'ViewEventInfo') && !args.element.classList.contains('e-template')) {
         args.element.classList.add('e-template')
       }
@@ -1008,7 +996,7 @@ export default defineComponent({
       if (args.type === 'Editor') {
         args.cancel = true
         this.message = 'Open Form'
-      }
+      } */
     },
     getHeaderStyles: function (data: any) {
       let scheduleObj = (document.querySelector('.e-schedule') as HTMLElement as EJ2Instance).ej2_instances[0]
@@ -1028,10 +1016,18 @@ export default defineComponent({
       let resourceData = resources.dataSource.filter((resource) => resource.CategoryId === data.CategoryId)[0]
       return resourceData.CategoryText
     },
+    eventClickActions: function (data: any) {
+      alert(JSON.stringify(data))
+    },
+    editEvent: function (data: any) {
+      // TODO: get recurrence fixed
+      let currentAction = ''
+      ;(this.$refs['scheduleObj'] as ScheduleComponent).openEditor(data, currentAction, true)
+    },
     buttonClickActions: function (e: { target: HTMLElement }) {
       console.log('BUTTON CLICK: ' + e)
       const scheduleObj = document.querySelector('.e-schedule') as unknown as ScheduleComponent
-      /* const quickPopup = closest(e.target, '.e-quick-popup-wrapper')
+      const quickPopup = closest(e.target, '.e-quick-popup-wrapper')
       const getSlotData = function () {
         const titleObj = quickPopup.querySelector('#title') as any
         const notesObj = quickPopup.querySelector('#notes') as any
@@ -1043,14 +1039,12 @@ export default defineComponent({
         addObj.EndTime = new Date(scheduleObj.ej2Instances.activeCellsData.endTime)
         addObj.IsAllDay = scheduleObj.ej2Instances.activeCellsData.isAllDay
         addObj.Description = isNullOrUndefined(notesObj.value) ? 'Add notes' : notesObj.value
-        addObj.RoomId = eventTypeObj.value
+        addObj.CategoryId = eventTypeObj.value
         return addObj
-      } */
+      }
       if (e.target.id === 'add') {
-        /* const addObj = getSlotData()
-        scheduleObj.addEvent(addObj) */
-        ;(this.$refs.dlgForm as DialogComponent).setProperties({ visible: true }, false)
-        ;(this.$refs.dlgForm as DialogComponent).show()
+        const addObj = getSlotData()
+        scheduleObj.addEvent(addObj)
       }
       if (e.target.id === 'delete') {
         const eventDetails = scheduleObj.ej2Instances.activeEventData.event
@@ -1058,21 +1052,19 @@ export default defineComponent({
         if (eventDetails.RecurrenceRule) {
           currentAction = 'DeleteOccurrence'
         }
-        // scheduleObj.deleteEvent(eventDetails, currentAction)
+        scheduleObj.deleteEvent(eventDetails, currentAction)
         // TODO: Setup delete action. Let user know
         this.message = 'Deleting Item...'
       }
       if (e.target.id === 'more-details') {
         // TODO: Get item details for editing if editing. Show form
-        /* const isCellPopup = quickPopup.firstElementChild?.classList.contains('e-cell-popup')
+        const isCellPopup = quickPopup.firstElementChild?.classList.contains('e-cell-popup')
         const eventDetails = isCellPopup ? getSlotData() : scheduleObj.ej2Instances.activeEventData.event
         let currentAction = isCellPopup ? 'Add' : 'Save'
         if (eventDetails.RecurrenceRule) {
           currentAction = 'EditOccurrence'
-        } */
-        // scheduleObj.openEditor(eventDetails, currentAction, true)
-        ;(this.$refs.dlgForm as DialogComponent).setProperties({ visible: true }, false)
-        ;(this.$refs.dlgForm as DialogComponent).show()
+        }
+        scheduleObj.openEditor(eventDetails, currentAction, true)
       }
       scheduleObj.closeQuickInfoPopup()
     },
@@ -1215,12 +1207,10 @@ export default defineComponent({
       ;(this.$refs.dlgSpinner as DialogComponent).show() */
       this.events = []
       let j: any[] = []
-      let Schedule = this.$refs['scheduleObj'] as ScheduleComponent
       // clear existing events
-      let events = Schedule.getEvents()
-      for (let c = 0; c < events.length; c++) {
-        Schedule.deleteEvent(events[c])
-      }
+      let Schedule = that.$refs['scheduleObj'] as ScheduleComponent
+      let oldevents = Schedule.getEvents()
+      Schedule.deleteEvent(oldevents)
       async function getAllEvents(url: string, list: List): Promise<void> {
         console.log('GETALLEVENTS: ' + url)
         await axios
@@ -1281,24 +1271,12 @@ export default defineComponent({
                         uri: String(j[a]['__metadata']['uri']),
                         type: String(j[a]['__metadata']['type'])
                       })
-                      Schedule.addEvent({
-                        Id: that.idcount,
-                        Subject: String(j[a][list.Fields.Subject]),
-                        Description: String(j[a][list.Fields.Description]),
-                        StartTime: start,
-                        EndTime: end,
-                        Location: String(j[a][list.Fields.Location]),
-                        Category: String(j[a][list.Fields.Category]),
-                        CategoryId: catid,
-                        guid: guid,
-                        etag: String(j[a]['__metadata']['etag']),
-                        uri: String(j[a]['__metadata']['uri']),
-                        type: String(j[a]['__metadata']['type'])
-                      })
                     } catch (e) {
                       // not gonna do it
                     }
                   }
+                  let Schedule = that.$refs['scheduleObj'] as ScheduleComponent
+                  Schedule.addEvent(that.events)
                 }
               }
             }

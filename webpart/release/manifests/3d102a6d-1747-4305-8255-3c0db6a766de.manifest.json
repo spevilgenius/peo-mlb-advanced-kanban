@@ -39,7 +39,7 @@
     "scriptResources": {
       "vue-3-kanban-web-part": {
         "type": "path",
-        "path": "vue-3-kanban-web-part_f5728aa242741776fcfb.js"
+        "path": "vue-3-kanban-web-part_bf093fd114b1edb5e174.js"
       },
       "@microsoft/sp-property-pane": {
         "type": "component",
